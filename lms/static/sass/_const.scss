@@ -1,0 +1,81 @@
+//body background
+$body-bg: #eee;
+$base-color:#0075b4;                                                            //cambiar
+$background-color:#eeeeee;
+//settings for header
+$header-bg: #fff;                                                               //Cambiar el header
+$header-nav-link-color: $base-color;
+$header-nav-link-color2: $base-color;
+$header-nav-link-color-hover: lighten($header-nav-link-color, 20%);
+$dropdown-menu-link-color: #009be0;
+$dropdown-menu-link-color-hover: lighten($dropdown-menu-link-color, 20%);
+$course-header: #898989; //titulo del curso - lista de cursos
+//settings for hamburger
+$hamburger-color: #009be0;
+$hamburger-width: 40px;
+$hamburger-height: 30px;
+$hamburger-height-line: 3px;
+//settings on promo box
+$promo-box-text-color: #fff;
+$promo-box-text-shadow: 0px 2px 0px rgba(77, 77, 77, 0.4);
+$find-btn-bg: transparent;
+$find-btn-bg-hover: rgba(0, 0, 0, .2);
+$find-btn-border: #fff;
+$find-btn-color: #fff;
+$find-btn-color-hover: $find-btn-color;
+//search input on promo box
+$search-input-background: rgba(255, 255, 255, 0.6);
+$search-input-border: #fff;
+$search-input-color: #4b4b4b;
+$search-button-background: none;
+$search-button-border: #fff;
+$search-button-color: #95b2d6;
+$search-height: 55px;
+//settings for footer
+$footer-bg: $base-color;                                                            //Cambia el fondo
+$footer-nav-link-color: #fff;                                                   //cambia el color del texto
+$footer-nav-link-color-hover: rgba(255, 255, 255, .8);                          //Cambia el color del texto cuando se posiciona el mouse sobre el.
+$footer-support-text-and-logo: #fff;
+$footer-social-link-bg: #fff;                                                   //Cambia el fondo
+$footer-social-link-text: #fff;                                                 //cambia el color del texto
+$footer-social-link-text-hover: #898989;                                        //Cambia el color del texto cuando se posiciona el mouse sobre el.
+$footer-social-link-bg-hover: #004183;
+//btn
+$theme-btn-bg: $base-color;                                                       //Cambia el fondo del boton
+$theme-btn-border: $base-color;                                                     //Cambia el borde de los botones
+$theme-btn-text-color: #fff;                                                    //Cambia el color del texto del boton
+$theme-btn-text-color-hover: $base-color;                                         //Cambia el color del texto cuando se posiciona el mouse sobre el.
+$theme-btn-bg-hover: #fff;                                                      //Cambia el fondo del boton cuando se posiciona el mouse sobre el.
+$theme-btn-border-hover: $base-color;                                               //Cambia el borde del boton cuando se posiciona el mouse sobre el.
+$theme-btn-shadow: darken($theme-btn-bg, 20%);
+//btn-white
+$theme-btn-white-bg: $base-color;
+$theme-btn-white-border: $base-color;
+$theme-btn-white-text-color: #fff;
+$theme-btn-white-text-color-hover: $base-color;
+$theme-btn-white-bg-hover: #fff;
+$theme-btn-white-border-hover: $base-color;
+// link color
+$theme-link: #009be0;
+$theme-link-hover: lighten($theme-link, 20%);
+//settings for bg content pages
+$theme-content-bg: #fff;
+//settings for input icons
+$theme-input-icon: #93D5F6;
+//user link color
+$theme-user-link: #93D5F6;
+$theme-user-link-hover: lighten($theme-user-link, 20%);
+//settings fo courses on main page and search
+$courses-border-color: #0083C7;
+$course-hover-bg: rgba(0, 0, 0, .5);
+$course-link-color: #000;
+$course-bg: #fff;
+//certificate
+$ribbon-corners-color: #cf7833;
+$ribbon-triangle-color: #df8844;
+$certificate-borders-color: #df8844;
+//our overrides for settings we want to change
+$img-path: "../images" !default;
+$font-path: "../fonts" !default;
+$delete-button: red;
+$white: #fff;
