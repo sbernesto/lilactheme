@@ -67,3 +67,17 @@ body.view-in-course .wiki-wrapper {
 		padding-bottom: 270px;
 	}
 }
+
+a:not(.btn),
+a:visited:not(.btn) {
+    color: $base-color;
+    font: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: $base-color;
+      text-decoration: underline;
+    }
+ }
+
