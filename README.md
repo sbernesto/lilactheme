@@ -1,6 +1,6 @@
-Template general para la version Lilac
+Template general para la version nugmet
 
-Template para la global
+* Se arreglo el enlace que buscaba las css e imagenes en el tema por default a una ruta estatica dinamica
 
 Basado en el tema de https://github.com/raccoongang/edx-theme/tree/SmartEd-hawthorn-prod
 
