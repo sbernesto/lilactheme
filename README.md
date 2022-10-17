@@ -1,4 +1,4 @@
-Template general para la version nugmet
+Template general para la version nugmet - uvp
 
 * Se arreglo el enlace que buscaba las css e imagenes en el tema por default a una ruta estatica dinamica
 
