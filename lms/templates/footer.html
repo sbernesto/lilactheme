@@ -20,59 +20,68 @@ from openedx.core.djangoapps.lang_pref.api import footer_language_selector_is_en
   >
 
 
-<div class="smarted-footer">
-      <div class="smarted-footer_footer-left">
-        <a href="http://edu.bunited.mx" class="smarted-footer_logo"><img alt="organization logo" src="${static.url('images/footer-logo.png')}"></a>
-        <p class="footer-support">
-          <span>Built on</span>
-          <a target="_blank" href="${footer['openedx_link']['url']}">
-            <svg class="svg-edx"  viewBox="0 0 100 70">
-              <use xlink:href="#logo-edx" />
-            </svg>
-          </a>
-          <span>by</span>
-          <a target="_blank" href="http://bunited.mx" class="raccoon__logo">
-            <em>B United</em>
-          </a>
-        </p>
-      </div>
-      <div class="smarted-footer_cources-catalog">
-        <strong class="smarted-footer_title">Informaci&oacute;n General</strong>
-        <ul>
-          <li><a href="http://bunited.mx/quienes-somos/">Acerca de</a></li>
-          <li><a href="http://bunited.mx">Servicios</a></li>
-        </ul>
-      </div>
-      <div class="smarted-footer_general-info">
-        <strong class="smarted-footer_title">Plataforma</strong>
-        <ul>
-          <li><a href="/honor">C&oacute;digo de honor</a></li>
-          <li><a href="/tos">T&eacute;rminos de servicio</a></li>
-          <li><a href="/privacy">Aviso de privacidad</a></li>
-        </ul>
-      </div>
-      <div class="smarted-footer_footer-right">
-        <strong class="smarted-footer_title">Contacto</strong>
-        <span class="smarted-footer_phone"><em>222 940 0626</em></span>
-        <a href="mailto:contacto@bunited.mx" class="smarted-footer_email">contacto@bunited.mx</a>
-        <ul class="icon-list">
-          <li class="icon-list_item"><a href="https://www.facebook.com/bunited.mx/" target="_blank" class="icon-list_link">
+ <div class="wrapper wrapper-footer">
+    <footer id="footer-openedx" class="grid-container">
+
+      <div class="smarted-footer">
+        <div class="smarted-footer_footer-left">
+          <!--<a href="https://online.uvp.mx" class="smarted-footer_logo"><img alt="organization logo" src="/static/${settings.DEFAULT_SITE_THEME}/images/footer-logo.png"></a> -->
+          <p class="footer-support">
+            <span style="color:#000">Built on</span>
+            <a target="_blank" href="${footer['openedx_link']['url']}">
+              <svg class="svg-edx"  viewBox="0 0 100 70">
+                <use xlink:href="#logo-edx" />
+              </svg>
+            </a>
+            <span style="color:#000">by</span>
+            <a target="_blank" href="http://bunited.mx" class="raccoon__logo">B United
+             <!--  <svg class="svg-raccoon"  viewBox="0 0 100 100">
+                <use xlink:href="#logo-raccoon" />
+              </svg>-->
+            </a>
+          </p>
+        </div>
+        <div class="smarted-footer_cources-catalog">
+          <strong class="smarted-footer_title" style="color:#000">UVP Online</strong>
+          <ul>
+            <li><a href="https://uvp.mx/uvpidentidad/ideologia">Acerca de</a></li>
+            <li><a href="/faq">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+        <div class="smarted-footer_general-info">
+          <strong class="smarted-footer_title">Legal</strong>
+          <ul>
+            <li><a href="/privacy">Pol&iacute;tica de privacidad</a></li>
+            <li><a href="/tos">T&eacute;rminos de servicio</a></li>
+            <li><a href="/honor">C&oacute;digo de honor</a></li>
+          </ul>
+        </div>
+        <div class="smarted-footer_footer-right">
+          <strong class="smarted-footer_title">Centro de Atenci&oacute;n Online</strong>
+    <ul>
+        <li li class="icon-list_item"><a href="mailto:coor.tec.uv@uvp.mx">
+                <svg class="icon-list_svg" viewBox="0 0 60 60">
+                    <use xlink:href="#ico-email" />
+                  </svg>
+            </a>
+            </li>
+    </ul>
+          <ul class="icon-list">
+      <li class="icon-list_item"> <!--
+        <a href="https://api.whatsapp.com/send?phone=5212211125696" target="_blank" class="icon-list_link">
             <svg class="icon-list_svg" viewBox="0 0 35 35">
-              <use xlink:href="#ico-facebook" />
+            <use xlink:href="#ico-what" />
             </svg>
-          </a>
-          </li>
-          <li class="icon-list_item"><a href="https://twitter.com/BUNITEDmx" target="_blank" class="icon-list_link">
-            <svg class="icon-list_svg" viewBox="0 0 35 35">
-              <use xlink:href="#ico-twitter" />
-            </svg></a>
-          </li>
-        </ul>
-        <span class="smarted-footer_copyright">B United 2022© </span>
+        </a> -->
+       </li>
+      </ul>
+          <span class="smarted-footer_copyright">UVP© 2019</span>
+        </div>
       </div>
-    </div>
-  </footer>
-</div>
+    </footer>
+  </div>
+
+
 % if include_dependencies:
   <%static:js group='base_vendor'/>
   <%static:css group='style-vendor'/>
