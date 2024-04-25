@@ -32,7 +32,7 @@ $search-button-border: #fff;
 $search-button-color: #95b2d6;
 $search-height: 55px;
 //settings for footer
-$footer-bg: #76161D;                                                            //Cambia el fondo
+$footer-bg: #000;                                                            //Cambia el fondo
 $footer-nav-link-color: #fff;                                                   //cambia el color del texto
 $footer-nav-link-color-hover: #E87900;                          //Cambia el color del texto cuando se posiciona el mouse sobre el.
 $footer-support-text-and-logo: #fff;
@@ -41,12 +41,12 @@ $footer-social-link-text: #fff;                                                 
 $footer-social-link-text-hover: #E87900;                                        //Cambia el color del texto cuando se posiciona el mouse sobre el.
 $footer-social-link-bg-hover: #E87900;
 //btn
-$theme-btn-bg: $base-color;                                                       //Cambia el fondo del boton
-$theme-btn-border: #F5C202;                                                     //Cambia el borde de los botones
+$theme-btn-bg: #000;                                                       //Cambia el fondo del boton
+$theme-btn-border: #FFD600;                                                     //Cambia el borde de los botones
 $theme-btn-text-color: #fff;                                                    //Cambia el color del texto del boton
-$theme-btn-text-color-hover: $base-color;                                         //Cambia el color del texto cuando se posiciona el mouse sobre el.
+$theme-btn-text-color-hover: #000;                                         //Cambia el color del texto cuando se posiciona el mouse sobre el.
 $theme-btn-bg-hover: #fff;                                                      //Cambia el fondo del boton cuando se posiciona el mouse sobre el.
-$theme-btn-border-hover: $base-color;                                               //Cambia el borde del boton cuando se posiciona el mouse sobre el.
+$theme-btn-border-hover: #FFD600;                                               //Cambia el borde del boton cuando se posiciona el mouse sobre el.
 $theme-btn-shadow: darken($theme-btn-bg, 20%);
 //btn-white
 $theme-btn-white-bg: $base-color;
