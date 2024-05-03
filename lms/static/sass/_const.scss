@@ -42,11 +42,11 @@ $footer-social-link-text-hover: #E87900;                                        
 $footer-social-link-bg-hover: #E87900;
 //btn
 $theme-btn-bg: #000;                                                       //Cambia el fondo del boton
-$theme-btn-border: #FFD600;                                                     //Cambia el borde de los botones
+$theme-btn-border: #000;                                                     //Cambia el borde de los botones
 $theme-btn-text-color: #fff;                                                    //Cambia el color del texto del boton
 $theme-btn-text-color-hover: #000;                                         //Cambia el color del texto cuando se posiciona el mouse sobre el.
 $theme-btn-bg-hover: #fff;                                                      //Cambia el fondo del boton cuando se posiciona el mouse sobre el.
-$theme-btn-border-hover: #FFD600;                                               //Cambia el borde del boton cuando se posiciona el mouse sobre el.
+$theme-btn-border-hover: #000;                                               //Cambia el borde del boton cuando se posiciona el mouse sobre el.
 $theme-btn-shadow: darken($theme-btn-bg, 20%);
 //btn-white
 $theme-btn-white-bg: $base-color;
