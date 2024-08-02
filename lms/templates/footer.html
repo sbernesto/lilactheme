@@ -38,49 +38,50 @@ from openedx.core.djangoapps.lang_pref.api import footer_language_selector_is_en
           </a>
         </p>
       </div>
-      <div class="smarted-footer_cources-catalog">
-        <!-- <strong class="smarted-footer_title">Informaci&oacute;n General</strong>
-        <ul>
-          <li><a href="https://www.nwl.com.mx/modelo-educativo">Acerca de</a></li>
-          <li><a href="https://www.nwl.com.mx/inscripcion">Informes</a></li>
-        </ul>
-      </div>
-      <div class="smarted-footer_general-info"> -->
-        <strong class="smarted-footer_title">Plataforma</strong>
-        <ul>
-          <li><a href="/honor">C&oacute;digo de honor</a></li>
-          <!-- <li><a href="https://www.nwl.com.mx/docs/otra-informacion.htm">Otra informaci&oacute;n</a></li> 
-          <li><a href="https://www.nwl.com.mx/pdf/AVISO-PRIVACIDAD-NWL.pdf">Aviso de privacidad</a></li> -->
-        </ul>
-      </div>
-      <div class="smarted-footer_footer-right">
-        <strong class="smarted-footer_title">Contacto</strong>
-        <span class="smarted-footer_phone"><em>22 2424 6372</em></span>
-        <a href="mailto:contacto@bigsur.mx" class="smarted-footer_email">contacto@bigsur.mx</a>
-        <ul class="icon-list">
-          <li class="icon-list_item"><a href="https://www.facebook.com/comunidadbigsur" target="_blank" class="icon-list_link">
+
+ <div class="smarted-footer_cources-catalog">
+          <strong class="smarted-footer_title">UVP Online</strong>
+          <ul>
+            <li><a href="https://uvp.mx/uvpidentidad/ideologia">Acerca de</a></li>
+            <li><a href="/faq">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+        <div class="smarted-footer_general-info">
+          <strong class="smarted-footer_title">Legal</strong>
+          <ul>
+            <li><a href="/privacy">Pol&iacute;tica de privacidad</a></li>
+            <li><a href="/honor">C&oacute;digo de honor</a></li>
+          </ul>
+        </div>
+        <div class="smarted-footer_footer-right">
+          <strong class="smarted-footer_title">Centro de Atenci&oacute;n Online</strong>
+    <ul>
+        <li li class="icon-list_item"><a href="mailto:coor.tec.uv@uvp.mx">
+                <svg class="icon-list_svg" viewBox="0 0 60 60">
+                    <use xlink:href="#ico-email" />
+                  </svg>
+            </a>
+            </li>
+    </ul>
+          <ul class="icon-list">
+      <li class="icon-list_item"> <!--
+        <a href="https://api.whatsapp.com/send?phone=5212211125696" target="_blank" class="icon-list_link">
             <svg class="icon-list_svg" viewBox="0 0 35 35">
-              <use xlink:href="#ico-facebook" />
+            <use xlink:href="#ico-what" />
             </svg>
-          </a>
-          </li>
-          <li class="icon-list_item"><a href="https://www.instagram.com/bigsur_learning_ecosystems/" target="_blank" class="icon-list_link">
-            <svg class="icon-list_svg" viewBox="0 0 35 35">
-              <use xlink:href="#ico-instagram" />
-            </svg>
-          </a>
-          </li>
-          <!-- <li class="icon-list_item"><a href="https://bit.ly/ColegioNWLWeb" target="_blank" class="icon-list_link">
-            <svg class="icon-list_svg" viewBox="0 0 35 35">
-              <use xlink:href="#ico-whatsapp" a/>
-            </svg></a>
-          </li> -->
-        </ul>
-        <span class="smarted-footer_copyright">Big Sur 2024© </span>
+        </a> -->
+       </li>
+      </ul>
+          <span class="smarted-footer_copyright">UVP© 2019</span>
+        </div>
       </div>
-    </div>
-  </footer>
-</div>
+    </footer>
+  </div>
+
+
+
+
+
 % if include_dependencies:
   <%static:js group='base_vendor'/>
   <%static:css group='style-vendor'/>
