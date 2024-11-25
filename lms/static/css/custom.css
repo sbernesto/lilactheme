@@ -12,13 +12,13 @@
 .course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong {
   transition: all 0.2s ease;
   display: inline-block;
-  background: #6e0018 !important;
-  color: #fff !important;
+  background: #fff !important;
+  color: #55565a !important;
   text-transform: uppercase;
   border-radius: 40px !important;
   text-shadow: none !important;
   box-shadow: none !important;
-  border: 3px solid #F5C202 !important;
+  border: 3px solid #55565a !important;
   text-transform: uppercase !important;
   cursor: pointer;
   font-size: 15px !important; }
@@ -44,7 +44,7 @@
   .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register:focus,
   .course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong:active,
   .course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong:focus {
-    color: #6e0018 !important;
+    color: #55565a !important;
     background: #fff !important; }
   /* line 39, /openedx/themes/canacintra/lms/static/sass/blocks/_buttons.scss */
   .register-button:focus:hover, .register-button:hover,
@@ -68,7 +68,7 @@
   .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register:hover,
   .course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong:focus:hover,
   .course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong:hover {
-    color: #6e0018 !important;
+    color: #55565a !important;
     background: #fff !important; }
 
 /* line 46, /openedx/themes/canacintra/lms/static/sass/blocks/_buttons.scss */
@@ -241,24 +241,24 @@ section.discussion .search-button,
   .global-header .btn {
     transition: all 0.2s ease;
     display: inline-block;
-    background: #6e0018 !important;
-    color: #fff !important;
-    border: 3px solid #F5C202 !important;
+    background: #fff !important;
+    color: #55565a !important;
+    border: 3px solid #55565a !important;
     text-transform: uppercase;
     border-radius: 40px !important; }
     /* line 133, /openedx/themes/canacintra/lms/static/sass/blocks/_header.scss */
     .global-header .btn:active, .global-header .btn:focus {
-      background: #6e0018 !important; }
+      background: #fff !important; }
     /* line 137, /openedx/themes/canacintra/lms/static/sass/blocks/_header.scss */
     .global-header .btn:focus:hover {
-      color: #6e0018 !important;
+      color: #55565a !important;
       background: #fff !important;
-      border: 3px solid #6e0018 !important; }
+      border: 3px solid #55565a !important; }
     /* line 142, /openedx/themes/canacintra/lms/static/sass/blocks/_header.scss */
     .global-header .btn:hover {
-      color: #6e0018 !important;
+      color: #55565a !important;
       background: #fff !important;
-      border: 3px solid #6e0018 !important; }
+      border: 3px solid #55565a !important; }
 
 /* line 151, /openedx/themes/canacintra/lms/static/sass/blocks/_header.scss */
 .mobile-menu {
@@ -445,21 +445,22 @@ section.home > header {
     padding: 0 15px; }
     /* line 21, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
     .wrapper-footer footer#footer-openedx a {
-      border: none !important; }
-    /* line 24, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+      border: none !important;
+      font-size: 14px; }
+    /* line 25, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
     .wrapper-footer footer#footer-openedx .colophon {
       float: none;
       width: 100%;
       text-align: center; }
-      /* line 28, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+      /* line 29, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
       .wrapper-footer footer#footer-openedx .colophon .nav-colophon {
         text-align: center;
         margin: 0 0 30px; }
-        /* line 31, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+        /* line 32, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
         .wrapper-footer footer#footer-openedx .colophon .nav-colophon ol {
           margin: 0;
           padding: 0; }
-          /* line 34, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+          /* line 35, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
           .wrapper-footer footer#footer-openedx .colophon .nav-colophon ol li {
             float: none;
             display: inline-block;
@@ -467,39 +468,39 @@ section.home > header {
             font-size: 16px;
             margin: 0 10px; }
             @media screen and (max-width: 567px) {
-              /* line 34, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+              /* line 35, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
               .wrapper-footer footer#footer-openedx .colophon .nav-colophon ol li {
                 display: block;
                 margin: 5px 0; } }
-            /* line 44, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+            /* line 45, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
             .wrapper-footer footer#footer-openedx .colophon .nav-colophon ol li a {
               color: #fff; }
-              /* line 46, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+              /* line 47, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
               .wrapper-footer footer#footer-openedx .colophon .nav-colophon ol li a:focus, .wrapper-footer footer#footer-openedx .colophon .nav-colophon ol li a:hover {
                 border: none !important;
                 color: #E87900; }
-  /* line 57, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+  /* line 58, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
   .wrapper-footer .footer-flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center; }
-    /* line 62, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+    /* line 63, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
     .wrapper-footer .footer-flex > * {
       width: 33.3333%; }
       @media screen and (max-width: 991px) {
-        /* line 62, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+        /* line 63, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
         .wrapper-footer .footer-flex > * {
           width: 100%; } }
-  /* line 69, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+  /* line 70, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
   .wrapper-footer .icon-list {
     width: auto !important; }
     @media screen and (max-width: 991px) {
-      /* line 69, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+      /* line 70, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
       .wrapper-footer .icon-list {
         width: 100% !important;
         order: 1; } }
-  /* line 76, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+  /* line 77, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
   .wrapper-footer .footer-support {
     display: flex;
     align-items: center;
@@ -507,125 +508,125 @@ section.home > header {
     margin: 0 !important;
     color: #fff; }
     @media screen and (max-width: 1050px) {
-      /* line 76, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+      /* line 77, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
       .wrapper-footer .footer-support {
         justify-content: center;
         order: 3; } }
-    /* line 86, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+    /* line 87, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
     .wrapper-footer .footer-support span {
       margin: 0 5px; }
-    /* line 89, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+    /* line 90, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
     .wrapper-footer .footer-support a {
       display: inline-block;
       vertical-align: top;
       color: #fff !important; }
-    /* line 94, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+    /* line 95, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
     .wrapper-footer .footer-support em {
       display: inline-block;
       vertical-align: top;
       font-style: normal;
       line-height: 22px; }
-    /* line 100, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+    /* line 101, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
     .wrapper-footer .footer-support .svg-edx {
       width: 66px;
       height: 50px; }
-    /* line 104, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+    /* line 105, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
     .wrapper-footer .footer-support .svg-raccoon {
       width: 20px;
       height: 20px; }
   @media screen and (max-width: 991px) {
-    /* line 109, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+    /* line 110, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
     .wrapper-footer .footer-logo-holder {
       order: 2;
       margin-bottom: 10px; } }
-  /* line 114, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+  /* line 115, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
   .wrapper-footer .footer-logo-holder a {
     float: right; }
     @media screen and (max-width: 991px) {
-      /* line 114, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+      /* line 115, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
       .wrapper-footer .footer-logo-holder a {
         float: none;
         display: inline-block; } }
-  /* line 121, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+  /* line 122, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
   .wrapper-footer .footer-logo-holder img {
     height: 50px; }
-  /* line 125, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+  /* line 126, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
   .wrapper-footer .icon-list {
     margin: 0 0 7px 10px;
     padding: 0;
     list-style: none; }
     @media screen and (max-width: 991px) {
-      /* line 125, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+      /* line 126, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
       .wrapper-footer .icon-list {
         margin-bottom: 15px; } }
-    /* line 132, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+    /* line 133, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
     .wrapper-footer .icon-list_item {
       margin: 0 5px 0 0;
       display: inline-block; }
-    /* line 136, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+    /* line 137, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
     .wrapper-footer .icon-list_link {
       display: block;
       width: 25px;
       height: 25px; }
-    /* line 141, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+    /* line 142, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
     .wrapper-footer .icon-list_svg {
       width: 25px;
       height: 25px;
       fill: #fff; }
-      /* line 145, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+      /* line 146, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
       .wrapper-footer .icon-list_svg:hover {
         fill: #969798;
         opacity: 0.8; }
 
-/* line 153, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+/* line 154, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
 .smarted-footer {
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: left; }
-  /* line 159, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+  /* line 160, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
   .smarted-footer > div {
     width: 25%;
     position: relative; }
     @media screen and (max-width: 1050px) {
-      /* line 159, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+      /* line 160, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
       .smarted-footer > div {
         width: 33.3333%; } }
     @media screen and (max-width: 767px) {
-      /* line 159, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+      /* line 160, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
       .smarted-footer > div {
         width: 100%;
         text-align: center; } }
-  /* line 170, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+  /* line 171, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
   .smarted-footer_footer-left {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between; }
-    /* line 174, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+    /* line 175, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
     .smarted-footer_footer-left .footer-support {
       position: relative;
       bottom: -15px; }
     @media screen and (max-width: 1050px) {
-      /* line 170, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+      /* line 171, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
       .smarted-footer_footer-left {
         order: 4;
         width: 100% !important;
         margin-top: 50px;
         display: block; } }
-  /* line 185, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+  /* line 186, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
   .smarted-footer_logo {
     display: block;
     width: 150px; }
     @media screen and (max-width: 1050px) {
-      /* line 185, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+      /* line 186, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
       .smarted-footer_logo {
         margin: 0 auto; } }
-    /* line 191, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+    /* line 192, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
     .smarted-footer_logo img {
       display: block;
       width: 150px; }
-  /* line 196, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+  /* line 197, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
   .smarted-footer_title {
     display: block;
     text-transform: uppercase;
@@ -634,7 +635,7 @@ section.home > header {
     font-weight: normal;
     position: relative;
     margin-bottom: 22px; }
-    /* line 204, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+    /* line 205, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
     .smarted-footer_title:before {
       content: "";
       width: 100px;
@@ -644,35 +645,35 @@ section.home > header {
       left: 0;
       bottom: -10px; }
       @media screen and (max-width: 767px) {
-        /* line 204, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+        /* line 205, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
         .smarted-footer_title:before {
           left: 50%;
           margin-left: -50px; } }
-  /* line 218, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+  /* line 219, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
   .smarted-footer ul {
     list-style: none;
     text-align: left;
     margin: 0;
     padding: 0 0 0 10px; }
     @media screen and (max-width: 767px) {
-      /* line 218, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+      /* line 219, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
       .smarted-footer ul {
         text-align: center;
         margin-bottom: 30px;
         padding-left: 0; } }
-    /* line 228, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+    /* line 229, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
     .smarted-footer ul li {
       font-size: 12px;
       text-transform: uppercase;
       margin-bottom: 5px; }
-      /* line 232, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+      /* line 233, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
       .smarted-footer ul li a {
         color: #fff !important;
         text-decoration: none; }
-        /* line 235, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+        /* line 236, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
         .smarted-footer ul li a:hover {
           color: #969798 !important; }
-  /* line 241, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+  /* line 242, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
   .smarted-footer_phone {
     color: #fff;
     font-size: 18px;
@@ -681,53 +682,53 @@ section.home > header {
     line-height: 25px;
     margin-bottom: 5px;
     display: block; }
-    /* line 249, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+    /* line 250, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
     .smarted-footer_phone em {
       font-style: normal;
       display: inline-block;
       background: url(../images/phone-icon.png) no-repeat 0 50%;
       padding-left: 30px; }
     @media screen and (max-width: 767px) {
-      /* line 241, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+      /* line 242, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
       .smarted-footer_phone {
         margin-left: 0; } }
-  /* line 259, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+  /* line 260, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
   .smarted-footer_email {
     display: block;
     color: #fff !important;
     text-decoration: none;
     margin: 0 0 10px 10px; }
-    /* line 264, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+    /* line 265, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
     .smarted-footer_email:hover {
       color: #969798 !important; }
     @media screen and (max-width: 767px) {
-      /* line 259, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+      /* line 260, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
       .smarted-footer_email {
         margin-left: 0; } }
-  /* line 271, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+  /* line 272, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
   .smarted-footer_telefono {
     display: block;
     color: #fff !important;
     text-decoration: none;
     margin: 0 0 10px 10px; }
     @media screen and (max-width: 767px) {
-      /* line 271, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+      /* line 272, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
       .smarted-footer_telefono {
         margin-left: 0; } }
-  /* line 280, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+  /* line 281, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
   .smarted-footer_copyright {
     display: block;
     font-size: 12px;
     text-transform: uppercase;
     margin-left: 10px; }
     @media screen and (max-width: 767px) {
-      /* line 280, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+      /* line 281, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
       .smarted-footer_copyright {
         margin-left: 0; } }
-    /* line 288, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+    /* line 289, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
     .smarted-footer_copyright a {
       color: #fff; }
-      /* line 290, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
+      /* line 291, /openedx/themes/canacintra/lms/static/sass/blocks/_footer.scss */
       .smarted-footer_copyright a:focus, .smarted-footer_copyright a:hover {
         border: none !important;
         color: #E87900; }
