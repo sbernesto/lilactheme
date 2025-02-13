@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
 /* line 3, /openedx/edx-platform/node_modules/bootstrap/scss/utilities/_align.scss */
 .align-baseline {
   vertical-align: baseline !important; }
@@ -3043,6 +3045,92 @@ a.text-darkest:hover, a.text-darkest:focus {
   padding: 0.5rem 0.75rem;
   color: #313131; }
 
+/*
+ * In pursuit of decoupling the built-in XBlocks from edx-platform's Sass build
+ * and ensuring comprehensive theming support in the extracted XBlocks,
+ * we need to expose Sass variables as CSS variables.
+ *
+ * Ticket/Issue: https://github.com/openedx/edx-platform/issues/35173
+ */
+/* stylelint-disable-line */
+/* stylelint-disable-line */
+/* line 126, /openedx/edx-platform/common/static/sass/edx-pattern-library-shims/base/_variables.scss */
+.btn-default:disabled, .btn-primary:disabled, .btn-brand:disabled, .btn-upgrade:disabled, .is-disabled.btn-default, .is-disabled.btn-primary, .is-disabled.btn-brand, .is-disabled.btn-upgrade {
+  pointer-events: none;
+  outline: none;
+  cursor: not-allowed; }
+
+/* line 227, /openedx/edx-platform/common/static/sass/edx-pattern-library-shims/base/_variables.scss */
+.btn-small.btn-default, .btn-small.btn-primary, .btn-small.btn-brand, .btn-small.btn-upgrade {
+  padding: 0.625rem;
+  font-size: 14px; }
+
+/* line 17, common/static/sass/_builtin-block-variables.scss */
+:root {
+  --action-primary-active-bg: #0075b4;
+  --base-font-size: 18px;
+  --base-line-height: 1.5em;
+  --baseline: 20px;
+  --black: #000;
+  --black-t2: rgba(0, 0, 0, 0.5);
+  --blue: #0075b4;
+  --blue-d1: #005e90;
+  --blue-d2: #00466c;
+  --blue-d4: #001724;
+  --blue-s1: #0075b4;
+  --body-color: #313131;
+  --border-color: #e7e7e7;
+  --bp-screen-lg: 1024px;
+  --btn-brand-focus-background: #065683;
+  --correct: #008100;
+  --danger: #b20610;
+  --darkGrey: #8891a1;
+  --error-color: #cb0712;
+  --error-color-dark: #95050d;
+  --error-color-light: #f95861;
+  --font-bold: 700;
+  --font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --general-color-accent: #0075b4;
+  --gray: #767676;
+  --gray-300: #d9d9d9;
+  --gray-d1: #5e5e5e;
+  --gray-l2: #adadad;
+  --gray-l3: #c8c8c8;
+  --gray-l4: #e4e4e4;
+  --gray-l6: #f8f8f8;
+  --icon-correct: url("../images/correct-icon.png");
+  --icon-incorrect: url("../images/incorrect-icon.png");
+  --icon-info: url("../images/info-icon.png");
+  --icon-partially-correct: url("../images/partially-correct-icon.png");
+  --icon-spinner: url("../images/spinner.gif");
+  --icon-unanswered: url("../images/unanswered-icon.png");
+  --incorrect: #b20610;
+  --lightGrey: #edf1f5;
+  --lighter-base-font-color: #646464;
+  --link-color: #1b6d99;
+  --medium-font-size: 0.9em;
+  --partially-correct: #008100;
+  --primary: #0075b4;
+  --shadow: rgba(0, 0, 0, 0.2);
+  --shadow-l1: rgba(0, 0, 0, 0.1);
+  --sidebar-color: #f6f6f6;
+  --small-font-size: 80%;
+  --static-path: "..";
+  --submitted: #0075b4;
+  --success: #008100;
+  --tmg-f2: 0.25s;
+  --tmg-s2: 2s;
+  --transparent: transparent;
+  --uxpl-gray-background: #d9d9d9;
+  --uxpl-gray-base: #414141;
+  --uxpl-gray-dark: #111111;
+  --very-light-text: white;
+  --warning: #e2c01f;
+  --warning-color: #ffc01f;
+  --warning-color-accent: #fffcdd;
+  --white: #fff;
+  --yellow: #e2c01f; }
+
 /* stylelint-disable-line */
 /* stylelint-disable-line */
 /* HTML5 Boilerplate  */
@@ -3097,7 +3185,7 @@ body {
 
 /* line 47, lms/static/sass/base/_reset.scss */
 a:not(.btn) {
-  color: #0075b4; }
+  color: #1b6d99; }
 
 /* line 51, lms/static/sass/base/_reset.scss */
 a:visited:not(.btn) {
@@ -3195,7 +3283,7 @@ sub {
 /* line 128, lms/static/sass/base/_reset.scss */
 ul,
 ol {
-  padding: 0 40px 0 0;
+  padding: 0 0 0 40px;
   margin: 1em 0; }
 
 /* line 135, lms/static/sass/base/_reset.scss */
@@ -3484,7 +3572,7 @@ footer#footer-openedx .sr-only {
   line-height: line-height(small); }
   /* line 10, common/static/sass/edx-pattern-library-shims/_breadcrumbs.scss */
   .breadcrumbs .nav-item {
-    margin-right: 5px;
+    margin-left: 5px;
     display: inline-block; }
     @media (max-width: 1199.98px) {
       /* line 10, common/static/sass/edx-pattern-library-shims/_breadcrumbs.scss */
@@ -3513,10 +3601,9 @@ footer#footer-openedx .sr-only {
       color: #065683; }
   /* line 46, common/static/sass/edx-pattern-library-shims/_breadcrumbs.scss */
   .breadcrumbs .fa-angle-right {
-    margin-right: 5px;
+    margin-left: 5px;
     display: inline-block;
-    color: #313131;
-    transform: rotateY(180deg); }
+    color: #313131; }
     @media (max-width: 767.98px) {
       /* line 46, common/static/sass/edx-pattern-library-shims/_breadcrumbs.scss */
       .breadcrumbs .fa-angle-right {
@@ -3554,7 +3641,7 @@ footer#footer-openedx .sr-only {
     .sr-only + .btn-primary .icon,
     .sr-only + .btn-brand .icon,
     .sr-only + .btn-upgrade .icon {
-      margin-left: 0; }
+      margin-right: 0; }
 
 /* line 55, common/static/sass/edx-pattern-library-shims/_buttons.scss */
 .btn-default {
@@ -3726,7 +3813,7 @@ footer#footer-openedx {
     line-height: 1.4; }
   /* line 47, /openedx/edx-platform/lms/static/sass/base/_reset.scss */
   footer#footer-openedx a:not(.btn) {
-    color: #0075b4; }
+    color: #1b6d99; }
   /* line 51, /openedx/edx-platform/lms/static/sass/base/_reset.scss */
   footer#footer-openedx a:visited:not(.btn) {
     color: #003655; }
@@ -3806,7 +3893,7 @@ footer#footer-openedx {
   /* line 128, /openedx/edx-platform/lms/static/sass/base/_reset.scss */
   footer#footer-openedx ul,
   footer#footer-openedx ol {
-    padding: 0 40px 0 0;
+    padding: 0 0 0 40px;
     margin: 1em 0; }
   /* line 135, /openedx/edx-platform/lms/static/sass/base/_reset.scss */
   footer#footer-openedx dd {
@@ -4102,7 +4189,7 @@ footer#footer-openedx {
   /* line 92, /openedx/edx-platform/lms/static/sass/base/_base.scss */
   footer#footer-openedx p a:not(.btn),
   footer#footer-openedx p a:visited:not(.btn) {
-    color: #0075b4;
+    color: #1b6d99;
     font: inherit;
     font-weight: inherit;
     text-decoration: none;
@@ -4116,7 +4203,7 @@ footer#footer-openedx {
   /* line 109, /openedx/edx-platform/lms/static/sass/base/_base.scss */
   footer#footer-openedx a:not(.btn),
   footer#footer-openedx a:visited:not(.btn) {
-    color: #0075b4;
+    color: #1b6d99;
     font: inherit;
     text-decoration: none;
     transition: all 0.1s linear 0s; }
@@ -4159,7 +4246,7 @@ footer#footer-openedx {
       footer#footer-openedx .container {
         margin: 0 auto;
         padding: 40px 0;
-        max-width: 1180px;
+        max-width: 940px;
         min-width: 760px;
         width: 100%; } }
   /* line 161, /openedx/edx-platform/lms/static/sass/base/_base.scss */
@@ -4183,7 +4270,7 @@ footer#footer-openedx {
     /* line 178, /openedx/edx-platform/lms/static/sass/base/_base.scss */
     footer#footer-openedx .static-container .inner-wrapper {
       margin: 0 auto;
-      width: 83.05085%; }
+      width: 82.97872%; }
     /* line 183, /openedx/edx-platform/lms/static/sass/base/_base.scss */
     footer#footer-openedx .static-container ol,
     footer#footer-openedx .static-container ul {
@@ -4253,8 +4340,8 @@ footer#footer-openedx {
     footer#footer-openedx .nav-skip:focus, footer#footer-openedx .nav-skip:active,
     footer#footer-openedx .transcript-skip:focus,
     footer#footer-openedx .transcript-skip:active {
-      right: 45%;
-      margin-right: -30px;
+      left: 45%;
+      margin-left: -30px;
       position: absolute;
       top: 5px;
       width: 10%;
@@ -4271,7 +4358,7 @@ footer#footer-openedx {
         footer#footer-openedx .nav-skip:focus, footer#footer-openedx .nav-skip:active,
         footer#footer-openedx .transcript-skip:focus,
         footer#footer-openedx .transcript-skip:active {
-          right: 40%;
+          left: 40%;
           width: 20%; } }
 
 /* line 230, /openedx/edx-platform/lms/static/sass/elements/_typography.scss */
@@ -4316,11 +4403,11 @@ footer#footer-openedx .is-deprecated {
     .wrapper-footer footer#footer-openedx a {
       transition: link-color 0.15s ease-in-out 0s, border 0.15s ease-in-out 0s;
       border-bottom: none;
-      color: #0075b4;
+      color: #1b6d99;
       text-decoration: none !important; }
       /* line 42, /openedx/edx-platform/lms/static/sass/shared/_footer.scss */
       .wrapper-footer footer#footer-openedx a:hover, .wrapper-footer footer#footer-openedx a:focus, .wrapper-footer footer#footer-openedx a:active {
-        border-bottom: 1px dotted #0075b4; }
+        border-bottom: 1px dotted #1b6d99; }
     /* line 49, /openedx/edx-platform/lms/static/sass/shared/_footer.scss */
     .wrapper-footer footer#footer-openedx .icon {
       font-family: 'FontAwesome';
@@ -4354,14 +4441,14 @@ footer#footer-openedx .is-deprecated {
           clear: both; }
         /* line 72, /openedx/edx-platform/lms/static/sass/shared/_footer.scss */
         .wrapper-footer footer#footer-openedx .colophon .nav-colophon li {
-          float: right;
+          float: left;
           margin-right: 15px; }
           /* line 77, /openedx/edx-platform/lms/static/sass/shared/_footer.scss */
           .wrapper-footer footer#footer-openedx .colophon .nav-colophon li a {
             color: #333333; }
             /* line 80, /openedx/edx-platform/lms/static/sass/shared/_footer.scss */
             .wrapper-footer footer#footer-openedx .colophon .nav-colophon li a:hover, .wrapper-footer footer#footer-openedx .colophon .nav-colophon li a:focus, .wrapper-footer footer#footer-openedx .colophon .nav-colophon li a:active {
-              color: #0075b4; }
+              color: #1b6d99; }
           /* line 87, /openedx/edx-platform/lms/static/sass/shared/_footer.scss */
           .wrapper-footer footer#footer-openedx .colophon .nav-colophon li:last-child {
             margin-right: 0; }
@@ -4406,10 +4493,10 @@ footer#footer-openedx .is-deprecated {
       margin: -2px 0 8px 0;
       font-size: 0.6875em;
       color: #767676;
-      text-align: right; }
+      text-align: left; }
     /* line 145, /openedx/edx-platform/lms/static/sass/shared/_footer.scss */
     .wrapper-footer footer#footer-openedx .nav-legal {
-      text-align: right; }
+      text-align: left; }
       /* line 15, /openedx/edx-platform/common/static/sass/bourbon/addons/_clearfix.scss */
       .wrapper-footer footer#footer-openedx .nav-legal:after {
         content: "";
@@ -4448,7 +4535,7 @@ footer#footer-openedx .is-deprecated {
       display: block;
       margin-right: 2.35765%;
       width: 31.76157%;
-      text-align: left;
+      text-align: right;
       vertical-align: bottom; }
       /* line 41, /openedx/edx-platform/common/static/sass/neat/grid/_span-columns.scss */
       .wrapper-footer footer#footer-openedx .footer-about-openedx:last-child {
@@ -4465,7 +4552,7 @@ footer#footer-openedx .is-deprecated {
           box-sizing: border-box; } }
       /* line 202, /openedx/edx-platform/lms/static/sass/shared/_footer.scss */
       .wrapper-footer footer#footer-openedx .footer-about-openedx a {
-        float: left;
+        float: right;
         display: inline-block; }
         /* line 207, /openedx/edx-platform/lms/static/sass/shared/_footer.scss */
         .wrapper-footer footer#footer-openedx .footer-about-openedx a:hover {

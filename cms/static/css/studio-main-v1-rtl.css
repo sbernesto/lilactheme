@@ -210,11 +210,12 @@ abbr[title] {
   z-index: 100; }
 
 /* line 173, /openedx/edx-platform/cms/static/sass/_mixins.scss */
-.is-draggable .draggable-drop-indicator, .sequence-nav-button, .wrapper-header, .modal-cover, [class*="view-"] .modal-window, [class*="view-"] .modal-window-overlay, .drawer-cover, .view-dashboard .course-item .course-actions, .view-outline .ui-splint-indicator .draggable-drop-indicator {
+.is-draggable .draggable-drop-indicator, .sequence-nav-button, .wrapper-header, .modal-cover, [class*="view-"] .modal-window, [class*="view-"] .modal-window-overlay, .drawer-cover,
+.picker-cover, .view-dashboard .course-item .course-actions, .view-outline .ui-splint-indicator .draggable-drop-indicator {
   z-index: 1000; }
 
 /* line 174, /openedx/edx-platform/cms/static/sass/_mixins.scss */
-.is-dragging, .modal, #lean_overlay, .drawer, .course-updates .update-list > li.editing, .edit-handouts-form, .view-static-pages .unit-body .wrapper-component-editor {
+.is-dragging, .modal, #lean_overlay, .drawer, .picker, .course-updates .update-list > li.editing, .edit-handouts-form, .view-static-pages .unit-body .wrapper-component-editor {
   z-index: 10000; }
 
 /* line 175, /openedx/edx-platform/cms/static/sass/_mixins.scss */
@@ -819,6 +820,20 @@ hr.divide, .sr, .view-uploads .assets-library .pagination .nav-label, .view-uplo
   width: 60px;
   height: 60px;
   background: url("../images/large-library-icon.png") center no-repeat; }
+
+/* line 70, /openedx/edx-platform/cms/static/sass/assets/_graphics.scss */
+.large-library_v2-icon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: url("../images/large-library_v2-icon.png") center no-repeat; }
+
+/* line 77, /openedx/edx-platform/cms/static/sass/assets/_graphics.scss */
+.large-itembank-icon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: url("../images/large-itembank-icon.png") center no-repeat; }
 
 @-webkit-keyframes fadeIn {
   0% {
@@ -3694,18 +3709,31 @@ div.wrapper-comp-editor.is-inactive ~ div.launch-latex-compiler {
       position: relative;
       display: inline-block;
       width: 125px;
-      height: 100px;
+      height: 140px;
       margin-bottom: 10px;
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.4) inset;
       border-radius: 5px;
       padding: 0;
-      text-align: center; }
-      /* line 152, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+      text-align: center;
+      vertical-align: top; }
+      /* line 153, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
       .add-xblock-component .new-component .new-component-type .add-xblock-component-button .name {
         box-sizing: border-box;
         display: block;
         color: #fff; }
-  /* line 164, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+      /* line 159, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+      .add-xblock-component .new-component .new-component-type .add-xblock-component-button .beta {
+        margin-top: 3px;
+        margin-bottom: -20px;
+        padding: 4px;
+        display: inline-block;
+        color: #008100;
+        background-color: #fff;
+        border-color: #fff;
+        border-radius: 3px;
+        font-size: 90%;
+        line-height: 90%; }
+  /* line 180, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .add-xblock-component .new-component-templates {
     display: none;
     margin: 20px 40px;
@@ -3718,7 +3746,7 @@ div.wrapper-comp-editor.is-inactive ~ div.launch-latex-compiler {
       content: "";
       display: table;
       clear: both; }
-    /* line 174, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 190, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .add-xblock-component .new-component-templates .cancel-button {
       transition: background-color 0.15s, box-shadow 0.15s;
       box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 0 0 transparent;
@@ -3752,37 +3780,37 @@ div.wrapper-comp-editor.is-inactive ~ div.launch-latex-compiler {
       .add-xblock-component .new-component-templates .cancel-button:hover, .add-xblock-component .new-component-templates .cancel-button:focus {
         background-color: #deecf7;
         color: #5c677a; }
-    /* line 179, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 195, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .add-xblock-component .new-component-templates .problem-type-tabs {
       display: none; }
-    /* line 185, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 201, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .add-xblock-component .new-component-templates.new-component-problem .problem-type-tabs {
       display: inline-block; }
-    /* line 190, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 206, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .add-xblock-component .new-component-templates .support-documentation {
       float: right;
       margin: 20px 10px 10px 0;
       font-size: 14px;
       font-size: 1.4rem; }
-      /* line 196, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+      /* line 212, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
       .add-xblock-component .new-component-templates .support-documentation .support-documentation-level {
         padding-right: 10px; }
-      /* line 200, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+      /* line 216, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
       .add-xblock-component .new-component-templates .support-documentation .support-documentation-link {
         color: #0075b4;
         text-decoration: none;
         padding-right: 10px; }
-        /* line 206, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+        /* line 222, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
         .add-xblock-component .new-component-templates .support-documentation .support-documentation-link:hover {
           color: #065683;
           text-decoration: underline; }
-    /* line 213, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 229, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .add-xblock-component .new-component-templates .support-level {
       padding-right: 10px; }
-    /* line 217, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 233, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .add-xblock-component .new-component-templates .icon {
       color: #0ea6ec; }
-  /* line 224, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 240, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .add-xblock-component .new-component-template {
     margin-bottom: 0; }
     /* line 15, /openedx/edx-platform/common/static/sass/bourbon/addons/_clearfix.scss */
@@ -3790,14 +3818,14 @@ div.wrapper-comp-editor.is-inactive ~ div.launch-latex-compiler {
       content: "";
       display: table;
       clear: both; }
-    /* line 229, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 245, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .add-xblock-component .new-component-template li {
       border: none;
       border-bottom: 1px dashed #edf1f5; }
-      /* line 233, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+      /* line 249, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
       .add-xblock-component .new-component-template li:first-child {
         border-radius: 3px 3px 0 0; }
-    /* line 238, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 254, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .add-xblock-component .new-component-template .button-component {
       transition: none;
       display: block;
@@ -3813,15 +3841,15 @@ div.wrapper-comp-editor.is-inactive ~ div.launch-latex-compiler {
         content: "";
         display: table;
         clear: both; }
-      /* line 253, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+      /* line 269, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
       .add-xblock-component .new-component-template .button-component:hover {
         transition: background-color 0.25s linear 0s;
         background: #4da74d;
         color: #fff; }
-        /* line 259, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+        /* line 275, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
         .add-xblock-component .new-component-template .button-component:hover .icon {
           color: #fff; }
-  /* line 268, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 284, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .add-xblock-component .problem-type-tabs {
     background-color: rgba(255, 255, 255, 0.4);
     background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
@@ -3831,10 +3859,10 @@ div.wrapper-comp-editor.is-inactive ~ div.launch-latex-compiler {
     border-radius: 0;
     background-color: #c5cfdf;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 -1px 0 rgba(0, 0, 0, 0.2) inset; }
-    /* line 277, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 293, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .add-xblock-component .problem-type-tabs li:first-child {
       margin-right: 20px; }
-    /* line 281, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 297, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .add-xblock-component .problem-type-tabs li {
       background-color: rgba(255, 255, 255, 0.4);
       background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
@@ -3846,11 +3874,11 @@ div.wrapper-comp-editor.is-inactive ~ div.launch-latex-compiler {
       box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 -1px 0 rgba(0, 0, 0, 0.2) inset;
       background-color: #cbd4e2;
       text-align: center; }
-      /* line 294, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+      /* line 310, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
       .add-xblock-component .problem-type-tabs li:hover {
         opacity: 0.9;
         background-color: #d1d9e5; }
-      /* line 299, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+      /* line 315, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
       .add-xblock-component .problem-type-tabs li.ui-state-active {
         background-color: rgba(255, 255, 255, 0.4);
         background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
@@ -3860,10 +3888,10 @@ div.wrapper-comp-editor.is-inactive ~ div.launch-latex-compiler {
         text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
         border: 0;
         opacity: 1; }
-      /* line 307, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+      /* line 323, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
       .add-xblock-component .problem-type-tabs li a.link-tab {
         float: none; }
-    /* line 312, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 328, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .add-xblock-component .problem-type-tabs a {
       display: block;
       padding: 15px 25px;
@@ -3871,18 +3899,18 @@ div.wrapper-comp-editor.is-inactive ~ div.launch-latex-compiler {
       color: #333333;
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3); }
 
-/* line 324, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+/* line 340, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
 .paste-component {
   margin: 20px 10px; }
-  /* line 327, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 343, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .paste-component .paste-component-button {
     display: block;
     width: 100%; }
-    /* line 331, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 347, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .paste-component .paste-component-button.button {
       font-size: 1.5rem;
       padding: 10px 0; }
-  /* line 339, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 355, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .paste-component .paste-component-whats-in-clipboard {
     position: relative;
     margin-left: auto;
@@ -3890,10 +3918,10 @@ div.wrapper-comp-editor.is-inactive ~ div.launch-latex-compiler {
     font-size: 1.2rem;
     margin-top: 4px;
     cursor: help; }
-    /* line 348, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 364, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .paste-component .paste-component-whats-in-clipboard:hover .clipboard-details-popup, .paste-component .paste-component-whats-in-clipboard:focus .clipboard-details-popup, .paste-component .paste-component-whats-in-clipboard:focus-within .clipboard-details-popup {
       display: block; }
-    /* line 353, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 369, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .paste-component .paste-component-whats-in-clipboard .clipboard-details-popup {
       display: none;
       position: absolute;
@@ -3905,7 +3933,7 @@ div.wrapper-comp-editor.is-inactive ~ div.launch-latex-compiler {
       box-shadow: 0 0 3px #ddd;
       padding: 15px;
       color: inherit; }
-      /* line 366, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+      /* line 382, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
       .paste-component .paste-component-whats-in-clipboard .clipboard-details-popup::before {
         content: '';
         position: absolute;
@@ -3917,7 +3945,7 @@ div.wrapper-comp-editor.is-inactive ~ div.launch-latex-compiler {
         border-bottom: none;
         border-top-color: #fff;
         filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1)); }
-      /* line 382, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+      /* line 398, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
       .paste-component .paste-component-whats-in-clipboard .clipboard-details-popup::after {
         content: '';
         position: absolute;
@@ -3925,176 +3953,176 @@ div.wrapper-comp-editor.is-inactive ~ div.launch-latex-compiler {
         left: 0;
         right: 0;
         height: 1rem; }
-      /* line 391, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+      /* line 407, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
       .paste-component .paste-component-whats-in-clipboard .clipboard-details-popup .fa-external-link {
         position: absolute;
         top: 10px;
         right: 10px; }
-      /* line 397, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+      /* line 413, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
       .paste-component .paste-component-whats-in-clipboard .clipboard-details-popup.no-edit-link {
         cursor: default; }
-        /* line 399, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+        /* line 415, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
         .paste-component .paste-component-whats-in-clipboard .clipboard-details-popup.no-edit-link .fa-external-link {
           display: none; }
-      /* line 406, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+      /* line 422, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
       .paste-component .paste-component-whats-in-clipboard .clipboard-details-popup .detail-block-name {
         font-size: 1.5rem; }
-      /* line 410, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+      /* line 426, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
       .paste-component .paste-component-whats-in-clipboard .clipboard-details-popup .detail-block-type {
         color: #888;
         font-size: 1rem;
         display: block;
         margin-top: -0.6rem; }
-      /* line 417, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+      /* line 433, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
       .paste-component .paste-component-whats-in-clipboard .clipboard-details-popup .detail-course-name {
         font-style: italic; }
 
-/* line 430, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+/* line 446, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
 .outline-content {
   margin-top: 5px; }
-  /* line 433, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 449, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-content .unit-content {
     margin-top: 0; }
-  /* line 438, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 454, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-content .add-item {
     margin-top: 15px; }
-    /* line 441, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 457, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .outline-content .add-item .button-new {
       padding: 10px 20px;
       display: block; }
-      /* line 447, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+      /* line 463, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
       .outline-content .add-item .button-new .icon {
         display: inline-block;
         vertical-align: middle;
         margin-left: 10px; }
 
-/* line 458, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+/* line 474, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
 .outline .paste-component {
   margin: 10px 0; }
-  /* line 463, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 479, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline .paste-component .paste-component-button.button {
     font-size: 1.2rem; }
 
-/* line 470, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+/* line 486, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
 .outline-complex .outline-section .section-status, .outline-complex .outline-subsection .subsection-status, .outline-complex .outline-unit .unit-status, .outline-simple .outline-section .section-status, .outline-simple .outline-subsection .subsection-status, .outline-simple .outline-unit .unit-status {
   color: #666666; }
-  /* line 476, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 492, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-complex .outline-section .section-status .icon, .outline-complex .outline-subsection .subsection-status .icon, .outline-complex .outline-unit .unit-status .icon, .outline-simple .outline-section .section-status .icon, .outline-simple .outline-subsection .subsection-status .icon, .outline-simple .outline-unit .unit-status .icon {
     margin-left: 5px; }
 
-/* line 488, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+/* line 504, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
 .outline-complex .outline-section .item-title, .outline-complex .outline-subsection .item-title, .outline-complex .outline-unit .item-title {
   transition: color 0.25s ease-in-out 0s; }
 
-/* line 493, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+/* line 509, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
 .outline-complex .outline-section:last-child, .outline-complex .outline-subsection:last-child, .outline-complex .outline-unit:last-child {
   margin-bottom: 0; }
 
-/* line 504, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+/* line 520, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
 .outline-complex .is-staff-only.outline-section > .section-status .status-message .icon, .outline-complex .is-staff-only.outline-subsection > .section-status .status-message .icon, .outline-complex .is-staff-only.outline-unit > .section-status .status-message .icon, .outline-complex .is-staff-only.outline-section > .subsection-status .status-message .icon, .outline-complex .is-staff-only.outline-subsection > .subsection-status .status-message .icon, .outline-complex .is-staff-only.outline-unit > .subsection-status .status-message .icon, .outline-complex .is-staff-only.outline-section > .unit-status .status-message .icon, .outline-complex .is-staff-only.outline-subsection > .unit-status .status-message .icon, .outline-complex .is-staff-only.outline-unit > .unit-status .status-message .icon {
   color: #000; }
 
-/* line 516, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+/* line 532, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
 .outline-complex .is-hidden-from-toc.outline-section > .section-status .status-message .icon, .outline-complex .is-hidden-from-toc.outline-subsection > .section-status .status-message .icon, .outline-complex .is-hidden-from-toc.outline-unit > .section-status .status-message .icon, .outline-complex .is-hidden-from-toc.outline-section > .subsection-status .status-message .icon, .outline-complex .is-hidden-from-toc.outline-subsection > .subsection-status .status-message .icon, .outline-complex .is-hidden-from-toc.outline-unit > .subsection-status .status-message .icon, .outline-complex .is-hidden-from-toc.outline-section > .unit-status .status-message .icon, .outline-complex .is-hidden-from-toc.outline-subsection > .unit-status .status-message .icon, .outline-complex .is-hidden-from-toc.outline-unit > .unit-status .status-message .icon {
   color: #000; }
 
-/* line 529, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+/* line 545, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
 .outline-complex .is-gated.outline-section > .section-status .status-message .icon, .outline-complex .is-gated.outline-subsection > .section-status .status-message .icon, .outline-complex .is-gated.outline-unit > .section-status .status-message .icon, .outline-complex .is-gated.outline-section > .subsection-status .status-message .icon, .outline-complex .is-gated.outline-subsection > .subsection-status .status-message .icon, .outline-complex .is-gated.outline-unit > .subsection-status .status-message .icon, .outline-complex .is-gated.outline-section > .unit-status .status-message .icon, .outline-complex .is-gated.outline-subsection > .unit-status .status-message .icon, .outline-complex .is-gated.outline-unit > .unit-status .status-message .icon {
   color: #000; }
 
-/* line 542, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+/* line 558, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
 .outline-complex .has-warnings.outline-section > .section-status .status-message .icon, .outline-complex .has-warnings.outline-subsection > .section-status .status-message .icon, .outline-complex .has-warnings.outline-unit > .section-status .status-message .icon, .outline-complex .has-warnings.outline-section > .subsection-status .status-message .icon, .outline-complex .has-warnings.outline-subsection > .subsection-status .status-message .icon, .outline-complex .has-warnings.outline-unit > .subsection-status .status-message .icon, .outline-complex .has-warnings.outline-section > .unit-status .status-message .icon, .outline-complex .has-warnings.outline-subsection > .unit-status .status-message .icon, .outline-complex .has-warnings.outline-unit > .unit-status .status-message .icon {
   color: #feb272; }
 
-/* line 552, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+/* line 568, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
 .outline-complex .has-errors.outline-section > .section-status .status-message, .outline-complex .has-errors.outline-subsection > .section-status .status-message, .outline-complex .has-errors.outline-unit > .section-status .status-message, .outline-complex .has-errors.outline-section > .subsection-status .status-message, .outline-complex .has-errors.outline-subsection > .subsection-status .status-message, .outline-complex .has-errors.outline-unit > .subsection-status .status-message, .outline-complex .has-errors.outline-section > .unit-status .status-message, .outline-complex .has-errors.outline-subsection > .unit-status .status-message, .outline-complex .has-errors.outline-unit > .unit-status .status-message, .outline-complex .has-errors.outline-section > .section-status .status-message-copy, .outline-complex .has-errors.outline-subsection > .section-status .status-message-copy, .outline-complex .has-errors.outline-unit > .section-status .status-message-copy, .outline-complex .has-errors.outline-section > .subsection-status .status-message-copy, .outline-complex .has-errors.outline-subsection > .subsection-status .status-message-copy, .outline-complex .has-errors.outline-unit > .subsection-status .status-message-copy, .outline-complex .has-errors.outline-section > .unit-status .status-message-copy, .outline-complex .has-errors.outline-subsection > .unit-status .status-message-copy, .outline-complex .has-errors.outline-unit > .unit-status .status-message-copy {
   color: #d16a70; }
 
-/* line 566, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+/* line 582, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
 .outline-simple .outline-section, .outline-simple .outline-subsection, .outline-simple .outline-unit {
   border: 1px solid #e5e5e5; }
-  /* line 570, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 586, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-simple .outline-section:last-child, .outline-simple .outline-subsection:last-child, .outline-simple .outline-unit:last-child {
     margin-bottom: 0; }
-  /* line 574, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 590, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-simple .outline-section .item-title a, .outline-simple .outline-subsection .item-title a, .outline-simple .outline-unit .item-title a {
     color: #4c4c4c; }
-    /* line 577, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 593, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .outline-simple .outline-section .item-title a:hover, .outline-simple .outline-subsection .item-title a:hover, .outline-simple .outline-unit .item-title a:hover {
       color: #0075b4; }
 
-/* line 588, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+/* line 604, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
 .outline-complex .outline-section {
   transition: border-left-width 0.25s linear 0s, border-left-color 0.25s linear 0s, padding-left 0.25s linear 0s;
   border-left: 1px solid #cccccc;
   margin-bottom: 20px;
   padding: 5px 10px 10px 10px; }
-  /* line 599, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 615, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-complex .outline-section.is-collapsed {
     border-left-width: 5px;
     padding-left: 20px; }
-    /* line 604, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 620, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .outline-complex .outline-section.is-collapsed.is-ready {
       border-left-color: #008100; }
-    /* line 609, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 625, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .outline-complex .outline-section.is-collapsed.is-live {
       border-left-color: #0075b4; }
-    /* line 614, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 630, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .outline-complex .outline-section.is-collapsed.is-staff-only {
       border-left-color: #000; }
-    /* line 619, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 635, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .outline-complex .outline-section.is-collapsed.is-hidden-from-toc {
       border-left-color: #000; }
-    /* line 624, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 640, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .outline-complex .outline-section.is-collapsed.is-gated {
       border-left-color: #000; }
-    /* line 629, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 645, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .outline-complex .outline-section.is-collapsed.has-warnings {
       border-left-color: #feb272; }
-    /* line 634, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 650, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .outline-complex .outline-section.is-collapsed.has-errors {
       border-left-color: #d16a70; }
-  /* line 640, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 656, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-complex .outline-section .section-title {
     color: #4c4c4c; }
-  /* line 653, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 669, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-complex .outline-section .status-release,
   .outline-complex .outline-section .explanatory-message {
     transition: opacity 0.25s ease-in-out 0s;
     opacity: 0.65; }
-  /* line 661, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 677, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-complex .outline-section .status-messages {
     margin-top: 10px;
     border-top: 1px solid #e5e5e5;
     padding-top: 5px; }
-    /* line 666, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 682, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .outline-complex .outline-section .status-messages .icon {
       margin-left: 5px; }
-    /* line 670, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 686, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .outline-complex .outline-section .status-messages .status-message {
       display: flex;
       flex-direction: row;
       justify-content: space-between; }
       @media (max-width: 768px) {
-        /* line 670, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+        /* line 686, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
         .outline-complex .outline-section .status-messages .status-message {
           flex-direction: column; } }
-    /* line 680, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 696, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .outline-complex .outline-section .status-messages .subsection-share-link-button {
       border-radius: 5px;
       font-size: 1.2rem;
       font-weight: 600;
       padding: 0.5rem 1rem;
       margin: 0 1rem; }
-      /* line 687, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+      /* line 703, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
       .outline-complex .outline-section .status-messages .subsection-share-link-button .icon-share-link {
         color: #fff !important;
         transform: rotate(90deg); }
-  /* line 694, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 710, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-complex .outline-section .status-message-copy {
     display: inline-block;
     color: #4c4c4c; }
-  /* line 704, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 720, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-complex .outline-section:hover > .section-status .status-release,
   .outline-complex .outline-section:hover .section-status,
   .outline-complex .outline-section:hover .explanatory-message, .outline-complex .outline-section:active > .section-status .status-release,
@@ -4102,7 +4130,7 @@ div.wrapper-comp-editor.is-inactive ~ div.launch-latex-compiler {
   .outline-complex .outline-section:active .explanatory-message {
     opacity: 1; }
 
-/* line 713, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+/* line 729, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
 .outline-complex .outline-subsection {
   transition: border-left-color 0.25s linear 0s;
   margin-bottom: 10px;
@@ -4111,140 +4139,140 @@ div.wrapper-comp-editor.is-inactive ~ div.launch-latex-compiler {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   padding: 15px; }
-  /* line 727, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 743, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-complex .outline-subsection.is-ready {
     border-left-color: #008100; }
-  /* line 732, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 748, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-complex .outline-subsection.is-live {
     border-left-color: #0075b4; }
-  /* line 737, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 753, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-complex .outline-subsection.is-staff-only {
     border-left-color: #000; }
-  /* line 742, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 758, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-complex .outline-subsection.is-hidden-from-toc {
     border-left-color: #000; }
-  /* line 747, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 763, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-complex .outline-subsection.is-gated {
     border-left-color: #000; }
-  /* line 752, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 768, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-complex .outline-subsection.has-warnings {
     border-left-color: #feb272; }
-  /* line 757, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 773, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-complex .outline-subsection.has-errors {
     border-left-color: #d16a70; }
-  /* line 762, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 778, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-complex .outline-subsection:hover, .outline-complex .outline-subsection:active {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
-  /* line 768, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 784, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-complex .outline-subsection .subsection-title {
     color: #4c4c4c; }
-  /* line 784, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 800, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-complex .outline-subsection:hover > .subsection-status .status-release, .outline-complex .outline-subsection:active > .subsection-status .status-release {
     opacity: 1; }
-  /* line 789, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 805, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-complex .outline-subsection:hover > .subsection-status .status-grading, .outline-complex .outline-subsection:active > .subsection-status .status-grading {
     opacity: 1; }
-  /* line 793, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 809, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-complex .outline-subsection:hover > .subsection-status .status-timed-proctored-exam, .outline-complex .outline-subsection:active > .subsection-status .status-timed-proctored-exam {
     opacity: 1; }
-  /* line 797, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 813, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-complex .outline-subsection:hover > .subsection-status .status-hide-after-due, .outline-complex .outline-subsection:active > .subsection-status .status-hide-after-due {
     opacity: 1; }
-  /* line 803, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 819, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-complex .outline-subsection .status-grading,
   .outline-complex .outline-subsection .status-timed-proctored-exam,
   .outline-complex .outline-subsection .status-hide-after-due {
     transition: opacity 0.25s ease-in-out 0s;
     opacity: 0.75; }
-  /* line 811, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 827, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-complex .outline-subsection .status-grading-value,
   .outline-complex .outline-subsection .status-proctored-exam-value,
   .outline-complex .outline-subsection .status-custom-grading-date {
     display: inline-block;
     vertical-align: middle; }
-  /* line 818, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 834, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-complex .outline-subsection .status-grading-date,
   .outline-complex .outline-subsection .status-due-date {
     display: inline-block;
     vertical-align: middle;
     margin-left: 5px; }
 
-/* line 827, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+/* line 843, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
 .outline-complex .outline-unit {
   margin-bottom: 10px;
   border: 1px solid #e5e5e5;
   padding: 5px 10px; }
-  /* line 835, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 851, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-complex .outline-unit .unit-title {
     color: #4c4c4c; }
-  /* line 846, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 862, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-complex .outline-unit:hover, .outline-complex .outline-unit:active {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
-    /* line 851, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 867, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .outline-complex .outline-unit:hover .unit-status .status-release, .outline-complex .outline-unit:active .unit-status .status-release {
       opacity: 1; }
 
-/* line 862, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+/* line 878, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
 .outline-simple .outline-section {
   margin-bottom: 20px;
   padding: 10px; }
-  /* line 869, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 885, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-simple .outline-section .section-title {
     color: #4c4c4c; }
-  /* line 882, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 898, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-simple .outline-section .status-release {
     transition: opacity 0.25s ease-in-out 0s;
     opacity: 0.65; }
-  /* line 889, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 905, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-simple .outline-section .status-grading {
     transition: opacity 0.25s ease-in-out 0s;
     opacity: 0.65; }
-  /* line 895, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 911, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-simple .outline-section .status-grading-value {
     display: inline-block;
     vertical-align: middle; }
-  /* line 900, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 916, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-simple .outline-section .status-grading-date {
     display: inline-block;
     vertical-align: middle;
     margin-left: 5px; }
-  /* line 907, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 923, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-simple .outline-section .status-message {
     margin-top: 10px;
     border-top: 1px solid #e5e5e5;
     padding-top: 5px; }
-    /* line 912, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 928, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .outline-simple .outline-section .status-message .icon {
       margin-right: 5px; }
-  /* line 917, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 933, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-simple .outline-section .status-message-copy {
     display: inline-block;
     color: #4c4c4c; }
 
-/* line 924, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+/* line 940, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
 .outline-simple .outline-subsection {
   margin-bottom: 10px;
   padding: 10px; }
-  /* line 931, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 947, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-simple .outline-subsection .subsection-title {
     color: #4c4c4c; }
 
-/* line 944, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+/* line 960, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
 .outline-simple .outline-unit {
   margin-bottom: 5px;
   padding: 5px 10px; }
-  /* line 951, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 967, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline-simple .outline-unit .unit-title {
     color: #4c4c4c; }
 
-/* line 964, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+/* line 980, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
 .outline .actions-list.nav-dd .wrapper-nav-sub {
   text-align: right;
   z-index: 10; }
-  /* line 971, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+  /* line 987, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
   .outline .actions-list.nav-dd .wrapper-nav-sub .nav-item a {
     color: #666666; }
-    /* line 975, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
+    /* line 991, /openedx/edx-platform/cms/static/sass/elements/_modules.scss */
     .outline .actions-list.nav-dd .wrapper-nav-sub .nav-item a:hover {
       color: #065683; }
 
@@ -7499,17 +7527,12 @@ body.modal-open {
 .ui-timepicker-list {
   z-index: 100000 !important; }
 
-/* line 71, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
-.zooming-image-place .larger {
-  left: 0 !important;
-  bottom: 100% !important; }
-
-/* line 79, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
+/* line 72, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
 .ui-tabs {
   padding: 0;
   white-space: normal; }
 
-/* line 84, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
+/* line 77, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
 .ui-corner-all,
 .ui-corner-bottom,
 .ui-corner-left,
@@ -7518,21 +7541,21 @@ body.modal-open {
 .ui-corner-right {
   border-radius: 0; }
 
-/* line 94, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
+/* line 87, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
 .ui-widget-content {
   border: 0;
   background: none; }
 
-/* line 103, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
+/* line 96, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
 .ui-widget-header {
   border: none;
   background: none; }
 
-/* line 108, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
+/* line 101, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
 .ui-tabs .ui-tabs-nav {
   padding: 0; }
 
-/* line 112, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
+/* line 105, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
 .ui-tabs .ui-tabs-nav li {
   margin: 0;
   padding: 0;
@@ -7542,20 +7565,20 @@ body.modal-open {
   border-top-left-radius: 0;
   border-top-right-radius: 0; }
 
-/* line 123, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
+/* line 116, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
 .ui-tabs-nav li {
   top: 0;
   margin: 0; }
 
-/* line 128, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
+/* line 121, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
 .ui-tabs-nav a {
   float: none; }
 
-/* line 135, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
+/* line 128, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
 .ui-tabs .ui-tabs-panel {
   padding: 0; }
 
-/* line 140, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
+/* line 133, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
 .problem-type-tabs {
   border: none;
   list-style-type: none;
@@ -7564,18 +7587,18 @@ body.modal-open {
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
   background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 -1px 0 rgba(0, 0, 0, 0.2) inset; }
-  /* line 149, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
+  /* line 142, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
   .problem-type-tabs li:first-child {
     margin-left: 20px; }
-  /* line 153, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
+  /* line 146, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
   .problem-type-tabs li {
     opacity: 0.8; }
-    /* line 156, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
+    /* line 149, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
     .problem-type-tabs li a:focus {
       outline: none;
       border: 0; }
 
-/* line 163, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
+/* line 156, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
 .ui-autocomplete {
   position: absolute;
   top: 0;
@@ -7592,14 +7615,14 @@ body.modal-open {
   background-color: #f2f2f2;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   color: #4c4c4c; }
-  /* line 180, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
+  /* line 173, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
   .ui-autocomplete li.ui-menu-item {
     padding: 0;
     margin: 0; }
-    /* line 184, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
+    /* line 177, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
     .ui-autocomplete li.ui-menu-item a {
       color: #4c4c4c; }
-    /* line 188, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
+    /* line 181, /openedx/edx-platform/cms/static/sass/elements/_vendor.scss */
     .ui-autocomplete li.ui-menu-item a.ui-state-focus {
       border: none;
       background-color: #0075b4;
@@ -8905,7 +8928,8 @@ body.modal-open {
     color: rgba(0, 0, 0, 0.85); }
 
 /* line 4, /openedx/edx-platform/cms/static/sass/elements/_drawer.scss */
-.drawer-cover {
+.drawer-cover,
+.picker-cover {
   display: none;
   position: fixed;
   top: 0;
@@ -8914,11 +8938,12 @@ body.modal-open {
   height: 100%;
   background: rgba(0, 0, 0, 0.8); }
 
-/* line 16, /openedx/edx-platform/cms/static/sass/elements/_drawer.scss */
-.drawer-cover.gray-cover {
+/* line 17, /openedx/edx-platform/cms/static/sass/elements/_drawer.scss */
+.drawer-cover.gray-cover,
+.picker-cover.gray-cover {
   background: rgba(112, 112, 112, 0.8); }
 
-/* line 20, /openedx/edx-platform/cms/static/sass/elements/_drawer.scss */
+/* line 22, /openedx/edx-platform/cms/static/sass/elements/_drawer.scss */
 .drawer {
   display: none;
   position: fixed;
@@ -8928,9 +8953,20 @@ body.modal-open {
   height: 100vh;
   background-color: #e5e5e5; }
 
-/* line 32, /openedx/edx-platform/cms/static/sass/elements/_drawer.scss */
-body.drawer-open {
+/* line 34, /openedx/edx-platform/cms/static/sass/elements/_drawer.scss */
+body.drawer-open,
+body.picker-open {
   overflow: hidden; }
+
+/* line 39, /openedx/edx-platform/cms/static/sass/elements/_drawer.scss */
+.picker {
+  display: none;
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  right: 1em;
+  bottom: 1em;
+  background-color: #e5e5e5; }
 
 /* line 7, /openedx/edx-platform/cms/static/sass/views/_account.scss */
 .view-signup .wrapper-content,
@@ -14232,10 +14268,59 @@ body.drawer-open {
   float: right;
   margin-right: 20px; }
 
-/* line 565, /openedx/edx-platform/cms/static/sass/views/_container.scss */
+/* line 568, /openedx/edx-platform/cms/static/sass/views/_container.scss */
+.modal-lib-preview .modal-content {
+  padding: 0 !important; }
+  /* line 571, /openedx/edx-platform/cms/static/sass/views/_container.scss */
+  .modal-lib-preview .modal-content > iframe {
+    width: 100%;
+    min-height: 450px;
+    background: url("../images/spinner.gif") center center no-repeat; }
+
+/* line 579, /openedx/edx-platform/cms/static/sass/views/_container.scss */
 .ltiLaunchFrame {
   width: 100%;
   height: 100%; }
+
+/* line 586, /openedx/edx-platform/cms/static/sass/views/_container.scss */
+.modal-add-component-picker {
+  top: 10%; }
+  /* line 588, /openedx/edx-platform/cms/static/sass/views/_container.scss */
+  .modal-add-component-picker .modal-content {
+    padding: 0 !important; }
+    /* line 591, /openedx/edx-platform/cms/static/sass/views/_container.scss */
+    .modal-add-component-picker .modal-content > iframe {
+      width: 100%;
+      min-height: 80vh;
+      background: url("../images/spinner.gif") center center no-repeat; }
+
+/* line 599, /openedx/edx-platform/cms/static/sass/views/_container.scss */
+.modal-alert {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px; }
+  /* line 605, /openedx/edx-platform/cms/static/sass/views/_container.scss */
+  .modal-alert.warning {
+    background-color: #fcf8e3; }
+    /* line 608, /openedx/edx-platform/cms/static/sass/views/_container.scss */
+    .modal-alert.warning .fa-warning {
+      color: #fd7e14;
+      margin-right: 20px; }
+  /* line 614, /openedx/edx-platform/cms/static/sass/views/_container.scss */
+  .modal-alert .action-btn {
+    text-wrap: nowrap;
+    background-color: #000;
+    color: #fff;
+    margin-left: auto;
+    padding: 10px; }
+    /* line 621, /openedx/edx-platform/cms/static/sass/views/_container.scss */
+    .modal-alert .action-btn .fa {
+      margin-left: 5px;
+      color: #fff; }
+    /* line 626, /openedx/edx-platform/cms/static/sass/views/_container.scss */
+    .modal-alert .action-btn:hover, .modal-alert .action-btn:focus, .modal-alert .action-btn:active {
+      background-color: #333333; }
 
 /* line 7, /openedx/edx-platform/cms/static/sass/views/_users.scss */
 .view-team .content-primary,

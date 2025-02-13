@@ -3,6 +3,10 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
 /* line 3, /openedx/edx-platform/node_modules/bootstrap/scss/utilities/_align.scss */
 .align-baseline {
   vertical-align: baseline !important; }
@@ -3046,6 +3050,95 @@ a.text-darkest:hover, a.text-darkest:focus {
   padding: 0.5rem 0.75rem;
   color: #313131; }
 
+/*
+ * In pursuit of decoupling the built-in XBlocks from edx-platform's Sass build
+ * and ensuring comprehensive theming support in the extracted XBlocks,
+ * we need to expose Sass variables as CSS variables.
+ *
+ * Ticket/Issue: https://github.com/openedx/edx-platform/issues/35173
+ */
+/* stylelint-disable-line */
+/* stylelint-disable-line */
+/* line 126, /openedx/edx-platform/common/static/sass/edx-pattern-library-shims/base/_variables.scss */
+.btn-default:disabled, .btn-primary:disabled, .btn-brand:disabled, .btn-upgrade:disabled, .public-video-page .public-video-share-cta .btn-learn-more:disabled, .public-video-page .public-video-share-cta .btn-enroll:disabled,
+.public-video-page .public-video-share-cta .btn-go-to-course:disabled, .is-disabled.btn-default, .is-disabled.btn-primary, .is-disabled.btn-brand, .is-disabled.btn-upgrade, .public-video-page .public-video-share-cta .is-disabled.btn-learn-more, .public-video-page .public-video-share-cta .is-disabled.btn-enroll,
+.public-video-page .public-video-share-cta .is-disabled.btn-go-to-course {
+  pointer-events: none;
+  outline: none;
+  cursor: not-allowed; }
+
+/* line 227, /openedx/edx-platform/common/static/sass/edx-pattern-library-shims/base/_variables.scss */
+.btn-small.btn-default, .btn-small.btn-primary, .btn-small.btn-brand, .btn-small.btn-upgrade, .public-video-page .public-video-share-cta .btn-small.btn-learn-more, .public-video-page .public-video-share-cta .btn-small.btn-enroll,
+.public-video-page .public-video-share-cta .btn-small.btn-go-to-course {
+  padding: 0.625rem;
+  font-size: 14px; }
+
+/* line 17, common/static/sass/_builtin-block-variables.scss */
+:root {
+  --action-primary-active-bg: #0075b4;
+  --base-font-size: 18px;
+  --base-line-height: 1.5em;
+  --baseline: 20px;
+  --black: #000;
+  --black-t2: rgba(0, 0, 0, 0.5);
+  --blue: #0075b4;
+  --blue-d1: #005e90;
+  --blue-d2: #00466c;
+  --blue-d4: #001724;
+  --blue-s1: #0075b4;
+  --body-color: #313131;
+  --border-color: #e7e7e7;
+  --bp-screen-lg: 1024px;
+  --btn-brand-focus-background: #065683;
+  --correct: #008100;
+  --danger: #b20610;
+  --darkGrey: #8891a1;
+  --error-color: #cb0712;
+  --error-color-dark: #95050d;
+  --error-color-light: #f95861;
+  --font-bold: 700;
+  --font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --general-color-accent: #0075b4;
+  --gray: #767676;
+  --gray-300: #d9d9d9;
+  --gray-d1: #5e5e5e;
+  --gray-l2: #adadad;
+  --gray-l3: #c8c8c8;
+  --gray-l4: #e4e4e4;
+  --gray-l6: #f8f8f8;
+  --icon-correct: url("../images/correct-icon.png");
+  --icon-incorrect: url("../images/incorrect-icon.png");
+  --icon-info: url("../images/info-icon.png");
+  --icon-partially-correct: url("../images/partially-correct-icon.png");
+  --icon-spinner: url("../images/spinner.gif");
+  --icon-unanswered: url("../images/unanswered-icon.png");
+  --incorrect: #b20610;
+  --lightGrey: #edf1f5;
+  --lighter-base-font-color: #646464;
+  --link-color: #1b6d99;
+  --medium-font-size: 0.9em;
+  --partially-correct: #008100;
+  --primary: #0075b4;
+  --shadow: rgba(0, 0, 0, 0.2);
+  --shadow-l1: rgba(0, 0, 0, 0.1);
+  --sidebar-color: #f6f6f6;
+  --small-font-size: 80%;
+  --static-path: "..";
+  --submitted: #0075b4;
+  --success: #008100;
+  --tmg-f2: 0.25s;
+  --tmg-s2: 2s;
+  --transparent: transparent;
+  --uxpl-gray-background: #d9d9d9;
+  --uxpl-gray-base: #414141;
+  --uxpl-gray-dark: #111111;
+  --very-light-text: white;
+  --warning: #e2c01f;
+  --warning-color: #ffc01f;
+  --warning-color-accent: #fffcdd;
+  --white: #fff;
+  --yellow: #e2c01f; }
+
 /* stylelint-disable-line */
 /* stylelint-disable-line */
 /* HTML5 Boilerplate  */
@@ -3100,7 +3193,7 @@ body {
 
 /* line 47, lms/static/sass/base/_reset.scss */
 a:not(.btn) {
-  color: #0075b4; }
+  color: #1b6d99; }
 
 /* line 51, lms/static/sass/base/_reset.scss */
 a:visited:not(.btn) {
@@ -3624,7 +3717,7 @@ footer#footer-edx-v3 .mobile-app-links, .modal-settings-language .list-input,
 
 /* line 208, lms/static/sass/base/_mixins.scss */
 .btn-link {
-  color: #0075b4; }
+  color: #1b6d99; }
   /* line 211, lms/static/sass/base/_mixins.scss */
   .btn-link:hover, .btn-link:focus {
     color: #0075b4; }
@@ -6897,6 +6990,95 @@ a.text-darkest:hover, a.text-darkest:focus {
   padding: 0.5rem 0.75rem;
   color: #313131; }
 
+/*
+ * In pursuit of decoupling the built-in XBlocks from edx-platform's Sass build
+ * and ensuring comprehensive theming support in the extracted XBlocks,
+ * we need to expose Sass variables as CSS variables.
+ *
+ * Ticket/Issue: https://github.com/openedx/edx-platform/issues/35173
+ */
+/* stylelint-disable-line */
+/* stylelint-disable-line */
+/* line 126, /openedx/edx-platform/common/static/sass/edx-pattern-library-shims/base/_variables.scss */
+.btn-default:disabled, .btn-primary:disabled, .btn-brand:disabled, .btn-upgrade:disabled, .public-video-page .public-video-share-cta .btn-learn-more:disabled, .public-video-page .public-video-share-cta .btn-enroll:disabled,
+.public-video-page .public-video-share-cta .btn-go-to-course:disabled, .is-disabled.btn-default, .is-disabled.btn-primary, .is-disabled.btn-brand, .is-disabled.btn-upgrade, .public-video-page .public-video-share-cta .is-disabled.btn-learn-more, .public-video-page .public-video-share-cta .is-disabled.btn-enroll,
+.public-video-page .public-video-share-cta .is-disabled.btn-go-to-course {
+  pointer-events: none;
+  outline: none;
+  cursor: not-allowed; }
+
+/* line 227, /openedx/edx-platform/common/static/sass/edx-pattern-library-shims/base/_variables.scss */
+.btn-small.btn-default, .btn-small.btn-primary, .btn-small.btn-brand, .btn-small.btn-upgrade, .public-video-page .public-video-share-cta .btn-small.btn-learn-more, .public-video-page .public-video-share-cta .btn-small.btn-enroll,
+.public-video-page .public-video-share-cta .btn-small.btn-go-to-course {
+  padding: 0.625rem;
+  font-size: 14px; }
+
+/* line 17, common/static/sass/_builtin-block-variables.scss */
+:root {
+  --action-primary-active-bg: #0075b4;
+  --base-font-size: 18px;
+  --base-line-height: 1.5em;
+  --baseline: 20px;
+  --black: #000;
+  --black-t2: rgba(0, 0, 0, 0.5);
+  --blue: #0075b4;
+  --blue-d1: #005e90;
+  --blue-d2: #00466c;
+  --blue-d4: #001724;
+  --blue-s1: #0075b4;
+  --body-color: #313131;
+  --border-color: #e7e7e7;
+  --bp-screen-lg: 1024px;
+  --btn-brand-focus-background: #065683;
+  --correct: #008100;
+  --danger: #b20610;
+  --darkGrey: #8891a1;
+  --error-color: #cb0712;
+  --error-color-dark: #95050d;
+  --error-color-light: #f95861;
+  --font-bold: 700;
+  --font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --general-color-accent: #0075b4;
+  --gray: #767676;
+  --gray-300: #d9d9d9;
+  --gray-d1: #5e5e5e;
+  --gray-l2: #adadad;
+  --gray-l3: #c8c8c8;
+  --gray-l4: #e4e4e4;
+  --gray-l6: #f8f8f8;
+  --icon-correct: url("../images/correct-icon.png");
+  --icon-incorrect: url("../images/incorrect-icon.png");
+  --icon-info: url("../images/info-icon.png");
+  --icon-partially-correct: url("../images/partially-correct-icon.png");
+  --icon-spinner: url("../images/spinner.gif");
+  --icon-unanswered: url("../images/unanswered-icon.png");
+  --incorrect: #b20610;
+  --lightGrey: #edf1f5;
+  --lighter-base-font-color: #646464;
+  --link-color: #1b6d99;
+  --medium-font-size: 0.9em;
+  --partially-correct: #008100;
+  --primary: #0075b4;
+  --shadow: rgba(0, 0, 0, 0.2);
+  --shadow-l1: rgba(0, 0, 0, 0.1);
+  --sidebar-color: #f6f6f6;
+  --small-font-size: 14px;
+  --static-path: "..";
+  --submitted: #0075b4;
+  --success: #008100;
+  --tmg-f2: 0.25s;
+  --tmg-s2: 2s;
+  --transparent: transparent;
+  --uxpl-gray-background: #d9d9d9;
+  --uxpl-gray-base: #414141;
+  --uxpl-gray-dark: #111111;
+  --very-light-text: white;
+  --warning: #e2c01f;
+  --warning-color: #ffc01f;
+  --warning-color-accent: #fffcdd;
+  --white: #fff;
+  --yellow: #e2c01f; }
+
 /* stylelint-disable-line */
 /* stylelint-disable-line */
 /* HTML5 Boilerplate  */
@@ -6951,7 +7133,7 @@ body {
 
 /* line 47, lms/static/sass/base/_reset.scss */
 a:not(.btn) {
-  color: #0075b4; }
+  color: #1b6d99; }
 
 /* line 51, lms/static/sass/base/_reset.scss */
 a:visited:not(.btn) {
@@ -7475,7 +7657,7 @@ footer#footer-edx-v3 .mobile-app-links, .modal-settings-language .list-input,
 
 /* line 208, lms/static/sass/base/_mixins.scss */
 .btn-link {
-  color: #0075b4; }
+  color: #1b6d99; }
   /* line 211, lms/static/sass/base/_mixins.scss */
   .btn-link:hover, .btn-link:focus {
     color: #0075b4; }
@@ -8306,7 +8488,7 @@ ol + p {
 /* line 92, /openedx/edx-platform/lms/static/sass/base/_base.scss */
 p a:not(.btn),
 p a:visited:not(.btn) {
-  color: #0075b4;
+  color: #1b6d99;
   font: inherit;
   font-weight: inherit;
   text-decoration: none;
@@ -8321,7 +8503,7 @@ p a:visited:not(.btn) {
 /* line 109, /openedx/edx-platform/lms/static/sass/base/_base.scss */
 a:not(.btn),
 a:visited:not(.btn) {
-  color: #0075b4;
+  color: #1b6d99;
   font: inherit;
   text-decoration: none;
   transition: all 0.1s linear 0s; }
@@ -8366,7 +8548,7 @@ a:visited:not(.btn) {
     .container, section.outside-app, .view-profile .profile-self .wrapper-profile-field-account-privacy .u-field-account_privacy, .view-profile .wrapper-profile-sections, .view-profile .badge-set-display {
       margin: 0 auto;
       padding: 40px 0;
-      max-width: 1180px;
+      max-width: 940px;
       min-width: 760px;
       width: 100%; } }
 
@@ -8393,7 +8575,7 @@ span.edx {
   /* line 178, /openedx/edx-platform/lms/static/sass/base/_base.scss */
   .static-container .inner-wrapper, .static-container .entitlement-unenrollment-modal .entitlement-unenrollment-modal-inner-wrapper, .entitlement-unenrollment-modal .static-container .entitlement-unenrollment-modal-inner-wrapper {
     margin: 0 auto;
-    width: 83.05085%; }
+    width: 82.97872%; }
   /* line 183, /openedx/edx-platform/lms/static/sass/base/_base.scss */
   .static-container ol,
   .static-container ul {
@@ -8545,7 +8727,7 @@ mark {
     padding-top: 20px; }
     /* line 57, /openedx/edx-platform/lms/static/sass/elements/_banners.scss */
     .page-banner .user-messages a:hover {
-      color: #0075b4;
+      color: #1b6d99;
       text-decoration: underline !important; }
     /* line 62, /openedx/edx-platform/lms/static/sass/elements/_banners.scss */
     .page-banner .user-messages .user-messages-ul {
@@ -9068,7 +9250,7 @@ mark {
   .btn-secondary:focus, .btn-secondary:hover {
     background-image: none !important;
     background-color: transparent !important;
-    color: #0075b4; }
+    color: #1b6d99; }
 
 /* line 519, /openedx/edx-platform/lms/static/sass/elements/_controls.scss */
 .btn-link {
@@ -9264,12 +9446,12 @@ mark {
     color: #474747; }
     /* line 153, /openedx/edx-platform/lms/static/sass/elements/_navigation.scss */
     .view-profile .page-content-nav .nav-item.is-active {
-      border-bottom: 4px solid #0075b4;
+      border-bottom: 4px solid #1b6d99;
       color: #474747; }
     /* line 159, /openedx/edx-platform/lms/static/sass/elements/_navigation.scss */
     .view-profile .page-content-nav .nav-item:hover, .view-profile .page-content-nav .nav-item:focus {
-      border-bottom: 4px solid #0075b4;
-      color: #0075b4; }
+      border-bottom: 4px solid #1b6d99;
+      color: #1b6d99; }
 
 /* line 171, /openedx/edx-platform/lms/static/sass/elements/_navigation.scss */
 .page-content-main .tabs .tabpanel {
@@ -9278,7 +9460,7 @@ mark {
 /* line 5, /openedx/edx-platform/lms/static/sass/elements/_pagination.scss */
 .pagination {
   display: inline-block;
-  width: 23.72881%; }
+  width: 23.40426%; }
   /* line 15, /openedx/edx-platform/common/static/sass/bourbon/addons/_clearfix.scss */
   .pagination:after {
     content: "";
@@ -9290,7 +9472,7 @@ mark {
   /* line 15, /openedx/edx-platform/lms/static/sass/elements/_pagination.scss */
   .pagination.pagination-full {
     display: block;
-    width: 32.20339%;
+    width: 31.91489%;
     margin: 20px auto; }
   /* line 21, /openedx/edx-platform/lms/static/sass/elements/_pagination.scss */
   .pagination .nav-item {
@@ -9756,10 +9938,10 @@ body.error h1 {
       color: #5e5e5e; }
     /* line 18, /openedx/edx-platform/lms/static/sass/shared/_fields.scss */
     .u-field.mode-placeholder:hover {
-      border: 2px dashed #0075b4; }
+      border: 2px dashed #1b6d99; }
       /* line 21, /openedx/edx-platform/lms/static/sass/shared/_fields.scss */
       .u-field.mode-placeholder:hover span {
-        color: #0075b4; }
+        color: #1b6d99; }
   /* line 27, /openedx/edx-platform/lms/static/sass/shared/_fields.scss */
   .u-field.editable-toggle.mode-display:hover {
     background-color: #e6f1f8;
@@ -9767,7 +9949,7 @@ body.error h1 {
     /* line 31, /openedx/edx-platform/lms/static/sass/shared/_fields.scss */
     .u-field.editable-toggle.mode-display:hover .message-can-edit {
       display: inline-block;
-      color: #0075b4; }
+      color: #1b6d99; }
   /* line 37, /openedx/edx-platform/lms/static/sass/shared/_fields.scss */
   .u-field.mode-hidden {
     display: none; }
@@ -9807,7 +9989,7 @@ body.error h1 {
 
 /* line 84, /openedx/edx-platform/lms/static/sass/shared/_fields.scss */
 .u-field-title {
-  width: 23.72881%;
+  width: 23.40426%;
   display: inline-block;
   color: #5e5e5e;
   vertical-align: top;
@@ -9820,7 +10002,7 @@ body.error h1 {
 
 /* line 98, /openedx/edx-platform/lms/static/sass/shared/_fields.scss */
 .u-field-value {
-  width: 23.72881%;
+  width: 23.40426%;
   display: inline-block;
   vertical-align: top; }
   /* line 103, /openedx/edx-platform/lms/static/sass/shared/_fields.scss */
@@ -9831,7 +10013,7 @@ body.error h1 {
 /* line 109, /openedx/edx-platform/lms/static/sass/shared/_fields.scss */
 .u-field-message {
   padding-left: 10px;
-  width: 49.15254%;
+  width: 48.93617%;
   display: inline-block;
   vertical-align: top;
   color: #919191; }
@@ -10032,11 +10214,11 @@ button,
     .wrapper-footer footer#footer-openedx a {
       transition: link-color 0.15s ease-in-out 0s, border 0.15s ease-in-out 0s;
       border-bottom: none;
-      color: #0075b4;
+      color: #1b6d99;
       text-decoration: none !important; }
       /* line 42, /openedx/edx-platform/lms/static/sass/shared/_footer.scss */
       .wrapper-footer footer#footer-openedx a:hover, .wrapper-footer footer#footer-openedx a:focus, .wrapper-footer footer#footer-openedx a:active {
-        border-bottom: 1px dotted #0075b4; }
+        border-bottom: 1px dotted #1b6d99; }
     /* line 49, /openedx/edx-platform/lms/static/sass/shared/_footer.scss */
     .wrapper-footer footer#footer-openedx .icon {
       font-family: 'FontAwesome';
@@ -10077,7 +10259,7 @@ button,
             color: #333333; }
             /* line 80, /openedx/edx-platform/lms/static/sass/shared/_footer.scss */
             .wrapper-footer footer#footer-openedx .colophon .nav-colophon li a:hover, .wrapper-footer footer#footer-openedx .colophon .nav-colophon li a:focus, .wrapper-footer footer#footer-openedx .colophon .nav-colophon li a:active {
-              color: #0075b4; }
+              color: #1b6d99; }
           /* line 87, /openedx/edx-platform/lms/static/sass/shared/_footer.scss */
           .wrapper-footer footer#footer-openedx .colophon .nav-colophon li:last-child {
             margin-right: 0; }
@@ -10946,7 +11128,7 @@ footer#footer-edx-v3 {
     height: 40px;
     margin: 0 auto;
     padding: 18px 10px 0;
-    max-width: 1180px; }
+    max-width: 940px; }
     /* line 15, /openedx/edx-platform/common/static/sass/bourbon/addons/_clearfix.scss */
     .header-global .wrapper-header:after {
       content: "";
@@ -10968,7 +11150,7 @@ footer#footer-edx-v3 {
     height: 40px;
     margin: 0 auto;
     padding: 18px 10px 0;
-    max-width: 1180px; }
+    max-width: 940px; }
     /* line 15, /openedx/edx-platform/common/static/sass/bourbon/addons/_clearfix.scss */
     .header-global nav:after {
       content: "";
@@ -10995,7 +11177,7 @@ footer#footer-edx-v3 {
       vertical-align: middle; }
   /* line 72, /openedx/edx-platform/lms/static/sass/shared/_header.scss */
   .header-global li.secondary > a {
-    color: #0075b4;
+    color: #1b6d99;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     display: inline-block;
     margin: 0 30px 0 0;
@@ -11150,7 +11332,7 @@ footer#footer-edx-v3 {
           border: 1px solid transparent;
           border-radius: 3px;
           box-sizing: border-box;
-          color: #0075b4;
+          color: #1b6d99;
           cursor: pointer;
           display: block;
           margin: 5px 0;
@@ -11207,7 +11389,7 @@ footer#footer-edx-v3 {
       .header-global .nav-global div a {
         display: block;
         padding: 5px;
-        color: #0075b4;
+        color: #1b6d99;
         font-weight: 600; }
         /* line 339, /openedx/edx-platform/lms/static/sass/shared/_header.scss */
         .header-global .nav-global li a:hover, .header-global .nav-global li a:focus, .header-global .nav-global li a:active,
@@ -11215,12 +11397,12 @@ footer#footer-edx-v3 {
         .header-global .nav-global div a:focus,
         .header-global .nav-global div a:active {
           text-decoration: none;
-          color: #0075b4; }
+          color: #1b6d99; }
       /* line 348, /openedx/edx-platform/lms/static/sass/shared/_header.scss */
       .header-global .nav-global li.active a,
       .header-global .nav-global div.active a {
         text-decoration: none;
-        color: #0075b4; }
+        color: #1b6d99; }
   /* line 356, /openedx/edx-platform/lms/static/sass/shared/_header.scss */
   .header-global .nav-courseware {
     float: right;
@@ -11242,7 +11424,7 @@ footer#footer-edx-v3 {
 .view-schools .nav-global-03 a,
 .view-register .nav-global-04 a {
   text-decoration: none;
-  color: #0075b4 !important; }
+  color: #1b6d99 !important; }
 
 /* line 396, /openedx/edx-platform/lms/static/sass/shared/_header.scss */
 .header-global-new {
@@ -11259,7 +11441,7 @@ footer#footer-edx-v3 {
     height: 74px;
     margin: 0 auto;
     padding: 17px 0;
-    max-width: 1180px; }
+    max-width: 940px; }
     /* line 15, /openedx/edx-platform/common/static/sass/bourbon/addons/_clearfix.scss */
     .header-global-new .wrapper-header:after {
       content: "";
@@ -11267,7 +11449,7 @@ footer#footer-edx-v3 {
       clear: both; }
     /* line 416, /openedx/edx-platform/lms/static/sass/shared/_header.scss */
     .header-global-new .wrapper-header:not(.rwd) {
-      min-width: 880px; }
+      min-width: 700px; }
   /* line 421, /openedx/edx-platform/lms/static/sass/shared/_header.scss */
   .header-global-new .logo {
     float: left;
@@ -11322,7 +11504,7 @@ footer#footer-edx-v3 {
       vertical-align: middle; }
   /* line 491, /openedx/edx-platform/lms/static/sass/shared/_header.scss */
   .header-global-new li.secondary > a {
-    color: #0075b4;
+    color: #1b6d99;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     display: inline-block;
     margin: 0 30px 0 0;
@@ -11487,7 +11669,7 @@ footer#footer-edx-v3 {
           border: 1px solid transparent;
           border-radius: 3px;
           box-sizing: border-box;
-          color: #0075b4;
+          color: #1b6d99;
           cursor: pointer;
           display: block;
           margin: 5px 0;
@@ -11654,7 +11836,7 @@ footer#footer-edx-v3 {
 .view-schools .nav-global-03 a,
 .view-register .nav-global-04 a {
   text-decoration: none;
-  color: #0075b4 !important; }
+  color: #1b6d99 !important; }
 
 /* line 912, /openedx/edx-platform/lms/static/sass/shared/_header.scss */
 .doc-link {
@@ -11707,7 +11889,7 @@ footer#footer-edx-v3 {
     /* line 32, /openedx/edx-platform/lms/static/sass/shared/_course_object.scss */
     .highlighted-courses .courses .course .status,
     .find-courses .courses .course .status {
-      background: #0075b4;
+      background: #1b6d99;
       color: white;
       font-size: 10px;
       left: 10px;
@@ -11718,7 +11900,7 @@ footer#footer-edx-v3 {
     /* line 45, /openedx/edx-platform/lms/static/sass/shared/_course_object.scss */
     .highlighted-courses .courses .course .status::after,
     .find-courses .courses .course .status::after {
-      border-bottom: 6px solid #003b5a;
+      border-bottom: 6px solid #0e364d;
       border-right: 6px solid transparent;
       content: "";
       display: block;
@@ -11802,7 +11984,7 @@ footer#footer-edx-v3 {
         .highlighted-courses .courses .course header.course-preview:hover .info-link, .highlighted-courses .courses .course header.course-preview:focus .info-link,
         .find-courses .courses .course header.course-preview:hover .info-link,
         .find-courses .courses .course header.course-preview:focus .info-link {
-          color: #0075b4;
+          color: #1b6d99;
           opacity: 1; }
         /* line 124, /openedx/edx-platform/lms/static/sass/shared/_course_object.scss */
         .highlighted-courses .courses .course header.course-preview:hover h2, .highlighted-courses .courses .course header.course-preview:hover .home > header .title > .heading-group p, .home > header .title > .heading-group .highlighted-courses .courses .course header.course-preview:hover p, .highlighted-courses .courses .course header.course-preview:hover section.outside-app h1, section.outside-app .highlighted-courses .courses .course header.course-preview:hover h1, .highlighted-courses .courses .course header.course-preview:focus h2, .highlighted-courses .courses .course header.course-preview:focus .home > header .title > .heading-group p, .home > header .title > .heading-group .highlighted-courses .courses .course header.course-preview:focus p, .highlighted-courses .courses .course header.course-preview:focus section.outside-app h1, section.outside-app .highlighted-courses .courses .course header.course-preview:focus h1,
@@ -11816,7 +11998,7 @@ footer#footer-edx-v3 {
         .find-courses .courses .course header.course-preview:focus p,
         .find-courses .courses .course header.course-preview:focus section.outside-app h1, section.outside-app
         .find-courses .courses .course header.course-preview:focus h1 {
-          color: #0075b4; }
+          color: #1b6d99; }
       /* line 129, /openedx/edx-platform/lms/static/sass/shared/_course_object.scss */
       .highlighted-courses .courses .course header.course-preview .heading-group,
       .find-courses .courses .course header.course-preview .heading-group {
@@ -12078,7 +12260,7 @@ footer#footer-edx-v3 {
   position: absolute;
   left: 50%;
   padding: 8px;
-  width: 480px;
+  width: 380px;
   border-radius: 3px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
   background: #313131;
@@ -12482,7 +12664,7 @@ footer#footer-edx-v3 {
     .help-tab a:visited:hover,
     .help-tab a:visited:focus {
       color: #fff;
-      background: #0075b4; }
+      background: #1b6d99; }
 
 /* line 50, /openedx/edx-platform/lms/static/sass/shared/_help-tab.scss */
 .help-buttons {
@@ -13558,7 +13740,7 @@ footer#footer-edx-v3 {
     .wrapper-messages-primary .message.is-expandable .wrapper-tip:hover .message-title .value,
     .wrapper-messages-primary .message.is-expandable .wrapper-tip:hover .message-copy,
     .wrapper-messages-primary .message.is-expandable .wrapper-tip:hover .ui-toggle-expansion {
-      color: #0075b4; }
+      color: #1b6d99; }
   /* line 751, /openedx/edx-platform/lms/static/sass/multicourse/_dashboard.scss */
   .wrapper-messages-primary .message.is-expandable .wrapper-extended {
     transition: opacity 0.25s ease-in-out 0;
@@ -14225,7 +14407,7 @@ a.fade-cover {
 .activation-message-container {
   margin: 0 auto;
   padding-top: 10px;
-  max-width: 1180px;
+  max-width: 940px;
   min-width: 760px;
   width: 100%; }
   /* line 15, /openedx/edx-platform/common/static/sass/bourbon/addons/_clearfix.scss */
@@ -15348,7 +15530,7 @@ a.fade-cover {
     font-size: 25px;
     margin: 0 0 20px 0;
     font-weight: 300;
-    color: #0075b4; }
+    color: #1b6d99; }
   /* line 44, /openedx/edx-platform/lms/static/sass/multicourse/_account.scss */
   .view-register .login aside .btn h3, .login aside .btn .view-register h3, .view-register
   .register aside .btn h3,
@@ -16239,7 +16421,7 @@ a.fade-cover {
   #forgot-password-modal #password-reset a:hover,
   #forgot-password-modal #password-reset a:active,
   #forgot-password-modal #password-reset a:focus {
-    color: #0075b4;
+    color: #1b6d99;
     font-weight: 400;
     text-decoration: none !important;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -16255,7 +16437,7 @@ a.fade-cover {
   #forgot-password-modal #password-reset a:active,
   #forgot-password-modal #password-reset a:focus {
     text-decoration: none !important;
-    border-bottom: 1px dotted #0075b4; }
+    border-bottom: 1px dotted #1b6d99; }
 
 /* line 228, /openedx/edx-platform/lms/static/sass/multicourse/_account.scss */
 .login strong,
@@ -16602,13 +16784,13 @@ a.fade-cover {
   .register form .field.is-focused label,
   .passwordreset form .field.is-focused label,
   #forgot-password-modal #password-reset form .field.is-focused label {
-    color: #0075b4; }
+    color: #0e71a7; }
   /* line 463, /openedx/edx-platform/lms/static/sass/multicourse/_account.scss */
   .login form .field.is-focused .tip,
   .register form .field.is-focused .tip,
   .passwordreset form .field.is-focused .tip,
   #forgot-password-modal #password-reset form .field.is-focused .tip {
-    color: #0075b4; }
+    color: #0e71a7; }
   /* line 470, /openedx/edx-platform/lms/static/sass/multicourse/_account.scss */
   .login form .field.disabled label::after,
   .register form .field.disabled label::after,
@@ -17950,7 +18132,7 @@ a.fade-cover {
             letter-spacing: 0 !important; }
             /* line 101, /openedx/edx-platform/lms/static/sass/multicourse/_course_about.scss */
             .course-info header.course-profile .intro-inner-wrapper .intro > .heading-group h1 .button-org:hover, .course-info header.course-profile .intro-inner-wrapper .intro > .heading-group h1 .button-org:focus {
-              color: #0075b4; }
+              color: #1b6d99; }
         /* line 108, /openedx/edx-platform/lms/static/sass/multicourse/_course_about.scss */
         .course-info header.course-profile .intro-inner-wrapper .intro > .heading-group h2, .course-info header.course-profile .intro-inner-wrapper .intro > .heading-group .home > header .title > .heading-group p, .home > header .title > .heading-group .course-info header.course-profile .intro-inner-wrapper .intro > .heading-group p, .course-info header.course-profile .intro-inner-wrapper .intro > .heading-group section.outside-app h1, section.outside-app .course-info header.course-profile .intro-inner-wrapper .intro > .heading-group h1 {
           display: inline-block;
@@ -17964,7 +18146,7 @@ a.fade-cover {
             text-transform: none; }
             /* line 119, /openedx/edx-platform/lms/static/sass/multicourse/_course_about.scss */
             .course-info header.course-profile .intro-inner-wrapper .intro > .heading-group h2 a:hover, .course-info header.course-profile .intro-inner-wrapper .intro > .heading-group .home > header .title > .heading-group p a:hover, .home > header .title > .heading-group .course-info header.course-profile .intro-inner-wrapper .intro > .heading-group p a:hover, .course-info header.course-profile .intro-inner-wrapper .intro > .heading-group section.outside-app h1 a:hover, section.outside-app .course-info header.course-profile .intro-inner-wrapper .intro > .heading-group h1 a:hover, .course-info header.course-profile .intro-inner-wrapper .intro > .heading-group h2 a:focus, .course-info header.course-profile .intro-inner-wrapper .intro > .heading-group .home > header .title > .heading-group p a:focus, .home > header .title > .heading-group .course-info header.course-profile .intro-inner-wrapper .intro > .heading-group p a:focus, .course-info header.course-profile .intro-inner-wrapper .intro > .heading-group section.outside-app h1 a:focus, section.outside-app .course-info header.course-profile .intro-inner-wrapper .intro > .heading-group h1 a:focus {
-              color: #0075b4; }
+              color: #1b6d99; }
       /* line 127, /openedx/edx-platform/lms/static/sass/multicourse/_course_about.scss */
       .course-info header.course-profile .intro-inner-wrapper .intro .main-cta {
         float: left;
@@ -19361,7 +19543,7 @@ section.outside-app {
   width: 100%; }
   /* line 16, /openedx/edx-platform/lms/static/sass/views/_account-settings.scss */
   .wrapper-account-settings .account-settings-container {
-    max-width: 1180px;
+    max-width: 940px;
     padding: 10px;
     margin: 0 auto; }
   /* line 22, /openedx/edx-platform/lms/static/sass/views/_account-settings.scss */
@@ -19378,7 +19560,7 @@ section.outside-app {
 
 /* line 40, /openedx/edx-platform/lms/static/sass/views/_account-settings.scss */
 .wrapper-account-settings .wrapper-header {
-  max-width: 1180px;
+  max-width: 940px;
   height: 139px;
   border-bottom: 4px solid whitesmoke; }
   /* line 45, /openedx/edx-platform/lms/static/sass/views/_account-settings.scss */
@@ -20949,7 +21131,7 @@ body.open-modal {
     background: #f2f8fb; }
     /* line 356, /openedx/edx-platform/lms/static/sass/views/_verification.scss */
     .verification-process .wrapper-msg .msg {
-      max-width: 1180px;
+      max-width: 940px;
       min-width: 760px;
       width: 100%;
       margin: 0 auto; }
@@ -23935,7 +24117,7 @@ body.open-modal {
           margin: 5px 0 35px 0;
           padding: 0 15px;
           height: 72px;
-          color: #0075b4; }
+          color: #1b6d99; }
         /* line 129, /openedx/edx-platform/lms/static/sass/views/_homepage.scss */
         .courses-container .courses .course .course-info .course-date {
           line-height: 20.72px;
@@ -24374,7 +24556,7 @@ body.open-modal {
   /* line 33, /openedx/edx-platform/lms/static/sass/views/_financial-assistance.scss */
   .financial-assistance-wrapper p {
     line-height: 1.5em;
-    margin-top: 0;
+    margin-top: 1em;
     color: #414141;
     font-size: 1em; }
   /* line 40, /openedx/edx-platform/lms/static/sass/views/_financial-assistance.scss */
@@ -24864,17 +25046,17 @@ body.open-modal {
     border-radius: 60px;
     border: 2px dashed transparent;
     background: rgba(229, 241, 247, 0.8);
-    color: #0075b4;
+    color: #1b6d99;
     text-shadow: none;
     transition: all 0.5s ease-in-out 0s;
     z-index: 6; }
     /* line 185, /openedx/edx-platform/lms/static/sass/features/_learner-profile.scss */
     .view-profile .profile-image-field .image-wrapper .u-field-upload-button i {
-      color: #0075b4; }
+      color: #1b6d99; }
     /* line 189, /openedx/edx-platform/lms/static/sass/features/_learner-profile.scss */
     .view-profile .profile-image-field .image-wrapper .u-field-upload-button:focus, .view-profile .profile-image-field .image-wrapper .u-field-upload-button:hover {
       opacity: 1;
-      border-color: #0075b4; }
+      border-color: #1b6d99; }
     /* line 196, /openedx/edx-platform/lms/static/sass/features/_learner-profile.scss */
     .view-profile .profile-image-field .image-wrapper .u-field-upload-button.in-progress {
       opacity: 1; }
@@ -25081,7 +25263,7 @@ body.open-modal {
         /* line 467, /openedx/edx-platform/lms/static/sass/features/_learner-profile.scss */
         .view-profile .wrapper-profile-section-container-one .wrapper-profile-section-one .profile-section-one-fields .u-field:not(.u-field-readonly):not(:last-child):hover.mode-placeholder {
           padding-bottom: 4px;
-          border-bottom: 2px dashed #0075b4; }
+          border-bottom: 2px dashed #1b6d99; }
     /* line 476, /openedx/edx-platform/lms/static/sass/features/_learner-profile.scss */
     .view-profile .wrapper-profile-section-container-one .wrapper-profile-section-one .profile-section-one-fields > .u-field:not(:first-child) {
       font-size: 0.875em;
@@ -25190,11 +25372,11 @@ body.open-modal {
       color: #313131; }
     /* line 621, /openedx/edx-platform/lms/static/sass/features/_learner-profile.scss */
     .view-profile .wrapper-profile-section-container-two .u-field.mode-placeholder:hover {
-      border: 2px dashed #0075b4; }
+      border: 2px dashed #1b6d99; }
       /* line 624, /openedx/edx-platform/lms/static/sass/features/_learner-profile.scss */
       .view-profile .wrapper-profile-section-container-two .u-field.mode-placeholder:hover .u-field-title,
       .view-profile .wrapper-profile-section-container-two .u-field.mode-placeholder:hover i {
-        color: #0075b4; }
+        color: #1b6d99; }
   /* line 631, /openedx/edx-platform/lms/static/sass/features/_learner-profile.scss */
   .view-profile .wrapper-profile-section-container-two .wrapper-u-field {
     font-size: 0.875em;
@@ -25595,7 +25777,7 @@ body.view-in-mfe .course-expiration-message {
   /* line 135, /openedx/edx-platform/lms/static/sass/search/_search.scss */
   .search-results .search-load-next {
     display: block;
-    border: 2px solid #0075b4;
+    border: 2px solid #1b6d99;
     padding: 1rem;
     border-radius: 3px;
     color: #313131; }
@@ -25967,7 +26149,7 @@ a.disabled:visited:not(.btn), .is-disabled {
   padding: 20px 30px; }
   /* line 13, /openedx/edx-platform/lms/static/sass/elements/_system-feedback.scss */
   .wrapper-msg .msg {
-    max-width: 1180px;
+    max-width: 940px;
     min-width: 320px;
     width: 100%;
     margin: 0 auto; }
@@ -26807,7 +26989,7 @@ a.disabled:visited:not(.btn), .is-disabled {
   box-sizing: border-box;
   margin: 0 auto;
   width: 100%;
-  max-width: 1400px; }
+  max-width: 1280px; }
   /* line 15, /openedx/edx-platform/common/static/sass/bourbon/addons/_clearfix.scss */
   .notification:after {
     content: "";
@@ -26963,7 +27145,7 @@ a.disabled:visited:not(.btn), .is-disabled {
   box-sizing: border-box;
   margin: 0 auto;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1280px;
   color: white; }
   /* line 15, /openedx/edx-platform/common/static/sass/bourbon/addons/_clearfix.scss */
   .alert:not(.pattern-library-shim):after {
@@ -27678,7 +27860,7 @@ body.error {
 
 /* line 101, /openedx/edx-platform/lms/static/sass/_developer.scss */
 .view-teams .wrapper-msg {
-  max-width: 1180px;
+  max-width: 940px;
   margin: 0 auto;
   border-top: 3px solid #fd7e14; }
   /* line 15, /openedx/edx-platform/common/static/sass/bourbon/addons/_clearfix.scss */

@@ -1,6 +1,8 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
 /* line 3, /openedx/edx-platform/node_modules/bootstrap/scss/utilities/_align.scss */
 .align-baseline {
   vertical-align: baseline !important; }
@@ -3045,6 +3047,92 @@ a.text-darkest:hover, a.text-darkest:focus {
   padding: 0.5rem 0.75rem;
   color: #313131; }
 
+/*
+ * In pursuit of decoupling the built-in XBlocks from edx-platform's Sass build
+ * and ensuring comprehensive theming support in the extracted XBlocks,
+ * we need to expose Sass variables as CSS variables.
+ *
+ * Ticket/Issue: https://github.com/openedx/edx-platform/issues/35173
+ */
+/* stylelint-disable-line */
+/* stylelint-disable-line */
+/* line 126, /openedx/edx-platform/common/static/sass/edx-pattern-library-shims/base/_variables.scss */
+.btn-default:disabled, .btn-primary:disabled, .btn-brand:disabled, .btn-upgrade:disabled, .is-disabled.btn-default, .is-disabled.btn-primary, .is-disabled.btn-brand, .is-disabled.btn-upgrade {
+  pointer-events: none;
+  outline: none;
+  cursor: not-allowed; }
+
+/* line 227, /openedx/edx-platform/common/static/sass/edx-pattern-library-shims/base/_variables.scss */
+.btn-small.btn-default, .btn-small.btn-primary, .btn-small.btn-brand, .btn-small.btn-upgrade {
+  padding: 0.625rem;
+  font-size: 14px; }
+
+/* line 17, common/static/sass/_builtin-block-variables.scss */
+:root {
+  --action-primary-active-bg: #0075b4;
+  --base-font-size: 18px;
+  --base-line-height: 1.5em;
+  --baseline: 20px;
+  --black: #000;
+  --black-t2: rgba(0, 0, 0, 0.5);
+  --blue: #0075b4;
+  --blue-d1: #005e90;
+  --blue-d2: #00466c;
+  --blue-d4: #001724;
+  --blue-s1: #0075b4;
+  --body-color: #313131;
+  --border-color: #e7e7e7;
+  --bp-screen-lg: 1024px;
+  --btn-brand-focus-background: #065683;
+  --correct: #008100;
+  --danger: #b20610;
+  --darkGrey: #8891a1;
+  --error-color: #cb0712;
+  --error-color-dark: #95050d;
+  --error-color-light: #f95861;
+  --font-bold: 700;
+  --font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --general-color-accent: #0075b4;
+  --gray: #767676;
+  --gray-300: #d9d9d9;
+  --gray-d1: #5e5e5e;
+  --gray-l2: #adadad;
+  --gray-l3: #c8c8c8;
+  --gray-l4: #e4e4e4;
+  --gray-l6: #f8f8f8;
+  --icon-correct: url("../images/correct-icon.png");
+  --icon-incorrect: url("../images/incorrect-icon.png");
+  --icon-info: url("../images/info-icon.png");
+  --icon-partially-correct: url("../images/partially-correct-icon.png");
+  --icon-spinner: url("../images/spinner.gif");
+  --icon-unanswered: url("../images/unanswered-icon.png");
+  --incorrect: #b20610;
+  --lightGrey: #edf1f5;
+  --lighter-base-font-color: #646464;
+  --link-color: #1b6d99;
+  --medium-font-size: 0.9em;
+  --partially-correct: #008100;
+  --primary: #0075b4;
+  --shadow: rgba(0, 0, 0, 0.2);
+  --shadow-l1: rgba(0, 0, 0, 0.1);
+  --sidebar-color: #f6f6f6;
+  --small-font-size: 80%;
+  --static-path: "..";
+  --submitted: #0075b4;
+  --success: #008100;
+  --tmg-f2: 0.25s;
+  --tmg-s2: 2s;
+  --transparent: transparent;
+  --uxpl-gray-background: #d9d9d9;
+  --uxpl-gray-base: #414141;
+  --uxpl-gray-dark: #111111;
+  --very-light-text: white;
+  --warning: #e2c01f;
+  --warning-color: #ffc01f;
+  --warning-color-accent: #fffcdd;
+  --white: #fff;
+  --yellow: #e2c01f; }
+
 /* stylelint-disable-line */
 /* stylelint-disable-line */
 /* HTML5 Boilerplate  */
@@ -3100,7 +3188,7 @@ body {
 
 /* line 47, lms/static/sass/base/_reset.scss */
 a:not(.btn) {
-  color: #0075b4; }
+  color: #1b6d99; }
 
 /* line 51, lms/static/sass/base/_reset.scss */
 a:visited:not(.btn) {
@@ -3198,7 +3286,7 @@ sub {
 /* line 128, lms/static/sass/base/_reset.scss */
 ul,
 ol {
-  padding: 0 40px 0 0;
+  padding: 0 0 0 40px;
   margin: 1em 0; }
 
 /* line 135, lms/static/sass/base/_reset.scss */
@@ -3549,7 +3637,7 @@ div.gradebook-wrapper section.gradebook-content .grades .right-shadow {
 .btn-link, .view-student-notes .note-group .note .wrapper-note-excerpts .note-excerpt-more-link, .view-student-notes .note-group .note .reference .wrapper-reference-content a.reference-meta, .edx-notes-wrapper .annotator-adder button::after, .edx-notes-wrapper .annotator-viewer .annotator-controls .annotator-edit::before,
 .edx-notes-wrapper .annotator-viewer .annotator-controls .annotator-delete::before,
 .edx-notes-wrapper .annotator-viewer .annotator-controls .annotator-close::before, .edx-notes-wrapper .annotator-wrapper .annotator-editor.annotator-outer button.annotator-cancel, .view-student-notes .wrapper-tabs .tab-list .tab .tab-label, .view-student-notes .wrapper-tabs .tab-list .tab .action-close {
-  color: #0075b4; }
+  color: #1b6d99; }
   /* line 211, lms/static/sass/base/_mixins.scss */
   .btn-link:hover, .view-student-notes .note-group .note .wrapper-note-excerpts .note-excerpt-more-link:hover, .view-student-notes .note-group .note .reference .wrapper-reference-content a.reference-meta:hover, .edx-notes-wrapper .annotator-adder button:hover::after, .edx-notes-wrapper .annotator-viewer .annotator-controls .annotator-edit:hover::before,
   .edx-notes-wrapper .annotator-viewer .annotator-controls .annotator-delete:hover::before,
@@ -3579,7 +3667,7 @@ div.gradebook-wrapper section.gradebook-content .grades .right-shadow {
   line-height: line-height(small); }
   /* line 10, common/static/sass/edx-pattern-library-shims/_breadcrumbs.scss */
   .breadcrumbs .nav-item {
-    margin-right: 5px;
+    margin-left: 5px;
     display: inline-block; }
     @media (max-width: 1199.98px) {
       /* line 10, common/static/sass/edx-pattern-library-shims/_breadcrumbs.scss */
@@ -3608,10 +3696,9 @@ div.gradebook-wrapper section.gradebook-content .grades .right-shadow {
       color: #065683; }
   /* line 46, common/static/sass/edx-pattern-library-shims/_breadcrumbs.scss */
   .breadcrumbs .fa-angle-right {
-    margin-right: 5px;
+    margin-left: 5px;
     display: inline-block;
-    color: #313131;
-    transform: rotateY(180deg); }
+    color: #313131; }
     @media (max-width: 767.98px) {
       /* line 46, common/static/sass/edx-pattern-library-shims/_breadcrumbs.scss */
       .breadcrumbs .fa-angle-right {
@@ -3649,7 +3736,7 @@ div.gradebook-wrapper section.gradebook-content .grades .right-shadow {
     .sr-only + .btn-primary .icon,
     .sr-only + .btn-brand .icon,
     .sr-only + .btn-upgrade .icon {
-      margin-left: 0; }
+      margin-right: 0; }
 
 /* line 55, common/static/sass/edx-pattern-library-shims/_buttons.scss */
 .btn-default {
@@ -3856,7 +3943,7 @@ ol + p {
 /* line 92, /openedx/edx-platform/lms/static/sass/base/_base.scss */
 p a:not(.btn),
 p a:visited:not(.btn) {
-  color: #0075b4;
+  color: #1b6d99;
   font: inherit;
   font-weight: inherit;
   text-decoration: none;
@@ -3871,7 +3958,7 @@ p a:visited:not(.btn) {
 /* line 109, /openedx/edx-platform/lms/static/sass/base/_base.scss */
 a:not(.btn),
 a:visited:not(.btn) {
-  color: #0075b4;
+  color: #1b6d99;
   font: inherit;
   text-decoration: none;
   transition: all 0.1s linear 0s; }
@@ -3916,7 +4003,7 @@ a:visited:not(.btn) {
     .container {
       margin: 0 auto;
       padding: 40px 0;
-      max-width: 1180px;
+      max-width: 940px;
       min-width: 760px;
       width: 100%; } }
 
@@ -3943,7 +4030,7 @@ span.edx {
   /* line 178, /openedx/edx-platform/lms/static/sass/base/_base.scss */
   .static-container .inner-wrapper {
     margin: 0 auto;
-    width: 83.05085%; }
+    width: 82.97872%; }
   /* line 183, /openedx/edx-platform/lms/static/sass/base/_base.scss */
   .static-container ol,
   .static-container ul {
@@ -4018,8 +4105,8 @@ mark {
   .nav-skip:focus, .nav-skip:active,
   .transcript-skip:focus,
   .transcript-skip:active {
-    right: 45%;
-    margin-right: -30px;
+    left: 45%;
+    margin-left: -30px;
     position: absolute;
     top: 5px;
     width: 10%;
@@ -4036,7 +4123,7 @@ mark {
       .nav-skip:focus, .nav-skip:active,
       .transcript-skip:focus,
       .transcript-skip:active {
-        right: 40%;
+        left: 40%;
         width: 20%; } }
 
 /*
@@ -4558,7 +4645,7 @@ mark {
   @media (min-width: 768px) {
     /* line 117, /openedx/edx-platform/lms/static/sass/shared/_alerts_pattern_library_shim.scss */
     .pattern-library-shim .alert-icon {
-      float: right;
+      float: left;
       display: block;
       border-radius: 50%;
       padding: 10px; } }
@@ -4569,7 +4656,7 @@ mark {
   @media (min-width: 768px) {
     /* line 134, /openedx/edx-platform/lms/static/sass/shared/_alerts_pattern_library_shim.scss */
     .pattern-library-shim .alert-message-with-action {
-      float: right;
+      float: left;
       width: 70%;
       padding: 20px;
       padding-top: 0;
@@ -4584,7 +4671,7 @@ mark {
   @media (min-width: 768px) {
     /* line 139, /openedx/edx-platform/lms/static/sass/shared/_alerts_pattern_library_shim.scss */
     .pattern-library-shim .alert-message {
-      float: right;
+      float: left;
       width: 90%;
       padding: 20px;
       padding-top: 0;
@@ -4609,7 +4696,7 @@ mark {
   @media (min-width: 768px) {
     /* line 166, /openedx/edx-platform/lms/static/sass/shared/_alerts_pattern_library_shim.scss */
     .pattern-library-shim .alert-action {
-      float: left;
+      float: right;
       width: inherit; } }
 
 /* line 181, /openedx/edx-platform/lms/static/sass/shared/_alerts_pattern_library_shim.scss */
@@ -5081,7 +5168,7 @@ mark {
   .btn-secondary:focus, .btn-secondary:hover {
     background-image: none !important;
     background-color: transparent !important;
-    color: #0075b4; }
+    color: #1b6d99; }
 
 /* line 519, /openedx/edx-platform/lms/static/sass/elements/_controls.scss */
 .btn-link {
@@ -5102,7 +5189,7 @@ mark {
 /* line 5, /openedx/edx-platform/lms/static/sass/elements/_pagination.scss */
 .pagination {
   display: inline-block;
-  width: 23.72881%; }
+  width: 23.40426%; }
   /* line 15, /openedx/edx-platform/common/static/sass/bourbon/addons/_clearfix.scss */
   .pagination:after {
     content: "";
@@ -5110,11 +5197,11 @@ mark {
     clear: both; }
   /* line 11, /openedx/edx-platform/lms/static/sass/elements/_pagination.scss */
   .pagination.pagination-compact {
-    text-align: left; }
+    text-align: right; }
   /* line 15, /openedx/edx-platform/lms/static/sass/elements/_pagination.scss */
   .pagination.pagination-full {
     display: block;
-    width: 32.20339%;
+    width: 31.91489%;
     margin: 20px auto; }
   /* line 21, /openedx/edx-platform/lms/static/sass/elements/_pagination.scss */
   .pagination .nav-item {
@@ -5165,7 +5252,7 @@ mark {
   /* line 83, /openedx/edx-platform/lms/static/sass/elements/_pagination.scss */
   .pagination .current-page {
     position: absolute;
-    right: -5px; }
+    left: -5px; }
   /* line 91, /openedx/edx-platform/lms/static/sass/elements/_pagination.scss */
   .pagination .page-divider {
     vertical-align: middle;
@@ -5217,7 +5304,7 @@ mark {
   .nav-utilities .wrapper-utility {
     display: inline-block;
     vertical-align: bottom;
-    margin-left: 6px; }
+    margin-right: 6px; }
   /* line 48, /openedx/edx-platform/lms/static/sass/elements/_navigation.scss */
   .nav-utilities .utility-control {
     transition: background-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s;
@@ -5254,7 +5341,7 @@ mark {
   .nav-utilities .action-toggle-message {
     position: absolute;
     bottom: 0;
-    left: 50px;
+    right: 50px;
     display: inline-block;
     min-width: 100px;
     padding: 10px 15px;
@@ -5267,7 +5354,7 @@ mark {
       animation: pulse-out 2s ease-in-out; }
   /* line 127, /openedx/edx-platform/lms/static/sass/elements/_navigation.scss */
   .nav-utilities.has-utility-calculator {
-    left: 55px; }
+    right: 55px; }
 
 /* line 132, /openedx/edx-platform/lms/static/sass/elements/_navigation.scss */
 .view-teams .page-content-nav .nav-item, .view-teams .page-header-search .action-search, .view-teams .page-header-search .action-clear, .view-teams .action-cancel {
@@ -5290,12 +5377,12 @@ mark {
     color: #474747; }
     /* line 153, /openedx/edx-platform/lms/static/sass/elements/_navigation.scss */
     .view-teams .page-content-nav .nav-item.is-active {
-      border-bottom: 4px solid #0075b4;
+      border-bottom: 4px solid #1b6d99;
       color: #474747; }
     /* line 159, /openedx/edx-platform/lms/static/sass/elements/_navigation.scss */
     .view-teams .page-content-nav .nav-item:hover, .view-teams .page-content-nav .nav-item:focus {
-      border-bottom: 4px solid #0075b4;
-      color: #0075b4; }
+      border-bottom: 4px solid #1b6d99;
+      color: #1b6d99; }
 
 /* line 171, /openedx/edx-platform/lms/static/sass/elements/_navigation.scss */
 .page-content-main .tabs .tabpanel {
@@ -5321,12 +5408,12 @@ mark {
       white-space: nowrap; } }
   /* line 23, /openedx/edx-platform/lms/static/sass/course/layout/_courseware_header.scss */
   .wrapper-course-material .course-tabs {
-    -webkit-border-top-right-radius: 4px;
-    -moz-border-topright-radius: 4px;
-    border-top-right-radius: 4px;
     -webkit-border-top-left-radius: 4px;
     -moz-border-topleft-radius: 4px;
     border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-topright-radius: 4px;
+    border-top-right-radius: 4px;
     padding: 15px 0 15px 0; }
     /* line 15, /openedx/edx-platform/common/static/sass/bourbon/addons/_clearfix.scss */
     .wrapper-course-material .course-tabs:after {
@@ -5339,13 +5426,13 @@ mark {
       list-style: none; }
       /* line 33, /openedx/edx-platform/lms/static/sass/course/layout/_courseware_header.scss */
       .wrapper-course-material .course-tabs .tab.prominent {
-        margin-left: 16px;
+        margin-right: 16px;
         background: rgba(255, 255, 255, 0.5);
         border-radius: 3px; }
       /* line 40, /openedx/edx-platform/lms/static/sass/course/layout/_courseware_header.scss */
       .wrapper-course-material .course-tabs .tab.prominent + li {
-        padding-right: 15px;
-        border-right: 1px solid #2f2f2f; }
+        padding-left: 15px;
+        border-left: 1px solid #2f2f2f; }
       /* line 45, /openedx/edx-platform/lms/static/sass/course/layout/_courseware_header.scss */
       .wrapper-course-material .course-tabs .tab a,
       .wrapper-course-material .course-tabs .tab a:visited {
@@ -5387,14 +5474,14 @@ mark {
     padding: 0; }
   /* line 94, /openedx/edx-platform/lms/static/sass/course/layout/_courseware_header.scss */
   .header-global.slim .guest .secondary {
-    margin-left: 0; }
+    margin-right: 0; }
   /* line 98, /openedx/edx-platform/lms/static/sass/course/layout/_courseware_header.scss */
   .header-global.slim .guest .secondary a {
     display: none; }
     /* line 101, /openedx/edx-platform/lms/static/sass/course/layout/_courseware_header.scss */
     .header-global.slim .guest .secondary a#login {
-      background-image: -webkit-linear-gradient(-90deg, #0090dd, #0086ce 50%, #0075b4 50%, #005481 100%);
-      background-image: linear-gradient(-90deg, #0090dd, #0086ce 50%, #0075b4 50%, #005481 100%);
+      background-image: -webkit-linear-gradient(-90deg, #2186bc, #1f7caf 50%, #1b6d99 50%, #134e6e 100%);
+      background-image: linear-gradient(-90deg, #2186bc, #1f7caf 50%, #1b6d99 50%, #134e6e 100%);
       border: 1px solid transparent;
       border-color: #0075b4;
       border-radius: 3px;
@@ -5433,7 +5520,7 @@ mark {
     display: none; }
   /* line 149, /openedx/edx-platform/lms/static/sass/course/layout/_courseware_header.scss */
   .header-global.slim .course-header {
-    float: right;
+    float: left;
     margin: 10px 10px 0 10px;
     display: inline-block;
     width: 65%;
@@ -5481,7 +5568,7 @@ mark {
       margin: 5px 0 5px 5px; }
   /* line 25, /openedx/edx-platform/lms/static/sass/course/layout/_courseware_preview.scss */
   .wrapper-preview-menu .preview-actions {
-    padding-right: 0;
+    padding-left: 0;
     display: inline-block;
     margin-bottom: 0; }
     /* line 31, /openedx/edx-platform/lms/static/sass/course/layout/_courseware_preview.scss */
@@ -5489,14 +5576,14 @@ mark {
       display: inline-block; }
       /* line 34, /openedx/edx-platform/lms/static/sass/course/layout/_courseware_preview.scss */
       .wrapper-preview-menu .preview-actions .action-preview .action-preview-label {
-        margin-left: 10px;
+        margin-right: 10px;
         display: inline-block;
         margin-bottom: 0;
         vertical-align: middle;
         color: #fff; }
       /* line 43, /openedx/edx-platform/lms/static/sass/course/layout/_courseware_preview.scss */
       .wrapper-preview-menu .preview-actions .action-preview .action-preview-select {
-        margin-left: 20px; }
+        margin-right: 20px; }
       /* line 47, /openedx/edx-platform/lms/static/sass/course/layout/_courseware_preview.scss */
       .wrapper-preview-menu .preview-actions .action-preview .action-preview-username-container {
         display: none; }
@@ -5725,7 +5812,7 @@ h5,
 h6,
 p,
 label {
-  text-align: right;
+  text-align: left;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 /* line 59, /openedx/edx-platform/lms/static/sass/course/base/_base.scss */
@@ -5760,7 +5847,7 @@ form label {
 /* line 96, /openedx/edx-platform/lms/static/sass/course/base/_base.scss */
 form.choicegroup label {
   clear: both;
-  float: right; }
+  float: left; }
 
 /* line 104, /openedx/edx-platform/lms/static/sass/course/base/_base.scss */
 textarea, form#wiki_revision .CodeMirror,
@@ -5788,7 +5875,7 @@ input[type="password"] {
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="password"]:focus {
-    border-color: #1bafff;
+    border-color: #3da5dd;
     box-shadow: 0 0 6px 0 rgba(0, 117, 180, 0.4), inset 0 0 4px 0 rgba(0, 0, 0, 0.15); }
 
 /* line 129, /openedx/edx-platform/lms/static/sass/course/base/_base.scss */
@@ -5911,7 +5998,7 @@ img {
 h1.top-header, .course-wrapper .course-content .vert-mod > div header,
 .course-wrapper .courseware-results-wrapper .vert-mod > div header, div.syllabus h1, .profile-wrapper .course-info header, div.static_tab_wrapper h1, div.gradebook-wrapper section.gradebook-content h1, .instructor-dashboard-content-2 h1.instructor-dashboard-title {
   border-bottom: 1px solid #c8c8c8;
-  text-align: right;
+  text-align: left;
   font-size: 1.5em;
   font-weight: 100;
   padding-bottom: 1.41575em; }
@@ -6145,7 +6232,7 @@ form .button {
   display: table-cell;
   padding: 2em 2.5em;
   vertical-align: top;
-  width: 76.27119%; }
+  width: 76.59574%; }
   @media print {
     /* line 58, /openedx/edx-platform/lms/static/sass/course/base/_extends.scss */
     .content, .course-wrapper .course-content,
@@ -6160,7 +6247,7 @@ form .button {
   font-size: 14px;
   position: relative;
   vertical-align: top;
-  width: 23.72881%;
+  width: 23.40426%;
   background: #f6f6f6; }
   /* line 80, /openedx/edx-platform/lms/static/sass/course/base/_extends.scss */
   .sidebar h1, div#wiki_panel h1, div.book-wrapper section.book-sidebar h1, .profile-wrapper .user-info h1,
@@ -6205,7 +6292,7 @@ form .button {
     /* line 127, /openedx/edx-platform/lms/static/sass/course/base/_extends.scss */
     .sidebar ul li, div#wiki_panel ul li, div.book-wrapper section.book-sidebar ul li, .profile-wrapper .user-info ul li,
     .sidebar ol li, div#wiki_panel ol li, div.book-wrapper section.book-sidebar ol li, .profile-wrapper .user-info ol li {
-      margin-right: 20px;
+      margin-left: 20px;
       background: none;
       position: relative;
       padding: 0; }
@@ -6267,15 +6354,15 @@ form .button {
 
 /* line 206, /openedx/edx-platform/lms/static/sass/course/base/_extends.scss */
 .fa-chevron-next::before {
-  content: "\f053"; }
+  content: "\f054"; }
 
 /* line 219, /openedx/edx-platform/lms/static/sass/course/base/_extends.scss */
 .fa-chevron-prev::before {
-  content: "\f054"; }
+  content: "\f053"; }
 
 /* line 231, /openedx/edx-platform/lms/static/sass/course/base/_extends.scss */
 .fa-arrow-circle-prev::before {
-  content: "\f0a9"; }
+  content: "\f0a8"; }
 
 /* line 5, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
 html {
@@ -6303,9 +6390,9 @@ html.video-fullscreen {
     display: inline; }
   /* line 33, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
   .wrap-instructor-info .instructor-info-action {
-    float: left;
-    margin-right: 10px;
-    text-align: left;
+    float: right;
+    margin-left: 10px;
+    text-align: right;
     padding: 5px 10px;
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -6318,16 +6405,16 @@ html.video-fullscreen {
 
 /* line 56, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
 .content-wrapper .container-footer {
-  text-align: left;
+  text-align: right;
   margin: 0 auto;
-  max-width: 1180px;
+  max-width: 940px;
   min-width: 760px;
   color: #767676; }
 
 /* line 67, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
 .content-wrapper .course-license,
 .content-wrapper .xblock-license {
-  text-align: left;
+  text-align: right;
   display: block;
   width: auto;
   padding: 5px 0;
@@ -6463,7 +6550,7 @@ html.video-fullscreen {
         color: #0075b4;
         border: none;
         box-shadow: none;
-        text-align: right;
+        text-align: left;
         width: 100%; }
         /* line 201, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
         .course-wrapper .course-content div.timed-exam button.gated-sequence:hover, .course-wrapper .course-content div.proctored-exam button.gated-sequence:hover,
@@ -6511,7 +6598,7 @@ html.video-fullscreen {
       .course-wrapper .course-content div.timed-exam .exam-action-button, .course-wrapper .course-content div.proctored-exam .exam-action-button,
       .course-wrapper .courseware-results-wrapper div.timed-exam .exam-action-button,
       .course-wrapper .courseware-results-wrapper div.proctored-exam .exam-action-button {
-        margin-left: 20px;
+        margin-right: 20px;
         background-image: none;
         box-shadow: none;
         text-shadow: none; }
@@ -6573,7 +6660,7 @@ html.video-fullscreen {
       .course-wrapper .course-content div.timed-exam.warning, .course-wrapper .course-content div.warning.proctored-exam,
       .course-wrapper .courseware-results-wrapper div.timed-exam.warning,
       .course-wrapper .courseware-results-wrapper div.warning.proctored-exam {
-        border-right: 4px solid #ffc01f;
+        border-left: 4px solid #ffc01f;
         margin: 0 auto; }
     /* line 310, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
     .course-wrapper .course-content div.proctored-exam .proctored-exam-message,
@@ -6634,7 +6721,7 @@ html.video-fullscreen {
       /* line 372, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
       .course-wrapper .course-content div.proctored-exam .gated-sequence .icon,
       .course-wrapper .courseware-results-wrapper div.proctored-exam .gated-sequence .icon {
-        left: 35px;
+        right: 35px;
         position: absolute;
         font-size: 30px;
         color: #414141; }
@@ -6655,7 +6742,7 @@ html.video-fullscreen {
       /* line 404, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
       .course-wrapper .course-content .proctored-exam-skip-confirm-wrapper .proctored-exam-skip-actions,
       .course-wrapper .courseware-results-wrapper .proctored-exam-skip-confirm-wrapper .proctored-exam-skip-actions {
-        float: left;
+        float: right;
         margin-top: 20px; }
     /* line 411, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
     .course-wrapper .course-content .footer-sequence, .course-wrapper .course-content .faq-proctoring-exam,
@@ -6752,8 +6839,8 @@ html.video-fullscreen {
       .course-wrapper .course-content .footer-sequence a.contest-review, .course-wrapper .course-content .faq-proctoring-exam a.contest-review,
       .course-wrapper .courseware-results-wrapper .footer-sequence a.contest-review,
       .course-wrapper .courseware-results-wrapper .faq-proctoring-exam a.contest-review {
-        float: left;
-        text-align: left;
+        float: right;
+        text-align: right;
         font-size: 12px;
         margin: 0;
         width: 20%; }
@@ -6821,12 +6908,6 @@ html.video-fullscreen {
       margin-bottom: 1.41575em;
       padding-bottom: 0;
       border-bottom: none; }
-    /* line 520, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
-    .course-wrapper .course-content div#seq_content code::before,
-    .course-wrapper .course-content div#seq_content code::after,
-    .course-wrapper .courseware-results-wrapper div#seq_content code::before,
-    .course-wrapper .courseware-results-wrapper div#seq_content code::after {
-      content: "\200E‎"; }
     /* line 526, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
     .course-wrapper .course-content .vert-due-date,
     .course-wrapper .courseware-results-wrapper .vert-due-date {
@@ -6885,8 +6966,8 @@ html.video-fullscreen {
         /* line 584, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
         .course-wrapper .course-content .vert-mod > div header h2,
         .course-wrapper .courseware-results-wrapper .vert-mod > div header h2 {
-          border-left: 0;
-          padding-left: 0;
+          border-right: 0;
+          padding-right: 0;
           margin: 12px 0 0;
           font-size: 0.58333em; }
       /* line 593, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
@@ -6903,12 +6984,12 @@ html.video-fullscreen {
       /* line 604, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
       .course-wrapper .course-content .vert-mod > div ul,
       .course-wrapper .courseware-results-wrapper .vert-mod > div ul {
-        padding-right: 1em;
+        padding-left: 1em;
         list-style: disc outside none; }
         /* line 609, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
         .course-wrapper .course-content .vert-mod > div ul.discussion-errors,
         .course-wrapper .courseware-results-wrapper .vert-mod > div ul.discussion-errors {
-          padding-right: 2em;
+          padding-left: 2em;
           list-style: none; }
         /* line 615, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
         .course-wrapper .course-content .vert-mod > div ul.admin-actions,
@@ -6917,7 +6998,7 @@ html.video-fullscreen {
       /* line 620, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
       .course-wrapper .course-content .vert-mod > div nav.sequence-nav ul li.prev,
       .course-wrapper .courseware-results-wrapper .vert-mod > div nav.sequence-nav ul li.prev {
-        right: 4px; }
+        left: 4px; }
       /* line 625, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
       .course-wrapper .course-content .vert-mod > div nav.sequence-bottom ul,
       .course-wrapper .courseware-results-wrapper .vert-mod > div nav.sequence-bottom ul {
@@ -6977,15 +7058,15 @@ html.video-fullscreen {
       /* line 683, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
       .course-wrapper .course-content section.tutorials ul li,
       .course-wrapper .courseware-results-wrapper section.tutorials ul li {
-        float: right;
-        margin-left: 2.27273%;
-        width: 31.81818%;
+        float: left;
+        margin-right: 2.85714%;
+        width: 31.42857%;
         margin-bottom: 1.41575em;
         line-height: 1.41575em; }
         /* line 691, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
         .course-wrapper .course-content section.tutorials ul li:nth-child(3n),
         .course-wrapper .courseware-results-wrapper section.tutorials ul li:nth-child(3n) {
-          margin-left: 0; }
+          margin-right: 0; }
         /* line 695, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
         .course-wrapper .course-content section.tutorials ul li:nth-child(3n+1),
         .course-wrapper .courseware-results-wrapper section.tutorials ul li:nth-child(3n+1) {
@@ -7058,7 +7139,7 @@ html.video-fullscreen {
         background: transparent !important; } }
   /* line 768, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
   .course-wrapper.closed div.course-index {
-    width: 3.38983%;
+    width: 2.97872%;
     overflow: hidden; }
     /* line 773, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
     .course-wrapper.closed div.course-index header#open_close_accordion a {
@@ -7074,7 +7155,7 @@ html.video-fullscreen {
         overflow: hidden; }
   /* line 790, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
   .course-wrapper.closed section.course-content {
-    width: 97.45763%; }
+    width: 97.87234%; }
   @media print {
     /* line 111, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
     .course-wrapper {
@@ -7121,19 +7202,19 @@ section.self-assessment .error {
 /* line 3, /openedx/edx-platform/lms/static/sass/course/courseware/_sidebar.scss */
 .course-index {
   transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s;
-  border-left: 1px solid #c8c8c8;
-  -webkit-border-top-right-radius: 3px;
-  -moz-border-topright-radius: 3px;
-  border-top-right-radius: 3px;
-  -webkit-border-top-left-radius: 0;
-  -moz-border-topleft-radius: 0;
-  border-top-left-radius: 0;
-  -webkit-border-bottom-left-radius: 0;
-  -moz-border-bottomleft-radius: 0;
-  border-bottom-left-radius: 0;
-  -webkit-border-bottom-right-radius: 3px;
-  -moz-border-bottomright-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-right: 1px solid #c8c8c8;
+  -webkit-border-top-left-radius: 3px;
+  -moz-border-topleft-radius: 3px;
+  border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 0;
+  -moz-border-topright-radius: 0;
+  border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-bottomright-radius: 0;
+  border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-bottomleft-radius: 3px;
+  border-bottom-left-radius: 3px;
   display: table-cell; }
   /* line 11, /openedx/edx-platform/lms/static/sass/course/courseware/_sidebar.scss */
   .course-index .sr,
@@ -7155,18 +7236,18 @@ section.self-assessment .error {
     padding: 0;
     box-shadow: 0 1px 0 #fff inset, 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
     background-color: #f6f6f6;
-    color: #0075b4;
+    color: #1b6d99;
     -webkit-font-smoothing: subpixel-antialiased; }
     /* line 45, /openedx/edx-platform/lms/static/sass/course/courseware/_sidebar.scss */
     .course-index .accordion .course-navigation .button-chapter .group-heading {
       position: relative;
       display: block;
       padding: 15px 20px 15px 40px;
-      text-align: right; }
+      text-align: left; }
       /* line 54, /openedx/edx-platform/lms/static/sass/course/courseware/_sidebar.scss */
       .course-index .accordion .course-navigation .button-chapter .group-heading .icon {
         position: absolute;
-        right: 20px;
+        left: 20px;
         top: 20px;
         font-size: 0.875em;
         color: #c8c8c8; }
@@ -7235,10 +7316,10 @@ section.self-assessment .error {
               color: #5e5e5e; }
         /* line 164, /openedx/edx-platform/lms/static/sass/course/courseware/_sidebar.scss */
         .course-index .accordion .course-navigation .chapter-content-container .chapter-menu .menu-item.graded .menu-icon {
-          left: 8px;
+          right: 8px;
           position: absolute;
           bottom: 10px;
-          color: #0075b4; }
+          color: #1b6d99; }
         /* line 174, /openedx/edx-platform/lms/static/sass/course/courseware/_sidebar.scss */
         .course-index .accordion .course-navigation .chapter-content-container .chapter-menu .menu-item.active a {
           background: #e4e4e4; }
@@ -7262,7 +7343,7 @@ section.tool-wrapper {
     display: table-cell;
     padding: 1.41575em;
     vertical-align: top;
-    width: 51.13636%; }
+    width: 51.42857%; }
     /* line 21, /openedx/edx-platform/lms/static/sass/course/courseware/_amplifier.scss */
     section.tool-wrapper div#graph-container .ui-widget-content {
       background: none;
@@ -7316,7 +7397,7 @@ section.tool-wrapper {
     display: table-cell;
     padding: 1.41575em;
     vertical-align: top;
-    width: 48.86364%; }
+    width: 48.57143%; }
     /* line 89, /openedx/edx-platform/lms/static/sass/course/courseware/_amplifier.scss */
     section.tool-wrapper div#controlls-container div.graph-controls div.music-wrapper {
       border-bottom: 1px solid #021014;
@@ -7509,7 +7590,7 @@ section.tool-wrapper {
 /* line 17, /openedx/edx-platform/lms/static/sass/course/modules/_student-notes.scss */
 .edx-notes-wrapper .annotator-listing .annotator-widget::after, .edx-notes-wrapper .annotator-editor .annotator-widget::after, .edx-notes-wrapper .annotator-adder button::before {
   transform: rotate(45deg);
-  right: 12px;
+  left: 12px;
   position: absolute;
   bottom: -10px;
   display: block;
@@ -7555,8 +7636,8 @@ section.tool-wrapper {
   max-width: 300px;
   display: none;
   vertical-align: bottom;
-  margin-left: -5px;
-  border-left: 5px solid #cb0712;
+  margin-right: -5px;
+  border-right: 5px solid #cb0712;
   padding: 10px 20px;
   background: rgba(0, 0, 0, 0.75);
   text-align: center;
@@ -7611,16 +7692,16 @@ section.tool-wrapper {
     font-size: 30px;
     position: absolute;
     top: 35%;
-    right: 15%;
+    left: 15%;
     content: "\f14b"; }
   /* line 196, /openedx/edx-platform/lms/static/sass/course/modules/_student-notes.scss */
   .edx-notes-wrapper .annotator-adder button::before {
-    right: 10px;
+    left: 10px;
     background: whitesmoke; }
 
 /* line 208, /openedx/edx-platform/lms/static/sass/course/modules/_student-notes.scss */
 .edx-notes-wrapper .annotator-editor .annotator-controls {
-  text-align: right;
+  text-align: left;
   position: relative;
   padding: 8px;
   border: none !important;
@@ -7647,7 +7728,7 @@ section.tool-wrapper {
       display: none !important; }
   /* line 239, /openedx/edx-platform/lms/static/sass/course/modules/_student-notes.scss */
   .edx-notes-wrapper .annotator-editor .annotator-controls .annotator-save {
-    float: right; }
+    float: left; }
   /* line 243, /openedx/edx-platform/lms/static/sass/course/modules/_student-notes.scss */
   .edx-notes-wrapper .annotator-editor .annotator-controls .annotator-cancel {
     background-color: transparent !important; }
@@ -7668,7 +7749,7 @@ section.tool-wrapper {
   background: #ffea75; }
   /* line 276, /openedx/edx-platform/lms/static/sass/course/modules/_student-notes.scss */
   .edx-notes-wrapper .annotator-hl a {
-    color: #0075b4; }
+    color: #1b6d99; }
     /* line 280, /openedx/edx-platform/lms/static/sass/course/modules/_student-notes.scss */
     .edx-notes-wrapper .annotator-hl a:hover, .edx-notes-wrapper .annotator-hl a:focus {
       text-decoration: underline; }
@@ -7679,7 +7760,7 @@ section.tool-wrapper {
 
 /* line 297, /openedx/edx-platform/lms/static/sass/course/modules/_student-notes.scss */
 .edx-notes-wrapper a .annotator-hl {
-  color: #0075b4; }
+  color: #1b6d99; }
   /* line 301, /openedx/edx-platform/lms/static/sass/course/modules/_student-notes.scss */
   .edx-notes-wrapper a .annotator-hl:hover, .edx-notes-wrapper a .annotator-hl:focus {
     text-decoration: underline; }
@@ -7698,10 +7779,10 @@ section.tool-wrapper {
 /* line 324, /openedx/edx-platform/lms/static/sass/course/modules/_student-notes.scss */
 .edx-notes-wrapper .annotator-viewer .annotator-controls {
   opacity: 1;
-  left: 0;
+  right: 0;
   top: 0;
-  float: left;
-  padding-right: 5px; }
+  float: right;
+  padding-left: 5px; }
   /* line 334, /openedx/edx-platform/lms/static/sass/course/modules/_student-notes.scss */
   .edx-notes-wrapper .annotator-viewer .annotator-controls .annotator-edit,
   .edx-notes-wrapper .annotator-viewer .annotator-controls .annotator-delete,
@@ -7716,24 +7797,24 @@ section.tool-wrapper {
       position: absolute; }
   /* line 350, /openedx/edx-platform/lms/static/sass/course/modules/_student-notes.scss */
   .edx-notes-wrapper .annotator-viewer .annotator-controls .annotator-edit {
-    margin-left: 10px; }
+    margin-right: 10px; }
     /* line 353, /openedx/edx-platform/lms/static/sass/course/modules/_student-notes.scss */
     .edx-notes-wrapper .annotator-viewer .annotator-controls .annotator-edit::before {
       top: 0;
-      right: 0;
+      left: 0;
       content: "\f040"; }
   /* line 362, /openedx/edx-platform/lms/static/sass/course/modules/_student-notes.scss */
   .edx-notes-wrapper .annotator-viewer .annotator-controls .annotator-delete {
-    margin-left: 6.66667px; }
+    margin-right: 6.66667px; }
     /* line 365, /openedx/edx-platform/lms/static/sass/course/modules/_student-notes.scss */
     .edx-notes-wrapper .annotator-viewer .annotator-controls .annotator-delete::before {
       top: -1px;
-      right: 0;
+      left: 0;
       content: "\f1f8"; }
   /* line 375, /openedx/edx-platform/lms/static/sass/course/modules/_student-notes.scss */
   .edx-notes-wrapper .annotator-viewer .annotator-controls .annotator-close::before {
     top: -1px;
-    right: 0;
+    left: 0;
     content: "\f00d"; }
 
 /* line 388, /openedx/edx-platform/lms/static/sass/course/modules/_student-notes.scss */
@@ -7754,8 +7835,8 @@ section.tool-wrapper {
   /* line 20, /openedx/edx-platform/lms/static/sass/course/modules/_calculator.scss */
   .calc-main .calc {
     transition: background-color 0.25s ease-in-out 0s;
-    float: left;
-    left: 15px;
+    float: right;
+    right: 15px;
     position: relative;
     top: -42px;
     border-bottom: 0;
@@ -7809,11 +7890,11 @@ section.tool-wrapper {
         font-size: 30px;
         font-weight: bold;
         height: 35px;
-        margin: 0 0.84746%;
+        margin: 0 1.06383%;
         padding: 0;
         text-shadow: none;
         -webkit-appearance: none;
-        width: 4.23729%; }
+        width: 4.25532%; }
         /* line 95, /openedx/edx-platform/lms/static/sass/course/modules/_calculator.scss */
         .calc-main #calculator_wrapper form #calculator_button:hover, .calc-main #calculator_wrapper form #calculator_button:focus {
           background: #00466c;
@@ -7836,7 +7917,7 @@ section.tool-wrapper {
         margin: 1px 0 0;
         padding: 10px;
         -webkit-appearance: none;
-        width: 32.20339%; }
+        width: 31.91489%; }
         /* line 122, /openedx/edx-platform/lms/static/sass/course/modules/_calculator.scss */
         .calc-main #calculator_wrapper form #calculator_output.has-result {
           border: 1px solid #006700;
@@ -7846,7 +7927,7 @@ section.tool-wrapper {
         float: left;
         margin: 0;
         position: relative;
-        width: 61.86441%; }
+        width: 61.70213%; }
         /* line 136, /openedx/edx-platform/lms/static/sass/course/modules/_calculator.scss */
         .calc-main #calculator_wrapper form .input-wrapper .label-calc-input {
           background: #000;
@@ -8265,8 +8346,8 @@ div#wiki_panel {
 /* line 1, /openedx/edx-platform/lms/static/sass/course/wiki/_create.scss */
 form#wiki_revision {
   float: left;
-  margin-right: 2.27273%;
-  width: 65.90909%; }
+  margin-right: 2.85714%;
+  width: 65.71429%; }
   /* line 6, /openedx/edx-platform/lms/static/sass/course/wiki/_create.scss */
   form#wiki_revision label {
     display: block;
@@ -8308,7 +8389,7 @@ form#wiki_revision {
   color: #666;
   float: left;
   margin-top: 1.41575em;
-  width: 31.81818%; }
+  width: 31.42857%; }
   /* line 57, /openedx/edx-platform/lms/static/sass/course/wiki/_create.scss */
   #wiki_edit_instructions:hover, #wiki_edit_instructions:focus {
     color: #333; }
@@ -8370,7 +8451,7 @@ form#wiki_revision {
       height: 100%;
       text-overflow: ellipsis;
       white-space: nowrap;
-      color: #0075b4; }
+      color: #1b6d99; }
     /* line 54, /openedx/edx-platform/lms/static/sass/course/wiki/_wiki.scss */
     .wiki-wrapper section.wiki .breadcrumb li::after {
       content: '›';
@@ -8449,7 +8530,7 @@ form#wiki_revision {
       font-style: italic; }
     /* line 117, /openedx/edx-platform/lms/static/sass/course/wiki/_wiki.scss */
     .wiki-wrapper section.wiki .search-wiki input:focus {
-      border-color: #0075b4; }
+      border-color: #1b6d99; }
 
 /* line 131, /openedx/edx-platform/lms/static/sass/course/wiki/_wiki.scss */
 .wiki-wrapper section.wiki h1 {
@@ -8471,7 +8552,7 @@ form#wiki_revision {
 /* line 148, /openedx/edx-platform/lms/static/sass/course/wiki/_wiki.scss */
 .wiki-wrapper section.wiki .main-article {
   float: left;
-  width: 74.57627%;
+  width: 74.46809%;
   padding: 40px 0 40px 40px;
   color: #313131;
   box-sizing: border-box; }
@@ -8547,7 +8628,7 @@ form#wiki_revision {
 /* line 236, /openedx/edx-platform/lms/static/sass/course/wiki/_wiki.scss */
 .wiki-wrapper section.wiki .article-functions {
   float: left;
-  width: 23.72881%;
+  width: 23.40426%;
   padding: 40px;
   box-sizing: border-box; }
   /* line 242, /openedx/edx-platform/lms/static/sass/course/wiki/_wiki.scss */
@@ -8598,7 +8679,7 @@ form#wiki_revision {
     border-radius: 3px;
     font-size: 0.9em;
     line-height: 25px;
-    color: #0075b4; }
+    color: #1b6d99; }
     /* line 303, /openedx/edx-platform/lms/static/sass/course/wiki/_wiki.scss */
     .wiki-wrapper section.wiki .nav-tabs a .icon {
       float: left;
@@ -9377,7 +9458,7 @@ div.book-wrapper {
         line-height: 1.4em; }
       /* line 37, /openedx/edx-platform/lms/static/sass/course/_textbook.scss */
       div.book-wrapper section.book-sidebar #booknav .page-number {
-        float: left;
+        float: right;
         width: 12%;
         font-size: 0.8em;
         line-height: 2.1em;
@@ -9438,7 +9519,7 @@ div.book-wrapper {
     div.book-wrapper .book nav ul li {
       position: absolute;
       height: 100%;
-      width: 23.07692%;
+      width: 22.58065%;
       z-index: 1; }
       /* line 126, /openedx/edx-platform/lms/static/sass/course/_textbook.scss */
       div.book-wrapper .book nav ul li a {
@@ -9501,7 +9582,7 @@ div.book-wrapper {
           margin-top: 10px; }
   /* line 206, /openedx/edx-platform/lms/static/sass/course/_textbook.scss */
   div.book-wrapper.closed section.book-sidebar {
-    width: 3.38983%; }
+    width: 2.97872%; }
     /* line 209, /openedx/edx-platform/lms/static/sass/course/_textbook.scss */
     div.book-wrapper.closed section.book-sidebar header#open_close_accordion {
       padding: 0; }
@@ -9522,7 +9603,7 @@ div.book-wrapper {
       width: 10px; }
   /* line 232, /openedx/edx-platform/lms/static/sass/course/_textbook.scss */
   div.book-wrapper.closed section.course-content {
-    width: 97.45763%; }
+    width: 97.87234%; }
 
 /* line 1, /openedx/edx-platform/lms/static/sass/course/_profile.scss */
 .profile-wrapper {
@@ -9640,7 +9721,7 @@ div.book-wrapper {
     margin-bottom: 1.41575em; }
     /* line 141, /openedx/edx-platform/lms/static/sass/course/_profile.scss */
     .profile-wrapper .course-info header .hd {
-      float: right;
+      float: left;
       font-size: 1em;
       font-weight: 100;
       margin: 0; }
@@ -9701,7 +9782,7 @@ div.book-wrapper {
   .profile-wrapper .course-info > .credit-eligibility {
     border-top: 1px solid #edf1f5;
     margin-top: 1.41575em;
-    padding-right: 0; }
+    padding-left: 0; }
     /* line 188, /openedx/edx-platform/lms/static/sass/course/_profile.scss */
     .profile-wrapper .course-info > .credit-eligibility > .credit-eligibility-container {
       padding: 1.41575em; }
@@ -9716,7 +9797,7 @@ div.book-wrapper {
         border-radius: 1.27418em;
         border-color: #fff;
         text-shadow: None;
-        padding-right: 0.2em; }
+        padding-left: 0.2em; }
       /* line 205, /openedx/edx-platform/lms/static/sass/course/_profile.scss */
       .profile-wrapper .course-info > .credit-eligibility > .credit-eligibility-container > .detail-collapse {
         border: none;
@@ -9739,12 +9820,12 @@ div.book-wrapper {
           padding: 0.70788em; }
           /* line 228, /openedx/edx-platform/lms/static/sass/course/_profile.scss */
           .profile-wrapper .course-info > .credit-eligibility > .credit-eligibility-container > .requirement-container > .requirement > .requirement-name {
-            width: 60%;
+            width: 40%;
             display: inline-block; }
           /* line 233, /openedx/edx-platform/lms/static/sass/course/_profile.scss */
           .profile-wrapper .course-info > .credit-eligibility > .credit-eligibility-container > .requirement-container > .requirement > .requirement-status {
-            width: 40%;
-            float: left;
+            width: 60%;
+            float: right;
             display: inline-block; }
             /* line 240, /openedx/edx-platform/lms/static/sass/course/_profile.scss */
             .profile-wrapper .course-info > .credit-eligibility > .credit-eligibility-container > .requirement-container > .requirement > .requirement-status .fa-times {
@@ -9771,21 +9852,21 @@ div.book-wrapper {
         border-bottom: 0; }
       /* line 278, /openedx/edx-platform/lms/static/sass/course/_profile.scss */
       .profile-wrapper .course-info > .chapters > section .hd {
-        border-left: 1px dashed #ddd;
+        border-right: 1px dashed #ddd;
         box-sizing: border-box;
         display: table-cell;
         letter-spacing: 0;
         margin: 0;
         padding: 0;
-        padding-right: 2.27273%;
+        padding-right: 2.85714%;
         text-transform: none;
-        width: 20.45455%;
+        width: 20%;
         vertical-align: top; }
       /* line 292, /openedx/edx-platform/lms/static/sass/course/_profile.scss */
       .profile-wrapper .course-info > .chapters > section .sections {
         display: inline-block;
-        padding-right: 2.27273%;
-        width: 77.27273%; }
+        padding-left: 2.85714%;
+        width: 77.14286%; }
         /* line 299, /openedx/edx-platform/lms/static/sass/course/_profile.scss */
         .profile-wrapper .course-info > .chapters > section .sections > div {
           padding: 0 0 1.41575em 0; }
@@ -9820,7 +9901,7 @@ div.book-wrapper {
               display: inline-block;
               width: auto;
               margin: initial;
-              margin-left: 20px;
+              margin-right: 20px;
               border: initial;
               padding: initial;
               font-size: 0.875em; }
@@ -9828,8 +9909,8 @@ div.book-wrapper {
             .profile-wrapper .course-info > .chapters > section .sections > div .scores dd {
               display: inline-block;
               margin: 0;
-              margin-left: 20px;
-              padding-left: 1em;
+              margin-right: 20px;
+              padding-right: 1em;
               font-size: 0.875em;
               font-weight: normal;
               color: #474747; }
@@ -9881,8 +9962,8 @@ div.static_tab_wrapper {
     clear: both; }
   /* line 62, /openedx/edx-platform/lms/static/sass/course/_student-notes.scss */
   .view-student-notes .title-search-container .wrapper-title {
-    float: right;
-    width: 57.62712%; }
+    float: left;
+    width: 57.44681%; }
     /* line 67, /openedx/edx-platform/lms/static/sass/course/_student-notes.scss */
     .view-student-notes .title-search-container .wrapper-title .page-title {
       margin-bottom: 0; }
@@ -9894,9 +9975,9 @@ div.static_tab_wrapper {
         letter-spacing: 0; }
   /* line 85, /openedx/edx-platform/lms/static/sass/course/_student-notes.scss */
   .view-student-notes .title-search-container .wrapper-notes-search {
-    float: left;
-    width: 40.67797%;
-    text-align: left; }
+    float: right;
+    width: 40.42553%;
+    text-align: right; }
   /* line 93, /openedx/edx-platform/lms/static/sass/course/_student-notes.scss */
   .view-student-notes .title-search-container .search-notes-input,
   .view-student-notes .title-search-container .search-notes-submit {
@@ -9905,7 +9986,7 @@ div.static_tab_wrapper {
   /* line 99, /openedx/edx-platform/lms/static/sass/course/_student-notes.scss */
   .view-student-notes .title-search-container .search-notes-input {
     position: relative;
-    left: -6px;
+    right: -6px;
     width: 55%;
     padding: 10px 15px;
     color: #2f2f2f; }
@@ -9945,7 +10026,7 @@ div.static_tab_wrapper {
     .view-student-notes .note-group .note .wrapper-note-excerpts {
       transition: box-shadow 0.75s ease-in-out 0, border-color 0.75s ease-in-out 0;
       display: inline-block;
-      width: 74.57627%;
+      width: 74.46809%;
       border: 1px solid #f1f1f1;
       border-radius: 2px; }
       /* line 166, /openedx/edx-platform/lms/static/sass/course/_student-notes.scss */
@@ -9956,7 +10037,7 @@ div.static_tab_wrapper {
       /* line 179, /openedx/edx-platform/lms/static/sass/course/_student-notes.scss */
       .view-student-notes .note-group .note .wrapper-note-excerpts .note-excerpt-more-link {
         display: inline;
-        margin-right: 5px;
+        margin-left: 5px;
         border: 0;
         background: transparent;
         padding: 0; }
@@ -9998,7 +10079,7 @@ div.static_tab_wrapper {
     /* line 248, /openedx/edx-platform/lms/static/sass/course/_student-notes.scss */
     .view-student-notes .note-group .note .reference {
       display: inline-block;
-      width: 23.72881%;
+      width: 23.40426%;
       vertical-align: top; }
       /* line 255, /openedx/edx-platform/lms/static/sass/course/_student-notes.scss */
       .view-student-notes .note-group .note .reference .wrapper-reference-content {
@@ -10084,7 +10165,7 @@ div.static_tab_wrapper {
   .view-student-notes .wrapper-tabs .tab-list .tabs-label {
     margin-bottom: 0;
     padding: 15px 0;
-    padding-left: 20px;
+    padding-right: 20px;
     color: #767676;
     font-weight: 600 !important; }
   /* line 378, /openedx/edx-platform/lms/static/sass/course/_student-notes.scss */
@@ -10106,7 +10187,7 @@ div.static_tab_wrapper {
       text-align: center; }
       /* line 397, /openedx/edx-platform/lms/static/sass/course/_student-notes.scss */
       .view-student-notes .wrapper-tabs .tab-list .tab .tab-label .icon {
-        margin-left: 2px; }
+        margin-right: 2px; }
     /* line 404, /openedx/edx-platform/lms/static/sass/course/_student-notes.scss */
     .view-student-notes .wrapper-tabs .tab-list .tab.is-active .tab-label {
       border-bottom-color: #2f2f2f;
@@ -10117,7 +10198,7 @@ div.static_tab_wrapper {
     /* line 416, /openedx/edx-platform/lms/static/sass/course/_student-notes.scss */
     .view-student-notes .wrapper-tabs .tab-list .tab .action-close {
       position: relative;
-      right: -15px;
+      left: -15px;
       padding: 10px; }
 
 /* line 433, /openedx/edx-platform/lms/static/sass/course/_student-notes.scss */
@@ -10345,26 +10426,25 @@ div.static_tab_wrapper {
 /* line 47, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
 .view-teams .page-header.has-secondary .page-header-main {
   display: inline-block;
-  width: 66.10169%; }
+  width: 65.95745%; }
 
 /* line 52, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
 .view-teams .page-header.has-secondary .page-header-secondary {
-  text-align: left;
+  text-align: right;
   display: inline-block;
-  width: 32.20339%;
+  width: 31.91489%;
   vertical-align: text-bottom; }
 
 /* line 65, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
 .view-teams .breadcrumbs .nav-item {
-  margin-left: 10px;
+  margin-right: 10px;
   display: inline-block; }
 
 /* line 71, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
 .view-teams .breadcrumbs .icon {
-  margin-left: 5px;
+  margin-right: 5px;
   display: inline-block;
-  color: #adadad;
-  transform: rotateY(180deg); }
+  color: #adadad; }
 
 /* line 84, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
 .view-teams .page-header-search .wrapper-search-input {
@@ -10396,7 +10476,7 @@ div.static_tab_wrapper {
 
 /* line 122, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
 .view-teams .page-header-search .action-clear {
-  left: 0;
+  right: 0;
   margin: 0 5px 0 0;
   position: absolute;
   top: 0;
@@ -10470,7 +10550,7 @@ div.static_tab_wrapper {
     clear: both; }
   /* line 222, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
   .view-teams .card .card-actions .action-view {
-    float: left;
+    float: right;
     margin: 5px 0; }
   /* line 231, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
   .view-teams .card .wrapper-card-meta {
@@ -10492,12 +10572,12 @@ div.static_tab_wrapper {
         text-decoration: none; }
       /* line 250, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
       .view-teams .card .wrapper-card-meta .meta-detail .icon {
-        margin-left: 5px; }
+        margin-right: 5px; }
     /* line 255, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
     .view-teams .card .wrapper-card-meta .member-count {
       display: inline-block;
       vertical-align: middle;
-      margin-left: 5px; }
+      margin-right: 5px; }
     /* line 262, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
     .view-teams .card .wrapper-card-meta .list-member-thumbs {
       display: inline-block;
@@ -10542,7 +10622,7 @@ div.static_tab_wrapper {
       vertical-align: middle; }
     /* line 319, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
     .view-teams .card.list-card .team-activity {
-      float: left; }
+      float: right; }
     /* line 323, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
     .view-teams .card.list-card .card-actions {
       display: inline-block;
@@ -10553,7 +10633,7 @@ div.static_tab_wrapper {
     display: block;
     position: absolute;
     top: 10px;
-    right: -5px;
+    left: -5px;
     box-shadow: 1px 1px 1px 0 #005e90;
     background-color: #42b5e9;
     padding: 2px 15px;
@@ -10583,15 +10663,15 @@ div.static_tab_wrapper {
 .view-teams .team-profile .page-content-main,
 .view-teams .team-management .page-content-main {
   display: inline-block;
-  width: 66.10169%;
+  width: 65.95745%;
   vertical-align: top; }
 
 /* line 381, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
 .view-teams .team-profile .page-content-secondary,
 .view-teams .team-management .page-content-secondary {
   display: inline-block;
-  width: 32.20339%;
-  margin-right: 15px;
+  width: 31.91489%;
+  margin-left: 15px;
   margin-bottom: 20px;
   color: #767676; }
   /* line 393, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
@@ -10695,7 +10775,7 @@ div.static_tab_wrapper {
     margin-bottom: 5px; }
   /* line 458, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
   .view-teams .create-team .form-field.is-required .label::after {
-    margin-right: 5px;
+    margin-left: 5px;
     content: "*"; }
   /* line 465, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
   .view-teams .create-team .form-field .input-text {
@@ -10743,7 +10823,7 @@ div.static_tab_wrapper {
   display: inline-block;
   vertical-align: top;
   width: 35%;
-  margin-right: 2%;
+  margin-left: 2%;
   border-left: 2px solid #e4e4e4;
   padding-left: 2%; }
 
@@ -10753,7 +10833,7 @@ div.static_tab_wrapper {
 
 /* line 537, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
 .view-teams .action {
-  margin-left: 10px;
+  margin-right: 10px;
   padding: 10px 20px; }
 
 /* line 546, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
@@ -10772,8 +10852,8 @@ div.static_tab_wrapper {
   color: #767676; }
   /* line 566, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
   .view-teams .action-cancel:hover, .view-teams .action-cancel:focus {
-    border: 1px solid #0075b4;
-    color: #0075b4; }
+    border: 1px solid #1b6d99;
+    color: #1b6d99; }
 
 /* line 573, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
 .view-teams .header-action-view {
@@ -10783,11 +10863,11 @@ div.static_tab_wrapper {
   /* line 578, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
   .view-teams .header-action-view .join-team.form-actions,
   .view-teams .header-action-view .join-team-message {
-    text-align: left; }
+    text-align: right; }
 
 /* line 584, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
 .view-teams .join-team-message {
-  text-align: left;
+  text-align: right;
   color: #919191;
   display: block;
   margin-bottom: 5px; }
@@ -10819,11 +10899,11 @@ div.static_tab_wrapper {
     clear: both; }
   /* line 626, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
   .teams-content .teams-main .team-edit-fields .team-required-fields {
-    float: right;
+    float: left;
     width: 55%; }
     /* line 631, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
     .teams-content .teams-main .team-edit-fields .team-required-fields .u-field {
-      margin-left: 40px; }
+      margin-right: 40px; }
     /* line 635, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
     .teams-content .teams-main .team-edit-fields .team-required-fields .u-field.u-field-name {
       padding-bottom: 20px; }
@@ -10836,7 +10916,7 @@ div.static_tab_wrapper {
           height: 40px; }
       /* line 647, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
       .teams-content .teams-main .team-edit-fields .team-required-fields .u-field.u-field-name .u-field-message {
-        padding-right: 0;
+        padding-left: 0;
         padding-top: 5px;
         width: 100%; }
     /* line 656, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
@@ -10850,7 +10930,7 @@ div.static_tab_wrapper {
     /* line 667, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
     .teams-content .teams-main .team-edit-fields .team-required-fields .u-field.u-field-description .u-field-footer .u-field-message {
       display: block;
-      padding-right: 0;
+      padding-left: 0;
       margin-top: 5px;
       color: #919191;
       width: 100%; }
@@ -10861,8 +10941,8 @@ div.static_tab_wrapper {
       width: 100%; }
   /* line 688, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
   .teams-content .teams-main .team-edit-fields .team-optional-fields {
-    float: right;
-    margin-right: 40px;
+    float: left;
+    margin-left: 40px;
     width: 40%; }
     /* line 694, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
     .teams-content .teams-main .team-edit-fields .team-optional-fields .u-field.u-field-optional_description {
@@ -10886,7 +10966,7 @@ div.static_tab_wrapper {
       color: #313131; }
     /* line 720, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
     .teams-content .teams-main .team-edit-fields .team-optional-fields .u-field-message {
-      padding-right: 0; }
+      padding-left: 0; }
     /* line 724, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
     .teams-content .teams-main .team-edit-fields .team-optional-fields .u-field-title,
     .teams-content .teams-main .team-edit-fields .team-optional-fields .u-field-value,
@@ -11145,13 +11225,13 @@ div.gradebook-wrapper .grade-table tr.highlight td {
   .instructor-dashboard-wrapper-2 .olddash-button-wrapper {
     position: absolute;
     top: 16px;
-    left: 15px;
+    right: 15px;
     font-size: 16px; }
   /* line 33, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .instructor-dashboard-wrapper-2 .studio-edit-link {
     position: absolute;
     top: 40px;
-    left: 15px;
+    right: 15px;
     font-size: 16px; }
   /* line 41, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .instructor-dashboard-wrapper-2 .file-download-link a {
@@ -11174,12 +11254,12 @@ div.gradebook-wrapper .grade-table tr.highlight td {
   /* line 65, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .instructor-dashboard-wrapper-2 .msg-inline {
     display: inline-block;
-    margin-right: 20px;
+    margin-left: 20px;
     padding: 0; }
     /* line 72, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     .instructor-dashboard-wrapper-2 .msg-inline .icon,
     .instructor-dashboard-wrapper-2 .msg-inline .fa {
-      margin-left: 10px; }
+      margin-right: 10px; }
   /* line 79, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .instructor-dashboard-wrapper-2 .msg-warning {
     display: none;
@@ -11362,7 +11442,7 @@ div.gradebook-wrapper .grade-table tr.highlight td {
     margin-top: 20px; }
   /* line 263, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .instructor-dashboard-content-2 .slickgrid {
-    margin-right: 1px;
+    margin-left: 1px;
     font-size: 14px;
     font-family: verdana, arial, sans-serif;
     color: #333; }
@@ -11419,7 +11499,7 @@ div.gradebook-wrapper .grade-table tr.highlight td {
   /* line 291, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .instructor-dashboard-content-2 .instructor_dash_glob_info {
     position: absolute;
-    left: 50px;
+    right: 50px;
     top: 46px;
     text-align: right; }
   /* line 300, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
@@ -11591,11 +11671,11 @@ div.gradebook-wrapper .grade-table tr.highlight td {
       clear: both; }
     /* line 455, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     .idash-section .section-title .value {
-      float: right; }
+      float: left; }
     /* line 459, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     .idash-section .section-title .description {
-      float: left;
-      text-align: left;
+      float: right;
+      text-align: right;
       text-transform: none;
       letter-spacing: 0;
       color: #767676; }
@@ -11621,13 +11701,13 @@ div.gradebook-wrapper .grade-table tr.highlight td {
     cursor: pointer; }
     /* line 506, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     .instructor-dashboard-wrapper-2 section.idash-section#course_info .course-errors-wrapper .toggle-wrapper div {
-      float: right; }
+      float: left; }
     /* line 510, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     .instructor-dashboard-wrapper-2 section.idash-section#course_info .course-errors-wrapper .toggle-wrapper h2 {
-      float: right; }
+      float: left; }
     /* line 514, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     .instructor-dashboard-wrapper-2 section.idash-section#course_info .course-errors-wrapper .toggle-wrapper .triangle {
-      float: right;
+      float: left;
       width: 20px;
       height: 20px;
       background-image: url("/static/images/bullet-closed.png");
@@ -11640,7 +11720,7 @@ div.gradebook-wrapper .grade-table tr.highlight td {
     /* line 529, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     .instructor-dashboard-wrapper-2 section.idash-section#course_info .course-errors-wrapper .course-errors-visibility-wrapper .course-error {
       margin-bottom: 1em;
-      margin-right: 0.5em; }
+      margin-left: 0.5em; }
       /* line 535, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       .instructor-dashboard-wrapper-2 section.idash-section#course_info .course-errors-wrapper .course-errors-visibility-wrapper .course-error code.course-error-first {
         color: #111; }
@@ -11774,7 +11854,7 @@ div.gradebook-wrapper .grade-table tr.highlight td {
 
 /* line 699, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .instructor-dashboard-wrapper-2 section.idash-section#membership .auto_enroll_csv .enrollment_signup_button {
-  margin-left: 5px; }
+  margin-right: 5px; }
 
 /* line 704, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .instructor-dashboard-wrapper-2 section.idash-section#membership .enroll-option {
@@ -11789,7 +11869,7 @@ div.gradebook-wrapper .grade-table tr.highlight td {
     display: block;
     position: absolute;
     top: 10px;
-    right: -9999em;
+    left: -9999em;
     padding: 10px;
     width: 50%;
     background-color: #f9f9f9;
@@ -11799,17 +11879,17 @@ div.gradebook-wrapper .grade-table tr.highlight td {
       display: block;
       position: absolute;
       top: 0;
-      right: -15px;
-      border-left: 8px solid #f9f9f9;
-      border-right: 8px solid transparent;
+      left: -15px;
+      border-right: 8px solid #f9f9f9;
+      border-left: 8px solid transparent;
       border-top: 8px solid #f9f9f9;
       border-bottom: 8px solid transparent; }
   /* line 739, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#membership .enroll-option .has-hint:hover > .hint {
-    right: 200px; }
+    left: 200px; }
   /* line 743, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#membership .enroll-option .has-hint input:focus ~ .hint {
-    right: 200px; }
+    left: 200px; }
 
 /* line 750, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .instructor-dashboard-wrapper-2 section.idash-section#membership .enroll-actions {
@@ -11875,8 +11955,8 @@ div.gradebook-wrapper .grade-table tr.highlight td {
     .instructor-dashboard-wrapper-2 section.idash-section#membership .member-lists-management .auth-list-container .member-list-widget .member-list td, .instructor-dashboard-wrapper-2 section.idash-section#membership .member-lists-management-ccx .auth-list-container .member-list-widget .member-list td {
       vertical-align: middle;
       padding: 10px 5px;
-      border-right: 1px solid #dddddd;
       border-left: 1px solid #dddddd;
+      border-right: 1px solid #dddddd;
       word-wrap: break-word; }
   /* line 836, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#membership .member-lists-management .auth-list-container .member-list-widget .bottom-bar, .instructor-dashboard-wrapper-2 section.idash-section#membership .member-lists-management-ccx .auth-list-container .member-list-widget .bottom-bar {
@@ -11910,7 +11990,7 @@ div.gradebook-wrapper .grade-table tr.highlight td {
     font-size: 0.8125em;
     line-height: 1.3em;
     position: absolute;
-    left: 20px; }
+    right: 20px; }
     /* line 131, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
     .instructor-dashboard-wrapper-2 section.idash-section#membership .member-lists-management .auth-list-container .member-list-widget input[type="button"].add:hover:not(:disabled), .instructor-dashboard-wrapper-2 section.idash-section#membership .member-lists-management-ccx .auth-list-container .member-list-widget input[type="button"].add:hover:not(:disabled) {
       box-shadow: inset 0 1px 0 0 #0783c6;
@@ -12045,7 +12125,7 @@ div.gradebook-wrapper .grade-table tr.highlight td {
 /* line 959, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-nav .cohort-management-nav-form {
   width: 60%;
-  float: right; }
+  float: left; }
 
 /* line 965, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-nav .cohort-select {
@@ -12072,8 +12152,8 @@ div.gradebook-wrapper .grade-table tr.highlight td {
   padding: 8px 17px;
   font-size: 0.8125em;
   line-height: 1.3em;
-  float: left;
-  text-align: left;
+  float: right;
+  text-align: right;
   text-shadow: none; }
   /* line 131, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-nav .action-create:hover:not(:disabled) {
@@ -12187,7 +12267,7 @@ div.gradebook-wrapper .grade-table tr.highlight td {
     vertical-align: middle; }
   /* line 1065, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-group-header .title-value {
-    margin-left: 5px; }
+    margin-right: 5px; }
   /* line 1077, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-group-header .action-edit-name {
     border: 1px solid #ac9c9c;
@@ -12211,7 +12291,7 @@ div.gradebook-wrapper .grade-table tr.highlight td {
     transition: opacity 0.25s ease-in-out;
     font-size: 14px;
     line-height: 20.72px;
-    margin-right: 10px;
+    margin-left: 10px;
     padding: 5px 10px;
     margin-bottom: 0;
     opacity: 0;
@@ -12245,13 +12325,13 @@ div.gradebook-wrapper .grade-table tr.highlight td {
     clear: both; }
   /* line 1098, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-group-setup .setup-value {
-    float: right;
-    margin-left: 5%;
+    float: left;
+    margin-right: 5%;
     width: 70%; }
   /* line 1105, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-group-setup .setup-actions {
-    float: left;
-    text-align: left;
+    float: right;
+    text-align: right;
     width: 20%; }
 
 /* line 1113, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
@@ -12358,7 +12438,7 @@ div.gradebook-wrapper .grade-table tr.highlight td {
   border-radius: 2px; }
   /* line 1219, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-supplemental .icon {
-    margin-left: 5px;
+    margin-right: 5px;
     color: #919191; }
 
 /* line 1226, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
@@ -12414,13 +12494,13 @@ div.gradebook-wrapper .grade-table tr.highlight td {
       /* line 1278, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-settings .cohort-management-group-header .cohort-management-group-setup .cohort-management-group-text {
         display: inline-block;
-        width: 74.57627%; }
+        width: 74.46809%; }
       /* line 1283, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-settings .cohort-management-group-header .cohort-management-group-setup .cohort-management-group-actions {
         display: inline-block;
-        width: 23.72881%;
+        width: 23.40426%;
         vertical-align: top;
-        text-align: left; }
+        text-align: right; }
   /* line 1293, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-settings .cohort-management-details,
   .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-settings .cohort-management-group-add {
@@ -12785,7 +12865,7 @@ div.gradebook-wrapper .grade-table tr.highlight td {
   position: relative;
   clear: both;
   width: 100%;
-  float: right;
+  float: left;
   margin-top: 25px; }
   /* line 1715, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#metrics .metrics-container .metrics-left,
@@ -12794,8 +12874,8 @@ div.gradebook-wrapper .grade-table tr.highlight td {
   .instructor-dashboard-wrapper-2 section.idash-section#metrics .metrics-header-container .metrics-left-header {
     position: relative;
     width: 30%;
-    float: right;
-    margin-left: 2.5%; }
+    float: left;
+    margin-right: 2.5%; }
     /* line 1723, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     .instructor-dashboard-wrapper-2 section.idash-section#metrics .metrics-container .metrics-left svg,
     .instructor-dashboard-wrapper-2 section.idash-section#metrics .metrics-container .metrics-left-header svg,
@@ -12813,8 +12893,8 @@ div.gradebook-wrapper .grade-table tr.highlight td {
   .instructor-dashboard-wrapper-2 section.idash-section#metrics .metrics-header-container .metrics-right-header {
     position: relative;
     width: 65%;
-    float: right;
-    margin-right: 2.5%;
+    float: left;
+    margin-left: 2.5%;
     margin-bottom: 25px; }
     /* line 1742, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     .instructor-dashboard-wrapper-2 section.idash-section#metrics .metrics-container .metrics-right svg,
@@ -12895,13 +12975,13 @@ div.gradebook-wrapper .grade-table tr.highlight td {
       .instructor-dashboard-wrapper-2 section.idash-section#metrics .metrics-header-container .metrics-overlay .metrics-overlay-content-wrapper .download-csv {
         position: absolute;
         display: none;
-        left: 2%;
+        right: 2%;
         bottom: 2%; }
       /* line 1823, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       .instructor-dashboard-wrapper-2 section.idash-section#metrics .metrics-container .metrics-overlay .metrics-overlay-content-wrapper .close-button,
       .instructor-dashboard-wrapper-2 section.idash-section#metrics .metrics-header-container .metrics-overlay .metrics-overlay-content-wrapper .close-button {
         position: absolute;
-        left: 1.5%;
+        right: 1.5%;
         top: 2%;
         font-size: 2em; }
   /* line 1834, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
@@ -12928,41 +13008,35 @@ div.gradebook-wrapper .grade-table tr.highlight td {
 /* line 1859, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .instructor-dashboard-wrapper-2 section.idash-section#open_response_assessment .open-response-assessment {
   padding-top: 20px; }
-  /* line 1863, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
-  .instructor-dashboard-wrapper-2 section.idash-section#open_response_assessment .open-response-assessment .open-response-assessment-content .open-response-assessment-summary, .instructor-dashboard-wrapper-2 section.idash-section#open_response_assessment .open-response-assessment .open-response-assessment-content .open-response-assessment-main-table {
-    line-height: 1; }
-    /* line 1866, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
-    .instructor-dashboard-wrapper-2 section.idash-section#open_response_assessment .open-response-assessment .open-response-assessment-content .open-response-assessment-summary table tr td, .instructor-dashboard-wrapper-2 section.idash-section#open_response_assessment .open-response-assessment .open-response-assessment-content .open-response-assessment-main-table table tr td {
-      padding-right: 20px; }
 
-/* line 1874, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 1864, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 input[name="subject"] {
   width: 600px; }
 
-/* line 1878, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 1868, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .enrollment-wrapper {
   margin-bottom: 40px; }
-  /* line 1881, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 1871, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .enrollment-wrapper .count {
     color: green;
     font-weight: bold; }
-  /* line 1887, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 1877, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .enrollment-wrapper table tr {
     height: 21px; }
-    /* line 1890, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 1880, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     .enrollment-wrapper table tr td {
       width: 120px; }
 
-/* line 1898, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 1888, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .ecommerce-wrapper h2 {
   height: 26px;
   line-height: 26px; }
-  /* line 1902, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 1892, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .ecommerce-wrapper h2 span {
-    float: left;
+    float: right;
     font-size: 16px;
     font-weight: bold; }
-    /* line 1908, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 1898, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     .ecommerce-wrapper h2 span span {
       background: #ddd;
       padding: 2px 9px;
@@ -12970,7 +13044,7 @@ input[name="subject"] {
       float: none;
       font-weight: 400; }
 
-/* line 1918, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 1908, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .ecommerce-wrapper span.tip {
   display: block;
   padding: 10px 15px;
@@ -12979,7 +13053,7 @@ input[name="subject"] {
   background: #f8f4ec;
   color: #3c3c3c;
   line-height: 30px; }
-  /* line 1927, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 1917, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .ecommerce-wrapper span.tip .add {
     border: 1px solid #00476d;
     border-radius: 3px;
@@ -12996,7 +13070,7 @@ input[name="subject"] {
     text-shadow: 0 1px 0 #003958;
     background-clip: padding-box;
     font-size: 0.8125em;
-    float: left; }
+    float: right; }
     /* line 131, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
     .ecommerce-wrapper span.tip .add:hover:not(:disabled) {
       box-shadow: inset 0 1px 0 0 #0783c6;
@@ -13013,29 +13087,29 @@ input[name="subject"] {
       opacity: 0.5;
       cursor: not-allowed; }
 
-/* line 1940, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 1930, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 #e-commerce input[name='list-order-sale-csv'] {
-  margin-left: 14px; }
+  margin-right: 14px; }
 
-/* line 1944, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 1934, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 #e-commerce input {
   margin-bottom: 1em;
   line-height: 1.3em; }
 
-/* line 1951, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 1941, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 #e-commerce .reports-download-container .data-display-table .slickgrid {
   height: 400px; }
 
-/* line 1957, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 1947, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 #e-commerce .reports-download-container .report-downloads-table .slickgrid {
   height: 300px;
   padding: 5px; }
 
-/* line 1962, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 1952, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 #e-commerce .reports-download-container .report-downloads-table .slick-viewport {
   overflow-x: hidden !important; }
 
-/* line 1968, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 1958, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 #e-commerce .error-msgs {
   background: #ffeef5;
   color: #b72667;
@@ -13047,7 +13121,7 @@ input[name="subject"] {
   margin-bottom: 20px;
   display: none; }
 
-/* line 1980, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 1970, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 #e-commerce .success-msgs {
   background: #d0f5d5;
   color: #008801;
@@ -13059,147 +13133,147 @@ input[name="subject"] {
   margin-bottom: 20px;
   display: none; }
 
-/* line 1992, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 1982, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 #e-commerce .content, #e-commerce .course-wrapper .course-content, .course-wrapper #e-commerce .course-content, #e-commerce
 .course-wrapper .courseware-results-wrapper,
 .course-wrapper #e-commerce .courseware-results-wrapper, #e-commerce div.book-wrapper .book, div.book-wrapper #e-commerce .book, #e-commerce .profile-wrapper .course-info, .profile-wrapper #e-commerce .course-info, #e-commerce .view-student-notes .wrapper-student-notes .student-notes, .view-student-notes .wrapper-student-notes #e-commerce .student-notes, #e-commerce .date-wrapper, #e-commerce div.gradebook-wrapper section.gradebook-content, div.gradebook-wrapper #e-commerce section.gradebook-content, #e-commerce .instructor-dashboard-content-2 {
   padding: 0 !important; }
 
-/* line 1996, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 1986, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 #e-commerce input[name="download_company_name"],
 #e-commerce input[name="active_company_name"],
 #e-commerce input[name="spent_company_name"] {
-  margin-left: 8px;
+  margin-right: 8px;
   height: 36px;
   width: 254px;
   border-radius: 3px; }
 
-/* line 2006, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 1996, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 #e-commerce .coupons-table {
   width: 100%; }
-  /* line 2009, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 1999, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce .coupons-table tr:nth-child(even) {
     background-color: #f8f8f8;
     border-bottom: 1px solid #f3f3f3; }
-  /* line 2014, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2004, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce .coupons-table tr.always-gray {
     background: #eee !important;
     border-top: 2px solid #fff; }
-  /* line 2019, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2009, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce .coupons-table tr.always-white {
     background: #fff !important; }
-    /* line 2022, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 2012, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     #e-commerce .coupons-table tr.always-white td {
       padding: 30px 0 10px; }
-  /* line 2027, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2017, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce .coupons-table .coupons-headings {
     height: 40px;
     border-bottom: 1px solid #bebebe; }
-    /* line 2031, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 2021, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     #e-commerce .coupons-table .coupons-headings th:nth-child(5) {
       text-align: center;
       width: 120px; }
-    /* line 2036, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 2026, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     #e-commerce .coupons-table .coupons-headings th:first-child {
       padding-left: 20px; }
-    /* line 2040, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 2030, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     #e-commerce .coupons-table .coupons-headings th {
       text-align: left;
       border-bottom: 1px solid #bebebe;
       font-size: 13px; }
-      /* line 2045, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2035, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       #e-commerce .coupons-table .coupons-headings th.c_code {
         width: 110px; }
-      /* line 2049, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2039, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       #e-commerce .coupons-table .coupons-headings th.c_count {
         width: 60px; }
-      /* line 2053, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2043, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       #e-commerce .coupons-table .coupons-headings th.c_course_id {
         width: 320px;
         word-wrap: break-word; }
-      /* line 2058, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2048, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       #e-commerce .coupons-table .coupons-headings th.c_discount {
         width: 90px; }
-      /* line 2062, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2052, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       #e-commerce .coupons-table .coupons-headings th.c_expiry {
         width: 150px; }
-      /* line 2066, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2056, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       #e-commerce .coupons-table .coupons-headings th.c_action {
         width: 60px; }
-      /* line 2070, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2060, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       #e-commerce .coupons-table .coupons-headings th.c_dsc {
         width: 200px;
         word-wrap: break-word; }
-  /* line 2078, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2068, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce .coupons-table .inactive_coupon {
     background: #fff0f0 !important;
     text-decoration: line-through;
     color: rgba(51, 51, 51, 0.2);
     border-bottom: 1px solid #fff; }
-    /* line 2085, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 2075, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     #e-commerce .coupons-table .inactive_coupon td a {
       color: rgba(51, 51, 51, 0.2); }
-  /* line 2091, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2081, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce .coupons-table .expired_coupon {
     background: #feefb3 !important;
     color: rgba(51, 51, 51, 0.2);
     border-bottom: 1px solid #fff; }
-    /* line 2096, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 2086, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     #e-commerce .coupons-table .expired_coupon td:nth-child(3) {
       text-decoration: line-through; }
-  /* line 2103, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2093, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce .coupons-table .coupons-items td {
     padding: 10px 0;
     position: relative;
     line-height: normal;
     font-size: 14px; }
-    /* line 2109, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 2099, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     #e-commerce .coupons-table .coupons-items td span.old-price {
       top: -1px;
-      right: -75px;
+      left: -75px;
       position: relative;
       text-decoration: line-through;
       color: red;
       font-size: 12px; }
-  /* line 2121, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2111, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce .coupons-table .coupons-items td:nth-child(5),
   #e-commerce .coupons-table .coupons-items td:first-child {
-    padding-right: 20px; }
-  /* line 2126, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    padding-left: 20px; }
+  /* line 2116, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce .coupons-table .coupons-items td:nth-child(2) {
     line-height: 22px;
-    padding-left: 0;
-    word-wrap: break-word; }
-  /* line 2134, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
-  #e-commerce .coupons-table .coupons-items td:nth-child(5) {
     padding-right: 0;
+    word-wrap: break-word; }
+  /* line 2124, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  #e-commerce .coupons-table .coupons-items td:nth-child(5) {
+    padding-left: 0;
     text-align: center; }
-  /* line 2141, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2131, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce .coupons-table .coupons-items td a.edit-right {
-    margin-right: 15px; }
+    margin-left: 15px; }
 
-/* line 2148, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2138, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 #e-commerce section#registration_code_generation_modal {
-  margin-right: -442px;
+  margin-left: -442px;
   width: 930px; }
 
-/* line 2154, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2144, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 #e-commerce #add-coupon-modal,
 #e-commerce #invalidate_registration_code_modal,
 #e-commerce #edit-coupon-modal,
 #e-commerce #set-course-mode-price-modal,
 #e-commerce #registration_code_generation_modal {
   width: 650px;
-  margin-right: -325px;
+  margin-left: -325px;
   border-radius: 2px; }
-  /* line 2159, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2149, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce #add-coupon-modal .inner-wrapper,
   #e-commerce #invalidate_registration_code_modal .inner-wrapper,
   #e-commerce #edit-coupon-modal .inner-wrapper,
   #e-commerce #set-course-mode-price-modal .inner-wrapper,
   #e-commerce #registration_code_generation_modal .inner-wrapper {
     background: #fff; }
-  /* line 2163, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2153, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce #add-coupon-modal span.tip-text,
   #e-commerce #invalidate_registration_code_modal span.tip-text,
   #e-commerce #edit-coupon-modal span.tip-text,
@@ -13209,7 +13283,7 @@ input[name="subject"] {
     margin-top: 5px;
     font-size: 12px;
     color: #646464; }
-  /* line 2176, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2166, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce #add-coupon-modal input[type="button"]#update_coupon_button,
   #e-commerce #add-coupon-modal input[type="button"]#add_coupon_button,
   #e-commerce #add-coupon-modal input[type="button"]#set_course_button,
@@ -13340,7 +13414,7 @@ input[name="subject"] {
     #e-commerce #registration_code_generation_modal input[type="button"]#lookup_regcode:disabled {
       opacity: 0.5;
       cursor: not-allowed; }
-  /* line 2191, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2181, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce #add-coupon-modal input[name="generate-registration-codes-csv"],
   #e-commerce #invalidate_registration_code_modal input[name="generate-registration-codes-csv"],
   #e-commerce #edit-coupon-modal input[name="generate-registration-codes-csv"],
@@ -13391,7 +13465,7 @@ input[name="subject"] {
     #e-commerce #registration_code_generation_modal input[name="generate-registration-codes-csv"]:disabled {
       opacity: 0.5;
       cursor: not-allowed; }
-  /* line 2197, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2187, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce #add-coupon-modal .modal-form-error,
   #e-commerce #invalidate_registration_code_modal .modal-form-error,
   #e-commerce #edit-coupon-modal .modal-form-error,
@@ -13406,30 +13480,30 @@ input[name="subject"] {
     border: none;
     border-bottom: 3px solid #a0050e;
     background: #fbf2f3; }
-  /* line 2211, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2201, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce #add-coupon-modal ol.list-input li,
   #e-commerce #invalidate_registration_code_modal ol.list-input li,
   #e-commerce #edit-coupon-modal ol.list-input li,
   #e-commerce #set-course-mode-price-modal ol.list-input li,
   #e-commerce #registration_code_generation_modal ol.list-input li {
     width: 278px;
-    float: right; }
-    /* line 2216, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    float: left; }
+    /* line 2206, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     #e-commerce #add-coupon-modal ol.list-input li label.required::after,
     #e-commerce #invalidate_registration_code_modal ol.list-input li label.required::after,
     #e-commerce #edit-coupon-modal ol.list-input li label.required::after,
     #e-commerce #set-course-mode-price-modal ol.list-input li label.required::after,
     #e-commerce #registration_code_generation_modal ol.list-input li label.required::after {
       content: "*";
-      margin-right: 5px; }
-  /* line 2223, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      margin-left: 5px; }
+  /* line 2213, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce #add-coupon-modal ol.list-input li:nth-child(even),
   #e-commerce #invalidate_registration_code_modal ol.list-input li:nth-child(even),
   #e-commerce #edit-coupon-modal ol.list-input li:nth-child(even),
   #e-commerce #set-course-mode-price-modal ol.list-input li:nth-child(even),
   #e-commerce #registration_code_generation_modal ol.list-input li:nth-child(even) {
-    margin-right: 30px !important; }
-  /* line 2227, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    margin-left: 30px !important; }
+  /* line 2217, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce #add-coupon-modal ol.list-input li:nth-child(3),
   #e-commerce #add-coupon-modal ol.list-input li:nth-child(4),
   #e-commerce #invalidate_registration_code_modal ol.list-input li:nth-child(3),
@@ -13441,15 +13515,15 @@ input[name="subject"] {
   #e-commerce #registration_code_generation_modal ol.list-input li:nth-child(3),
   #e-commerce #registration_code_generation_modal ol.list-input li:nth-child(4) {
     width: 100%;
-    margin-right: 0 !important; }
-  /* line 2234, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    margin-left: 0 !important; }
+  /* line 2224, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce #add-coupon-modal ol.list-input li:nth-child(3),
   #e-commerce #invalidate_registration_code_modal ol.list-input li:nth-child(3),
   #e-commerce #edit-coupon-modal ol.list-input li:nth-child(3),
   #e-commerce #set-course-mode-price-modal ol.list-input li:nth-child(3),
   #e-commerce #registration_code_generation_modal ol.list-input li:nth-child(3) {
     margin-bottom: 0 !important; }
-    /* line 2237, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 2227, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     #e-commerce #add-coupon-modal ol.list-input li:nth-child(3) textarea, #e-commerce #add-coupon-modal ol.list-input li:nth-child(3) form#wiki_revision .CodeMirror, form#wiki_revision #e-commerce #add-coupon-modal ol.list-input li:nth-child(3) .CodeMirror,
     #e-commerce #invalidate_registration_code_modal ol.list-input li:nth-child(3) textarea,
     #e-commerce #invalidate_registration_code_modal ol.list-input li:nth-child(3) form#wiki_revision .CodeMirror, form#wiki_revision
@@ -13464,14 +13538,14 @@ input[name="subject"] {
     #e-commerce #registration_code_generation_modal ol.list-input li:nth-child(3) form#wiki_revision .CodeMirror, form#wiki_revision
     #e-commerce #registration_code_generation_modal ol.list-input li:nth-child(3) .CodeMirror {
       min-height: 100px; }
-  /* line 2242, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2232, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce #add-coupon-modal ol.list-input li:last-child,
   #e-commerce #invalidate_registration_code_modal ol.list-input li:last-child,
   #e-commerce #edit-coupon-modal ol.list-input li:last-child,
   #e-commerce #set-course-mode-price-modal ol.list-input li:last-child,
   #e-commerce #registration_code_generation_modal ol.list-input li:last-child {
     margin-bottom: 0 !important; }
-  /* line 2247, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2237, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce #add-coupon-modal table.tb_registration_code_status,
   #e-commerce #invalidate_registration_code_modal table.tb_registration_code_status,
   #e-commerce #edit-coupon-modal table.tb_registration_code_status,
@@ -13479,66 +13553,66 @@ input[name="subject"] {
   #e-commerce #registration_code_generation_modal table.tb_registration_code_status {
     margin-top: 20px;
     color: #555; }
-    /* line 2251, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 2241, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     #e-commerce #add-coupon-modal table.tb_registration_code_status thead,
     #e-commerce #invalidate_registration_code_modal table.tb_registration_code_status thead,
     #e-commerce #edit-coupon-modal table.tb_registration_code_status thead,
     #e-commerce #set-course-mode-price-modal table.tb_registration_code_status thead,
     #e-commerce #registration_code_generation_modal table.tb_registration_code_status thead {
       font-size: 14px; }
-      /* line 2254, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2244, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       #e-commerce #add-coupon-modal table.tb_registration_code_status thead tr th:last-child,
       #e-commerce #invalidate_registration_code_modal table.tb_registration_code_status thead tr th:last-child,
       #e-commerce #edit-coupon-modal table.tb_registration_code_status thead tr th:last-child,
       #e-commerce #set-course-mode-price-modal table.tb_registration_code_status thead tr th:last-child,
       #e-commerce #registration_code_generation_modal table.tb_registration_code_status thead tr th:last-child {
         text-align: center; }
-    /* line 2259, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 2249, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     #e-commerce #add-coupon-modal table.tb_registration_code_status tbody,
     #e-commerce #invalidate_registration_code_modal table.tb_registration_code_status tbody,
     #e-commerce #edit-coupon-modal table.tb_registration_code_status tbody,
     #e-commerce #set-course-mode-price-modal table.tb_registration_code_status tbody,
     #e-commerce #registration_code_generation_modal table.tb_registration_code_status tbody {
       font-size: 14px; }
-      /* line 2262, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2252, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       #e-commerce #add-coupon-modal table.tb_registration_code_status tbody tr td:last-child,
       #e-commerce #invalidate_registration_code_modal table.tb_registration_code_status tbody tr td:last-child,
       #e-commerce #edit-coupon-modal table.tb_registration_code_status tbody tr td:last-child,
       #e-commerce #set-course-mode-price-modal table.tb_registration_code_status tbody tr td:last-child,
       #e-commerce #registration_code_generation_modal table.tb_registration_code_status tbody tr td:last-child {
         text-align: center; }
-        /* line 2265, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+        /* line 2255, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
         #e-commerce #add-coupon-modal table.tb_registration_code_status tbody tr td:last-child a:first-child,
         #e-commerce #invalidate_registration_code_modal table.tb_registration_code_status tbody tr td:last-child a:first-child,
         #e-commerce #edit-coupon-modal table.tb_registration_code_status tbody tr td:last-child a:first-child,
         #e-commerce #set-course-mode-price-modal table.tb_registration_code_status tbody tr td:last-child a:first-child,
         #e-commerce #registration_code_generation_modal table.tb_registration_code_status tbody tr td:last-child a:first-child {
           margin-right: 10px; }
-  /* line 2273, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2263, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce #add-coupon-modal form#generate_codes ol.list-input li,
   #e-commerce #invalidate_registration_code_modal form#generate_codes ol.list-input li,
   #e-commerce #edit-coupon-modal form#generate_codes ol.list-input li,
   #e-commerce #set-course-mode-price-modal form#generate_codes ol.list-input li,
   #e-commerce #registration_code_generation_modal form#generate_codes ol.list-input li {
     width: 278px;
-    float: right;
+    float: left;
     min-height: 120px; }
-    /* line 2278, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 2268, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     #e-commerce #add-coupon-modal form#generate_codes ol.list-input li label.required::after,
     #e-commerce #invalidate_registration_code_modal form#generate_codes ol.list-input li label.required::after,
     #e-commerce #edit-coupon-modal form#generate_codes ol.list-input li label.required::after,
     #e-commerce #set-course-mode-price-modal form#generate_codes ol.list-input li label.required::after,
     #e-commerce #registration_code_generation_modal form#generate_codes ol.list-input li label.required::after {
       content: "*";
-      margin-right: 5px; }
-  /* line 2287, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      margin-left: 5px; }
+  /* line 2277, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce #add-coupon-modal form#generate_codes ol.list-input li.address_fields,
   #e-commerce #invalidate_registration_code_modal form#generate_codes ol.list-input li.address_fields,
   #e-commerce #edit-coupon-modal form#generate_codes ol.list-input li.address_fields,
   #e-commerce #set-course-mode-price-modal form#generate_codes ol.list-input li.address_fields,
   #e-commerce #registration_code_generation_modal form#generate_codes ol.list-input li.address_fields {
     min-height: 45px !important; }
-  /* line 2291, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2281, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce #add-coupon-modal form#generate_codes ol.list-input li#generate-registration-modal-field-city,
   #e-commerce #add-coupon-modal form#generate_codes ol.list-input li#generate-registration-modal-field-state,
   #e-commerce #add-coupon-modal form#generate_codes ol.list-input li#generate-registration-modal-field-zipcode,
@@ -13555,30 +13629,30 @@ input[name="subject"] {
   #e-commerce #registration_code_generation_modal form#generate_codes ol.list-input li#generate-registration-modal-field-state,
   #e-commerce #registration_code_generation_modal form#generate_codes ol.list-input li#generate-registration-modal-field-zipcode {
     width: 205px; }
-  /* line 2297, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2287, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce #add-coupon-modal form#generate_codes ol.list-input li#generate-registration-modal-field-country,
   #e-commerce #invalidate_registration_code_modal form#generate_codes ol.list-input li#generate-registration-modal-field-country,
   #e-commerce #edit-coupon-modal form#generate_codes ol.list-input li#generate-registration-modal-field-country,
   #e-commerce #set-course-mode-price-modal form#generate_codes ol.list-input li#generate-registration-modal-field-country,
   #e-commerce #registration_code_generation_modal form#generate_codes ol.list-input li#generate-registration-modal-field-country {
     width: 204px;
-    margin-right: 15px !important;
+    margin-left: 15px !important;
     margin-bottom: 20px; }
-  /* line 2305, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2295, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce #add-coupon-modal form#generate_codes ol.list-input li:nth-child(even),
   #e-commerce #invalidate_registration_code_modal form#generate_codes ol.list-input li:nth-child(even),
   #e-commerce #edit-coupon-modal form#generate_codes ol.list-input li:nth-child(even),
   #e-commerce #set-course-mode-price-modal form#generate_codes ol.list-input li:nth-child(even),
   #e-commerce #registration_code_generation_modal form#generate_codes ol.list-input li:nth-child(even) {
-    margin-right: 0 !important; }
-  /* line 2309, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    margin-left: 0 !important; }
+  /* line 2299, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce #add-coupon-modal form#generate_codes ol.list-input li:nth-child(3n),
   #e-commerce #invalidate_registration_code_modal form#generate_codes ol.list-input li:nth-child(3n),
   #e-commerce #edit-coupon-modal form#generate_codes ol.list-input li:nth-child(3n),
   #e-commerce #set-course-mode-price-modal form#generate_codes ol.list-input li:nth-child(3n),
   #e-commerce #registration_code_generation_modal form#generate_codes ol.list-input li:nth-child(3n) {
-    margin-right: 15px !important; }
-  /* line 2313, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    margin-left: 15px !important; }
+  /* line 2303, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce #add-coupon-modal form#generate_codes ol.list-input li#generate-registration-modal-field-company-contact-name,
   #e-commerce #add-coupon-modal form#generate_codes ol.list-input li#generate-registration-modal-field-address-line-3,
   #e-commerce #add-coupon-modal form#generate_codes ol.list-input li#generate-registration-modal-field-zipcode,
@@ -13594,25 +13668,25 @@ input[name="subject"] {
   #e-commerce #registration_code_generation_modal form#generate_codes ol.list-input li#generate-registration-modal-field-company-contact-name,
   #e-commerce #registration_code_generation_modal form#generate_codes ol.list-input li#generate-registration-modal-field-address-line-3,
   #e-commerce #registration_code_generation_modal form#generate_codes ol.list-input li#generate-registration-modal-field-zipcode {
-    margin-right: 15px !important; }
-  /* line 2319, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    margin-left: 15px !important; }
+  /* line 2309, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce #add-coupon-modal form#generate_codes ol.list-input li:last-child,
   #e-commerce #invalidate_registration_code_modal form#generate_codes ol.list-input li:last-child,
   #e-commerce #edit-coupon-modal form#generate_codes ol.list-input li:last-child,
   #e-commerce #set-course-mode-price-modal form#generate_codes ol.list-input li:last-child,
   #e-commerce #registration_code_generation_modal form#generate_codes ol.list-input li:last-child {
     min-height: 5px;
-    margin-right: 0 !important; }
-    /* line 2320, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    margin-left: 0 !important; }
+    /* line 2310, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     #e-commerce #add-coupon-modal form#generate_codes ol.list-input li:last-child label,
     #e-commerce #invalidate_registration_code_modal form#generate_codes ol.list-input li:last-child label,
     #e-commerce #edit-coupon-modal form#generate_codes ol.list-input li:last-child label,
     #e-commerce #set-course-mode-price-modal form#generate_codes ol.list-input li:last-child label,
     #e-commerce #registration_code_generation_modal form#generate_codes ol.list-input li:last-child label {
-      float: left;
-      left: 27px;
+      float: right;
+      right: 27px;
       margin-top: -5px; }
-    /* line 2331, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 2321, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     #e-commerce #add-coupon-modal form#generate_codes ol.list-input li:last-child input[type='checkbox'],
     #e-commerce #invalidate_registration_code_modal form#generate_codes ol.list-input li:last-child input[type='checkbox'],
     #e-commerce #edit-coupon-modal form#generate_codes ol.list-input li:last-child input[type='checkbox'],
@@ -13620,7 +13694,7 @@ input[name="subject"] {
     #e-commerce #registration_code_generation_modal form#generate_codes ol.list-input li:last-child input[type='checkbox'] {
       width: auto;
       height: auto; }
-  /* line 2337, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2327, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce #add-coupon-modal form#generate_codes ol.list-input li#generate-registration-modal-field-country ~ li#generate-registration-modal-field-unit-price,
   #e-commerce #add-coupon-modal form#generate_codes ol.list-input li#generate-registration-modal-field-country ~ li#generate-registration-modal-field-internal-reference,
   #e-commerce #invalidate_registration_code_modal form#generate_codes ol.list-input li#generate-registration-modal-field-country ~ li#generate-registration-modal-field-unit-price,
@@ -13631,23 +13705,23 @@ input[name="subject"] {
   #e-commerce #set-course-mode-price-modal form#generate_codes ol.list-input li#generate-registration-modal-field-country ~ li#generate-registration-modal-field-internal-reference,
   #e-commerce #registration_code_generation_modal form#generate_codes ol.list-input li#generate-registration-modal-field-country ~ li#generate-registration-modal-field-unit-price,
   #e-commerce #registration_code_generation_modal form#generate_codes ol.list-input li#generate-registration-modal-field-country ~ li#generate-registration-modal-field-internal-reference {
-    margin-right: 0 !important;
-    margin-left: 15px !important; }
-  /* line 2343, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    margin-left: 0 !important;
+    margin-right: 15px !important; }
+  /* line 2333, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce #add-coupon-modal form#generate_codes ol.list-input li#generate-registration-modal-field-custom-reference-number,
   #e-commerce #invalidate_registration_code_modal form#generate_codes ol.list-input li#generate-registration-modal-field-custom-reference-number,
   #e-commerce #edit-coupon-modal form#generate_codes ol.list-input li#generate-registration-modal-field-custom-reference-number,
   #e-commerce #set-course-mode-price-modal form#generate_codes ol.list-input li#generate-registration-modal-field-custom-reference-number,
   #e-commerce #registration_code_generation_modal form#generate_codes ol.list-input li#generate-registration-modal-field-custom-reference-number {
     width: auto; }
-  /* line 2348, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2338, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce #add-coupon-modal li#set-course-mode-modal-field-price,
   #e-commerce #invalidate_registration_code_modal li#set-course-mode-modal-field-price,
   #e-commerce #edit-coupon-modal li#set-course-mode-modal-field-price,
   #e-commerce #set-course-mode-price-modal li#set-course-mode-modal-field-price,
   #e-commerce #registration_code_generation_modal li#set-course-mode-modal-field-price {
     width: 100%; }
-    /* line 2351, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 2341, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     #e-commerce #add-coupon-modal li#set-course-mode-modal-field-price label.required::after,
     #e-commerce #invalidate_registration_code_modal li#set-course-mode-modal-field-price label.required::after,
     #e-commerce #edit-coupon-modal li#set-course-mode-modal-field-price label.required::after,
@@ -13655,21 +13729,21 @@ input[name="subject"] {
     #e-commerce #registration_code_generation_modal li#set-course-mode-modal-field-price label.required::after {
       content: "*";
       margin-left: 5px; }
-  /* line 2357, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2347, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce #add-coupon-modal li#set-course-mode-modal-field-currency,
   #e-commerce #invalidate_registration_code_modal li#set-course-mode-modal-field-currency,
   #e-commerce #edit-coupon-modal li#set-course-mode-modal-field-currency,
   #e-commerce #set-course-mode-price-modal li#set-course-mode-modal-field-currency,
   #e-commerce #registration_code_generation_modal li#set-course-mode-modal-field-currency {
-    margin-right: 0 !important; }
-    /* line 2360, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    margin-left: 0 !important; }
+    /* line 2350, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     #e-commerce #add-coupon-modal li#set-course-mode-modal-field-currency select,
     #e-commerce #invalidate_registration_code_modal li#set-course-mode-modal-field-currency select,
     #e-commerce #edit-coupon-modal li#set-course-mode-modal-field-currency select,
     #e-commerce #set-course-mode-price-modal li#set-course-mode-modal-field-currency select,
     #e-commerce #registration_code_generation_modal li#set-course-mode-modal-field-currency select {
       width: 100%; }
-  /* line 2365, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2355, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce #add-coupon-modal #registration-content form .field.text input,
   #e-commerce #invalidate_registration_code_modal #registration-content form .field.text input,
   #e-commerce #edit-coupon-modal #registration-content form .field.text input,
@@ -13679,7 +13753,7 @@ input[name="subject"] {
     margin-bottom: 0;
     height: 40px;
     border-radius: 3px; }
-  /* line 2372, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2362, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce #add-coupon-modal #coupon-content,
   #e-commerce #add-coupon-modal #course-content,
   #e-commerce #add-coupon-modal #content,
@@ -13706,7 +13780,7 @@ input[name="subject"] {
   #e-commerce #registration_code_generation_modal #registration-content,
   #e-commerce #registration_code_generation_modal #regcode-content {
     padding: 20px; }
-    /* line 2379, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 2369, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     #e-commerce #add-coupon-modal #coupon-content header,
     #e-commerce #add-coupon-modal #course-content header,
     #e-commerce #add-coupon-modal #content header,
@@ -13734,7 +13808,7 @@ input[name="subject"] {
     #e-commerce #registration_code_generation_modal #regcode-content header {
       margin: 0;
       padding: 0; }
-      /* line 2383, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2373, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       #e-commerce #add-coupon-modal #coupon-content header h2,
       #e-commerce #add-coupon-modal #course-content header h2,
       #e-commerce #add-coupon-modal #content header h2,
@@ -13763,8 +13837,8 @@ input[name="subject"] {
         font-size: 24px;
         font-weight: 100;
         color: #0075b4;
-        text-align: right; }
-    /* line 2392, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+        text-align: left; }
+    /* line 2382, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     #e-commerce #add-coupon-modal #coupon-content .instructions p,
     #e-commerce #add-coupon-modal #course-content .instructions p,
     #e-commerce #add-coupon-modal #content .instructions p,
@@ -13791,7 +13865,7 @@ input[name="subject"] {
     #e-commerce #registration_code_generation_modal #registration-content .instructions p,
     #e-commerce #registration_code_generation_modal #regcode-content .instructions p {
       margin-bottom: 5px; }
-    /* line 2396, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 2386, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     #e-commerce #add-coupon-modal #coupon-content form,
     #e-commerce #add-coupon-modal #course-content form,
     #e-commerce #add-coupon-modal #content form,
@@ -13822,7 +13896,7 @@ input[name="subject"] {
       border-radius: 0;
       box-shadow: none;
       border: none; }
-      /* line 2403, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2393, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       #e-commerce #add-coupon-modal #coupon-content form .group-form,
       #e-commerce #add-coupon-modal #course-content form .group-form,
       #e-commerce #add-coupon-modal #content form .group-form,
@@ -13851,7 +13925,7 @@ input[name="subject"] {
         margin: 0;
         padding-top: 0;
         padding-bottom: 20px; }
-      /* line 2409, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2399, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       #e-commerce #add-coupon-modal #coupon-content form .list-input,
       #e-commerce #add-coupon-modal #course-content form .list-input,
       #e-commerce #add-coupon-modal #content form .list-input,
@@ -13880,7 +13954,7 @@ input[name="subject"] {
         margin: 0;
         padding: 0;
         list-style: none; }
-      /* line 2415, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2405, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       #e-commerce #add-coupon-modal #coupon-content form .readonly,
       #e-commerce #add-coupon-modal #course-content form .readonly,
       #e-commerce #add-coupon-modal #content form .readonly,
@@ -13908,7 +13982,7 @@ input[name="subject"] {
       #e-commerce #registration_code_generation_modal #regcode-content form .readonly {
         background-color: #eee !important;
         color: #aaa; }
-      /* line 2420, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2410, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       #e-commerce #add-coupon-modal #coupon-content form .field,
       #e-commerce #add-coupon-modal #course-content form .field,
       #e-commerce #add-coupon-modal #content form .field,
@@ -13935,7 +14009,7 @@ input[name="subject"] {
       #e-commerce #registration_code_generation_modal #registration-content form .field,
       #e-commerce #registration_code_generation_modal #regcode-content form .field {
         margin: 0 0 20px; }
-      /* line 2424, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2414, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       #e-commerce #add-coupon-modal #coupon-content form .field.required label,
       #e-commerce #add-coupon-modal #course-content form .field.required label,
       #e-commerce #add-coupon-modal #content form .field.required label,
@@ -13962,7 +14036,7 @@ input[name="subject"] {
       #e-commerce #registration_code_generation_modal #registration-content form .field.required label,
       #e-commerce #registration_code_generation_modal #regcode-content form .field.required label {
         font-weight: 600; }
-      /* line 2428, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2418, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       #e-commerce #add-coupon-modal #coupon-content form .field label,
       #e-commerce #add-coupon-modal #course-content form .field label,
       #e-commerce #add-coupon-modal #content form .field label,
@@ -13993,7 +14067,7 @@ input[name="subject"] {
         -moz-transition: color 0.15s ease-in-out 0s;
         transition: color 0.15s ease-in-out 0s;
         color: #333; }
-      /* line 2436, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2426, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       #e-commerce #add-coupon-modal #coupon-content form .field.text input,
       #e-commerce #add-coupon-modal #course-content form .field.text input,
       #e-commerce #add-coupon-modal #content form .field.text input,
@@ -14021,7 +14095,7 @@ input[name="subject"] {
       #e-commerce #registration_code_generation_modal #regcode-content form .field.text input {
         background: #fff;
         margin-bottom: 0; }
-      /* line 2441, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2431, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       #e-commerce #add-coupon-modal #coupon-content form .field input,
       #e-commerce #add-coupon-modal #course-content form .field input,
       #e-commerce #add-coupon-modal #content form .field input,
@@ -14050,14 +14124,14 @@ input[name="subject"] {
         width: 100%;
         margin: 0;
         padding: 10px 15px; }
-  /* line 2450, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2440, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce #add-coupon-modal #registration-content form .field,
   #e-commerce #invalidate_registration_code_modal #registration-content form .field,
   #e-commerce #edit-coupon-modal #registration-content form .field,
   #e-commerce #set-course-mode-price-modal #registration-content form .field,
   #e-commerce #registration_code_generation_modal #registration-content form .field {
     margin: 0; }
-  /* line 2454, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2444, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   #e-commerce #add-coupon-modal #registration-content form .group-form,
   #e-commerce #invalidate_registration_code_modal #registration-content form .group-form,
   #e-commerce #edit-coupon-modal #registration-content form .group-form,
@@ -14067,56 +14141,56 @@ input[name="subject"] {
     padding-top: 0;
     padding-bottom: 0; }
 
-/* line 2465, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2455, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 #e-commerce #add-coupon-modal ol.list-input li input[type="checkbox"]#expiry-check,
 #e-commerce #add-coupon-modal ol.list-input li input[type="checkbox"]#expiry-check + label {
   display: inline-block;
   width: auto;
   margin-top: 10px; }
 
-/* line 2472, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2462, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 #e-commerce #add-coupon-modal ol.list-input li.full-width {
   width: 100%; }
 
-/* line 2476, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2466, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 #e-commerce #add-coupon-modal ol.list-input li input#coupon_expiration_date {
   width: 278px;
   display: inline-block;
   float: right; }
 
-/* line 2487, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2477, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .certificates-wrapper .generate-example-certificates-wrapper {
   margin-bottom: 30px; }
 
-/* line 2491, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2481, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .certificates-wrapper .example-certificate-status-wrapper {
   width: 75%; }
 
-/* line 2496, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2486, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 input[name="subject"] {
   width: 600px; }
 
-/* line 2500, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2490, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .enrollment-wrapper {
   margin-bottom: 40px; }
-  /* line 2503, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2493, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .enrollment-wrapper .count {
     color: green;
     font-weight: bold; }
 
-/* line 2511, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2501, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .ecommerce-wrapper h2,
 .proctoring-wrapper h2 {
   height: 26px;
   line-height: 26px;
-  padding-right: 25px; }
-  /* line 2517, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  padding-left: 25px; }
+  /* line 2507, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .ecommerce-wrapper h2 span,
   .proctoring-wrapper h2 span {
-    float: left;
+    float: right;
     font-size: 16px;
     font-weight: bold; }
-    /* line 2523, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 2513, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     .ecommerce-wrapper h2 span span,
     .proctoring-wrapper h2 span span {
       float: none;
@@ -14125,7 +14199,7 @@ input[name="subject"] {
       border-radius: 2px;
       font-weight: 400; }
 
-/* line 2533, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2523, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .ecommerce-wrapper span.tip,
 .proctoring-wrapper span.tip {
   display: block;
@@ -14135,7 +14209,7 @@ input[name="subject"] {
   background: #f8f4ec;
   color: #3c3c3c;
   line-height: 30px; }
-  /* line 2542, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2532, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .ecommerce-wrapper span.tip .add,
   .proctoring-wrapper span.tip .add {
     border: 1px solid #00476d;
@@ -14153,7 +14227,7 @@ input[name="subject"] {
     text-shadow: 0 1px 0 #003958;
     background-clip: padding-box;
     font-size: 0.8125em;
-    float: left;
+    float: right;
     line-height: 14px;
     font-size: 0.7em;
     /* stylelint-disable-line */ }
@@ -14177,7 +14251,7 @@ input[name="subject"] {
       opacity: 0.5;
       cursor: not-allowed; }
 
-/* line 2556, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2546, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .ecommerce-wrapper .content, .ecommerce-wrapper .course-wrapper .course-content, .course-wrapper .ecommerce-wrapper .course-content, .ecommerce-wrapper
 .course-wrapper .courseware-results-wrapper,
 .course-wrapper .ecommerce-wrapper .courseware-results-wrapper, .ecommerce-wrapper div.book-wrapper .book, div.book-wrapper .ecommerce-wrapper .book, .ecommerce-wrapper .profile-wrapper .course-info, .profile-wrapper .ecommerce-wrapper .course-info, .ecommerce-wrapper .view-student-notes .wrapper-student-notes .student-notes, .view-student-notes .wrapper-student-notes .ecommerce-wrapper .student-notes, .ecommerce-wrapper .date-wrapper, .ecommerce-wrapper div.gradebook-wrapper section.gradebook-content, div.gradebook-wrapper .ecommerce-wrapper section.gradebook-content, .ecommerce-wrapper .instructor-dashboard-content-2,
@@ -14201,7 +14275,7 @@ input[name="subject"] {
   display: block;
   width: 100%; }
 
-/* line 2561, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2551, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .ecommerce-wrapper span.code_tip,
 .proctoring-wrapper span.code_tip {
   display: block;
@@ -14209,7 +14283,7 @@ input[name="subject"] {
   padding: 10px 15px 10px 0;
   color: #3c3c3c;
   line-height: 30px; }
-  /* line 2570, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2560, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .ecommerce-wrapper span.code_tip .add,
   .proctoring-wrapper span.code_tip .add {
     border: 1px solid #00476d;
@@ -14247,19 +14321,19 @@ input[name="subject"] {
       opacity: 0.5;
       cursor: not-allowed; }
 
-/* line 2579, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2569, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .ecommerce-wrapper span.csv_tip,
 .proctoring-wrapper span.csv_tip {
   display: block;
   line-height: 30px;
   margin-bottom: 6px;
   padding: 10px 15px 10px 1px; }
-  /* line 2586, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2576, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .ecommerce-wrapper span.csv_tip .add,
   .proctoring-wrapper span.csv_tip .add {
     font-size: 0.8125em; }
 
-/* line 2591, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2581, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .ecommerce-wrapper span.invalid_sale,
 .proctoring-wrapper span.invalid_sale {
   display: block;
@@ -14269,7 +14343,7 @@ input[name="subject"] {
   background: none repeat scroll 0 0 #f8f4ec;
   color: #3c3c3c;
   line-height: 30px; }
-  /* line 2602, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2592, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .ecommerce-wrapper span.invalid_sale .add,
   .proctoring-wrapper span.invalid_sale .add {
     border: 1px solid #00476d;
@@ -14307,12 +14381,12 @@ input[name="subject"] {
       opacity: 0.5;
       cursor: not-allowed; }
 
-/* line 2611, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2601, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .ecommerce-wrapper .special-exam-header,
 .proctoring-wrapper .special-exam-header {
   padding-left: 25px; }
 
-/* line 2619, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2609, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .special-allowance-container .allowance-table,
 .special-allowance-container .exam-attempts-table,
 .special-allowance-container .onboarding-status-table,
@@ -14323,7 +14397,7 @@ input[name="subject"] {
 .student-proctored-exam-container .exam-attempts-table,
 .student-proctored-exam-container .onboarding-status-table {
   width: 100%; }
-  /* line 2624, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2614, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .special-allowance-container .allowance-table tr:nth-child(even),
   .special-allowance-container .exam-attempts-table tr:nth-child(even),
   .special-allowance-container .onboarding-status-table tr:nth-child(even),
@@ -14335,7 +14409,7 @@ input[name="subject"] {
   .student-proctored-exam-container .onboarding-status-table tr:nth-child(even) {
     background-color: #f8f8f8;
     border-bottom: 1px solid #f3f3f3; }
-  /* line 2629, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2619, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .special-allowance-container .allowance-table tbody.even,
   .special-allowance-container .exam-attempts-table tbody.even,
   .special-allowance-container .onboarding-status-table tbody.even,
@@ -14347,7 +14421,7 @@ input[name="subject"] {
   .student-proctored-exam-container .onboarding-status-table tbody.even {
     background-color: #f8f8f8;
     border-bottom: 1px solid #f3f3f3; }
-  /* line 2634, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2624, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .special-allowance-container .allowance-table tbody.accordion-trigger,
   .special-allowance-container .exam-attempts-table tbody.accordion-trigger,
   .special-allowance-container .onboarding-status-table tbody.accordion-trigger,
@@ -14358,7 +14432,7 @@ input[name="subject"] {
   .student-proctored-exam-container .exam-attempts-table tbody.accordion-trigger,
   .student-proctored-exam-container .onboarding-status-table tbody.accordion-trigger {
     cursor: pointer; }
-  /* line 2638, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2628, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .special-allowance-container .allowance-table .allowance-headings,
   .special-allowance-container .allowance-table .exam-attempt-headings,
   .special-allowance-container .allowance-table .onboarding-status-headings,
@@ -14388,7 +14462,7 @@ input[name="subject"] {
   .student-proctored-exam-container .onboarding-status-table .onboarding-status-headings {
     height: 40px;
     border-bottom: 1px solid #bebebe; }
-    /* line 2644, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 2634, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     .special-allowance-container .allowance-table .allowance-headings th:nth-child(5),
     .special-allowance-container .allowance-table .allowance-headings th:nth-child(4),
     .special-allowance-container .allowance-table .exam-attempt-headings th:nth-child(5),
@@ -14444,7 +14518,7 @@ input[name="subject"] {
     .student-proctored-exam-container .onboarding-status-table .onboarding-status-headings th:nth-child(5),
     .student-proctored-exam-container .onboarding-status-table .onboarding-status-headings th:nth-child(4) {
       text-align: center; }
-    /* line 2649, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 2639, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     .special-allowance-container .allowance-table .allowance-headings th:first-child,
     .special-allowance-container .allowance-table .exam-attempt-headings th:first-child,
     .special-allowance-container .allowance-table .onboarding-status-headings th:first-child,
@@ -14473,7 +14547,7 @@ input[name="subject"] {
     .student-proctored-exam-container .onboarding-status-table .exam-attempt-headings th:first-child,
     .student-proctored-exam-container .onboarding-status-table .onboarding-status-headings th:first-child {
       padding-left: 20px; }
-    /* line 2653, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 2643, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     .special-allowance-container .allowance-table .allowance-headings th,
     .special-allowance-container .allowance-table .exam-attempt-headings th,
     .special-allowance-container .allowance-table .onboarding-status-headings th,
@@ -14503,7 +14577,7 @@ input[name="subject"] {
     .student-proctored-exam-container .onboarding-status-table .onboarding-status-headings th {
       text-align: left;
       border-bottom: 1px solid #bebebe; }
-      /* line 2659, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2649, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       .special-allowance-container .allowance-table .allowance-headings th.attempt-allowed-time,
       .special-allowance-container .allowance-table .exam-attempt-headings th.attempt-allowed-time,
       .special-allowance-container .allowance-table .onboarding-status-headings th.attempt-allowed-time,
@@ -14532,7 +14606,7 @@ input[name="subject"] {
       .student-proctored-exam-container .onboarding-status-table .exam-attempt-headings th.attempt-allowed-time,
       .student-proctored-exam-container .onboarding-status-table .onboarding-status-headings th.attempt-allowed-time {
         width: 90px; }
-      /* line 2663, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2653, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       .special-allowance-container .allowance-table .allowance-headings th.attempt-type,
       .special-allowance-container .allowance-table .exam-attempt-headings th.attempt-type,
       .special-allowance-container .allowance-table .onboarding-status-headings th.attempt-type,
@@ -14562,7 +14636,7 @@ input[name="subject"] {
       .student-proctored-exam-container .onboarding-status-table .onboarding-status-headings th.attempt-type {
         width: 90px;
         text-align: center; }
-      /* line 2668, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2658, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       .special-allowance-container .allowance-table .allowance-headings th.attempt-started-at,
       .special-allowance-container .allowance-table .exam-attempt-headings th.attempt-started-at,
       .special-allowance-container .allowance-table .onboarding-status-headings th.attempt-started-at,
@@ -14592,7 +14666,7 @@ input[name="subject"] {
       .student-proctored-exam-container .onboarding-status-table .onboarding-status-headings th.attempt-started-at {
         width: 170px;
         text-align: center; }
-      /* line 2673, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2663, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       .special-allowance-container .allowance-table .allowance-headings th.attempt-completed-at,
       .special-allowance-container .allowance-table .exam-attempt-headings th.attempt-completed-at,
       .special-allowance-container .allowance-table .onboarding-status-headings th.attempt-completed-at,
@@ -14622,7 +14696,7 @@ input[name="subject"] {
       .student-proctored-exam-container .onboarding-status-table .onboarding-status-headings th.attempt-completed-at {
         width: 160px;
         text-align: center; }
-      /* line 2678, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2668, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       .special-allowance-container .allowance-table .allowance-headings th.attempt-status,
       .special-allowance-container .allowance-table .exam-attempt-headings th.attempt-status,
       .special-allowance-container .allowance-table .onboarding-status-headings th.attempt-status,
@@ -14652,7 +14726,7 @@ input[name="subject"] {
       .student-proctored-exam-container .onboarding-status-table .onboarding-status-headings th.attempt-status {
         width: 100px;
         text-align: center; }
-      /* line 2683, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2673, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       .special-allowance-container .allowance-table .allowance-headings th.exam-name,
       .special-allowance-container .allowance-table .exam-attempt-headings th.exam-name,
       .special-allowance-container .allowance-table .onboarding-status-headings th.exam-name,
@@ -14681,7 +14755,7 @@ input[name="subject"] {
       .student-proctored-exam-container .onboarding-status-table .exam-attempt-headings th.exam-name,
       .student-proctored-exam-container .onboarding-status-table .onboarding-status-headings th.exam-name {
         width: 150px; }
-      /* line 2687, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2677, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       .special-allowance-container .allowance-table .allowance-headings th.more,
       .special-allowance-container .allowance-table .exam-attempt-headings th.more,
       .special-allowance-container .allowance-table .onboarding-status-headings th.more,
@@ -14710,7 +14784,7 @@ input[name="subject"] {
       .student-proctored-exam-container .onboarding-status-table .exam-attempt-headings th.more,
       .student-proctored-exam-container .onboarding-status-table .onboarding-status-headings th.more {
         width: 30px; }
-      /* line 2691, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2681, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       .special-allowance-container .allowance-table .allowance-headings th.username,
       .special-allowance-container .allowance-table .exam-attempt-headings th.username,
       .special-allowance-container .allowance-table .onboarding-status-headings th.username,
@@ -14739,7 +14813,7 @@ input[name="subject"] {
       .student-proctored-exam-container .onboarding-status-table .exam-attempt-headings th.username,
       .student-proctored-exam-container .onboarding-status-table .onboarding-status-headings th.username {
         width: 140px; }
-      /* line 2695, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2685, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       .special-allowance-container .allowance-table .allowance-headings th.attempt-ready-to-resume,
       .special-allowance-container .allowance-table .exam-attempt-headings th.attempt-ready-to-resume,
       .special-allowance-container .allowance-table .onboarding-status-headings th.attempt-ready-to-resume,
@@ -14769,7 +14843,7 @@ input[name="subject"] {
       .student-proctored-exam-container .onboarding-status-table .onboarding-status-headings th.attempt-ready-to-resume {
         width: 60px;
         text-align: center; }
-      /* line 2700, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2690, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       .special-allowance-container .allowance-table .allowance-headings th.email,
       .special-allowance-container .allowance-table .exam-attempt-headings th.email,
       .special-allowance-container .allowance-table .onboarding-status-headings th.email,
@@ -14799,7 +14873,7 @@ input[name="subject"] {
       .student-proctored-exam-container .onboarding-status-table .onboarding-status-headings th.email {
         width: 160px;
         word-wrap: break-word; }
-      /* line 2705, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2695, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       .special-allowance-container .allowance-table .allowance-headings th.allowance-name,
       .special-allowance-container .allowance-table .exam-attempt-headings th.allowance-name,
       .special-allowance-container .allowance-table .onboarding-status-headings th.allowance-name,
@@ -14829,7 +14903,7 @@ input[name="subject"] {
       .student-proctored-exam-container .onboarding-status-table .onboarding-status-headings th.allowance-name {
         width: 100px;
         text-align: center; }
-      /* line 2710, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2700, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       .special-allowance-container .allowance-table .allowance-headings th.allowance-value,
       .special-allowance-container .allowance-table .exam-attempt-headings th.allowance-value,
       .special-allowance-container .allowance-table .onboarding-status-headings th.allowance-value,
@@ -14859,7 +14933,7 @@ input[name="subject"] {
       .student-proctored-exam-container .onboarding-status-table .onboarding-status-headings th.allowance-value {
         text-align: center;
         width: 100px; }
-      /* line 2716, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2706, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       .special-allowance-container .allowance-table .allowance-headings th.c_action,
       .special-allowance-container .allowance-table .exam-attempt-headings th.c_action,
       .special-allowance-container .allowance-table .onboarding-status-headings th.c_action,
@@ -14889,7 +14963,7 @@ input[name="subject"] {
       .student-proctored-exam-container .onboarding-status-table .onboarding-status-headings th.c_action {
         text-align: center;
         width: 60px; }
-  /* line 2725, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2715, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .special-allowance-container .allowance-table .allowance-items td,
   .special-allowance-container .exam-attempts-table .allowance-items td,
   .special-allowance-container .onboarding-status-table .allowance-items td,
@@ -14903,7 +14977,7 @@ input[name="subject"] {
     position: relative;
     line-height: normal;
     font-size: 14px; }
-  /* line 2732, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2722, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .special-allowance-container .allowance-table .allowance-items td:first-child,
   .special-allowance-container .exam-attempts-table .allowance-items td:first-child,
   .special-allowance-container .onboarding-status-table .allowance-items td:first-child,
@@ -14913,8 +14987,8 @@ input[name="subject"] {
   .student-proctored-exam-container .allowance-table .allowance-items td:first-child,
   .student-proctored-exam-container .exam-attempts-table .allowance-items td:first-child,
   .student-proctored-exam-container .onboarding-status-table .allowance-items td:first-child {
-    padding-right: 20px; }
-  /* line 2736, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    padding-left: 20px; }
+  /* line 2726, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .special-allowance-container .allowance-table .allowance-items td:nth-child(3),
   .special-allowance-container .exam-attempts-table .allowance-items td:nth-child(3),
   .special-allowance-container .onboarding-status-table .allowance-items td:nth-child(3),
@@ -14925,9 +14999,9 @@ input[name="subject"] {
   .student-proctored-exam-container .exam-attempts-table .allowance-items td:nth-child(3),
   .student-proctored-exam-container .onboarding-status-table .allowance-items td:nth-child(3) {
     line-height: 22px;
-    padding-left: 0;
+    padding-right: 0;
     word-wrap: break-word; }
-  /* line 2744, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2734, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .special-allowance-container .allowance-table .allowance-items td:nth-child(6),
   .special-allowance-container .allowance-table .allowance-items td:nth-child(5),
   .special-allowance-container .allowance-table .allowance-items td:nth-child(7),
@@ -14964,9 +15038,9 @@ input[name="subject"] {
   .student-proctored-exam-container .onboarding-status-table .allowance-items td:nth-child(5),
   .student-proctored-exam-container .onboarding-status-table .allowance-items td:nth-child(7),
   .student-proctored-exam-container .onboarding-status-table .allowance-items td:nth-child(8) {
-    padding-right: 0;
+    padding-left: 0;
     text-align: center; }
-  /* line 2753, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2743, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .special-allowance-container .allowance-table .allowance-items td:nth-child(4),
   .special-allowance-container .exam-attempts-table .allowance-items td:nth-child(4),
   .special-allowance-container .onboarding-status-table .allowance-items td:nth-child(4),
@@ -14978,7 +15052,7 @@ input[name="subject"] {
   .student-proctored-exam-container .onboarding-status-table .allowance-items td:nth-child(4) {
     word-wrap: break-word;
     text-align: center; }
-  /* line 2758, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2748, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .special-allowance-container .allowance-table .allowance-items td:nth-child(9),
   .special-allowance-container .exam-attempts-table .allowance-items td:nth-child(9),
   .special-allowance-container .onboarding-status-table .allowance-items td:nth-child(9),
@@ -14990,7 +15064,7 @@ input[name="subject"] {
   .student-proctored-exam-container .onboarding-status-table .allowance-items td:nth-child(9) {
     word-wrap: break-word;
     text-align: center; }
-  /* line 2763, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2753, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .special-allowance-container .allowance-table .allowance-items td:last-child,
   .special-allowance-container .exam-attempts-table .allowance-items td:last-child,
   .special-allowance-container .onboarding-status-table .allowance-items td:last-child,
@@ -15002,7 +15076,7 @@ input[name="subject"] {
   .student-proctored-exam-container .onboarding-status-table .allowance-items td:last-child {
     padding-left: 17px; }
 
-/* line 2769, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2759, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .special-allowance-container .exam-attempts-content,
 .special-allowance-container .exam-allowances-content,
 .special-allowance-container .onboarding-status-content,
@@ -15015,7 +15089,7 @@ input[name="subject"] {
   padding-left: 0;
   padding-right: 0; }
 
-/* line 2776, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2766, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .special-allowance-container .top-header, .special-allowance-container div.syllabus h1, div.syllabus .special-allowance-container h1, .special-allowance-container div.static_tab_wrapper h1, div.static_tab_wrapper .special-allowance-container h1, .special-allowance-container div.gradebook-wrapper section.gradebook-content h1, div.gradebook-wrapper section.gradebook-content .special-allowance-container h1, .special-allowance-container .instructor-dashboard-content-2 .instructor-dashboard-title, .instructor-dashboard-content-2 .special-allowance-container .instructor-dashboard-title,
 .student-onboarding-status-container .top-header,
 .student-onboarding-status-container div.syllabus h1, div.syllabus
@@ -15037,7 +15111,7 @@ input[name="subject"] {
 .student-proctored-exam-container .instructor-dashboard-title {
   margin-top: -30px;
   margin-bottom: 20px; }
-  /* line 2780, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2770, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .special-allowance-container .top-header .search-attempts, .special-allowance-container div.syllabus h1 .search-attempts, div.syllabus .special-allowance-container h1 .search-attempts, .special-allowance-container div.static_tab_wrapper h1 .search-attempts, div.static_tab_wrapper .special-allowance-container h1 .search-attempts, .special-allowance-container div.gradebook-wrapper section.gradebook-content h1 .search-attempts, div.gradebook-wrapper section.gradebook-content .special-allowance-container h1 .search-attempts, .special-allowance-container .instructor-dashboard-content-2 .instructor-dashboard-title .search-attempts, .instructor-dashboard-content-2 .special-allowance-container .instructor-dashboard-title .search-attempts,
   .special-allowance-container .top-header .search-onboarding,
   .special-allowance-container div.syllabus h1 .search-onboarding, div.syllabus
@@ -15088,7 +15162,7 @@ input[name="subject"] {
     display: inline-block;
     border-radius: 5px;
     float: left; }
-    /* line 2787, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 2777, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     .special-allowance-container .top-header .search-attempts input, .special-allowance-container div.syllabus h1 .search-attempts input, div.syllabus .special-allowance-container h1 .search-attempts input, .special-allowance-container div.static_tab_wrapper h1 .search-attempts input, div.static_tab_wrapper .special-allowance-container h1 .search-attempts input, .special-allowance-container div.gradebook-wrapper section.gradebook-content h1 .search-attempts input, div.gradebook-wrapper section.gradebook-content .special-allowance-container h1 .search-attempts input, .special-allowance-container .instructor-dashboard-content-2 .instructor-dashboard-title .search-attempts input, .instructor-dashboard-content-2 .special-allowance-container .instructor-dashboard-title .search-attempts input,
     .special-allowance-container .top-header .search-onboarding input,
     .special-allowance-container div.syllabus h1 .search-onboarding input, div.syllabus
@@ -15140,7 +15214,7 @@ input[name="subject"] {
       border-radius: 5px;
       font-size: 14px;
       width: 285px; }
-    /* line 2795, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 2785, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     .special-allowance-container .top-header .search-attempts span:first-child, .special-allowance-container div.syllabus h1 .search-attempts span:first-child, div.syllabus .special-allowance-container h1 .search-attempts span:first-child, .special-allowance-container div.static_tab_wrapper h1 .search-attempts span:first-child, div.static_tab_wrapper .special-allowance-container h1 .search-attempts span:first-child, .special-allowance-container div.gradebook-wrapper section.gradebook-content h1 .search-attempts span:first-child, div.gradebook-wrapper section.gradebook-content .special-allowance-container h1 .search-attempts span:first-child, .special-allowance-container .instructor-dashboard-content-2 .instructor-dashboard-title .search-attempts span:first-child, .instructor-dashboard-content-2 .special-allowance-container .instructor-dashboard-title .search-attempts span:first-child,
     .special-allowance-container .top-header .search-onboarding span:first-child,
     .special-allowance-container div.syllabus h1 .search-onboarding span:first-child, div.syllabus
@@ -15188,7 +15262,7 @@ input[name="subject"] {
     .student-proctored-exam-container .instructor-dashboard-content-2 .instructor-dashboard-title .search-onboarding span:first-child, .instructor-dashboard-content-2
     .student-proctored-exam-container .instructor-dashboard-title .search-onboarding span:first-child {
       margin-right: -5px; }
-    /* line 2799, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 2789, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     .special-allowance-container .top-header .search-attempts span, .special-allowance-container div.syllabus h1 .search-attempts span, div.syllabus .special-allowance-container h1 .search-attempts span, .special-allowance-container div.static_tab_wrapper h1 .search-attempts span, div.static_tab_wrapper .special-allowance-container h1 .search-attempts span, .special-allowance-container div.gradebook-wrapper section.gradebook-content h1 .search-attempts span, div.gradebook-wrapper section.gradebook-content .special-allowance-container h1 .search-attempts span, .special-allowance-container .instructor-dashboard-content-2 .instructor-dashboard-title .search-attempts span, .instructor-dashboard-content-2 .special-allowance-container .instructor-dashboard-title .search-attempts span,
     .special-allowance-container .top-header .search-onboarding span,
     .special-allowance-container div.syllabus h1 .search-onboarding span, div.syllabus
@@ -15240,7 +15314,7 @@ input[name="subject"] {
       padding: 7px 12px;
       cursor: pointer; }
 
-/* line 2808, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2798, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .special-allowance-container .pagination,
 .student-onboarding-status-container .pagination,
 .student-proctored-exam-container .pagination {
@@ -15249,12 +15323,12 @@ input[name="subject"] {
   float: right;
   margin: 0;
   border-radius: 4px; }
-  /* line 2815, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2805, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .special-allowance-container .pagination > li,
   .student-onboarding-status-container .pagination > li,
   .student-proctored-exam-container .pagination > li {
     display: inline; }
-    /* line 2817, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 2807, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     .special-allowance-container .pagination > li > a,
     .special-allowance-container .pagination > li > span,
     .student-onboarding-status-container .pagination > li > a,
@@ -15268,12 +15342,12 @@ input[name="subject"] {
       background-color: #fff;
       border: 1px solid #ddd;
       margin-left: -1px; }
-    /* line 2828, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 2818, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     .special-allowance-container .pagination > li > a.active,
     .student-onboarding-status-container .pagination > li > a.active,
     .student-proctored-exam-container .pagination > li > a.active {
       background-color: #ccc; }
-    /* line 2833, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 2823, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     .special-allowance-container .pagination > li:first-child > a,
     .special-allowance-container .pagination > li:first-child > span,
     .student-onboarding-status-container .pagination > li:first-child > a,
@@ -15283,7 +15357,7 @@ input[name="subject"] {
       margin-left: 0;
       border-top-left-radius: 4px;
       border-bottom-left-radius: 4px; }
-    /* line 2842, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 2832, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     .special-allowance-container .pagination > li:last-child > a,
     .special-allowance-container .pagination > li:last-child > span,
     .student-onboarding-status-container .pagination > li:last-child > a,
@@ -15292,7 +15366,7 @@ input[name="subject"] {
     .student-proctored-exam-container .pagination > li:last-child > span {
       border-top-right-radius: 4px;
       border-bottom-right-radius: 4px; }
-  /* line 2851, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2841, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .special-allowance-container .pagination > li > a:hover, .special-allowance-container .pagination > li > a:focus,
   .special-allowance-container .pagination > li > span:hover,
   .special-allowance-container .pagination > li > span:focus,
@@ -15308,7 +15382,7 @@ input[name="subject"] {
     color: #001731;
     background-color: #eeeeee;
     border-color: #ddd; }
-  /* line 2862, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2852, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .special-allowance-container .pagination > .active > a, .special-allowance-container .pagination > .active > a:hover, .special-allowance-container .pagination > .active > a:focus,
   .special-allowance-container .pagination > .active > span,
   .special-allowance-container .pagination > .active > span:hover,
@@ -15330,7 +15404,7 @@ input[name="subject"] {
     background-color: #0075b4;
     border-color: #0075b4;
     cursor: default; }
-  /* line 2874, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2864, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .special-allowance-container .pagination > .disabled > span,
   .special-allowance-container .pagination > .disabled > span:hover,
   .special-allowance-container .pagination > .disabled > span:focus,
@@ -15354,13 +15428,13 @@ input[name="subject"] {
     border-color: #ddd;
     cursor: not-allowed; }
 
-/* line 2889, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2879, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .rtl .instructor-dashboard-wrapper-2 .olddash-button-wrapper,
 .rtl .instructor-dashboard-wrapper-2 .studio-edit-link {
-  right: 2em;
-  left: auto; }
+  left: 2em;
+  right: auto; }
 
-/* line 2898, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2888, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .instructor-dashboard-wrapper-2 section.idash-section#certificates .certificates-wrapper .message, .instructor-dashboard-wrapper-2 section.idash-section#certificates #certificate-allowlist-editor .certificate-exception-inputs .message, .instructor-dashboard-wrapper-2 section.idash-section#certificates .allowlisted-students .message,
 .instructor-dashboard-wrapper-2 section.idash-section#certificates .invalidation-history .message {
   margin-top: 15px;
@@ -15368,58 +15442,58 @@ input[name="subject"] {
   border-top-style: groove;
   color: #000; }
 
-/* line 2911, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2901, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .instructor-dashboard-wrapper-2 section.idash-section#certificates p.under-heading {
   margin: 12px 0;
   line-height: 23px; }
 
-/* line 2916, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2906, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .instructor-dashboard-wrapper-2 section.idash-section#certificates hr.section-divider {
   margin: 25px 0;
   border-top: 7px solid #646464; }
 
-/* line 2925, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2915, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .instructor-dashboard-wrapper-2 section.idash-section#certificates .certificate-generation-history table thead tr td.task-name {
   width: 150px; }
 
-/* line 2929, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2919, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .instructor-dashboard-wrapper-2 section.idash-section#certificates .certificate-generation-history table thead tr td.task-date {
   width: 200px; }
 
-/* line 2937, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2927, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .instructor-dashboard-wrapper-2 section.idash-section#certificates .certificate-generation-history table tbody tr td {
   padding: 5px;
   vertical-align: middle;
   text-align: left; }
 
-/* line 2947, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2937, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .instructor-dashboard-wrapper-2 section.idash-section#certificates .student-username-or-email {
   width: 300px;
   margin-bottom: 10px; }
 
-/* line 2952, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2942, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .instructor-dashboard-wrapper-2 section.idash-section#certificates .notes-field {
   width: 400px; }
 
-/* line 2956, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2946, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .instructor-dashboard-wrapper-2 section.idash-section#certificates #certificate-allowlist-editor {
   padding-top: 5px; }
-  /* line 2960, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2950, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#certificates #certificate-allowlist-editor .certificate-exception-inputs p + p {
     margin-top: 5px; }
 
-/* line 2970, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 2960, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .instructor-dashboard-wrapper-2 section.idash-section#certificates .allowlisted-students,
 .instructor-dashboard-wrapper-2 section.idash-section#certificates .invalidation-history {
   margin-top: 10px;
   padding-top: 5px; }
-  /* line 2975, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 2965, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#certificates .allowlisted-students table,
   .instructor-dashboard-wrapper-2 section.idash-section#certificates .invalidation-history table {
     margin-top: 5px;
     width: 100%;
     word-wrap: break-word; }
-    /* line 2980, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 2970, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     .instructor-dashboard-wrapper-2 section.idash-section#certificates .allowlisted-students table th,
     .instructor-dashboard-wrapper-2 section.idash-section#certificates .invalidation-history table th {
       background-color: #f1f1f1;
@@ -15427,91 +15501,91 @@ input[name="subject"] {
       vertical-align: middle;
       text-align: left;
       color: #767676; }
-      /* line 2989, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2979, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       .instructor-dashboard-wrapper-2 section.idash-section#certificates .allowlisted-students table th.date,
       .instructor-dashboard-wrapper-2 section.idash-section#certificates .invalidation-history table th.date {
         width: 150px; }
-      /* line 2993, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2983, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       .instructor-dashboard-wrapper-2 section.idash-section#certificates .allowlisted-students table th.user-name,
       .instructor-dashboard-wrapper-2 section.idash-section#certificates .invalidation-history table th.user-name {
         width: 120px; }
-      /* line 2997, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2987, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       .instructor-dashboard-wrapper-2 section.idash-section#certificates .allowlisted-students table th.user-email,
       .instructor-dashboard-wrapper-2 section.idash-section#certificates .invalidation-history table th.user-email {
         width: 200px; }
-      /* line 3001, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 2991, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       .instructor-dashboard-wrapper-2 section.idash-section#certificates .allowlisted-students table th.action,
       .instructor-dashboard-wrapper-2 section.idash-section#certificates .invalidation-history table th.action {
         width: 150px; }
-    /* line 3006, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 2996, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     .instructor-dashboard-wrapper-2 section.idash-section#certificates .allowlisted-students table td,
     .instructor-dashboard-wrapper-2 section.idash-section#certificates .invalidation-history table td {
       padding: 10px;
       vertical-align: middle;
       text-align: left; }
-    /* line 3012, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 3002, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     .instructor-dashboard-wrapper-2 section.idash-section#certificates .allowlisted-students table tbody,
     .instructor-dashboard-wrapper-2 section.idash-section#certificates .invalidation-history table tbody {
       box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
       border: 1px solid #e4e4e4;
       background: #fff; }
-      /* line 3017, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+      /* line 3007, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       .instructor-dashboard-wrapper-2 section.idash-section#certificates .allowlisted-students table tbody tr,
       .instructor-dashboard-wrapper-2 section.idash-section#certificates .invalidation-history table tbody tr {
         transition: all 0.25s ease-in-out 0s;
         border-top: 1px solid #e4e4e4; }
-        /* line 3022, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+        /* line 3012, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
         .instructor-dashboard-wrapper-2 section.idash-section#certificates .allowlisted-students table tbody tr:first-child,
         .instructor-dashboard-wrapper-2 section.idash-section#certificates .invalidation-history table tbody tr:first-child {
           border-top: none; }
-        /* line 3026, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+        /* line 3016, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
         .instructor-dashboard-wrapper-2 section.idash-section#certificates .allowlisted-students table tbody tr:nth-child(odd),
         .instructor-dashboard-wrapper-2 section.idash-section#certificates .invalidation-history table tbody tr:nth-child(odd) {
           background-color: #f8f8f8; }
-        /* line 3030, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+        /* line 3020, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
         .instructor-dashboard-wrapper-2 section.idash-section#certificates .allowlisted-students table tbody tr a,
         .instructor-dashboard-wrapper-2 section.idash-section#certificates .invalidation-history table tbody tr a {
           color: #5e5e5e; }
-          /* line 3033, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+          /* line 3023, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
           .instructor-dashboard-wrapper-2 section.idash-section#certificates .allowlisted-students table tbody tr a:hover,
           .instructor-dashboard-wrapper-2 section.idash-section#certificates .invalidation-history table tbody tr a:hover {
             color: #065683; }
-        /* line 3038, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+        /* line 3028, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
         .instructor-dashboard-wrapper-2 section.idash-section#certificates .allowlisted-students table tbody tr:hover,
         .instructor-dashboard-wrapper-2 section.idash-section#certificates .invalidation-history table tbody tr:hover {
           background-color: #e6f1f8; }
 
-/* line 3051, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 3041, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .instructor-dashboard-wrapper-2 section.idash-section#certificates .certificate-exception-container h3 {
   border-bottom: 1px groove black;
   display: inline-block; }
 
-/* line 3057, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 3047, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .instructor-dashboard-wrapper-2 section.idash-section#certificates .bulk-allowlist-exception {
   margin-top: 10px;
   padding-top: 5px; }
-  /* line 3062, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 3052, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#certificates .bulk-allowlist-exception .allowlist-csv .bulk-exception-results {
     margin-top: 10px;
     background-color: #e4e4e4;
     border-top-style: groove;
     color: #000;
     margin-bottom: 15px; }
-    /* line 3069, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+    /* line 3059, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     .instructor-dashboard-wrapper-2 section.idash-section#certificates .bulk-allowlist-exception .allowlist-csv .bulk-exception-results .message {
       padding: 5px 10px;
       margin: 2px;
       border-top-style: none; }
-  /* line 3076, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+  /* line 3066, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#certificates .bulk-allowlist-exception .allowlist-csv .arrow {
-    margin-left: 10px;
+    margin-right: 10px;
     border: none;
     background: transparent;
     box-shadow: none;
     color: #0075b4;
     font-weight: bold; }
 
-/* line 3089, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 3079, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 div.staff_info {
   display: none;
   white-space: pre-wrap;
@@ -15528,7 +15602,7 @@ div.staff_info {
     display: table;
     clear: both; }
 
-/* line 3106, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 3096, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .xqa-modal,
 .staff-modal,
 .history-modal {
@@ -15538,47 +15612,47 @@ div.staff_info {
   overflow: auto;
   display: none; }
 
-/* line 3117, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 3107, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 div.staff_actions p.error {
   color: #b20610; }
 
-/* line 3121, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 3111, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 div.staff_actions p.success {
   color: #008100; }
 
-/* line 3126, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 3116, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .action-type-container p {
   line-height: 2; }
 
-/* line 3130, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 3120, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .mb-15 {
   margin-bottom: 20px; }
 
-/* line 3133, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 3123, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .mb-20 {
   margin-bottom: 20px; }
 
-/* line 3137, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 3127, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .download-report {
   margin-left: 10px; }
 
-/* line 3141, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 3131, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .selector {
   width: 315px;
   height: 34px; }
 
-/* line 3145, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 3135, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .data-download-container .message {
   border-radius: 1px;
   padding: 10px 15px;
   margin-bottom: 20px;
   font-weight: 600; }
 
-/* line 3151, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 3141, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .font-size-100 {
   font-size: 100%; }
 
-/* line 3155, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 3145, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .problem-selector {
   width: 780px;
   border: 1px solid grey;
@@ -15587,7 +15661,7 @@ div.staff_actions p.success {
   margin-right: 10px;
   float: left; }
 
-/* line 3164, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
+/* line 3154, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .block-browser {
   margin-top: 34px; }
 
@@ -15815,18 +15889,18 @@ button.ccx-button-link {
   .search-bar .search-button:hover,
   .search-bar .cancel-button:hover {
     box-sizing: border-box;
-    left: 0;
+    right: 0;
     display: block;
     position: absolute;
     top: 0;
     border: none;
     border-radius: 0;
-    -webkit-border-top-left-radius: 3px;
-    -moz-border-topleft-radius: 3px;
-    border-top-left-radius: 3px;
-    -webkit-border-bottom-left-radius: 3px;
-    -moz-border-bottomleft-radius: 3px;
-    border-bottom-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-topright-radius: 3px;
+    border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-bottomright-radius: 3px;
+    border-bottom-right-radius: 3px;
     background: #0075b4;
     padding: 0 10px;
     height: 35px;
@@ -15863,7 +15937,7 @@ button.ccx-button-link {
     padding-bottom: 10px; }
     /* line 69, /openedx/edx-platform/lms/static/sass/search/_search.scss */
     .search-results .search-info .search-count {
-      float: left;
+      float: right;
       color: #919191; }
   /* line 76, /openedx/edx-platform/lms/static/sass/search/_search.scss */
   .search-results .search-result-list {
@@ -15884,14 +15958,14 @@ button.ccx-button-link {
       margin-bottom: 20px; }
     /* line 96, /openedx/edx-platform/lms/static/sass/search/_search.scss */
     .search-results .search-results-item .result-type {
-      left: 10px;
+      right: 10px;
       position: absolute;
       bottom: 20px;
       font-size: 14px;
       color: #919191; }
     /* line 105, /openedx/edx-platform/lms/static/sass/search/_search.scss */
     .search-results .search-results-item .result-course-name {
-      margin-left: 1em;
+      margin-right: 1em;
       font-size: 14px;
       color: #919191; }
     /* line 112, /openedx/edx-platform/lms/static/sass/search/_search.scss */
@@ -15900,8 +15974,8 @@ button.ccx-button-link {
       color: #919191; }
     /* line 117, /openedx/edx-platform/lms/static/sass/search/_search.scss */
     .search-results .search-results-item .result-link {
-      float: left;
-      padding-right: 5px;
+      float: right;
+      padding-left: 5px;
       line-height: 1.6em; }
     /* line 124, /openedx/edx-platform/lms/static/sass/search/_search.scss */
     .search-results .search-results-item .search-results-ellipsis {
@@ -15912,14 +15986,14 @@ button.ccx-button-link {
   /* line 135, /openedx/edx-platform/lms/static/sass/search/_search.scss */
   .search-results .search-load-next {
     display: block;
-    border: 2px solid #0075b4;
+    border: 2px solid #1b6d99;
     padding: 1rem;
     border-radius: 3px;
     color: #313131; }
 
 /* line 144, /openedx/edx-platform/lms/static/sass/search/_search.scss */
 .courseware-search-bar {
-  width: 57.62712%; }
+  width: 57.44681%; }
 
 /* line 150, /openedx/edx-platform/lms/static/sass/search/_search.scss */
 .dashboard-search-bar {
@@ -15952,8 +16026,8 @@ button.ccx-button-link {
       font-size: 13px; }
     /* line 184, /openedx/edx-platform/lms/static/sass/search/_search.scss */
     .dashboard-search-results .search-info h2 {
-      float: right;
-      clear: right; }
+      float: left;
+      clear: left; }
 
 /* line 6, /openedx/edx-platform/lms/static/sass/base/_layouts.scss */
 body.view-in-course {
@@ -16068,25 +16142,25 @@ body.view-in-course {
     display: inline; }
     /* line 27, /openedx/edx-platform/lms/static/sass/_header.scss */
     .global-header .header-logo a {
-      float: right;
+      float: left;
       margin: 15px 0 0 40px;
       display: block; }
       /* line 33, /openedx/edx-platform/lms/static/sass/_header.scss */
       .global-header .header-logo a .logo {
-        float: right;
+        float: left;
         height: 40px; }
       @media (max-width: 991.98px) {
         /* line 27, /openedx/edx-platform/lms/static/sass/_header.scss */
         .global-header .header-logo a {
-          margin-right: 50%;
+          margin-left: 50%;
           height: 40px;
           width: auto; }
           /* line 45, /openedx/edx-platform/lms/static/sass/_header.scss */
           .global-header .header-logo a .logo {
-            margin-right: -50%; } }
+            margin-left: -50%; } }
     /* line 51, /openedx/edx-platform/lms/static/sass/_header.scss */
     .global-header .header-logo .course-header {
-      float: right;
+      float: left;
       margin: 16px 0 0 20px;
       font-size: 0.875rem;
       color: #313131;
@@ -16114,11 +16188,11 @@ body.view-in-course {
         text-decoration: none; }
     /* line 97, /openedx/edx-platform/lms/static/sass/_header.scss */
     .global-header .nav-links .main {
-      float: right;
+      float: left;
       margin: 20px 0 0 20px; }
       /* line 101, /openedx/edx-platform/lms/static/sass/_header.scss */
       .global-header .nav-links .main .nav-item {
-        float: right; }
+        float: left; }
       /* line 105, /openedx/edx-platform/lms/static/sass/_header.scss */
       .global-header .nav-links .main .nav-tab {
         text-transform: none;
@@ -16144,7 +16218,7 @@ body.view-in-course {
             border-bottom-color: #0075b4; }
     /* line 134, /openedx/edx-platform/lms/static/sass/_header.scss */
     .global-header .nav-links .secondary {
-      float: left;
+      float: right;
       margin: 15px 40px 0 0; }
       /* line 139, /openedx/edx-platform/lms/static/sass/_header.scss */
       .global-header .nav-links .secondary .nav-item {
@@ -16207,7 +16281,7 @@ body.view-in-course {
         position: absolute;
         background-color: #fff;
         color: #313131;
-        left: 30px;
+        right: 30px;
         top: 55px;
         z-index: 10; }
         /* line 218, /openedx/edx-platform/lms/static/sass/_header.scss */
@@ -16243,7 +16317,7 @@ body.view-in-course {
       position: inherit; }
     /* line 262, /openedx/edx-platform/lms/static/sass/_header.scss */
     .global-header .hamburger-menu {
-      right: 20px;
+      left: 20px;
       position: absolute;
       top: 18px;
       width: 30px;
@@ -16332,7 +16406,7 @@ body.view-in-course {
         width: 100%;
         padding: 12px 20px;
         border-bottom: 1px solid #e7e7e7;
-        text-align: right;
+        text-align: left;
         cursor: pointer; }
         /* line 372, /openedx/edx-platform/lms/static/sass/_header.scss */
         .mobile-menu .mobile-nav-link a:hover, .mobile-menu .mobile-nav-link a:focus {
@@ -16353,7 +16427,7 @@ body.view-in-course {
 
 /* line 403, /openedx/edx-platform/lms/static/sass/_header.scss */
 .settings-language-form {
-  float: left;
+  float: right;
   padding: 10px; }
 
 /* line 1, /openedx/edx-platform/lms/static/sass/features/_course-sock.scss */
@@ -16370,8 +16444,8 @@ body.view-in-course {
   transition: all 0.4s ease-out; }
   /* line 13, /openedx/edx-platform/lms/static/sass/features/_course-sock.scss */
   .verification-sock .action-toggle-verification-sock {
-    right: 50%;
-    margin-right: -150px;
+    left: 50%;
+    margin-left: -150px;
     position: absolute;
     top: -20px;
     width: 300px;
@@ -16416,7 +16490,7 @@ body.view-in-course {
           border: 1px solid rgba(0, 0, 0, 0.125); } }
       /* line 68, /openedx/edx-platform/lms/static/sass/features/_course-sock.scss */
       .verification-sock .verification-main-panel .verification-desc-panel .mini-cert {
-        left: 20px;
+        right: 20px;
         position: absolute;
         top: 20px;
         width: 260px; }
@@ -16467,7 +16541,7 @@ body.view-in-course {
             bottom: -30px; }
           /* line 130, /openedx/edx-platform/lms/static/sass/features/_course-sock.scss */
           .verification-sock .verification-main-panel .verification-desc-panel .action-upgrade-certificate.attached {
-            left: 20px;
+            right: 20px;
             position: fixed;
             bottom: 20px;
             top: auto; } }

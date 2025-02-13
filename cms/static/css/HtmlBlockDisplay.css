@@ -200,8 +200,9 @@
   .xmodule_display.xmodule_CourseInfoBlock img,
   .xmodule_display.xmodule_HtmlBlock img,
   .xmodule_display.xmodule_StaticTabBlock img {
-    max-width: 100%; }
-  /* line 123, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+    max-width: 100%;
+    height: auto; }
+  /* line 124, /openedx/edx-platform/xmodule/assets/html/_display.scss */
   .xmodule_display.xmodule_AboutBlock pre,
   .xmodule_display.xmodule_CourseInfoBlock pre,
   .xmodule_display.xmodule_HtmlBlock pre,
@@ -212,7 +213,7 @@
     font-size: 1em;
     white-space: pre-wrap;
     word-wrap: break-word; }
-  /* line 132, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+  /* line 133, /openedx/edx-platform/xmodule/assets/html/_display.scss */
   .xmodule_display.xmodule_AboutBlock code,
   .xmodule_display.xmodule_CourseInfoBlock code,
   .xmodule_display.xmodule_HtmlBlock code,
@@ -221,7 +222,7 @@
     font-family: monospace, serif;
     background: none;
     padding: 0; }
-  /* line 139, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+  /* line 140, /openedx/edx-platform/xmodule/assets/html/_display.scss */
   .xmodule_display.xmodule_AboutBlock table,
   .xmodule_display.xmodule_CourseInfoBlock table,
   .xmodule_display.xmodule_HtmlBlock table,
@@ -230,7 +231,7 @@
     margin: 20px 0;
     border-collapse: collapse;
     font-size: 16px; }
-    /* line 145, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+    /* line 146, /openedx/edx-platform/xmodule/assets/html/_display.scss */
     .xmodule_display.xmodule_AboutBlock table td,
     .xmodule_display.xmodule_AboutBlock table th,
     .xmodule_display.xmodule_CourseInfoBlock table td,
@@ -243,7 +244,7 @@
       padding: 10px;
       border: 1px solid #c8c8c8;
       font-size: 14px; }
-      /* line 152, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+      /* line 153, /openedx/edx-platform/xmodule/assets/html/_display.scss */
       .xmodule_display.xmodule_AboutBlock table td.cont-justified-left,
       .xmodule_display.xmodule_AboutBlock table th.cont-justified-left,
       .xmodule_display.xmodule_CourseInfoBlock table td.cont-justified-left,
@@ -253,7 +254,7 @@
       .xmodule_display.xmodule_StaticTabBlock table td.cont-justified-left,
       .xmodule_display.xmodule_StaticTabBlock table th.cont-justified-left {
         text-align: left !important; }
-      /* line 156, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+      /* line 157, /openedx/edx-platform/xmodule/assets/html/_display.scss */
       .xmodule_display.xmodule_AboutBlock table td.cont-justified-right,
       .xmodule_display.xmodule_AboutBlock table th.cont-justified-right,
       .xmodule_display.xmodule_CourseInfoBlock table td.cont-justified-right,
@@ -263,7 +264,7 @@
       .xmodule_display.xmodule_StaticTabBlock table td.cont-justified-right,
       .xmodule_display.xmodule_StaticTabBlock table th.cont-justified-right {
         text-align: right !important; }
-      /* line 160, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+      /* line 161, /openedx/edx-platform/xmodule/assets/html/_display.scss */
       .xmodule_display.xmodule_AboutBlock table td.cont-justified-center,
       .xmodule_display.xmodule_AboutBlock table th.cont-justified-center,
       .xmodule_display.xmodule_CourseInfoBlock table td.cont-justified-center,
@@ -273,14 +274,14 @@
       .xmodule_display.xmodule_StaticTabBlock table td.cont-justified-center,
       .xmodule_display.xmodule_StaticTabBlock table th.cont-justified-center {
         text-align: center !important; }
-  /* line 166, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+  /* line 167, /openedx/edx-platform/xmodule/assets/html/_display.scss */
   .xmodule_display.xmodule_AboutBlock th,
   .xmodule_display.xmodule_CourseInfoBlock th,
   .xmodule_display.xmodule_HtmlBlock th,
   .xmodule_display.xmodule_StaticTabBlock th {
     background: #eee;
     font-weight: bold; }
-  /* line 177, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+  /* line 178, /openedx/edx-platform/xmodule/assets/html/_display.scss */
   .xmodule_display.xmodule_AboutBlock .wrapper-modal-image .modal-ui-icon,
   .xmodule_display.xmodule_CourseInfoBlock .wrapper-modal-image .modal-ui-icon,
   .xmodule_display.xmodule_HtmlBlock .wrapper-modal-image .modal-ui-icon,
@@ -293,26 +294,26 @@
     background: #fff;
     color: #000;
     border: 2px solid #000; }
-    /* line 189, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+    /* line 190, /openedx/edx-platform/xmodule/assets/html/_display.scss */
     .xmodule_display.xmodule_AboutBlock .wrapper-modal-image .modal-ui-icon .label,
     .xmodule_display.xmodule_CourseInfoBlock .wrapper-modal-image .modal-ui-icon .label,
     .xmodule_display.xmodule_HtmlBlock .wrapper-modal-image .modal-ui-icon .label,
     .xmodule_display.xmodule_StaticTabBlock .wrapper-modal-image .modal-ui-icon .label {
       font-weight: bold; }
-    /* line 193, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+    /* line 194, /openedx/edx-platform/xmodule/assets/html/_display.scss */
     .xmodule_display.xmodule_AboutBlock .wrapper-modal-image .modal-ui-icon i,
     .xmodule_display.xmodule_CourseInfoBlock .wrapper-modal-image .modal-ui-icon i,
     .xmodule_display.xmodule_HtmlBlock .wrapper-modal-image .modal-ui-icon i,
     .xmodule_display.xmodule_StaticTabBlock .wrapper-modal-image .modal-ui-icon i {
       font-style: normal; }
-  /* line 198, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+  /* line 199, /openedx/edx-platform/xmodule/assets/html/_display.scss */
   .xmodule_display.xmodule_AboutBlock .wrapper-modal-image .image-link,
   .xmodule_display.xmodule_CourseInfoBlock .wrapper-modal-image .image-link,
   .xmodule_display.xmodule_HtmlBlock .wrapper-modal-image .image-link,
   .xmodule_display.xmodule_StaticTabBlock .wrapper-modal-image .image-link {
     position: relative;
     display: block; }
-    /* line 204, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+    /* line 205, /openedx/edx-platform/xmodule/assets/html/_display.scss */
     .xmodule_display.xmodule_AboutBlock .wrapper-modal-image .image-link .action-fullscreen,
     .xmodule_display.xmodule_CourseInfoBlock .wrapper-modal-image .image-link .action-fullscreen,
     .xmodule_display.xmodule_HtmlBlock .wrapper-modal-image .image-link .action-fullscreen,
@@ -320,13 +321,13 @@
       display: none;
       top: 10px;
       left: 10px; }
-    /* line 210, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+    /* line 211, /openedx/edx-platform/xmodule/assets/html/_display.scss */
     .xmodule_display.xmodule_AboutBlock .wrapper-modal-image .image-link:hover .action-fullscreen,
     .xmodule_display.xmodule_CourseInfoBlock .wrapper-modal-image .image-link:hover .action-fullscreen,
     .xmodule_display.xmodule_HtmlBlock .wrapper-modal-image .image-link:hover .action-fullscreen,
     .xmodule_display.xmodule_StaticTabBlock .wrapper-modal-image .image-link:hover .action-fullscreen {
       display: block; }
-  /* line 215, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+  /* line 216, /openedx/edx-platform/xmodule/assets/html/_display.scss */
   .xmodule_display.xmodule_AboutBlock .wrapper-modal-image .image-modal,
   .xmodule_display.xmodule_CourseInfoBlock .wrapper-modal-image .image-modal,
   .xmodule_display.xmodule_HtmlBlock .wrapper-modal-image .image-modal,
@@ -338,7 +339,7 @@
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7); }
-    /* line 227, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+    /* line 228, /openedx/edx-platform/xmodule/assets/html/_display.scss */
     .xmodule_display.xmodule_AboutBlock .wrapper-modal-image .image-modal .image-content,
     .xmodule_display.xmodule_CourseInfoBlock .wrapper-modal-image .image-modal .image-content,
     .xmodule_display.xmodule_HtmlBlock .wrapper-modal-image .image-modal .image-content,
@@ -350,13 +351,13 @@
       width: 95%;
       margin: auto;
       overflow: hidden; }
-      /* line 236, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+      /* line 237, /openedx/edx-platform/xmodule/assets/html/_display.scss */
       .xmodule_display.xmodule_AboutBlock .wrapper-modal-image .image-modal .image-content .image-wrapper,
       .xmodule_display.xmodule_CourseInfoBlock .wrapper-modal-image .image-modal .image-content .image-wrapper,
       .xmodule_display.xmodule_HtmlBlock .wrapper-modal-image .image-modal .image-content .image-wrapper,
       .xmodule_display.xmodule_StaticTabBlock .wrapper-modal-image .image-modal .image-content .image-wrapper {
         position: relative; }
-        /* line 239, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+        /* line 240, /openedx/edx-platform/xmodule/assets/html/_display.scss */
         .xmodule_display.xmodule_AboutBlock .wrapper-modal-image .image-modal .image-content .image-wrapper img,
         .xmodule_display.xmodule_CourseInfoBlock .wrapper-modal-image .image-modal .image-content .image-wrapper img,
         .xmodule_display.xmodule_HtmlBlock .wrapper-modal-image .image-modal .image-content .image-wrapper img,
@@ -367,14 +368,14 @@
           max-height: 100%;
           margin: auto;
           cursor: default; }
-      /* line 249, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+      /* line 250, /openedx/edx-platform/xmodule/assets/html/_display.scss */
       .xmodule_display.xmodule_AboutBlock .wrapper-modal-image .image-modal .image-content .action-close,
       .xmodule_display.xmodule_CourseInfoBlock .wrapper-modal-image .image-modal .image-content .action-close,
       .xmodule_display.xmodule_HtmlBlock .wrapper-modal-image .image-modal .image-content .action-close,
       .xmodule_display.xmodule_StaticTabBlock .wrapper-modal-image .image-modal .image-content .action-close {
         top: 10px;
         right: 10px; }
-      /* line 254, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+      /* line 255, /openedx/edx-platform/xmodule/assets/html/_display.scss */
       .xmodule_display.xmodule_AboutBlock .wrapper-modal-image .image-modal .image-content .image-controls,
       .xmodule_display.xmodule_CourseInfoBlock .wrapper-modal-image .image-modal .image-content .image-controls,
       .xmodule_display.xmodule_HtmlBlock .wrapper-modal-image .image-modal .image-content .image-controls,
@@ -385,7 +386,7 @@
         margin: 0;
         padding: 0;
         list-style: none; }
-        /* line 262, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+        /* line 263, /openedx/edx-platform/xmodule/assets/html/_display.scss */
         .xmodule_display.xmodule_AboutBlock .wrapper-modal-image .image-modal .image-content .image-controls .image-control,
         .xmodule_display.xmodule_CourseInfoBlock .wrapper-modal-image .image-modal .image-content .image-controls .image-control,
         .xmodule_display.xmodule_HtmlBlock .wrapper-modal-image .image-modal .image-content .image-controls .image-control,
@@ -394,38 +395,38 @@
           display: inline-block;
           margin: 0;
           padding: 0; }
-          /* line 268, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+          /* line 269, /openedx/edx-platform/xmodule/assets/html/_display.scss */
           .xmodule_display.xmodule_AboutBlock .wrapper-modal-image .image-modal .image-content .image-controls .image-control .modal-ui-icon,
           .xmodule_display.xmodule_CourseInfoBlock .wrapper-modal-image .image-modal .image-content .image-controls .image-control .modal-ui-icon,
           .xmodule_display.xmodule_HtmlBlock .wrapper-modal-image .image-modal .image-content .image-controls .image-control .modal-ui-icon,
           .xmodule_display.xmodule_StaticTabBlock .wrapper-modal-image .image-modal .image-content .image-controls .image-control .modal-ui-icon {
             position: relative; }
-            /* line 271, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+            /* line 272, /openedx/edx-platform/xmodule/assets/html/_display.scss */
             .xmodule_display.xmodule_AboutBlock .wrapper-modal-image .image-modal .image-content .image-controls .image-control .modal-ui-icon.action-zoom-in,
             .xmodule_display.xmodule_CourseInfoBlock .wrapper-modal-image .image-modal .image-content .image-controls .image-control .modal-ui-icon.action-zoom-in,
             .xmodule_display.xmodule_HtmlBlock .wrapper-modal-image .image-modal .image-content .image-controls .image-control .modal-ui-icon.action-zoom-in,
             .xmodule_display.xmodule_StaticTabBlock .wrapper-modal-image .image-modal .image-content .image-controls .image-control .modal-ui-icon.action-zoom-in {
               margin-right: 5px; }
-            /* line 275, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+            /* line 276, /openedx/edx-platform/xmodule/assets/html/_display.scss */
             .xmodule_display.xmodule_AboutBlock .wrapper-modal-image .image-modal .image-content .image-controls .image-control .modal-ui-icon.action-zoom-out,
             .xmodule_display.xmodule_CourseInfoBlock .wrapper-modal-image .image-modal .image-content .image-controls .image-control .modal-ui-icon.action-zoom-out,
             .xmodule_display.xmodule_HtmlBlock .wrapper-modal-image .image-modal .image-content .image-controls .image-control .modal-ui-icon.action-zoom-out,
             .xmodule_display.xmodule_StaticTabBlock .wrapper-modal-image .image-modal .image-content .image-controls .image-control .modal-ui-icon.action-zoom-out {
               margin-left: 5px; }
-            /* line 279, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+            /* line 280, /openedx/edx-platform/xmodule/assets/html/_display.scss */
             .xmodule_display.xmodule_AboutBlock .wrapper-modal-image .image-modal .image-content .image-controls .image-control .modal-ui-icon.is-disabled,
             .xmodule_display.xmodule_CourseInfoBlock .wrapper-modal-image .image-modal .image-content .image-controls .image-control .modal-ui-icon.is-disabled,
             .xmodule_display.xmodule_HtmlBlock .wrapper-modal-image .image-modal .image-content .image-controls .image-control .modal-ui-icon.is-disabled,
             .xmodule_display.xmodule_StaticTabBlock .wrapper-modal-image .image-modal .image-content .image-controls .image-control .modal-ui-icon.is-disabled {
               opacity: 0.5;
               cursor: default; }
-    /* line 288, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+    /* line 289, /openedx/edx-platform/xmodule/assets/html/_display.scss */
     .xmodule_display.xmodule_AboutBlock .wrapper-modal-image .image-modal.image-is-fit-to-screen,
     .xmodule_display.xmodule_CourseInfoBlock .wrapper-modal-image .image-modal.image-is-fit-to-screen,
     .xmodule_display.xmodule_HtmlBlock .wrapper-modal-image .image-modal.image-is-fit-to-screen,
     .xmodule_display.xmodule_StaticTabBlock .wrapper-modal-image .image-modal.image-is-fit-to-screen {
       display: block; }
-      /* line 292, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+      /* line 293, /openedx/edx-platform/xmodule/assets/html/_display.scss */
       .xmodule_display.xmodule_AboutBlock .wrapper-modal-image .image-modal.image-is-fit-to-screen .image-content .image-wrapper,
       .xmodule_display.xmodule_CourseInfoBlock .wrapper-modal-image .image-modal.image-is-fit-to-screen .image-content .image-wrapper,
       .xmodule_display.xmodule_HtmlBlock .wrapper-modal-image .image-modal.image-is-fit-to-screen .image-content .image-wrapper,
@@ -434,20 +435,20 @@
         left: 0 !important;
         width: 100% !important;
         height: 100% !important; }
-        /* line 298, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+        /* line 299, /openedx/edx-platform/xmodule/assets/html/_display.scss */
         .xmodule_display.xmodule_AboutBlock .wrapper-modal-image .image-modal.image-is-fit-to-screen .image-content .image-wrapper img,
         .xmodule_display.xmodule_CourseInfoBlock .wrapper-modal-image .image-modal.image-is-fit-to-screen .image-content .image-wrapper img,
         .xmodule_display.xmodule_HtmlBlock .wrapper-modal-image .image-modal.image-is-fit-to-screen .image-content .image-wrapper img,
         .xmodule_display.xmodule_StaticTabBlock .wrapper-modal-image .image-modal.image-is-fit-to-screen .image-content .image-wrapper img {
           top: 0 !important;
           left: 0 !important; }
-    /* line 305, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+    /* line 306, /openedx/edx-platform/xmodule/assets/html/_display.scss */
     .xmodule_display.xmodule_AboutBlock .wrapper-modal-image .image-modal.image-is-zoomed,
     .xmodule_display.xmodule_CourseInfoBlock .wrapper-modal-image .image-modal.image-is-zoomed,
     .xmodule_display.xmodule_HtmlBlock .wrapper-modal-image .image-modal.image-is-zoomed,
     .xmodule_display.xmodule_StaticTabBlock .wrapper-modal-image .image-modal.image-is-zoomed {
       display: block; }
-      /* line 309, /openedx/edx-platform/xmodule/assets/html/_display.scss */
+      /* line 310, /openedx/edx-platform/xmodule/assets/html/_display.scss */
       .xmodule_display.xmodule_AboutBlock .wrapper-modal-image .image-modal.image-is-zoomed .image-content .image-wrapper img,
       .xmodule_display.xmodule_CourseInfoBlock .wrapper-modal-image .image-modal.image-is-zoomed .image-content .image-wrapper img,
       .xmodule_display.xmodule_HtmlBlock .wrapper-modal-image .image-modal.image-is-zoomed .image-content .image-wrapper img,

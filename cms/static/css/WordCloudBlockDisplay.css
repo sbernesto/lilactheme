@@ -5,7 +5,7 @@
   /* stylelint-disable-line */ }
   /* line 6, /openedx/edx-platform/xmodule/assets/word_cloud/_display.scss */
   .xmodule_display.xmodule_WordCloudBlock .input-cloud {
-    margin: 5px; }
+    margin: calc((var(--baseline)/4)); }
   /* line 10, /openedx/edx-platform/xmodule/assets/word_cloud/_display.scss */
   .xmodule_display.xmodule_WordCloudBlock .result_cloud_section {
     display: none;
