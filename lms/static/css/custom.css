@@ -1,4 +1,4 @@
-/* line 2, /openedx/themes/delfa/lms/static/sass/blocks/_buttons.scss */
+/* line 2, /openedx/themes/allkopier/lms/static/sass/blocks/_buttons.scss */
 .register-button,
 .login-button,
 .wiki-wrapper section.wiki .settings-form .btn,
@@ -12,17 +12,17 @@
 .course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong {
   transition: all 0.2s ease;
   display: inline-block;
-  background: #e1452c !important;
+  background: #C3130A !important;
   color: #fff !important;
   text-transform: uppercase;
   border-radius: 40px !important;
   text-shadow: none !important;
   box-shadow: none !important;
-  border: 3px solid #e1452c !important;
+  border: 3px solid #C3130A !important;
   text-transform: uppercase !important;
   cursor: pointer;
   font-size: 15px !important; }
-  /* line 34, /openedx/themes/delfa/lms/static/sass/blocks/_buttons.scss */
+  /* line 34, /openedx/themes/allkopier/lms/static/sass/blocks/_buttons.scss */
   .register-button:active, .register-button:focus,
   .login-button:active,
   .login-button:focus,
@@ -44,9 +44,9 @@
   .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register:focus,
   .course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong:active,
   .course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong:focus {
-    color: #e1452c !important;
+    color: #C3130A !important;
     background: #fff !important; }
-  /* line 39, /openedx/themes/delfa/lms/static/sass/blocks/_buttons.scss */
+  /* line 39, /openedx/themes/allkopier/lms/static/sass/blocks/_buttons.scss */
   .register-button:focus:hover, .register-button:hover,
   .login-button:focus:hover,
   .login-button:hover,
@@ -68,28 +68,28 @@
   .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register:hover,
   .course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong:focus:hover,
   .course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong:hover {
-    color: #e1452c !important;
+    color: #C3130A !important;
     background: #fff !important; }
 
-/* line 46, /openedx/themes/delfa/lms/static/sass/blocks/_buttons.scss */
+/* line 46, /openedx/themes/allkopier/lms/static/sass/blocks/_buttons.scss */
 .wrapper-messages-primary .message.message-upsell .action-upgrade {
   border-radius: 40px; }
 
-/* line 51, /openedx/themes/delfa/lms/static/sass/blocks/_buttons.scss */
+/* line 51, /openedx/themes/allkopier/lms/static/sass/blocks/_buttons.scss */
 #expand-collapse-outline-all-button,
 .new-post-btn,
 section.discussion .search-button,
 .course-info .container .wrap-instructor-info .instructor-info-action {
-  border: 3px solid #004183 !important;
+  border: 3px solid #C3130A !important;
   border-radius: 40px !important;
   color: #fff !important;
-  background: #004183 !important;
+  background: #C3130A !important;
   line-height: 1.1;
   text-transform: uppercase !important;
   cursor: pointer;
   font-size: 15px !important;
   text-decoration: none !important; }
-  /* line 64, /openedx/themes/delfa/lms/static/sass/blocks/_buttons.scss */
+  /* line 64, /openedx/themes/allkopier/lms/static/sass/blocks/_buttons.scss */
   #expand-collapse-outline-all-button:active, #expand-collapse-outline-all-button:focus, #expand-collapse-outline-all-button:focus:hover, #expand-collapse-outline-all-button:hover,
   .new-post-btn:active,
   .new-post-btn:focus,
@@ -104,15 +104,15 @@ section.discussion .search-button,
   .course-info .container .wrap-instructor-info .instructor-info-action:focus:hover,
   .course-info .container .wrap-instructor-info .instructor-info-action:hover {
     background: #fff !important;
-    border: 3px solid #004183 !important;
-    color: #004183 !important; }
+    border: 3px solid #C3130A !important;
+    color: #C3130A !important; }
 
-/* line 74, /openedx/themes/delfa/lms/static/sass/blocks/_buttons.scss */
+/* line 74, /openedx/themes/allkopier/lms/static/sass/blocks/_buttons.scss */
 .btn {
   font-weight: normal !important;
   font-size: 15px !important; }
 
-/* line 1, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+/* line 1, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
 .global-header {
   box-shadow: none !important;
   padding: 0;
@@ -120,7 +120,7 @@ section.discussion .search-button,
   position: relative;
   overflow: visible;
   background: #fff; }
-  /* line 8, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+  /* line 8, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
   .global-header .main-header {
     display: flex;
     justify-content: space-between;
@@ -128,93 +128,93 @@ section.discussion .search-button,
     padding: 20px 0;
     height: auto; }
     @media screen and (max-width: 991px) {
-      /* line 8, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+      /* line 8, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
       .global-header .main-header {
         display: block;
         text-align: center; } }
-    /* line 18, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+    /* line 18, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
     .global-header .main-header .header-logo {
       display: block;
       margin: 0;
       flex-grow: 0; }
       @media screen and (max-width: 991px) {
-        /* line 18, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+        /* line 18, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
         .global-header .main-header .header-logo {
           display: inline-block; } }
-      /* line 25, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+      /* line 25, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
       .global-header .main-header .header-logo a {
         margin: 0; }
-        /* line 27, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+        /* line 27, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
         .global-header .main-header .header-logo a .logo {
           display: block;
           margin: 0 !important; }
-      /* line 32, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+      /* line 32, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
       .global-header .main-header .header-logo .course-header {
         margin-top: 0;
         color: #898989; }
-    /* line 37, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+    /* line 37, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
     .global-header .main-header .nav-links {
       flex-grow: 1;
       display: flex;
       justify-content: space-between;
       align-items: center;
       font-size: 16px !important; }
-      /* line 43, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+      /* line 43, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
       .global-header .main-header .nav-links .main {
         margin: 0 0 0 20px; }
-        /* line 45, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+        /* line 45, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
         .global-header .main-header .nav-links .main .nav-item {
           margin-left: 30px; }
-          /* line 47, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+          /* line 47, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
           .global-header .main-header .nav-links .main .nav-item a {
             color: #898989; }
-      /* line 52, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+      /* line 52, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
       .global-header .main-header .nav-links .secondary {
         margin: 0; }
-        /* line 54, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+        /* line 54, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
         .global-header .main-header .nav-links .secondary .nav-item {
           padding: 0;
           margin: 0 0 0 10px;
           font-size: 16px !important; }
-          /* line 58, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+          /* line 58, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
           .global-header .main-header .nav-links .secondary .nav-item a {
             color: #898989; }
-          /* line 61, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+          /* line 61, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
           .global-header .main-header .nav-links .secondary .nav-item .fa {
             color: #898989; }
-        /* line 65, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+        /* line 65, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
         .global-header .main-header .nav-links .secondary .nav-item-dropdown {
           position: relative; }
-        /* line 68, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+        /* line 68, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
         .global-header .main-header .nav-links .secondary .username {
           margin-left: 10px; }
-        /* line 71, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+        /* line 71, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
         .global-header .main-header .nav-links .secondary .user-image-frame {
           margin: 0 5px;
           border-radius: 50%;
-          border: 2px solid #004183; }
-        /* line 76, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+          border: 2px solid #C3130A; }
+        /* line 76, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
         .global-header .main-header .nav-links .secondary .dropdown-user-menu {
           right: 0; }
-  /* line 82, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+  /* line 82, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
   .global-header .dropdown-user-menu {
     background: #e6eaed !important;
     border: 5px solid #fff !important;
     width: 200px; }
-    /* line 86, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+    /* line 86, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
     .global-header .dropdown-user-menu a {
       color: #28507d !important; }
-      /* line 88, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+      /* line 88, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
       .global-header .dropdown-user-menu a:hover {
         background: #bfdff7;
-        color: #004183 !important; }
-  /* line 94, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+        color: #C3130A !important; }
+  /* line 94, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
   .global-header .main .nav-item a {
     padding: 0 !important;
     border: none !important;
     position: relative;
     color: #898989 !important; }
-    /* line 99, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+    /* line 99, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
     .global-header .main .nav-item a:before {
       content: "";
       width: 0;
@@ -222,64 +222,64 @@ section.discussion .search-button,
       position: absolute;
       left: 0;
       bottom: -5px;
-      background: #004183;
+      background: #C3130A;
       transition: all 0.2s ease; }
-    /* line 109, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+    /* line 109, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
     .global-header .main .nav-item a.active:before, .global-header .main .nav-item a:hover:before {
       width: 100%; }
-  /* line 114, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+  /* line 114, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
   .global-header .help-link {
     color: #898989 !important; }
-  /* line 117, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+  /* line 117, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
   .global-header .hamburger-menu {
     top: 30px; }
-    /* line 119, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+    /* line 119, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
     .global-header .hamburger-menu .line {
       background: #000; }
-  /* line 124, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+  /* line 124, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
   .global-header .btn {
     transition: all 0.2s ease;
     display: inline-block;
-    background: #e1452c !important;
+    background: #C3130A !important;
     color: #fff !important;
-    border: 3px solid #e1452c !important;
+    border: 3px solid #C3130A !important;
     text-transform: uppercase;
     border-radius: 40px !important; }
-    /* line 132, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+    /* line 132, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
     .global-header .btn:active, .global-header .btn:focus {
-      background: #e1452c !important; }
-    /* line 136, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+      background: #C3130A !important; }
+    /* line 136, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
     .global-header .btn:focus:hover {
-      color: #e1452c !important;
+      color: #C3130A !important;
       background: #fff !important;
-      border: 3px solid #e1452c !important; }
-    /* line 141, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+      border: 3px solid #C3130A !important; }
+    /* line 141, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
     .global-header .btn:hover {
-      color: #e1452c !important;
+      color: #C3130A !important;
       background: #fff !important;
-      border: 3px solid #e1452c !important; }
+      border: 3px solid #C3130A !important; }
 
-/* line 150, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+/* line 150, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
 .mobile-menu {
   margin: 0;
   border-top: 1px solid #234264; }
-  /* line 153, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+  /* line 153, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
   .mobile-menu .mobile-nav-link a {
     background: none !important;
     color: #000 !important;
     border-bottom: 1px solid #234264 !important;
     font-size: 16px; }
-    /* line 158, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+    /* line 158, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
     .mobile-menu .mobile-nav-link a:focus:hover, .mobile-menu .mobile-nav-link a:hover {
       background: none !important; }
 
-/* line 166, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+/* line 166, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
 .global-header .main-header .nav-links .main .nav-item {
   position: relative; }
-  /* line 169, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+  /* line 169, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
   .global-header .main-header .nav-links .main .nav-item:hover ul {
     display: block; }
-  /* line 173, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+  /* line 173, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
   .global-header .main-header .nav-links .main .nav-item ul {
     list-style: none;
     padding: 0;
@@ -292,27 +292,27 @@ section.discussion .search-button,
     width: 300px;
     z-index: 100;
     display: none; }
-    /* line 185, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+    /* line 185, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
     .global-header .main-header .nav-links .main .nav-item ul li {
       font-size: 15px;
       line-height: 18px;
       text-transform: uppercase; }
-      /* line 189, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+      /* line 189, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
       .global-header .main-header .nav-links .main .nav-item ul li a {
         color: #28507d !important;
         text-decoration: none;
         display: block;
         padding: 10px 15px !important;
         margin: 0 !important; }
-        /* line 195, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+        /* line 195, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
         .global-header .main-header .nav-links .main .nav-item ul li a:before {
           display: none !important; }
-        /* line 198, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+        /* line 198, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
         .global-header .main-header .nav-links .main .nav-item ul li a:hover {
           background: #bfdff7;
-          color: #004183 !important; }
+          color: #C3130A !important; }
 
-/* line 209, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+/* line 209, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
 section.home > header {
   min-height: 450px;
   background: url("../images/background.jpg") no-repeat 50% 50%;
@@ -322,11 +322,11 @@ section.home > header {
   align-items: center;
   justify-content: center;
   color: #fff; }
-  /* line 218, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+  /* line 218, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
   section.home > header .outer-wrapper {
     width: 100%;
     padding: 15px; }
-    /* line 221, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+    /* line 221, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
     section.home > header .outer-wrapper .title {
       background: none;
       box-shadow: none;
@@ -335,10 +335,10 @@ section.home > header {
       padding: 0;
       width: 100%;
       transition: none !important; }
-      /* line 229, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+      /* line 229, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
       section.home > header .outer-wrapper .title .heading-group {
         text-align: center; }
-        /* line 231, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+        /* line 231, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
         section.home > header .outer-wrapper .title .heading-group h1 {
           font-size: 32px;
           line-height: 1.2;
@@ -349,10 +349,10 @@ section.home > header {
           text-transform: uppercase;
           text-align: center !important; }
           @media screen and (min-width: 760px) {
-            /* line 231, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+            /* line 231, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
             section.home > header .outer-wrapper .title .heading-group h1 {
               font-size: 52px; } }
-        /* line 244, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+        /* line 244, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
         section.home > header .outer-wrapper .title .heading-group span {
           display: block;
           text-align: center;
@@ -362,29 +362,29 @@ section.home > header {
           color: #fff;
           margin-bottom: 40px; }
           @media screen and (max-width: 760px) {
-            /* line 244, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+            /* line 244, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
             section.home > header .outer-wrapper .title .heading-group span {
               font-size: 24px; } }
-        /* line 256, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+        /* line 256, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
         section.home > header .outer-wrapper .title .heading-group .link {
           background: transparent;
           border: 3px solid #fff;
           color: #fff;
           padding: 10px 20px;
           display: inline-block; }
-          /* line 262, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+          /* line 262, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
           section.home > header .outer-wrapper .title .heading-group .link:hover {
             background: rgba(0, 0, 0, 0.2);
             color: #fff;
             text-decoration: none; }
-      /* line 269, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+      /* line 269, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
       section.home > header .outer-wrapper .title .course-search {
         max-width: 590px;
         margin: 0 auto;
         overflow: hidden;
         position: relative;
         padding: 15px 0; }
-        /* line 275, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+        /* line 275, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
         section.home > header .outer-wrapper .title .course-search .search-input {
           background: rgba(255, 255, 255, 0.6);
           border: 2px solid #fff;
@@ -392,17 +392,17 @@ section.home > header {
           padding-left: 20px !important;
           height: 55px;
           border-radius: 40px; }
-          /* line 282, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+          /* line 282, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
           section.home > header .outer-wrapper .title .course-search .search-input:focus {
             border-color: #fff !important; }
-          /* line 285, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+          /* line 285, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
           section.home > header .outer-wrapper .title .course-search .search-input::placeholder {
             color: #4b4b4b;
             opacity: 1; }
-          /* line 289, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+          /* line 289, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
           section.home > header .outer-wrapper .title .course-search .search-input:-ms-input-placeholder {
             color: #4b4b4b; }
-        /* line 293, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+        /* line 293, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
         section.home > header .outer-wrapper .title .course-search .search-button {
           background: none !important;
           color: #95b2d6;
@@ -411,54 +411,54 @@ section.home > header {
           height: 55px;
           border: none !important; }
 
-/* line 308, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+/* line 308, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
 .wrapper-preview-menu {
   background: #c8c8c8; }
-  /* line 310, /openedx/themes/delfa/lms/static/sass/blocks/_header.scss */
+  /* line 310, /openedx/themes/allkopier/lms/static/sass/blocks/_header.scss */
   .wrapper-preview-menu label {
     color: #3c3c3c !important; }
 
-/* line 1, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+/* line 1, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
 .wrapper-footer {
   padding: 50px 0 !important;
   text-align: center;
-  background: #e1452c;
+  background: #1C1C1C;
   color: #fff;
   margin: 0 !important;
   box-shadow: none !important; }
   @media screen and (min-width: 1200px) {
-    /* line 1, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+    /* line 1, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
     .wrapper-footer {
       position: absolute;
       left: 0;
       bottom: 0;
       width: 100%; } }
   @media screen and (max-width: 991px) {
-    /* line 1, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+    /* line 1, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
     .wrapper-footer {
       padding: 30px 0 10px; } }
-  /* line 17, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+  /* line 17, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
   .wrapper-footer footer#footer-openedx {
     width: 100%;
     max-width: 1200px !important;
     padding: 0 15px; }
-    /* line 21, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+    /* line 21, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
     .wrapper-footer footer#footer-openedx a {
       border: none !important; }
-    /* line 24, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+    /* line 24, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
     .wrapper-footer footer#footer-openedx .colophon {
       float: none;
       width: 100%;
       text-align: center; }
-      /* line 28, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+      /* line 28, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
       .wrapper-footer footer#footer-openedx .colophon .nav-colophon {
         text-align: center;
         margin: 0 0 30px; }
-        /* line 31, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+        /* line 31, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
         .wrapper-footer footer#footer-openedx .colophon .nav-colophon ol {
           margin: 0;
           padding: 0; }
-          /* line 34, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+          /* line 34, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
           .wrapper-footer footer#footer-openedx .colophon .nav-colophon ol li {
             float: none;
             display: inline-block;
@@ -466,39 +466,39 @@ section.home > header {
             font-size: 16px;
             margin: 0 10px; }
             @media screen and (max-width: 567px) {
-              /* line 34, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+              /* line 34, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
               .wrapper-footer footer#footer-openedx .colophon .nav-colophon ol li {
                 display: block;
                 margin: 5px 0; } }
-            /* line 44, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+            /* line 44, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
             .wrapper-footer footer#footer-openedx .colophon .nav-colophon ol li a {
               color: #fff; }
-              /* line 46, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+              /* line 46, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
               .wrapper-footer footer#footer-openedx .colophon .nav-colophon ol li a:focus, .wrapper-footer footer#footer-openedx .colophon .nav-colophon ol li a:hover {
                 border: none !important;
                 color: rgba(255, 255, 255, 0.8); }
-  /* line 57, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+  /* line 57, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
   .wrapper-footer .footer-flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center; }
-    /* line 62, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+    /* line 62, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
     .wrapper-footer .footer-flex > * {
       width: 33.3333%; }
       @media screen and (max-width: 991px) {
-        /* line 62, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+        /* line 62, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
         .wrapper-footer .footer-flex > * {
           width: 100%; } }
-  /* line 69, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+  /* line 69, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
   .wrapper-footer .icon-list {
     width: auto !important; }
     @media screen and (max-width: 991px) {
-      /* line 69, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+      /* line 69, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
       .wrapper-footer .icon-list {
         width: 100% !important;
         order: 1; } }
-  /* line 76, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+  /* line 76, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
   .wrapper-footer .footer-support {
     display: flex;
     align-items: center;
@@ -506,125 +506,125 @@ section.home > header {
     margin: 0 !important;
     color: #fff; }
     @media screen and (max-width: 1050px) {
-      /* line 76, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+      /* line 76, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
       .wrapper-footer .footer-support {
         justify-content: center;
         order: 3; } }
-    /* line 86, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+    /* line 86, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
     .wrapper-footer .footer-support span {
       margin: 0 5px; }
-    /* line 89, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+    /* line 89, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
     .wrapper-footer .footer-support a {
       display: inline-block;
       vertical-align: top;
       color: #fff !important; }
-    /* line 94, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+    /* line 94, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
     .wrapper-footer .footer-support em {
       display: inline-block;
       vertical-align: top;
       font-style: normal;
       line-height: 22px; }
-    /* line 100, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+    /* line 100, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
     .wrapper-footer .footer-support .svg-edx {
       width: 66px;
       height: 50px; }
-    /* line 104, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+    /* line 104, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
     .wrapper-footer .footer-support .svg-raccoon {
       width: 20px;
       height: 20px; }
   @media screen and (max-width: 991px) {
-    /* line 109, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+    /* line 109, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
     .wrapper-footer .footer-logo-holder {
       order: 2;
       margin-bottom: 10px; } }
-  /* line 114, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+  /* line 114, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
   .wrapper-footer .footer-logo-holder a {
     float: right; }
     @media screen and (max-width: 991px) {
-      /* line 114, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+      /* line 114, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
       .wrapper-footer .footer-logo-holder a {
         float: none;
         display: inline-block; } }
-  /* line 121, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+  /* line 121, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
   .wrapper-footer .footer-logo-holder img {
     height: 50px; }
-  /* line 125, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+  /* line 125, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
   .wrapper-footer .icon-list {
     margin: 0 0 7px 10px;
     padding: 0;
     list-style: none; }
     @media screen and (max-width: 991px) {
-      /* line 125, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+      /* line 125, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
       .wrapper-footer .icon-list {
         margin-bottom: 15px; } }
-    /* line 132, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+    /* line 132, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
     .wrapper-footer .icon-list_item {
       margin: 0 5px 0 0;
       display: inline-block; }
-    /* line 136, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+    /* line 136, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
     .wrapper-footer .icon-list_link {
       display: block;
       width: 25px;
       height: 25px; }
-    /* line 141, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+    /* line 141, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
     .wrapper-footer .icon-list_svg {
       width: 25px;
       height: 25px;
       fill: #fff; }
-      /* line 145, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+      /* line 145, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
       .wrapper-footer .icon-list_svg:hover {
-        fill: #004183;
+        fill: #C3130A;
         opacity: 0.8; }
 
-/* line 153, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+/* line 153, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
 .smarted-footer {
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: left; }
-  /* line 159, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+  /* line 159, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
   .smarted-footer > div {
     width: 25%;
     position: relative; }
     @media screen and (max-width: 1050px) {
-      /* line 159, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+      /* line 159, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
       .smarted-footer > div {
         width: 33.3333%; } }
     @media screen and (max-width: 767px) {
-      /* line 159, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+      /* line 159, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
       .smarted-footer > div {
         width: 100%;
         text-align: center; } }
-  /* line 170, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+  /* line 170, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
   .smarted-footer_footer-left {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between; }
-    /* line 174, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+    /* line 174, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
     .smarted-footer_footer-left .footer-support {
       position: relative;
       bottom: -15px; }
     @media screen and (max-width: 1050px) {
-      /* line 170, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+      /* line 170, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
       .smarted-footer_footer-left {
         order: 4;
         width: 100% !important;
         margin-top: 50px;
         display: block; } }
-  /* line 185, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+  /* line 185, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
   .smarted-footer_logo {
     display: block;
     width: 150px; }
     @media screen and (max-width: 1050px) {
-      /* line 185, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+      /* line 185, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
       .smarted-footer_logo {
         margin: 0 auto; } }
-    /* line 191, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+    /* line 191, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
     .smarted-footer_logo img {
       display: block;
       width: 150px; }
-  /* line 196, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+  /* line 196, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
   .smarted-footer_title {
     display: block;
     text-transform: uppercase;
@@ -633,7 +633,7 @@ section.home > header {
     font-weight: normal;
     position: relative;
     margin-bottom: 22px; }
-    /* line 204, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+    /* line 204, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
     .smarted-footer_title:before {
       content: "";
       width: 100px;
@@ -643,35 +643,35 @@ section.home > header {
       left: 0;
       bottom: -10px; }
       @media screen and (max-width: 767px) {
-        /* line 204, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+        /* line 204, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
         .smarted-footer_title:before {
           left: 50%;
           margin-left: -50px; } }
-  /* line 218, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+  /* line 218, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
   .smarted-footer ul {
     list-style: none;
     text-align: left;
     margin: 0;
     padding: 0 0 0 10px; }
     @media screen and (max-width: 767px) {
-      /* line 218, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+      /* line 218, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
       .smarted-footer ul {
         text-align: center;
         margin-bottom: 30px;
         padding-left: 0; } }
-    /* line 228, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+    /* line 228, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
     .smarted-footer ul li {
       font-size: 12px;
       text-transform: uppercase;
       margin-bottom: 5px; }
-      /* line 232, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+      /* line 232, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
       .smarted-footer ul li a {
         color: #fff !important;
         text-decoration: none; }
-        /* line 235, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+        /* line 235, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
         .smarted-footer ul li a:hover {
-          color: #004183 !important; }
-  /* line 241, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+          color: #C3130A !important; }
+  /* line 241, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
   .smarted-footer_phone {
     color: #fff;
     font-size: 18px;
@@ -680,58 +680,58 @@ section.home > header {
     line-height: 25px;
     margin-bottom: 5px;
     display: block; }
-    /* line 249, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+    /* line 249, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
     .smarted-footer_phone em {
       font-style: normal;
       display: inline-block;
       background: url(../images/phone-icon.png) no-repeat 0 50%;
       padding-left: 30px; }
     @media screen and (max-width: 767px) {
-      /* line 241, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+      /* line 241, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
       .smarted-footer_phone {
         margin-left: 0; } }
-  /* line 259, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+  /* line 259, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
   .smarted-footer_email {
     display: block;
     color: #fff !important;
     text-decoration: none;
     margin: 0 0 10px 10px; }
-    /* line 264, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+    /* line 264, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
     .smarted-footer_email:hover {
-      color: #004183 !important; }
+      color: #C3130A !important; }
     @media screen and (max-width: 767px) {
-      /* line 259, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+      /* line 259, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
       .smarted-footer_email {
         margin-left: 0; } }
-  /* line 271, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+  /* line 271, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
   .smarted-footer_telefono {
     display: block;
     color: #fff !important;
     text-decoration: none;
     margin: 0 0 10px 10px; }
     @media screen and (max-width: 767px) {
-      /* line 271, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+      /* line 271, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
       .smarted-footer_telefono {
         margin-left: 0; } }
-  /* line 280, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+  /* line 280, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
   .smarted-footer_copyright {
     display: block;
     font-size: 12px;
     text-transform: uppercase;
     margin-left: 10px; }
     @media screen and (max-width: 767px) {
-      /* line 280, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+      /* line 280, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
       .smarted-footer_copyright {
         margin-left: 0; } }
-    /* line 288, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+    /* line 288, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
     .smarted-footer_copyright a {
       color: #fff; }
-      /* line 290, /openedx/themes/delfa/lms/static/sass/blocks/_footer.scss */
+      /* line 290, /openedx/themes/allkopier/lms/static/sass/blocks/_footer.scss */
       .smarted-footer_copyright a:focus, .smarted-footer_copyright a:hover {
         border: none !important;
         color: rgba(255, 255, 255, 0.8); }
 
-/* line 1, /openedx/themes/delfa/lms/static/sass/blocks/_courses-index-page.scss */
+/* line 1, /openedx/themes/allkopier/lms/static/sass/blocks/_courses-index-page.scss */
 .learn-more {
   display: block;
   border: 3px solid #fff !important;
@@ -739,19 +739,19 @@ section.home > header {
   line-height: 45px !important;
   box-sizing: border-box; }
 
-/* line 9, /openedx/themes/delfa/lms/static/sass/blocks/_courses-index-page.scss */
+/* line 9, /openedx/themes/allkopier/lms/static/sass/blocks/_courses-index-page.scss */
 .highlighted-courses .courses .course {
-  border-bottom-color: #0083C7; }
+  border-bottom-color: #FFD23F; }
 
-/* line 12, /openedx/themes/delfa/lms/static/sass/blocks/_courses-index-page.scss */
+/* line 12, /openedx/themes/allkopier/lms/static/sass/blocks/_courses-index-page.scss */
 .highlighted-courses .courses .course:hover {
   background: none; }
 
-/* line 16, /openedx/themes/delfa/lms/static/sass/blocks/_courses-index-page.scss */
+/* line 16, /openedx/themes/allkopier/lms/static/sass/blocks/_courses-index-page.scss */
 .courses-container .courses .course .cover-image:before {
   transition: all 0.2s ease; }
 
-/* line 20, /openedx/themes/delfa/lms/static/sass/blocks/_courses-index-page.scss */
+/* line 20, /openedx/themes/allkopier/lms/static/sass/blocks/_courses-index-page.scss */
 .courses-container .courses .course .course-info .course-title {
   color: #000;
   font-size: 18px;
@@ -759,40 +759,40 @@ section.home > header {
   height: 96px;
   overflow: hidden; }
 
-/* line 2, /openedx/themes/delfa/lms/static/sass/blocks/_dashboard.scss */
+/* line 2, /openedx/themes/allkopier/lms/static/sass/blocks/_dashboard.scss */
 .dashboard .main-container {
   padding: 40px 20px 40px 40px; }
 
-/* line 5, /openedx/themes/delfa/lms/static/sass/blocks/_dashboard.scss */
+/* line 5, /openedx/themes/allkopier/lms/static/sass/blocks/_dashboard.scss */
 .dashboard .side-container {
   padding: 40px 0 40px 20px; }
 
-/* line 2, /openedx/themes/delfa/lms/static/sass/blocks/_search.scss */
+/* line 2, /openedx/themes/allkopier/lms/static/sass/blocks/_search.scss */
 .find-courses .discovery-input {
   border-radius: 40px;
   overflow: hidden; }
 
-/* line 6, /openedx/themes/delfa/lms/static/sass/blocks/_search.scss */
+/* line 6, /openedx/themes/allkopier/lms/static/sass/blocks/_search.scss */
 .find-courses .discovery-submit {
   border-radius: 0 40px 40px 0; }
 
-/* line 2, /openedx/themes/delfa/lms/static/sass/blocks/_about.scss */
+/* line 2, /openedx/themes/allkopier/lms/static/sass/blocks/_about.scss */
 .course-info header.course-profile {
   padding: 20px 0;
   height: auto; }
 
-/* line 7, /openedx/themes/delfa/lms/static/sass/blocks/_about.scss */
+/* line 7, /openedx/themes/allkopier/lms/static/sass/blocks/_about.scss */
 .course-info .details * {
   font-family: "Open Sans"; }
 
-/* line 11, /openedx/themes/delfa/lms/static/sass/blocks/_about.scss */
+/* line 11, /openedx/themes/allkopier/lms/static/sass/blocks/_about.scss */
 .course-info .intro-inner-wrapper {
   border-color: #ccc; }
 
-/* line 15, /openedx/themes/delfa/lms/static/sass/blocks/_about.scss */
+/* line 15, /openedx/themes/allkopier/lms/static/sass/blocks/_about.scss */
 .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a {
   display: flex; }
-  /* line 17, /openedx/themes/delfa/lms/static/sass/blocks/_about.scss */
+  /* line 17, /openedx/themes/allkopier/lms/static/sass/blocks/_about.scss */
   .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a span.register {
     padding: 10px !important;
     display: flex;
@@ -800,55 +800,55 @@ section.home > header {
     justify-content: center;
     border-radius: 40px; }
 
-/* line 1, /openedx/themes/delfa/lms/static/sass/blocks/_course-main.scss */
+/* line 1, /openedx/themes/allkopier/lms/static/sass/blocks/_course-main.scss */
 .content-wrapper .course-tabs .nav-item .nav-link {
   padding: 18px 15px 15px; }
 
-/* line 4, /openedx/themes/delfa/lms/static/sass/blocks/_course-main.scss */
+/* line 4, /openedx/themes/allkopier/lms/static/sass/blocks/_course-main.scss */
 #course-container {
   max-width: 1920px;
   padding: 0 15px; }
-  /* line 7, /openedx/themes/delfa/lms/static/sass/blocks/_course-main.scss */
+  /* line 7, /openedx/themes/allkopier/lms/static/sass/blocks/_course-main.scss */
   #course-container .page-header {
     padding: 20px; }
-  /* line 10, /openedx/themes/delfa/lms/static/sass/blocks/_course-main.scss */
+  /* line 10, /openedx/themes/allkopier/lms/static/sass/blocks/_course-main.scss */
   #course-container .page-content {
     padding: 20px; }
 
-/* line 1, /openedx/themes/delfa/lms/static/sass/blocks/_wiki.scss */
+/* line 1, /openedx/themes/allkopier/lms/static/sass/blocks/_wiki.scss */
 .paragon__alert-warning {
   border-bottom: 1px solid #c8c8c8; }
 
-/* line 4, /openedx/themes/delfa/lms/static/sass/blocks/_wiki.scss */
+/* line 4, /openedx/themes/allkopier/lms/static/sass/blocks/_wiki.scss */
 .paragon__alert-dismissible .paragon__close {
   background: none !important;
   padding: 8px 15px; }
 
-/* line 9, /openedx/themes/delfa/lms/static/sass/blocks/_wiki.scss */
+/* line 9, /openedx/themes/allkopier/lms/static/sass/blocks/_wiki.scss */
 .wiki-wrapper section.wiki .breadcrumbs-header {
   margin: 0 -15px; }
 
-/* line 12, /openedx/themes/delfa/lms/static/sass/blocks/_wiki.scss */
+/* line 12, /openedx/themes/allkopier/lms/static/sass/blocks/_wiki.scss */
 .wiki-wrapper section.wiki .main-article {
   padding: 20px; }
 
-/* line 15, /openedx/themes/delfa/lms/static/sass/blocks/_wiki.scss */
+/* line 15, /openedx/themes/allkopier/lms/static/sass/blocks/_wiki.scss */
 .wiki-wrapper section.wiki .article-functions {
   padding: 20px; }
 
-/* line 24, /openedx/themes/delfa/lms/static/sass/blocks/_wiki.scss */
+/* line 24, /openedx/themes/allkopier/lms/static/sass/blocks/_wiki.scss */
 .article-wrapper .settings-form .page-header {
   margin-bottom: 20px;
   padding: 10px 0; }
 
-/* line 28, /openedx/themes/delfa/lms/static/sass/blocks/_wiki.scss */
+/* line 28, /openedx/themes/allkopier/lms/static/sass/blocks/_wiki.scss */
 .article-wrapper .settings-form #div_id_group_read,
 .article-wrapper .settings-form #div_id_group_write,
 .article-wrapper .settings-form #div_id_other_read,
 .article-wrapper .settings-form #div_id_other_write {
   display: flex;
   align-items: center; }
-  /* line 34, /openedx/themes/delfa/lms/static/sass/blocks/_wiki.scss */
+  /* line 34, /openedx/themes/allkopier/lms/static/sass/blocks/_wiki.scss */
   .article-wrapper .settings-form #div_id_group_read .controls,
   .article-wrapper .settings-form #div_id_group_write .controls,
   .article-wrapper .settings-form #div_id_other_read .controls,
@@ -857,7 +857,7 @@ section.home > header {
     margin-right: 10px;
     position: relative;
     top: -1px; }
-  /* line 40, /openedx/themes/delfa/lms/static/sass/blocks/_wiki.scss */
+  /* line 40, /openedx/themes/allkopier/lms/static/sass/blocks/_wiki.scss */
   .article-wrapper .settings-form #div_id_group_read label,
   .article-wrapper .settings-form #div_id_group_write label,
   .article-wrapper .settings-form #div_id_other_read label,
@@ -865,27 +865,27 @@ section.home > header {
     order: 2;
     margin: 0; }
 
-/* line 47, /openedx/themes/delfa/lms/static/sass/blocks/_wiki.scss */
+/* line 47, /openedx/themes/allkopier/lms/static/sass/blocks/_wiki.scss */
 .article-wrapper .settings-form #div_id_locked .controls,
 .article-wrapper .settings-form #div_id_recursive .controls {
   display: flex;
   align-items: center; }
-  /* line 50, /openedx/themes/delfa/lms/static/sass/blocks/_wiki.scss */
+  /* line 50, /openedx/themes/allkopier/lms/static/sass/blocks/_wiki.scss */
   .article-wrapper .settings-form #div_id_locked .controls input,
   .article-wrapper .settings-form #div_id_recursive .controls input {
     margin-right: 10px; }
 
-/* line 54, /openedx/themes/delfa/lms/static/sass/blocks/_wiki.scss */
+/* line 54, /openedx/themes/allkopier/lms/static/sass/blocks/_wiki.scss */
 .article-wrapper .settings-form #div_id_locked label,
 .article-wrapper .settings-form #div_id_recursive label {
   display: block; }
 
-/* line 58, /openedx/themes/delfa/lms/static/sass/blocks/_wiki.scss */
+/* line 58, /openedx/themes/allkopier/lms/static/sass/blocks/_wiki.scss */
 .article-wrapper .settings-form #id_owner_username {
   width: 100%;
   margin-bottom: 10px; }
 
-/* line 1, /openedx/themes/delfa/lms/static/sass/blocks/_discussion.scss */
+/* line 1, /openedx/themes/allkopier/lms/static/sass/blocks/_discussion.scss */
 .btn-link.all-topics {
   text-transform: uppercase;
   height: 40px;
@@ -893,194 +893,194 @@ section.home > header {
   cursor: pointer;
   padding: 0 20px; }
 
-/* line 10, /openedx/themes/delfa/lms/static/sass/blocks/_discussion.scss */
+/* line 10, /openedx/themes/allkopier/lms/static/sass/blocks/_discussion.scss */
 section.discussion .search-input {
   border-radius: 40px 0 0 40px !important;
-  border-left: 3px solid #004183;
-  border-top: 3px solid #004183;
-  border-bottom: 3px solid #004183;
+  border-left: 3px solid #C3130A;
+  border-top: 3px solid #C3130A;
+  border-bottom: 3px solid #C3130A;
   border-right: none;
   box-shadow: none; }
 
-/* line 18, /openedx/themes/delfa/lms/static/sass/blocks/_discussion.scss */
+/* line 18, /openedx/themes/allkopier/lms/static/sass/blocks/_discussion.scss */
 section.discussion .search-button {
   border-radius: 0 40px 40px 0 !important; }
 
-/* line 21, /openedx/themes/delfa/lms/static/sass/blocks/_discussion.scss */
+/* line 21, /openedx/themes/allkopier/lms/static/sass/blocks/_discussion.scss */
 section.discussion .page-header {
   align-items: center;
   padding: 20px; }
 
 @media screen and (max-width: 600px) {
-  /* line 25, /openedx/themes/delfa/lms/static/sass/blocks/_discussion.scss */
+  /* line 25, /openedx/themes/allkopier/lms/static/sass/blocks/_discussion.scss */
   section.discussion .page-header .page-header-secondary {
     justify-content: space-between; } }
 
 @media screen and (max-width: 420px) {
-  /* line 25, /openedx/themes/delfa/lms/static/sass/blocks/_discussion.scss */
+  /* line 25, /openedx/themes/allkopier/lms/static/sass/blocks/_discussion.scss */
   section.discussion .page-header .page-header-secondary {
     display: block; } }
 
-/* line 33, /openedx/themes/delfa/lms/static/sass/blocks/_discussion.scss */
+/* line 33, /openedx/themes/allkopier/lms/static/sass/blocks/_discussion.scss */
 section.discussion .page-content {
   padding: 20px; }
 
-/* line 38, /openedx/themes/delfa/lms/static/sass/blocks/_discussion.scss */
+/* line 38, /openedx/themes/allkopier/lms/static/sass/blocks/_discussion.scss */
 #discussion-container {
   max-width: 1920px; }
 
-/* line 42, /openedx/themes/delfa/lms/static/sass/blocks/_discussion.scss */
+/* line 42, /openedx/themes/allkopier/lms/static/sass/blocks/_discussion.scss */
 .discussion-board > .page-header .has-breadcrumbs .breadcrumbs {
   margin: 0; }
 
 @media screen and (max-width: 600px) {
-  /* line 46, /openedx/themes/delfa/lms/static/sass/blocks/_discussion.scss */
+  /* line 46, /openedx/themes/allkopier/lms/static/sass/blocks/_discussion.scss */
   .page-header {
     display: block; } }
 
-/* line 53, /openedx/themes/delfa/lms/static/sass/blocks/_discussion.scss */
+/* line 53, /openedx/themes/allkopier/lms/static/sass/blocks/_discussion.scss */
 .forum-nav-browse-menu {
   position: relative; }
 
 @media screen and (max-width: 600px) {
-  /* line 57, /openedx/themes/delfa/lms/static/sass/blocks/_discussion.scss */
+  /* line 57, /openedx/themes/allkopier/lms/static/sass/blocks/_discussion.scss */
   .forum-search {
     margin: 0; } }
 
-/* line 78, /openedx/themes/delfa/lms/static/sass/blocks/_discussion.scss */
+/* line 78, /openedx/themes/allkopier/lms/static/sass/blocks/_discussion.scss */
 .btn {
   font-size: 15px !important;
   cursor: pointer; }
 
-/* line 2, /openedx/themes/delfa/lms/static/sass/blocks/_instructor.scss */
+/* line 2, /openedx/themes/allkopier/lms/static/sass/blocks/_instructor.scss */
 .instructor-dashboard-wrapper-2 textarea {
   display: block;
   height: 150px !important;
   width: 100% !important; }
 
-/* line 7, /openedx/themes/delfa/lms/static/sass/blocks/_instructor.scss */
+/* line 7, /openedx/themes/allkopier/lms/static/sass/blocks/_instructor.scss */
 .instructor-dashboard-wrapper-2 .instructor-nav .nav-item .btn-link:hover {
   text-decoration: none !important; }
 
-/* line 13, /openedx/themes/delfa/lms/static/sass/blocks/_instructor.scss */
+/* line 13, /openedx/themes/allkopier/lms/static/sass/blocks/_instructor.scss */
 .enrollment-wrapper table {
   width: 100%; }
-  /* line 15, /openedx/themes/delfa/lms/static/sass/blocks/_instructor.scss */
+  /* line 15, /openedx/themes/allkopier/lms/static/sass/blocks/_instructor.scss */
   .enrollment-wrapper table caption {
     padding: 10px; }
-  /* line 18, /openedx/themes/delfa/lms/static/sass/blocks/_instructor.scss */
+  /* line 18, /openedx/themes/allkopier/lms/static/sass/blocks/_instructor.scss */
   .enrollment-wrapper table th {
     text-align: left; }
-  /* line 21, /openedx/themes/delfa/lms/static/sass/blocks/_instructor.scss */
+  /* line 21, /openedx/themes/allkopier/lms/static/sass/blocks/_instructor.scss */
   .enrollment-wrapper table td {
     text-align: center; }
-  /* line 24, /openedx/themes/delfa/lms/static/sass/blocks/_instructor.scss */
+  /* line 24, /openedx/themes/allkopier/lms/static/sass/blocks/_instructor.scss */
   .enrollment-wrapper table th, .enrollment-wrapper table td {
     padding: 5px 10px;
     border: 1px solid #ccc;
     vertical-align: middle; }
 
-/* line 32, /openedx/themes/delfa/lms/static/sass/blocks/_instructor.scss */
+/* line 32, /openedx/themes/allkopier/lms/static/sass/blocks/_instructor.scss */
 .instructor-dashboard-content-2 {
   padding: 20px;
   line-height: 1.5; }
-  /* line 35, /openedx/themes/delfa/lms/static/sass/blocks/_instructor.scss */
+  /* line 35, /openedx/themes/allkopier/lms/static/sass/blocks/_instructor.scss */
   .instructor-dashboard-content-2 button:not(.btn-link),
   .instructor-dashboard-content-2 .btn-blue,
   .instructor-dashboard-content-2 input[type=button] {
     margin: 10px 0; }
-  /* line 40, /openedx/themes/delfa/lms/static/sass/blocks/_instructor.scss */
+  /* line 40, /openedx/themes/allkopier/lms/static/sass/blocks/_instructor.scss */
   .instructor-dashboard-content-2 p input {
     margin-top: 0 !important; }
-  /* line 43, /openedx/themes/delfa/lms/static/sass/blocks/_instructor.scss */
+  /* line 43, /openedx/themes/allkopier/lms/static/sass/blocks/_instructor.scss */
   .instructor-dashboard-content-2 ul li {
     margin-bottom: 5px; }
-  /* line 46, /openedx/themes/delfa/lms/static/sass/blocks/_instructor.scss */
+  /* line 46, /openedx/themes/allkopier/lms/static/sass/blocks/_instructor.scss */
   .instructor-dashboard-content-2 textarea {
     width: 100% !important;
     clear: both; }
-    /* line 49, /openedx/themes/delfa/lms/static/sass/blocks/_instructor.scss */
+    /* line 49, /openedx/themes/allkopier/lms/static/sass/blocks/_instructor.scss */
     .instructor-dashboard-content-2 textarea#notes, .instructor-dashboard-content-2 textarea#certificate-invalidation-notes {
       height: 100px; }
-  /* line 55, /openedx/themes/delfa/lms/static/sass/blocks/_instructor.scss */
+  /* line 55, /openedx/themes/allkopier/lms/static/sass/blocks/_instructor.scss */
   .instructor-dashboard-content-2 .add-certificate-invalidation label {
     display: block;
     margin-bottom: 10px; }
-  /* line 59, /openedx/themes/delfa/lms/static/sass/blocks/_instructor.scss */
+  /* line 59, /openedx/themes/allkopier/lms/static/sass/blocks/_instructor.scss */
   .instructor-dashboard-content-2 .add-certificate-invalidation div {
     margin-bottom: 10px; }
 
-/* line 1, /openedx/themes/delfa/lms/static/sass/blocks/_progress.scss */
+/* line 1, /openedx/themes/allkopier/lms/static/sass/blocks/_progress.scss */
 body.view-progress .profile-wrapper {
   max-width: 1920px; }
 
-/* line 3, /openedx/themes/delfa/lms/static/sass/blocks/_sysadmin.scss */
+/* line 3, /openedx/themes/allkopier/lms/static/sass/blocks/_sysadmin.scss */
 .sysadmin-dashboard-wrapper {
   background: #fff;
   padding: 20px;
   margin-top: 20px;
   overflow: hidden; }
-  /* line 9, /openedx/themes/delfa/lms/static/sass/blocks/_sysadmin.scss */
+  /* line 9, /openedx/themes/allkopier/lms/static/sass/blocks/_sysadmin.scss */
   .sysadmin-dashboard-wrapper .instructor-nav a {
     padding: 5px 0; }
-    /* line 11, /openedx/themes/delfa/lms/static/sass/blocks/_sysadmin.scss */
+    /* line 11, /openedx/themes/allkopier/lms/static/sass/blocks/_sysadmin.scss */
     .sysadmin-dashboard-wrapper .instructor-nav a.active-section {
       color: #000; }
-  /* line 16, /openedx/themes/delfa/lms/static/sass/blocks/_sysadmin.scss */
+  /* line 16, /openedx/themes/allkopier/lms/static/sass/blocks/_sysadmin.scss */
   .sysadmin-dashboard-wrapper hr {
     width: 100%; }
-  /* line 19, /openedx/themes/delfa/lms/static/sass/blocks/_sysadmin.scss */
+  /* line 19, /openedx/themes/allkopier/lms/static/sass/blocks/_sysadmin.scss */
   .sysadmin-dashboard-wrapper ol {
     word-break: break-all; }
 
-/* line 23, /openedx/themes/delfa/lms/static/sass/blocks/_sysadmin.scss */
+/* line 23, /openedx/themes/allkopier/lms/static/sass/blocks/_sysadmin.scss */
 .sysadmin-dashboard-content {
   margin: 20px 0 !important; }
 
-/* line 27, /openedx/themes/delfa/lms/static/sass/blocks/_sysadmin.scss */
+/* line 27, /openedx/themes/allkopier/lms/static/sass/blocks/_sysadmin.scss */
 .list-input {
   list-style: none;
   padding: 0; }
-  /* line 30, /openedx/themes/delfa/lms/static/sass/blocks/_sysadmin.scss */
+  /* line 30, /openedx/themes/allkopier/lms/static/sass/blocks/_sysadmin.scss */
   .list-input li {
     padding-bottom: 15px; }
-    /* line 32, /openedx/themes/delfa/lms/static/sass/blocks/_sysadmin.scss */
+    /* line 32, /openedx/themes/allkopier/lms/static/sass/blocks/_sysadmin.scss */
     .list-input li input {
       width: 100% !important; }
 
-/* line 38, /openedx/themes/delfa/lms/static/sass/blocks/_sysadmin.scss */
+/* line 38, /openedx/themes/allkopier/lms/static/sass/blocks/_sysadmin.scss */
 table.stat_table {
   width: 100%;
   word-break: break-all; }
 
-/* line 43, /openedx/themes/delfa/lms/static/sass/blocks/_sysadmin.scss */
+/* line 43, /openedx/themes/allkopier/lms/static/sass/blocks/_sysadmin.scss */
 .instructor-dashboard-wrapper-2 .bottom-bar {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  /* line 47, /openedx/themes/delfa/lms/static/sass/blocks/_sysadmin.scss */
+  /* line 47, /openedx/themes/allkopier/lms/static/sass/blocks/_sysadmin.scss */
   .instructor-dashboard-wrapper-2 .bottom-bar label {
     margin: 0; }
 
-/* line 52, /openedx/themes/delfa/lms/static/sass/blocks/_sysadmin.scss */
+/* line 52, /openedx/themes/allkopier/lms/static/sass/blocks/_sysadmin.scss */
 .instructor-dashboard-wrapper-2 section#membership.idash-section .member-lists-management .auth-list-container .member-list-widget input.add[type="button"],
 .instructor-dashboard-wrapper-2 section#membership.idash-section .member-lists-management-ccx .auth-list-container .member-list-widget input.add[type="button"] {
   position: relative;
   margin: 0;
   right: auto; }
 
-/* line 1, /openedx/themes/delfa/lms/static/sass/blocks/_login-register.scss */
+/* line 1, /openedx/themes/allkopier/lms/static/sass/blocks/_login-register.scss */
 .login-register-content {
   background: none; }
 
-/* line 4, /openedx/themes/delfa/lms/static/sass/blocks/_login-register.scss */
+/* line 4, /openedx/themes/allkopier/lms/static/sass/blocks/_login-register.scss */
 .login-register {
   max-width: 1170px;
   padding: 0 15px;
   width: 100%;
   box-sizing: border-box; }
 
-/* line 11, /openedx/themes/delfa/lms/static/sass/blocks/_login-register.scss */
+/* line 11, /openedx/themes/allkopier/lms/static/sass/blocks/_login-register.scss */
 .register-button,
 .login-button {
   font-size: 16px !important;
@@ -1088,14 +1088,14 @@ table.stat_table {
   min-width: 150px;
   padding: 5px 20px !important; }
 
-/* line 18, /openedx/themes/delfa/lms/static/sass/custom.scss */
+/* line 18, /openedx/themes/allkopier/lms/static/sass/custom.scss */
 body {
-  background: #eee !important;
+  background: #fff !important;
   position: relative;
   line-height: 1.2;
   overflow-x: hidden; }
 
-/* line 25, /openedx/themes/delfa/lms/static/sass/custom.scss */
+/* line 25, /openedx/themes/allkopier/lms/static/sass/custom.scss */
 .holder,
 .wrapper-preview-menu .preview-menu {
   max-width: 1200px;
@@ -1104,7 +1104,7 @@ body {
   width: 100%;
   box-sizing: border-box; }
 
-/* line 34, /openedx/themes/delfa/lms/static/sass/custom.scss */
+/* line 34, /openedx/themes/allkopier/lms/static/sass/custom.scss */
 body.view-in-course .instructor-dashboard-wrapper-2,
 body.view-in-course .wiki-wrapper {
   max-width: 1920px;
@@ -1113,7 +1113,7 @@ body.view-in-course .wiki-wrapper {
   width: 100%;
   box-sizing: border-box; }
 
-/* line 43, /openedx/themes/delfa/lms/static/sass/custom.scss */
+/* line 43, /openedx/themes/allkopier/lms/static/sass/custom.scss */
 .content-wrapper {
   margin: 0 auto;
   padding-top: 0px;
@@ -1122,14 +1122,14 @@ body.view-in-course .wiki-wrapper {
   padding-left: 10px;
   background: #eeeeee; }
 
-/* line 52, /openedx/themes/delfa/lms/static/sass/custom.scss */
+/* line 52, /openedx/themes/allkopier/lms/static/sass/custom.scss */
 .view-profile .window-wrap,
 .window-wrap {
   background: none;
   position: relative;
   box-sizing: border-box; }
   @media screen and (min-width: 1200px) {
-    /* line 52, /openedx/themes/delfa/lms/static/sass/custom.scss */
+    /* line 52, /openedx/themes/allkopier/lms/static/sass/custom.scss */
     .view-profile .window-wrap,
     .window-wrap {
       min-height: 100vh;
