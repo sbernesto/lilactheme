@@ -32,21 +32,21 @@ $search-button-border: #fff;
 $search-button-color: #95b2d6;
 $search-height: 55px;
 //settings for footer
-$footer-bg: #000;                                                            //Cambia el fondo
+$footer-bg: #77031b;                                                            //Cambia el fondo
 $footer-nav-link-color: #fff;                                                   //cambia el color del texto
 $footer-nav-link-color-hover: rgba(255, 255, 255, .8);                          //Cambia el color del texto cuando se posiciona el mouse sobre el.
 $footer-support-text-and-logo: #fff;
 $footer-social-link-bg: #fff;                                                   //Cambia el fondo
 $footer-social-link-text: #fff;                                                 //cambia el color del texto
-$footer-social-link-text-hover: #d6251d;                                        //Cambia el color del texto cuando se posiciona el mouse sobre el.
-$footer-social-link-bg-hover: #d6251d;
+$footer-social-link-text-hover: #fcb22e;                                        //Cambia el color del texto cuando se posiciona el mouse sobre el.
+$footer-social-link-bg-hover: #fcb22e;
 //btn
-$theme-btn-bg: #d6251d;                                                       //Cambia el fondo del boton
-$theme-btn-border: #d6251d;                                                     //Cambia el borde de los botones
-$theme-btn-text-color: #fff;                                                    //Cambia el color del texto del boton
-$theme-btn-text-color-hover: #d6251d;                                         //Cambia el color del texto cuando se posiciona el mouse sobre el.
+$theme-btn-bg: #77031b;                                                       //Cambia el fondo del boton
+$theme-btn-border: #77031b;                                                     //Cambia el borde de los botones
+$theme-btn-text-color: #fcb22e;                                                    //Cambia el color del texto del boton
+$theme-btn-text-color-hover: #77031b;                                         //Cambia el color del texto cuando se posiciona el mouse sobre el.
 $theme-btn-bg-hover: #fff;                                                      //Cambia el fondo del boton cuando se posiciona el mouse sobre el.
-$theme-btn-border-hover: #d6251d;                                               //Cambia el borde del boton cuando se posiciona el mouse sobre el.
+$theme-btn-border-hover: #77031b;                                               //Cambia el borde del boton cuando se posiciona el mouse sobre el.
 $theme-btn-shadow: darken($theme-btn-bg, 20%);
 //btn-white
 $theme-btn-white-bg: $base-color;
@@ -67,7 +67,7 @@ $theme-user-link: #93D5F6;
 $theme-user-link-hover: lighten($theme-user-link, 20%);
 //settings fo courses on main page and search
 //$courses-border-color: #FFD23F;                                                 // Cambia la linea amarilla del borde de los cursos en el catalogo
-$courses-border-color: #d6251d;                                                 // Cambia la linea amarilla del borde de los cursos en el catalogo
+$courses-border-color: #77031b;                                                 // Cambia la linea amarilla del borde de los cursos en el catalogo
 $course-hover-bg: rgba(0, 0, 0, .5);
 $course-link-color: #000;
 $course-bg: #fff;
