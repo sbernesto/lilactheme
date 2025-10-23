@@ -1,45 +1,45 @@
-/* line 3, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+/* line 3, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
 .rtl.layout-accomplishment .accomplishment-orgs .organization-logo {
   position: relative;
   top: 0;
-  right: 0;
+  left: 0;
   transform: translate(0, 0); }
 
-/* line 9, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+/* line 9, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
 .btn-link,
 .copy-meta a {
-  color: #C3130A;
+  color: #d6251d;
   border: none; }
 
-/* line 14, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+/* line 14, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
 .header-app .logo {
   width: 230px; }
 
-/* line 17, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+/* line 17, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
 .btn-link:hover,
 .btn-link:focus,
 .copy-meta a:focus,
 .copy-meta a:hover {
-  color: #f5473e;
+  color: #eb736e;
   background: none;
   text-decoration: none;
   border: none; }
 
-/* line 26, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+/* line 26, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
 .wrapper-banner-user {
   margin-top: 0; }
 
-/* line 29, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+/* line 29, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
 .layout-accomplishment .wrapper-introduction {
   text-align: center;
   margin-bottom: 2rem; }
 
-/* line 33, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+/* line 33, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
 .wrapper-introduction h2 {
   width: 100%;
   margin: 0; }
 
-/* line 37, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+/* line 37, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
 .layout-accomplishment .accomplishment-rendering {
   top: 0; }
 
@@ -48,28 +48,28 @@
     size: auto;
     margin: 0;
     border: 0; }
-  /* line 46, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+  /* line 46, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
   html, body {
     height: auto;
     margin: 0 !important; } }
 
-/* line 51, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+/* line 51, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
 .certificate-wrapper {
   position: relative;
   width: 29.7cm;
   height: 21cm;
   margin: 0 auto; }
 
-/* line 57, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+/* line 57, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
 .main-bg {
   display: block;
   width: 29.7cm;
   height: 21cm; }
 
-/* line 62, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+/* line 62, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
 .certificate-body {
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
   width: 29.7cm;
   height: 21cm;
@@ -79,7 +79,7 @@
   justify-content: center;
   flex-direction: column; }
 
-/* line 74, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+/* line 74, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
 .certificate-logo {
   display: inline-block;
   margin-bottom: 26px;
@@ -88,12 +88,12 @@
   height: auto;
   max-width: 180px; }
 
-/* line 82, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+/* line 82, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
 .ribbon {
   position: relative;
   margin-bottom: 40px; }
 
-/* line 86, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+/* line 86, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
 .ribbon-text {
   display: block;
   position: relative;
@@ -105,20 +105,20 @@
   line-height: 60px;
   color: #fff;
   z-index: 1; }
-  /* line 97, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+  /* line 97, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
   .ribbon-text img {
     display: block;
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
     width: 100%;
     height: 100%; }
-  /* line 105, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+  /* line 105, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
   .ribbon-text b {
     z-index: 100;
     position: relative; }
 
-/* line 110, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+/* line 110, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
 .ribbon:before,
 .ribbon:after,
 .ribbon-text:before,
@@ -128,41 +128,41 @@
   width: 0;
   height: 0; }
 
-/* line 119, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+/* line 119, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
 .ribbon:before {
-  width: 65px;
-  left: -50px;
-  top: 25px;
-  border-width: 30px 15px;
-  border-style: solid;
-  border-color: #cf7833 #cf7833 #cf7833 transparent; }
-
-/* line 127, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
-.ribbon:after {
   width: 65px;
   right: -50px;
   top: 25px;
   border-width: 30px 15px;
   border-style: solid;
-  border-color: #cf7833 transparent #cf7833 #cf7833; }
+  border-color: #df8844 transparent #df8844 #df8844; }
 
-/* line 135, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
-.ribbon-text:before {
-  left: 0;
-  top: 100%;
-  border-width: 0 45px 25px 0;
+/* line 127, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
+.ribbon:after {
+  width: 65px;
+  left: -50px;
+  top: 25px;
+  border-width: 30px 15px;
   border-style: solid;
-  border-color: #df8844 #df8844 transparent transparent; }
+  border-color: #df8844 #df8844 #df8844 transparent; }
 
-/* line 142, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
-.ribbon-text:after {
+/* line 135, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
+.ribbon-text:before {
   right: 0;
   top: 100%;
-  border-width: 25px 45px 0 0;
+  border-width: 0 0 25px 45px;
+  border-style: solid;
+  border-color: #df8844 transparent transparent #df8844; }
+
+/* line 142, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
+.ribbon-text:after {
+  left: 0;
+  top: 100%;
+  border-width: 25px 0 0 45px;
   border-style: solid;
   border-color: #df8844 transparent transparent transparent; }
 
-/* line 149, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+/* line 149, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
 .general-text {
   display: block;
   text-align: center;
@@ -173,11 +173,11 @@
   margin: 8px auto 0;
   max-width: 300px; }
 
-/* line 159, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+/* line 159, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
 .inner {
   max-width: 550px; }
 
-/* line 162, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+/* line 162, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
 .user-name {
   border-bottom: 2px solid #df8844;
   color: #3b3e42;
@@ -188,7 +188,7 @@
   padding-bottom: 14px;
   margin-bottom: 17px; }
 
-/* line 172, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+/* line 172, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
 .course-name {
   color: #3b3e42;
   font-size: 25px;
@@ -197,27 +197,27 @@
   display: block;
   margin-bottom: 17px; }
 
-/* line 180, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+/* line 180, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
 .certificate-text {
   text-align: center;
   color: #747e92;
   font-size: 14px;
   line-height: 17px; }
 
-/* line 186, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+/* line 186, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
 .certificate-bottom {
   display: flex;
   justify-content: center;
   margin-top: 40px; }
 
-/* line 191, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+/* line 191, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
 .date {
   text-align: center;
   margin-top: 20px; }
-  /* line 194, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+  /* line 194, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
   .date * {
     display: block; }
-  /* line 197, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+  /* line 197, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
   .date strong {
     border-bottom: 2px solid #df8844;
     height: 25px;
@@ -225,59 +225,59 @@
     font-size: 14px;
     color: #636466;
     margin-bottom: 2px; }
-  /* line 205, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+  /* line 205, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
   .date span {
     color: #636466;
     font-size: 10px; }
 
-/* line 210, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+/* line 210, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
 .medal {
   text-align: center;
   margin: 0 30px; }
-  /* line 213, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+  /* line 213, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
   .medal img {
     display: inline-block;
     vertical-align: top;
     width: 70px; }
 
-/* line 219, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+/* line 219, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
 .signature {
   text-align: center;
   margin-top: 20px; }
-  /* line 222, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+  /* line 222, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
   .signature-item {
     display: inline-block !important;
     vertical-align: top;
     padding: 0 20px; }
-  /* line 227, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+  /* line 227, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
   .signature * {
     display: block; }
-  /* line 230, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+  /* line 230, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
   .signature strong {
     position: relative;
     border-bottom: 2px solid #df8844;
     height: 25px;
     line-height: 25px;
     margin-bottom: 2px; }
-  /* line 237, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+  /* line 237, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
   .signature img {
     display: block;
     position: absolute;
-    left: 50%;
+    right: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(50%, -50%);
     max-width: 120px; }
-  /* line 245, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+  /* line 245, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
   .signature span {
     color: #636466;
     font-size: 10px;
     min-width: 80px; }
 
-/* line 251, /openedx/themes/powernwl/lms/static/sass/certificate.scss */
+/* line 251, /openedx/themes/powernwl/lms/static/sass/sass/certificate.scss */
 .certificate-number {
   display: block;
   position: absolute;
-  left: 0;
+  right: 0;
   bottom: 75px;
   font-size: 13px;
   width: 100%;
