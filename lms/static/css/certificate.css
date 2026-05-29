@@ -8,7 +8,7 @@
 /* line 9, /openedx/themes/canacintra/lms/static/sass/certificate.scss */
 .btn-link,
 .copy-meta a {
-  color: #6e0018;
+  color: #001f60;
   border: none; }
 
 /* line 14, /openedx/themes/canacintra/lms/static/sass/certificate.scss */
@@ -20,7 +20,7 @@
 .btn-link:focus,
 .copy-meta a:focus,
 .copy-meta a:hover {
-  color: #d4002e;
+  color: #0040c6;
   background: none;
   text-decoration: none;
   border: none; }

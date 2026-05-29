@@ -13,12 +13,12 @@
   transition: all 0.2s ease;
   display: inline-block;
   background: #fff !important;
-  color: #55565a !important;
+  color: #001f60 !important;
   text-transform: uppercase;
   border-radius: 40px !important;
   text-shadow: none !important;
   box-shadow: none !important;
-  border: 3px solid #55565a !important;
+  border: 3px solid #fe070c !important;
   text-transform: uppercase !important;
   cursor: pointer;
   font-size: 15px !important; }
@@ -44,7 +44,7 @@
   .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register:focus,
   .course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong:active,
   .course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong:focus {
-    color: #55565a !important;
+    color: #fe070c !important;
     background: #fff !important; }
   /* line 39, /openedx/themes/canacintra/lms/static/sass/blocks/_buttons.scss */
   .register-button:focus:hover, .register-button:hover,
@@ -68,7 +68,7 @@
   .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register:hover,
   .course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong:focus:hover,
   .course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong:hover {
-    color: #55565a !important;
+    color: #fe070c !important;
     background: #fff !important; }
 
 /* line 46, /openedx/themes/canacintra/lms/static/sass/blocks/_buttons.scss */
@@ -80,10 +80,10 @@
 .new-post-btn,
 section.discussion .search-button,
 .course-info .container .wrap-instructor-info .instructor-info-action {
-  border: 3px solid #6e0018 !important;
+  border: 3px solid #001f60 !important;
   border-radius: 40px !important;
   color: #fff !important;
-  background: #6e0018 !important;
+  background: #001f60 !important;
   line-height: 1.1;
   text-transform: uppercase !important;
   cursor: pointer;
@@ -104,8 +104,8 @@ section.discussion .search-button,
   .course-info .container .wrap-instructor-info .instructor-info-action:focus:hover,
   .course-info .container .wrap-instructor-info .instructor-info-action:hover {
     background: #fff !important;
-    border: 3px solid #6e0018 !important;
-    color: #6e0018 !important; }
+    border: 3px solid #001f60 !important;
+    color: #001f60 !important; }
 
 /* line 74, /openedx/themes/canacintra/lms/static/sass/blocks/_buttons.scss */
 .btn {
@@ -168,7 +168,7 @@ section.discussion .search-button,
           margin-left: 30px; }
           /* line 48, /openedx/themes/canacintra/lms/static/sass/blocks/_header.scss */
           .global-header .main-header .nav-links .main .nav-item a {
-            color: #6e0018; }
+            color: #001f60; }
       /* line 53, /openedx/themes/canacintra/lms/static/sass/blocks/_header.scss */
       .global-header .main-header .nav-links .secondary {
         margin: 0; }
@@ -179,10 +179,10 @@ section.discussion .search-button,
           font-size: 16px !important; }
           /* line 59, /openedx/themes/canacintra/lms/static/sass/blocks/_header.scss */
           .global-header .main-header .nav-links .secondary .nav-item a {
-            color: #6e0018; }
+            color: #001f60; }
           /* line 62, /openedx/themes/canacintra/lms/static/sass/blocks/_header.scss */
           .global-header .main-header .nav-links .secondary .nav-item .fa {
-            color: #6e0018; }
+            color: #001f60; }
         /* line 66, /openedx/themes/canacintra/lms/static/sass/blocks/_header.scss */
         .global-header .main-header .nav-links .secondary .nav-item-dropdown {
           position: relative; }
@@ -193,7 +193,7 @@ section.discussion .search-button,
         .global-header .main-header .nav-links .secondary .user-image-frame {
           margin: 0 5px;
           border-radius: 50%;
-          border: 2px solid #6e0018; }
+          border: 2px solid #001f60; }
         /* line 77, /openedx/themes/canacintra/lms/static/sass/blocks/_header.scss */
         .global-header .main-header .nav-links .secondary .dropdown-user-menu {
           right: 0; }
@@ -208,13 +208,13 @@ section.discussion .search-button,
       /* line 89, /openedx/themes/canacintra/lms/static/sass/blocks/_header.scss */
       .global-header .dropdown-user-menu a:hover {
         background: #bfdff7;
-        color: #6e0018 !important; }
+        color: #001f60 !important; }
   /* line 95, /openedx/themes/canacintra/lms/static/sass/blocks/_header.scss */
   .global-header .main .nav-item a {
     padding: 0 !important;
     border: none !important;
     position: relative;
-    color: #6e0018 !important; }
+    color: #001f60 !important; }
     /* line 100, /openedx/themes/canacintra/lms/static/sass/blocks/_header.scss */
     .global-header .main .nav-item a:before {
       content: "";
@@ -223,14 +223,14 @@ section.discussion .search-button,
       position: absolute;
       left: 0;
       bottom: -5px;
-      background: #6e0018;
+      background: #001f60;
       transition: all 0.2s ease; }
     /* line 110, /openedx/themes/canacintra/lms/static/sass/blocks/_header.scss */
     .global-header .main .nav-item a.active:before, .global-header .main .nav-item a:hover:before {
       width: 100%; }
   /* line 115, /openedx/themes/canacintra/lms/static/sass/blocks/_header.scss */
   .global-header .help-link {
-    color: #6e0018 !important; }
+    color: #001f60 !important; }
   /* line 118, /openedx/themes/canacintra/lms/static/sass/blocks/_header.scss */
   .global-header .hamburger-menu {
     top: 30px; }
@@ -242,8 +242,8 @@ section.discussion .search-button,
     transition: all 0.2s ease;
     display: inline-block;
     background: #fff !important;
-    color: #55565a !important;
-    border: 3px solid #55565a !important;
+    color: #001f60 !important;
+    border: 3px solid #fe070c !important;
     text-transform: uppercase;
     border-radius: 40px !important; }
     /* line 133, /openedx/themes/canacintra/lms/static/sass/blocks/_header.scss */
@@ -251,14 +251,14 @@ section.discussion .search-button,
       background: #fff !important; }
     /* line 137, /openedx/themes/canacintra/lms/static/sass/blocks/_header.scss */
     .global-header .btn:focus:hover {
-      color: #55565a !important;
+      color: #fe070c !important;
       background: #fff !important;
-      border: 3px solid #55565a !important; }
+      border: 3px solid #001f60 !important; }
     /* line 142, /openedx/themes/canacintra/lms/static/sass/blocks/_header.scss */
     .global-header .btn:hover {
-      color: #55565a !important;
+      color: #fe070c !important;
       background: #fff !important;
-      border: 3px solid #55565a !important; }
+      border: 3px solid #001f60 !important; }
 
 /* line 151, /openedx/themes/canacintra/lms/static/sass/blocks/_header.scss */
 .mobile-menu {
@@ -311,7 +311,7 @@ section.discussion .search-button,
         /* line 199, /openedx/themes/canacintra/lms/static/sass/blocks/_header.scss */
         .global-header .main-header .nav-links .main .nav-item ul li a:hover {
           background: #bfdff7;
-          color: #6e0018 !important; }
+          color: #001f60 !important; }
 
 /* line 210, /openedx/themes/canacintra/lms/static/sass/blocks/_header.scss */
 section.home > header {
@@ -423,7 +423,7 @@ section.home > header {
 .wrapper-footer {
   padding: 50px 0 !important;
   text-align: center;
-  background: #0d245e;
+  background: #001f60;
   color: #fff;
   margin: 0 !important;
   box-shadow: none !important; }
@@ -898,9 +898,9 @@ section.home > header {
 /* line 10, /openedx/themes/canacintra/lms/static/sass/blocks/_discussion.scss */
 section.discussion .search-input {
   border-radius: 40px 0 0 40px !important;
-  border-left: 3px solid #6e0018;
-  border-top: 3px solid #6e0018;
-  border-bottom: 3px solid #6e0018;
+  border-left: 3px solid #001f60;
+  border-top: 3px solid #001f60;
+  border-bottom: 3px solid #001f60;
   border-right: none;
   box-shadow: none; }
 

@@ -6,6 +6,8 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
 /* line 1, /openedx/edx-platform/node_modules/bootstrap/scss/_root.scss */
 :root {
   --blue: #0075b4;
@@ -4858,7 +4860,7 @@ tbody.collapse.show {
 
 @keyframes progress-bar-stripes {
   from {
-    background-position: 1rem 0; }
+    background-position: right 1rem top 0; }
   to {
     background-position: 100% 0; } }
 
@@ -8513,6 +8515,80 @@ a.text-darkest:hover, a.text-darkest:focus {
   .table-bordered td {
     border: 1px solid #ddd !important; } }
 
+/*
+ * In pursuit of decoupling the built-in XBlocks from edx-platform's Sass build
+ * and ensuring comprehensive theming support in the extracted XBlocks,
+ * we need to expose Sass variables as CSS variables.
+ *
+ * Ticket/Issue: https://github.com/openedx/edx-platform/issues/35173
+ */
+/* stylelint-disable-line */
+/* stylelint-disable-line */
+/* line 17, common/static/sass/_builtin-block-variables.scss */
+:root {
+  --action-primary-active-bg: #0075b4;
+  --base-font-size: 18px;
+  --base-line-height: 1.5em;
+  --baseline: 20px;
+  --black: #000;
+  --black-t2: rgba(0, 0, 0, 0.5);
+  --blue: #0075b4;
+  --blue-d1: #005e90;
+  --blue-d2: #00466c;
+  --blue-d4: #001724;
+  --blue-s1: #0075b4;
+  --body-color: #313131;
+  --border-color: #e7e7e7;
+  --bp-screen-lg: 1024px;
+  --btn-brand-focus-background: #065683;
+  --correct: #008100;
+  --danger: #b20610;
+  --darkGrey: #8891a1;
+  --error-color: #cb0712;
+  --error-color-dark: #95050d;
+  --error-color-light: #f95861;
+  --font-bold: 700;
+  --font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --general-color-accent: #0075b4;
+  --gray: #767676;
+  --gray-300: #d9d9d9;
+  --gray-d1: #5e5e5e;
+  --gray-l2: #adadad;
+  --gray-l3: #c8c8c8;
+  --gray-l4: #e4e4e4;
+  --gray-l6: #f8f8f8;
+  --icon-correct: url("../../images/correct-icon.png");
+  --icon-incorrect: url("../../images/incorrect-icon.png");
+  --icon-info: url("../../images/info-icon.png");
+  --icon-partially-correct: url("../../images/partially-correct-icon.png");
+  --icon-spinner: url("../../images/spinner.gif");
+  --icon-unanswered: url("../../images/unanswered-icon.png");
+  --incorrect: #b20610;
+  --lightGrey: #edf1f5;
+  --lighter-base-font-color: #646464;
+  --link-color: #1b6d99;
+  --medium-font-size: 0.9em;
+  --partially-correct: #008100;
+  --primary: #0075b4;
+  --shadow: rgba(0, 0, 0, 0.2);
+  --shadow-l1: rgba(0, 0, 0, 0.1);
+  --sidebar-color: #f6f6f6;
+  --small-font-size: 80%;
+  --submitted: #0075b4;
+  --success: #008100;
+  --tmg-f2: 0.25s;
+  --tmg-s2: 2s;
+  --transparent: transparent;
+  --uxpl-gray-background: #d9d9d9;
+  --uxpl-gray-base: #414141;
+  --uxpl-gray-dark: #111111;
+  --very-light-text: white;
+  --warning: #e2c01f;
+  --warning-color: #ffc01f;
+  --warning-color-accent: #fffcdd;
+  --white: #fff;
+  --yellow: #e2c01f; }
+
 @media print {
   /* line 17, /openedx/edx-platform/lms/static/sass/bootstrap/_legacy.scss */
   .content-wrapper.container-fluid, .help-tab {
@@ -8932,11 +9008,11 @@ body {
   padding: 15px;
   background-color: #0075b4;
   box-sizing: border-box; }
-  /* line 2, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_clearfix.scss */
-  .wrapper-preview-menu::after {
-    display: block;
-    clear: both;
-    content: ""; }
+  /* line 15, /openedx/edx-platform/common/static/sass/bourbon/addons/_clearfix.scss */
+  .wrapper-preview-menu:after {
+    content: "";
+    display: table;
+    clear: both; }
   @media print {
     /* line 3, lms/static/sass/course/layout/_courseware_preview.scss */
     .wrapper-preview-menu {
@@ -9173,7 +9249,7 @@ body {
   position: absolute;
   right: 50%;
   padding: 8px;
-  width: grid-width(5);
+  width: 380px;
   border-radius: 3px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
   background: #313131;
@@ -9289,11 +9365,11 @@ body {
         box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.6);
         margin-bottom: 30px;
         padding-bottom: 10px; }
-        /* line 2, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_clearfix.scss */
-        .modal .inner-wrapper form .input-group::after, .leanModal_box .inner-wrapper form .input-group::after {
-          display: block;
-          clear: both;
-          content: ""; }
+        /* line 15, /openedx/edx-platform/common/static/sass/bourbon/addons/_clearfix.scss */
+        .modal .inner-wrapper form .input-group:after, .leanModal_box .inner-wrapper form .input-group:after {
+          content: "";
+          display: table;
+          clear: both; }
       /* line 160, lms/static/sass/shared/_modal.scss */
       .modal .inner-wrapper form label, .leanModal_box .inner-wrapper form label {
         color: #313131; }
@@ -9359,7 +9435,7 @@ body {
       .modal .inner-wrapper form .date-of-birth, .leanModal_box .inner-wrapper form .date-of-birth {
         margin-bottom: 20px;
         float: right;
-        width: 32.20339%; }
+        width: 31.91489%; }
         /* line 229, lms/static/sass/shared/_modal.scss */
         .modal .inner-wrapper form .citizenship label, .leanModal_box .inner-wrapper form .citizenship label,
         .modal .inner-wrapper form .gender label, .leanModal_box .inner-wrapper form .gender label,
@@ -9375,7 +9451,7 @@ body {
       /* line 240, lms/static/sass/shared/_modal.scss */
       .modal .inner-wrapper form .citizenship, .leanModal_box .inner-wrapper form .citizenship,
       .modal .inner-wrapper form .gender, .leanModal_box .inner-wrapper form .gender {
-        margin-left: flex-gutter(); }
+        margin-left: 2.12766%; }
       /* line 245, lms/static/sass/shared/_modal.scss */
       .modal .inner-wrapper form .submit, .leanModal_box .inner-wrapper form .submit {
         padding-top: 10px; }
@@ -9518,7 +9594,7 @@ body {
     .help-tab a:visited:hover,
     .help-tab a:visited:focus {
       color: #fff;
-      background: #0075b4; }
+      background: #1b6d99; }
 
 /* line 50, lms/static/sass/shared/_help-tab.scss */
 .help-buttons {
@@ -9602,7 +9678,7 @@ body {
     padding-top: 20px; }
     /* line 57, /openedx/edx-platform/lms/static/sass/bootstrap/elements/_banners.scss */
     .page-banner .user-messages a:hover {
-      color: #0075b4;
+      color: #1b6d99;
       text-decoration: underline !important; }
     /* line 62, /openedx/edx-platform/lms/static/sass/bootstrap/elements/_banners.scss */
     .page-banner .user-messages .user-messages-ul {
@@ -9901,19 +9977,19 @@ body {
 /* line 3, /openedx/edx-platform/lms/static/sass/bootstrap/elements/_pagination.scss */
 .pagination {
   display: inline-block;
-  width: 23.72881%; }
-  /* line 2, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_clearfix.scss */
-  .pagination::after {
-    display: block;
-    clear: both;
-    content: ""; }
+  width: 23.40426%; }
+  /* line 15, /openedx/edx-platform/common/static/sass/bourbon/addons/_clearfix.scss */
+  .pagination:after {
+    content: "";
+    display: table;
+    clear: both; }
   /* line 9, /openedx/edx-platform/lms/static/sass/bootstrap/elements/_pagination.scss */
   .pagination.pagination-compact {
     text-align: left; }
   /* line 13, /openedx/edx-platform/lms/static/sass/bootstrap/elements/_pagination.scss */
   .pagination.pagination-full {
     display: block;
-    width: 32.20339%;
+    width: 31.91489%;
     margin: 20px auto; }
   /* line 19, /openedx/edx-platform/lms/static/sass/bootstrap/elements/_pagination.scss */
   .pagination .nav-item {
@@ -10039,7 +10115,7 @@ body {
     .course-bookmarks .bookmarks-results-list .list-item-date {
       margin-top: 5px;
       color: #313131;
-      font-size: font-size(small); }
+      font-size: 0.875rem; }
     /* line 51, lms/static/sass/features/_bookmarks.scss */
     .course-bookmarks .bookmarks-results-list .bookmarks-results-list-item::before {
       content: "";
@@ -10170,7 +10246,7 @@ body {
         color: rgba(0, 0, 0, 0.5); }
     /* line 107, lms/static/sass/features/_course-experience.scss */
     .course-message .message-content .success-message {
-      font-size: font-size(small); }
+      font-size: 0.875rem; }
     /* line 111, lms/static/sass/features/_course-experience.scss */
     .course-message .message-content .goal-options-container {
       margin-top: 20px;
@@ -10200,8 +10276,8 @@ body {
           margin: 0;
           width: auto;
           flex-grow: 1;
-          font-size: font-size(small);
-          color: #0075b4;
+          font-size: 0.875rem;
+          color: #1b6d99;
           text-decoration: underline;
           cursor: pointer; }
           /* line 148, lms/static/sass/features/_course-experience.scss */
@@ -10408,7 +10484,7 @@ body {
           display: inline; }
         /* line 400, lms/static/sass/features/_course-experience.scss */
         .course-outline .block-tree .section ol.outline-item .subsection .subsection-text .details {
-          font-size: 1rem;
+          font-size: 0.875em;
           color: #313131; }
         /* line 405, lms/static/sass/features/_course-experience.scss */
         .course-outline .block-tree .section ol.outline-item .subsection .subsection-text .prerequisite {
@@ -10437,11 +10513,11 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 12px 0; }
-  /* line 2, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_clearfix.scss */
-  .date-summary-container .date-summary::after {
-    display: block;
-    clear: both;
-    content: ""; }
+  /* line 15, /openedx/edx-platform/common/static/sass/bourbon/addons/_clearfix.scss */
+  .date-summary-container .date-summary:after {
+    content: "";
+    display: table;
+    clear: both; }
   /* line 444, lms/static/sass/features/_course-experience.scss */
   .date-summary-container .date-summary:last-of-type {
     padding-bottom: 0; }
@@ -10617,144 +10693,6 @@ body {
   .search-results .search-load-next {
     display: block;
     margin-top: 20px; }
-
-/* line 1, lms/static/sass/features/_course-sock.scss */
-.verification-sock {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  max-width: 1920px;
-  margin: 20px auto 0;
-  -webkit-transition: all 0.4s ease-out;
-  -moz-transition: all 0.4s ease-out;
-  -o-transition: all 0.4s ease-out;
-  -ms-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out; }
-  /* line 13, lms/static/sass/features/_course-sock.scss */
-  .verification-sock .action-toggle-verification-sock {
-    right: 50%;
-    margin-right: -150px;
-    position: absolute;
-    top: -20px;
-    width: 300px;
-    color: #fff;
-    background-color: #008100;
-    border-color: #008100;
-    background-image: none;
-    box-shadow: none;
-    -webkit-transition: background-color 0.5s;
-    transition: background-color 0.5s;
-    cursor: pointer; }
-    /* line 29, lms/static/sass/features/_course-sock.scss */
-    .verification-sock .action-toggle-verification-sock.active, .verification-sock .action-toggle-verification-sock:focus, .verification-sock .action-toggle-verification-sock:hover {
-      color: #008100;
-      background-color: #fff;
-      border-color: #008100;
-      background-image: none;
-      box-shadow: none; }
-  /* line 40, lms/static/sass/features/_course-sock.scss */
-  .verification-sock .verification-main-panel {
-    display: none;
-    overflow: hidden;
-    border-top: 1px solid #e7e7e7;
-    padding: 50px 40px;
-    -webkit-transition: height ease-out;
-    transition: height ease-out; }
-    /* line 48, lms/static/sass/features/_course-sock.scss */
-    .verification-sock .verification-main-panel .verification-desc-panel {
-      color: rgba(0, 0, 0, 0.75);
-      position: relative; }
-      /* line 52, lms/static/sass/features/_course-sock.scss */
-      .verification-sock .verification-main-panel .verification-desc-panel h2 {
-        font-size: 1.5rem;
-        font-weight: 700; }
-      /* line 57, lms/static/sass/features/_course-sock.scss */
-      .verification-sock .verification-main-panel .verification-desc-panel h3 {
-        font-size: 1.25rem; }
-      @media (max-width: 960px) {
-        /* line 62, lms/static/sass/features/_course-sock.scss */
-        .verification-sock .verification-main-panel .verification-desc-panel .mini-cert {
-          display: none;
-          border: 1px solid rgba(0, 0, 0, 0.125); } }
-      /* line 68, lms/static/sass/features/_course-sock.scss */
-      .verification-sock .verification-main-panel .verification-desc-panel .mini-cert {
-        left: 20px;
-        position: absolute;
-        top: 20px;
-        width: 260px; }
-      /* line 76, lms/static/sass/features/_course-sock.scss */
-      .verification-sock .verification-main-panel .verification-desc-panel .learner-story-container {
-        display: flex;
-        max-width: 630px; }
-        /* line 80, lms/static/sass/features/_course-sock.scss */
-        .verification-sock .verification-main-panel .verification-desc-panel .learner-story-container .student-image {
-          margin: 5px 0 0 20px;
-          height: 50px;
-          width: 50px; }
-        /* line 86, lms/static/sass/features/_course-sock.scss */
-        .verification-sock .verification-main-panel .verification-desc-panel .learner-story-container .story-quote > .author {
-          display: block;
-          margin-top: 5px;
-          font-weight: 600; }
-        /* line 92, lms/static/sass/features/_course-sock.scss */
-        .verification-sock .verification-main-panel .verification-desc-panel .learner-story-container:not(:first-child) {
-          margin-top: 40px; }
-      /* line 97, lms/static/sass/features/_course-sock.scss */
-      .verification-sock .verification-main-panel .verification-desc-panel .action-upgrade-certificate {
-        position: absolute;
-        left: 20px;
-        background-color: #008100;
-        border-color: #008100;
-        color: #fff;
-        background-image: none;
-        box-shadow: none;
-        cursor: pointer; }
-        /* line 107, lms/static/sass/features/_course-sock.scss */
-        .verification-sock .verification-main-panel .verification-desc-panel .action-upgrade-certificate:hover {
-          background-color: #fff;
-          color: #008100; }
-        @media (max-width: 960px) {
-          /* line 113, lms/static/sass/features/_course-sock.scss */
-          .verification-sock .verification-main-panel .verification-desc-panel .action-upgrade-certificate {
-            position: relative;
-            margin-top: 40px; } }
-        @media (min-width: 960px) {
-          /* line 120, lms/static/sass/features/_course-sock.scss */
-          .verification-sock .verification-main-panel .verification-desc-panel .action-upgrade-certificate.stuck-top {
-            bottom: auto;
-            top: 208px; }
-          /* line 125, lms/static/sass/features/_course-sock.scss */
-          .verification-sock .verification-main-panel .verification-desc-panel .action-upgrade-certificate.stuck-bottom {
-            top: auto;
-            bottom: -30px; }
-          /* line 130, lms/static/sass/features/_course-sock.scss */
-          .verification-sock .verification-main-panel .verification-desc-panel .action-upgrade-certificate.attached {
-            left: 20px;
-            position: fixed;
-            bottom: 20px;
-            top: auto; } }
-
-/* line 145, lms/static/sass/features/_course-sock.scss */
-.view-courseware .verification-sock {
-  margin-top: 0;
-  border-top: none;
-  border-bottom: none; }
-  /* line 150, lms/static/sass/features/_course-sock.scss */
-  .view-courseware .verification-sock .action-toggle-verification-sock {
-    top: -25px; }
-    /* line 153, lms/static/sass/features/_course-sock.scss */
-    .view-courseware .verification-sock .action-toggle-verification-sock:not(.active) {
-      color: #fff;
-      background-color: #008100;
-      box-shadow: none;
-      border: 1px solid #008100; }
-      /* line 159, lms/static/sass/features/_course-sock.scss */
-      .view-courseware .verification-sock .action-toggle-verification-sock:not(.active):hover {
-        background-color: #003500; }
-  /* line 165, lms/static/sass/features/_course-sock.scss */
-  .view-courseware .verification-sock .verification-main-panel {
-    border-top: 0;
-    border-bottom: 1px solid #e7e7e7; }
 
 /*
 NOTE: If you make significant changes to the design, remember to update the Segment event properties and change
@@ -11189,7 +11127,7 @@ body.view-in-mfe .course-expiration-message {
 .program-header .title,
 .program-header .subtitle {
   color: #fff;
-  font-weight: font-weight(semi-bold); }
+  font-weight: 600; }
 
 /* line 35, lms/static/sass/views/_program-details.scss */
 .program-header .org-wrapper {
@@ -11221,7 +11159,7 @@ body.view-in-mfe .course-expiration-message {
 .program-header .crumb {
   float: right;
   position: relative;
-  font-size: font-size(x-small);
+  font-size: 0.75rem;
   line-height: line-height(x-small);
   color: #111111; }
   /* line 69, lms/static/sass/views/_program-details.scss */
@@ -11240,37 +11178,26 @@ body.view-in-mfe .course-expiration-message {
 
 /* line 86, lms/static/sass/views/_program-details.scss */
 .program-header .crumb-separator {
-  font-size: font-size(xx-small);
+  font-size: 0.6875rem;
   line-height: line-height(xx-small);
   padding: 0 5px; }
 
-/* line 94, lms/static/sass/views/_program-details.scss */
-.program-details-alerts .page-banner {
-  margin: 0;
-  padding: 0 0 48px;
-  gap: 24px; }
-
-/* line 102, lms/static/sass/views/_program-details.scss */
-.program-details-tab-alerts .page-banner {
-  margin: 0;
-  gap: 24px; }
-
-/* line 110, lms/static/sass/views/_program-details.scss */
+/* line 95, lms/static/sass/views/_program-details.scss */
 .program-details .window-wrap {
   background-color: #fff; }
 
-/* line 114, lms/static/sass/views/_program-details.scss */
+/* line 99, lms/static/sass/views/_program-details.scss */
 .program-details .wrapper-footer,
 .program-details footer#footer-edx-v3 {
   clear: both; }
-  /* line 2, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_clearfix.scss */
-  .program-details .wrapper-footer::after,
-  .program-details footer#footer-edx-v3::after {
-    display: block;
-    clear: both;
-    content: ""; }
+  /* line 15, /openedx/edx-platform/common/static/sass/bourbon/addons/_clearfix.scss */
+  .program-details .wrapper-footer:after,
+  .program-details footer#footer-edx-v3:after {
+    content: "";
+    display: table;
+    clear: both; }
 
-/* line 123, lms/static/sass/views/_program-details.scss */
+/* line 108, lms/static/sass/views/_program-details.scss */
 .program-details-wrapper .program-details-header {
   background-color: #fcfcfc;
   display: flex;
@@ -11281,86 +11208,86 @@ body.view-in-mfe .course-expiration-message {
   flex-direction: column;
   padding: 40px 0px 35px 10px; }
   @media (min-width: 768px) {
-    /* line 123, lms/static/sass/views/_program-details.scss */
+    /* line 108, lms/static/sass/views/_program-details.scss */
     .program-details-wrapper .program-details-header {
       flex-direction: row;
       padding-left: 30px; } }
   @media (min-width: 1920px) {
-    /* line 123, lms/static/sass/views/_program-details.scss */
+    /* line 108, lms/static/sass/views/_program-details.scss */
     .program-details-wrapper .program-details-header {
       padding-left: calc(((100% - 1180px) / 2) + 30px); } }
-  /* line 142, lms/static/sass/views/_program-details.scss */
+  /* line 127, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .program-details-header .hd-1 {
     font-size: 1.5em; }
     @media (min-width: 768px) {
-      /* line 142, lms/static/sass/views/_program-details.scss */
+      /* line 127, lms/static/sass/views/_program-details.scss */
       .program-details-wrapper .program-details-header .hd-1 {
         font-size: 2.375em; } }
-  /* line 150, lms/static/sass/views/_program-details.scss */
+  /* line 135, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .program-details-header .program-details-icon {
     margin-right: 3px;
     margin-top: 10px;
     height: auto;
     /* IE11 CSS styles */ }
-    /* line 156, lms/static/sass/views/_program-details.scss */
+    /* line 141, lms/static/sass/views/_program-details.scss */
     .program-details-wrapper .program-details-header .program-details-icon svg {
       width: inherit; }
 
 @media (min-width: 768px) and (-ms-high-contrast: none), (min-width: 768px) and (-ms-high-contrast: active) {
-  /* line 150, lms/static/sass/views/_program-details.scss */
+  /* line 135, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .program-details-header .program-details-icon {
     height: 50px; } }
-  /* line 168, lms/static/sass/views/_program-details.scss */
+  /* line 153, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .program-details-header .micromasters {
     fill: #005585;
     width: 200px; }
     @media (min-width: 768px) {
-      /* line 168, lms/static/sass/views/_program-details.scss */
+      /* line 153, lms/static/sass/views/_program-details.scss */
       .program-details-wrapper .program-details-header .micromasters {
         width: 250px; } }
-  /* line 177, lms/static/sass/views/_program-details.scss */
+  /* line 162, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .program-details-header .xseries {
     fill: xseries-color;
     width: 150px; }
     @media (min-width: 768px) {
-      /* line 177, lms/static/sass/views/_program-details.scss */
+      /* line 162, lms/static/sass/views/_program-details.scss */
       .program-details-wrapper .program-details-header .xseries {
         width: 200px; } }
-  /* line 186, lms/static/sass/views/_program-details.scss */
+  /* line 171, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .program-details-header .professional.certificate {
     fill: #9a1f60;
     width: 250px; }
     @media (min-width: 768px) {
-      /* line 186, lms/static/sass/views/_program-details.scss */
+      /* line 171, lms/static/sass/views/_program-details.scss */
       .program-details-wrapper .program-details-header .professional.certificate {
         width: 300px; } }
-  /* line 195, lms/static/sass/views/_program-details.scss */
+  /* line 180, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .program-details-header .meta-info {
     margin: 0;
     display: block; }
     @media (min-width: 768px) {
-      /* line 195, lms/static/sass/views/_program-details.scss */
+      /* line 180, lms/static/sass/views/_program-details.scss */
       .program-details-wrapper .program-details-header .meta-info {
         width: 70%; } }
     @media (min-width: 992px) {
-      /* line 195, lms/static/sass/views/_program-details.scss */
+      /* line 180, lms/static/sass/views/_program-details.scss */
       .program-details-wrapper .program-details-header .meta-info {
         width: 75%; } }
-    /* line 207, lms/static/sass/views/_program-details.scss */
+    /* line 192, lms/static/sass/views/_program-details.scss */
     .program-details-wrapper .program-details-header .meta-info .program-title {
       font-weight: normal;
       font-size: 2em; }
-  /* line 213, lms/static/sass/views/_program-details.scss */
+  /* line 198, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .program-details-header .authoring-organizations {
     text-align: center;
     display: block;
     padding-right: 24px;
     width: fit-content; }
     @media (min-width: 768px) {
-      /* line 213, lms/static/sass/views/_program-details.scss */
+      /* line 198, lms/static/sass/views/_program-details.scss */
       .program-details-wrapper .program-details-header .authoring-organizations {
         padding-right: 0px; } }
-    /* line 223, lms/static/sass/views/_program-details.scss */
+    /* line 208, lms/static/sass/views/_program-details.scss */
     .program-details-wrapper .program-details-header .authoring-organizations .heading {
       font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: bold;
@@ -11369,35 +11296,35 @@ body.view-in-mfe .course-expiration-message {
       margin-top: auto;
       margin-bottom: auto; }
       @media (min-width: 768px) {
-        /* line 223, lms/static/sass/views/_program-details.scss */
+        /* line 208, lms/static/sass/views/_program-details.scss */
         .program-details-wrapper .program-details-header .authoring-organizations .heading {
           margin-left: 10px 0 0 0; } }
-    /* line 236, lms/static/sass/views/_program-details.scss */
+    /* line 221, lms/static/sass/views/_program-details.scss */
     .program-details-wrapper .program-details-header .authoring-organizations .orgs .org-logo {
       height: 40px; }
     @media (min-width: 768px) {
-      /* line 213, lms/static/sass/views/_program-details.scss */
+      /* line 198, lms/static/sass/views/_program-details.scss */
       .program-details-wrapper .program-details-header .authoring-organizations {
         margin: initial;
         width: 30%; }
-        /* line 244, lms/static/sass/views/_program-details.scss */
+        /* line 229, lms/static/sass/views/_program-details.scss */
         .program-details-wrapper .program-details-header .authoring-organizations .orgs .org-logo {
           margin-right: 2.5%; } }
     @media (min-width: 992px) {
-      /* line 213, lms/static/sass/views/_program-details.scss */
+      /* line 198, lms/static/sass/views/_program-details.scss */
       .program-details-wrapper .program-details-header .authoring-organizations {
         width: 25%; } }
 
-/* line 255, lms/static/sass/views/_program-details.scss */
+/* line 240, lms/static/sass/views/_program-details.scss */
 .program-details-wrapper .program-details-content {
   margin-bottom: 30px;
   padding-left: 40px; }
 
-/* line 261, lms/static/sass/views/_program-details.scss */
+/* line 246, lms/static/sass/views/_program-details.scss */
 .program-details-wrapper .tab-content .tab-pane .js-program-pathways {
   padding-right: 40px; }
 
-/* line 267, lms/static/sass/views/_program-details.scss */
+/* line 252, lms/static/sass/views/_program-details.scss */
 .program-details-wrapper .course-list-heading {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -11408,47 +11335,47 @@ body.view-in-mfe .course-expiration-message {
   border-bottom: 3px solid #e2e7ec;
   margin-top: 10px;
   margin-bottom: 20px; }
-  /* line 280, lms/static/sass/views/_program-details.scss */
+  /* line 265, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .course-list-heading .status {
     margin-left: 7px; }
 
-/* line 285, lms/static/sass/views/_program-details.scss */
+/* line 270, lms/static/sass/views/_program-details.scss */
 .program-details-wrapper .course-list > div:nth-of-type(even) {
   background-color: #f9fafc; }
 
-/* line 290, lms/static/sass/views/_program-details.scss */
+/* line 275, lms/static/sass/views/_program-details.scss */
 .program-details-wrapper .course-list-headings .motivating-section {
   font-size: 0.9375em;
   width: auto; }
-  /* line 294, lms/static/sass/views/_program-details.scss */
+  /* line 279, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .course-list-headings .motivating-section .motivating-heading {
     margin-bottom: 0;
     font-weight: 600; }
-  /* line 299, lms/static/sass/views/_program-details.scss */
+  /* line 284, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .course-list-headings .motivating-section .motivating-message {
     color: #414141; }
 
-/* line 305, lms/static/sass/views/_program-details.scss */
+/* line 290, lms/static/sass/views/_program-details.scss */
 .program-details-wrapper .program-heading {
   margin-bottom: 40px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   margin-left: 48px; }
-  /* line 312, lms/static/sass/views/_program-details.scss */
+  /* line 297, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .program-heading .program-heading-title {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
     margin-bottom: 5px;
     line-height: normal;
     color: #0075b4 !important; }
-  /* line 320, lms/static/sass/views/_program-details.scss */
+  /* line 305, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .program-heading .program-heading-message {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px; }
 
-/* line 328, lms/static/sass/views/_program-details.scss */
+/* line 313, lms/static/sass/views/_program-details.scss */
 .program-details-wrapper .course-enroll-view .view-course-button {
   background: #065683;
   border-color: #065683;
@@ -11463,30 +11390,30 @@ body.view-in-mfe .course-expiration-message {
   /* IE11 CSS styles */ }
 
 @media (min-width: 992px) and (-ms-high-contrast: none), (min-width: 992px) and (-ms-high-contrast: active) {
-  /* line 328, lms/static/sass/views/_program-details.scss */
+  /* line 313, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .course-enroll-view .view-course-button {
     float: left; } }
   @media (min-width: 992px) {
-    /* line 328, lms/static/sass/views/_program-details.scss */
+    /* line 313, lms/static/sass/views/_program-details.scss */
     .program-details-wrapper .course-enroll-view .view-course-button {
       margin-top: 0; } }
 
-/* line 352, lms/static/sass/views/_program-details.scss */
+/* line 337, lms/static/sass/views/_program-details.scss */
 .program-details-wrapper .course-enroll-view .enroll-button {
   width: 100%; }
   @media (min-width: 576px) {
-    /* line 352, lms/static/sass/views/_program-details.scss */
+    /* line 337, lms/static/sass/views/_program-details.scss */
     .program-details-wrapper .course-enroll-view .enroll-button {
       width: initial;
       margin-bottom: 0;
       margin-top: 17px; } }
   @media (min-width: 768px) {
-    /* line 352, lms/static/sass/views/_program-details.scss */
+    /* line 337, lms/static/sass/views/_program-details.scss */
     .program-details-wrapper .course-enroll-view .enroll-button {
       width: initial;
       margin-top: 0;
       margin-bottom: 0; } }
-  /* line 367, lms/static/sass/views/_program-details.scss */
+  /* line 352, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .course-enroll-view .enroll-button button,
   .program-details-wrapper .course-enroll-view .enroll-button .enroll-course-button {
     background-color: #065683;
@@ -11498,22 +11425,22 @@ body.view-in-mfe .course-expiration-message {
     margin-top: 7px;
     font-size: 0.9375em;
     /* IE11 CSS styles */ }
-    /* line 378, lms/static/sass/views/_program-details.scss */
+    /* line 363, lms/static/sass/views/_program-details.scss */
     .program-details-wrapper .course-enroll-view .enroll-button button:hover,
     .program-details-wrapper .course-enroll-view .enroll-button .enroll-course-button:hover {
       color: #065683;
       background-color: #fff; }
 
 @media (min-width: 768px) and (-ms-high-contrast: none), (min-width: 768px) and (-ms-high-contrast: active) {
-  /* line 367, lms/static/sass/views/_program-details.scss */
+  /* line 352, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .course-enroll-view .enroll-button button,
   .program-details-wrapper .course-enroll-view .enroll-button .enroll-course-button {
     float: left; } }
-  /* line 391, lms/static/sass/views/_program-details.scss */
+  /* line 376, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .course-enroll-view .enroll-button .enroll-course-button {
     padding: 7px 18.5px 0; }
 
-/* line 396, lms/static/sass/views/_program-details.scss */
+/* line 381, lms/static/sass/views/_program-details.scss */
 .program-details-wrapper .course-enroll-view .select-choice {
   margin-left: 2px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -11523,24 +11450,24 @@ body.view-in-mfe .course-expiration-message {
   margin-top: 6px;
   display: block; }
   @media (min-width: 768px) {
-    /* line 396, lms/static/sass/views/_program-details.scss */
+    /* line 381, lms/static/sass/views/_program-details.scss */
     .program-details-wrapper .course-enroll-view .select-choice {
       display: inline; } }
 
 @media (min-width: 768px) {
-  /* line 411, lms/static/sass/views/_program-details.scss */
+  /* line 396, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .course-enroll-view .run-select-container {
     margin-top: 8px;
     display: flex;
     flex-wrap: wrap; } }
 
-/* line 419, lms/static/sass/views/_program-details.scss */
+/* line 404, lms/static/sass/views/_program-details.scss */
 .program-details-wrapper .course-enroll-view .run-select {
   width: 100%;
   height: 34px;
   padding: 0; }
 
-/* line 426, lms/static/sass/views/_program-details.scss */
+/* line 411, lms/static/sass/views/_program-details.scss */
 .program-details-wrapper .upgrade-button {
   background: #008100;
   border-color: #008100;
@@ -11552,159 +11479,123 @@ body.view-in-mfe .course-expiration-message {
   /* IE11 CSS styles */ }
 
 @media (min-width: 768px) and (-ms-high-contrast: none), (min-width: 768px) and (-ms-high-contrast: active) {
-  /* line 426, lms/static/sass/views/_program-details.scss */
+  /* line 411, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .upgrade-button {
     float: left; } }
-  /* line 442, lms/static/sass/views/_program-details.scss */
+  /* line 427, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .upgrade-button.complete-program {
     margin: 10px 5px 10px 15px;
     align-self: flex-start; }
-    /* line 446, lms/static/sass/views/_program-details.scss */
+    /* line 431, lms/static/sass/views/_program-details.scss */
     .program-details-wrapper .upgrade-button.complete-program .list-price {
       text-decoration: line-through; }
 
-/* line 452, lms/static/sass/views/_program-details.scss */
-.program-details-wrapper .upgrade-subscription {
-  margin: 16px 0 10px;
-  row-gap: 16px;
-  column-gap: 24px; }
-
-/* line 458, lms/static/sass/views/_program-details.scss */
-.program-details-wrapper .subscription-icon-launch {
-  width: 22.5px;
-  height: 22.5px;
-  margin-inline-start: 8px; }
-
-/* line 464, lms/static/sass/views/_program-details.scss */
-.program-details-wrapper .subscription-icon-restart {
-  width: 22.5px;
-  height: 22.5px;
-  margin-inline-end: 8px; }
-
-/* line 470, lms/static/sass/views/_program-details.scss */
-.program-details-wrapper .subscription-icon-arrow-upright {
-  display: inline-flex;
-  align-items: center;
-  width: 15px;
-  height: 15px;
-  margin-inline-start: 8px; }
-
-/* line 478, lms/static/sass/views/_program-details.scss */
-.program-details-wrapper .subscription-info-brief {
-  font-size: 0.9375em;
-  color: #a0a0a0; }
-
-/* line 483, lms/static/sass/views/_program-details.scss */
-.program-details-wrapper .subscription-info-upsell {
-  margin-top: 0.25rem;
-  font-size: 0.8125em; }
-
-/* line 488, lms/static/sass/views/_program-details.scss */
+/* line 437, lms/static/sass/views/_program-details.scss */
 .program-details-wrapper .program-course-card {
   width: 100%;
   padding: 15px 0px 15px 15px; }
   @media (min-width: 768px) {
-    /* line 488, lms/static/sass/views/_program-details.scss */
+    /* line 437, lms/static/sass/views/_program-details.scss */
     .program-details-wrapper .program-course-card {
       height: auto; } }
-  /* line 496, lms/static/sass/views/_program-details.scss */
+  /* line 445, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .program-course-card .section {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
     @media (min-width: 768px) {
-      /* line 496, lms/static/sass/views/_program-details.scss */
+      /* line 445, lms/static/sass/views/_program-details.scss */
       .program-details-wrapper .program-course-card .section {
         flex-wrap: wrap; } }
-  /* line 506, lms/static/sass/views/_program-details.scss */
+  /* line 455, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .program-course-card .section:not(:last-child) {
     margin-bottom: 10px; }
-  /* line 510, lms/static/sass/views/_program-details.scss */
+  /* line 459, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .program-course-card .section:not(:first-child) {
     margin-top: 0; }
-  /* line 514, lms/static/sass/views/_program-details.scss */
+  /* line 463, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .program-course-card .course-details {
     width: 100%;
     float: none; }
     @media (min-width: 768px) {
-      /* line 514, lms/static/sass/views/_program-details.scss */
+      /* line 463, lms/static/sass/views/_program-details.scss */
       .program-details-wrapper .program-course-card .course-details {
         display: table-cell;
         vertical-align: top;
         float: right; } }
-    /* line 524, lms/static/sass/views/_program-details.scss */
+    /* line 473, lms/static/sass/views/_program-details.scss */
     .program-details-wrapper .program-course-card .course-details .course-title {
       font-size: 1em;
       font-weight: 600;
       margin: 0; }
-      /* line 529, lms/static/sass/views/_program-details.scss */
+      /* line 478, lms/static/sass/views/_program-details.scss */
       .program-details-wrapper .program-course-card .course-details .course-title .course-title-link,
       .program-details-wrapper .program-course-card .course-details .course-title .course-title-link:visited {
         color: #0075b4;
         text-decoration: underline; }
-    /* line 536, lms/static/sass/views/_program-details.scss */
+    /* line 485, lms/static/sass/views/_program-details.scss */
     .program-details-wrapper .program-course-card .course-details .run-period,
     .program-details-wrapper .program-course-card .course-details .info-expires-at {
       color: #414141;
       font-size: 0.9375em; }
-    /* line 542, lms/static/sass/views/_program-details.scss */
+    /* line 491, lms/static/sass/views/_program-details.scss */
     .program-details-wrapper .program-course-card .course-details .course-text .enrolled {
       color: #414141; }
   @media (min-width: 768px) {
-    /* line 547, lms/static/sass/views/_program-details.scss */
+    /* line 496, lms/static/sass/views/_program-details.scss */
     .program-details-wrapper .program-course-card .course-meta-container {
       display: table;
       width: 100%; } }
-  /* line 553, lms/static/sass/views/_program-details.scss */
+  /* line 502, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .program-course-card .course-meta-container .course-content {
     overflow: hidden; }
   @media (min-width: 768px) {
-    /* line 558, lms/static/sass/views/_program-details.scss */
+    /* line 507, lms/static/sass/views/_program-details.scss */
     .program-details-wrapper .program-course-card .course-actions {
       width: 100%;
       text-align: left;
       float: left; } }
   @media (min-width: 768px) {
-    /* line 565, lms/static/sass/views/_program-details.scss */
+    /* line 514, lms/static/sass/views/_program-details.scss */
     .program-details-wrapper .program-course-card .course-actions .course-enroll-view {
       text-align: left; } }
-  /* line 572, lms/static/sass/views/_program-details.scss */
+  /* line 521, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .program-course-card .course-certificate {
     width: 100%; }
-  /* line 578, lms/static/sass/views/_program-details.scss */
+  /* line 527, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .program-course-card .final-grade .grade-header {
     color: #414141;
     font-weight: bold; }
-  /* line 583, lms/static/sass/views/_program-details.scss */
+  /* line 532, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .program-course-card .final-grade .grade-display {
     padding-left: 15px;
     font-size: 1.5em;
     color: #2991c3; }
-  /* line 590, lms/static/sass/views/_program-details.scss */
+  /* line 539, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .program-course-card .upgrade-message {
     flex-wrap: wrap; }
-    /* line 593, lms/static/sass/views/_program-details.scss */
+    /* line 542, lms/static/sass/views/_program-details.scss */
     .program-details-wrapper .program-course-card .upgrade-message .action {
       width: 100%;
       margin: 5px 0; }
       @media (min-width: 768px) {
-        /* line 593, lms/static/sass/views/_program-details.scss */
+        /* line 542, lms/static/sass/views/_program-details.scss */
         .program-details-wrapper .program-course-card .upgrade-message .action {
           margin-right: auto;
           width: initial; } }
-    /* line 603, lms/static/sass/views/_program-details.scss */
+    /* line 552, lms/static/sass/views/_program-details.scss */
     .program-details-wrapper .program-course-card .upgrade-message .certificate-status {
       padding-top: 0;
       width: initial; }
       @media (min-width: 576px) {
-        /* line 603, lms/static/sass/views/_program-details.scss */
+        /* line 552, lms/static/sass/views/_program-details.scss */
         .program-details-wrapper .program-course-card .upgrade-message .certificate-status {
           width: 300px; } }
       @media (min-width: 768px) {
-        /* line 603, lms/static/sass/views/_program-details.scss */
+        /* line 552, lms/static/sass/views/_program-details.scss */
         .program-details-wrapper .program-course-card .upgrade-message .certificate-status {
           width: initial; } }
-      /* line 615, lms/static/sass/views/_program-details.scss */
+      /* line 564, lms/static/sass/views/_program-details.scss */
       .program-details-wrapper .program-course-card .upgrade-message .certificate-status .card-msg {
         font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: bold;
@@ -11712,75 +11603,60 @@ body.view-in-mfe .course-expiration-message {
         color: #414141;
         display: block; }
         @media (min-width: 576px) {
-          /* line 615, lms/static/sass/views/_program-details.scss */
+          /* line 564, lms/static/sass/views/_program-details.scss */
           .program-details-wrapper .program-course-card .upgrade-message .certificate-status .card-msg {
             display: inline; } }
-      /* line 627, lms/static/sass/views/_program-details.scss */
+      /* line 576, lms/static/sass/views/_program-details.scss */
       .program-details-wrapper .program-course-card .upgrade-message .certificate-status .price {
         color: #008100;
         font-weight: bold; }
-  /* line 635, lms/static/sass/views/_program-details.scss */
+  /* line 584, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .program-course-card .certificate-status .fa-check-circle {
     color: #008100; }
-  /* line 639, lms/static/sass/views/_program-details.scss */
+  /* line 588, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .program-course-card .certificate-status .card-msg {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
     font-size: 0.9375em;
     color: #414141; }
-  /* line 646, lms/static/sass/views/_program-details.scss */
+  /* line 595, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .program-course-card .certificate-status .certificate-status-msg {
     color: #414141;
     font-size: 0.9375em; }
-  /* line 652, lms/static/sass/views/_program-details.scss */
+  /* line 601, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .program-course-card .expired-notification {
     display: inline-block;
     padding-top: 5px;
     width: 300px; }
     @media (min-width: 576px) {
-      /* line 652, lms/static/sass/views/_program-details.scss */
+      /* line 601, lms/static/sass/views/_program-details.scss */
       .program-details-wrapper .program-course-card .expired-notification {
         padding-top: 10px;
         width: 500px; } }
     @media (min-width: 768px) {
-      /* line 652, lms/static/sass/views/_program-details.scss */
+      /* line 601, lms/static/sass/views/_program-details.scss */
       .program-details-wrapper .program-course-card .expired-notification {
         width: initial; } }
-  /* line 667, lms/static/sass/views/_program-details.scss */
+  /* line 616, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .program-course-card .expired-icon {
     float: right;
     color: #065683; }
-  /* line 673, lms/static/sass/views/_program-details.scss */
+  /* line 622, lms/static/sass/views/_program-details.scss */
   .program-details-wrapper .program-course-card .expired-text {
     overflow: hidden;
     padding-right: 10px; }
 
-/* line 681, lms/static/sass/views/_program-details.scss */
+/* line 630, lms/static/sass/views/_program-details.scss */
 .program-sidebar {
   padding: 40px 0px 40px 40px; }
-  /* line 684, lms/static/sass/views/_program-details.scss */
-  .program-sidebar .program-record, .program-sidebar .subscription-info {
-    text-align: right;
-    padding-bottom: 2em; }
-  /* line 689, lms/static/sass/views/_program-details.scss */
-  .program-sidebar .subscription-section {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    color: #414141; }
-    /* line 695, lms/static/sass/views/_program-details.scss */
-    .program-sidebar .subscription-section .subscription-link {
-      color: inherit;
-      text-decoration: none;
-      border-bottom: 1px solid currentColor; }
-  /* line 702, lms/static/sass/views/_program-details.scss */
+  /* line 633, lms/static/sass/views/_program-details.scss */
   .program-sidebar .sidebar-section {
     font-size: 0.9375em;
     width: auto; }
-    /* line 706, lms/static/sass/views/_program-details.scss */
+    /* line 637, lms/static/sass/views/_program-details.scss */
     .program-sidebar .sidebar-section .motivating-message {
       color: #414141; }
-  /* line 711, lms/static/sass/views/_program-details.scss */
+  /* line 642, lms/static/sass/views/_program-details.scss */
   .program-sidebar .divider-heading {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
@@ -11790,147 +11666,147 @@ body.view-in-mfe .course-expiration-message {
     padding-bottom: 5px;
     border-bottom: 3px solid #e2e7ec;
     margin: 10px 0 20px 0; }
-  /* line 722, lms/static/sass/views/_program-details.scss */
+  /* line 653, lms/static/sass/views/_program-details.scss */
   .program-sidebar .sidebar-button-wrapper {
     text-align: left; }
-    /* line 724, lms/static/sass/views/_program-details.scss */
+    /* line 655, lms/static/sass/views/_program-details.scss */
     .program-sidebar .sidebar-button-wrapper .sidebar-button {
       font-size: 0.9375em;
       background: transparent;
       border: 1px solid;
       padding: 10px 16px; }
-  /* line 732, lms/static/sass/views/_program-details.scss */
+  /* line 663, lms/static/sass/views/_program-details.scss */
   .program-sidebar .program-credit-pathways {
     padding-bottom: 2em; }
-  /* line 736, lms/static/sass/views/_program-details.scss */
+  /* line 667, lms/static/sass/views/_program-details.scss */
   .program-sidebar .pathway-wrapper {
     width: auto;
     border-bottom: 1px solid #e4e4e4; }
-    /* line 741, lms/static/sass/views/_program-details.scss */
+    /* line 672, lms/static/sass/views/_program-details.scss */
     .program-sidebar .pathway-wrapper .pathway-info {
       margin: 15px 0;
       font-size: 0.9375em;
       color: #414141; }
-      /* line 746, lms/static/sass/views/_program-details.scss */
+      /* line 677, lms/static/sass/views/_program-details.scss */
       .program-sidebar .pathway-wrapper .pathway-info .pathway-heading {
         font-weight: bold;
         margin-bottom: 3px; }
-  /* line 753, lms/static/sass/views/_program-details.scss */
+  /* line 684, lms/static/sass/views/_program-details.scss */
   .program-sidebar .pathway-wrapper:last-child {
     border-bottom: none; }
   @media (min-width: 768px) {
-    /* line 681, lms/static/sass/views/_program-details.scss */
+    /* line 630, lms/static/sass/views/_program-details.scss */
     .program-sidebar {
       float: left;
       width: 300px;
       padding: 30px 10px 30px 30px;
       position: relative; } }
   @media (min-width: 992px) {
-    /* line 681, lms/static/sass/views/_program-details.scss */
+    /* line 630, lms/static/sass/views/_program-details.scss */
     .program-sidebar {
       width: 450px; }
-      /* line 768, lms/static/sass/views/_program-details.scss */
+      /* line 699, lms/static/sass/views/_program-details.scss */
       .program-sidebar .program-progress {
         margin-right: 50px; } }
   @media (min-width: 1920px) {
-    /* line 681, lms/static/sass/views/_program-details.scss */
+    /* line 630, lms/static/sass/views/_program-details.scss */
     .program-sidebar {
       margin-left: calc((100% - 1180px) / 2); } }
 
-/* line 778, lms/static/sass/views/_program-details.scss */
+/* line 709, lms/static/sass/views/_program-details.scss */
 .certificate-heading {
   margin-bottom: 10px; }
   @media (min-width: 768px) {
-    /* line 778, lms/static/sass/views/_program-details.scss */
+    /* line 709, lms/static/sass/views/_program-details.scss */
     .certificate-heading {
       margin-left: 30px; } }
   @media (min-width: 992px) {
-    /* line 778, lms/static/sass/views/_program-details.scss */
+    /* line 709, lms/static/sass/views/_program-details.scss */
     .certificate-heading {
       margin-right: 10px;
       margin-left: 0; } }
 
-/* line 791, lms/static/sass/views/_program-details.scss */
+/* line 722, lms/static/sass/views/_program-details.scss */
 .program-cert-link {
   display: inline-block; }
-  /* line 797, lms/static/sass/views/_program-details.scss */
+  /* line 728, lms/static/sass/views/_program-details.scss */
   .program-cert-link:active .program-cert, .program-cert-link:focus .program-cert, .program-cert-link:hover .program-cert {
     border-color: #005e90; }
 
-/* line 803, lms/static/sass/views/_program-details.scss */
+/* line 734, lms/static/sass/views/_program-details.scss */
 .program-cert {
   width: 100%;
   border: 1px solid #e2e7ec; }
   @media (min-width: 768px) {
-    /* line 803, lms/static/sass/views/_program-details.scss */
+    /* line 734, lms/static/sass/views/_program-details.scss */
     .program-cert {
       width: calc(100% - 30px); } }
   @media (min-width: 992px) {
-    /* line 803, lms/static/sass/views/_program-details.scss */
+    /* line 734, lms/static/sass/views/_program-details.scss */
     .program-cert {
       width: 100%; } }
 
-/* line 816, lms/static/sass/views/_program-details.scss */
+/* line 747, lms/static/sass/views/_program-details.scss */
 .certificate-list {
   margin: 0 10px 0 0;
   list-style: none; }
-  /* line 821, lms/static/sass/views/_program-details.scss */
+  /* line 752, lms/static/sass/views/_program-details.scss */
   .certificate-list .certificate {
     display: flex;
     flex-direction: row;
     padding: 5px 0 10px; }
-    /* line 826, lms/static/sass/views/_program-details.scss */
+    /* line 757, lms/static/sass/views/_program-details.scss */
     .certificate-list .certificate .image-link {
       flex: 0 0 100px; }
       @media (min-width: 768px) {
-        /* line 826, lms/static/sass/views/_program-details.scss */
+        /* line 757, lms/static/sass/views/_program-details.scss */
         .certificate-list .certificate .image-link {
           flex: 0 0 120px; } }
-  /* line 835, lms/static/sass/views/_program-details.scss */
+  /* line 766, lms/static/sass/views/_program-details.scss */
   .certificate-list .certificate-link {
     margin-right: 20px;
     color: #000;
     font-size: 1.1em;
     font-weight: 600; }
     @media (min-width: 768px) {
-      /* line 835, lms/static/sass/views/_program-details.scss */
+      /* line 766, lms/static/sass/views/_program-details.scss */
       .certificate-list .certificate-link {
         font-size: 0.9em; } }
     @media (min-width: 992px) {
-      /* line 835, lms/static/sass/views/_program-details.scss */
+      /* line 766, lms/static/sass/views/_program-details.scss */
       .certificate-list .certificate-link {
         font-size: 1.1em; } }
-    /* line 855, lms/static/sass/views/_program-details.scss */
+    /* line 786, lms/static/sass/views/_program-details.scss */
     .certificate-list .certificate-link:active .sample-cert, .certificate-list .certificate-link:focus .sample-cert, .certificate-list .certificate-link:hover .sample-cert {
       border-color: #005e90; }
-  /* line 861, lms/static/sass/views/_program-details.scss */
+  /* line 792, lms/static/sass/views/_program-details.scss */
   .certificate-list .sample-cert {
     width: 120px;
     border: 3px solid #c8c8c8;
     border-radius: 5px; }
     @media (min-width: 768px) {
-      /* line 861, lms/static/sass/views/_program-details.scss */
+      /* line 792, lms/static/sass/views/_program-details.scss */
       .certificate-list .sample-cert {
         width: 100px; } }
     @media (min-width: 992px) {
-      /* line 861, lms/static/sass/views/_program-details.scss */
+      /* line 792, lms/static/sass/views/_program-details.scss */
       .certificate-list .sample-cert {
         width: 120px; } }
 
-/* line 876, lms/static/sass/views/_program-details.scss */
+/* line 807, lms/static/sass/views/_program-details.scss */
 .program-detail-nav {
   display: block;
   width: 100%;
   padding: 40px; }
-  /* line 883, lms/static/sass/views/_program-details.scss */
+  /* line 814, lms/static/sass/views/_program-details.scss */
   .program-detail-nav .program-detail-nav-list {
     border-bottom: 1px solid #414141; }
-    /* line 888, lms/static/sass/views/_program-details.scss */
+    /* line 819, lms/static/sass/views/_program-details.scss */
     .program-detail-nav .program-detail-nav-list .nav-item {
       font-weight: 500;
       font-size: 1.125rem;
       display: inline-block; }
-      /* line 895, lms/static/sass/views/_program-details.scss */
+      /* line 826, lms/static/sass/views/_program-details.scss */
       .program-detail-nav .program-detail-nav-list .nav-item .btn-link {
         display: inline-block;
         padding: 10px;
@@ -11939,10 +11815,10 @@ body.view-in-mfe .course-expiration-message {
         text-shadow: none;
         color: #0075b4;
         cursor: pointer; }
-        /* line 904, lms/static/sass/views/_program-details.scss */
+        /* line 835, lms/static/sass/views/_program-details.scss */
         .program-detail-nav .program-detail-nav-list .nav-item .btn-link:hover, .program-detail-nav .program-detail-nav-list .nav-item .btn-link:focus {
           border-bottom: 3px solid #0075b4; }
-        /* line 909, lms/static/sass/views/_program-details.scss */
+        /* line 840, lms/static/sass/views/_program-details.scss */
         .program-detail-nav .program-detail-nav-list .nav-item .btn-link.active {
           border-bottom: 3px solid #0075b4; }
 
@@ -11991,14 +11867,8 @@ body.view-in-mfe .course-expiration-message {
   box-sizing: border-box;
   margin: 0 auto;
   padding-top: 32px; }
-  /* line 43, lms/static/sass/views/_program-list.scss */
-  .program-cards-container .subscription-badge {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    z-index: 10; }
 
-/* line 51, lms/static/sass/views/_program-list.scss */
+/* line 44, lms/static/sass/views/_program-list.scss */
 .sidebar {
   float: left;
   display: flex;
@@ -12006,10 +11876,10 @@ body.view-in-mfe .course-expiration-message {
   align-items: stretch;
   gap: 24px; }
   @media (min-width: 768px) {
-    /* line 51, lms/static/sass/views/_program-list.scss */
+    /* line 44, lms/static/sass/views/_program-list.scss */
     .sidebar {
       padding-top: 76px; } }
-  /* line 62, lms/static/sass/views/_program-list.scss */
+  /* line 55, lms/static/sass/views/_program-list.scss */
   .sidebar .aside {
     display: flex;
     flex-direction: column;
@@ -12018,19 +11888,19 @@ body.view-in-mfe .course-expiration-message {
     gap: 16px;
     background: #fbfaf9;
     border: 1px solid #d7d3d1; }
-  /* line 72, lms/static/sass/views/_program-list.scss */
+  /* line 65, lms/static/sass/views/_program-list.scss */
   .sidebar .program-advertise {
     clear: both; }
-  /* line 76, lms/static/sass/views/_program-list.scss */
+  /* line 69, lms/static/sass/views/_program-list.scss */
   .sidebar .advertise-message {
     font-size: 1rem;
     color: #111111;
     margin: 0; }
-  /* line 82, lms/static/sass/views/_program-list.scss */
+  /* line 75, lms/static/sass/views/_program-list.scss */
   .sidebar .view-button {
     white-space: normal; }
 
-/* line 87, lms/static/sass/views/_program-list.scss */
+/* line 80, lms/static/sass/views/_program-list.scss */
 .empty-programs-message {
   flex: 0 0 100%;
   max-width: 100%;
@@ -12039,7 +11909,7 @@ body.view-in-mfe .course-expiration-message {
   padding: 40px 0;
   text-align: center;
   margin-bottom: 20px; }
-  /* line 96, lms/static/sass/views/_program-list.scss */
+  /* line 89, lms/static/sass/views/_program-list.scss */
   .empty-programs-message .hd-3 {
     color: #000;
     margin-bottom: 20px; }
