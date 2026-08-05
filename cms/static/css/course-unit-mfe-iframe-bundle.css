@@ -16528,93 +16528,6 @@ body.picker-open {
       width: 100%;
       max-height: 100%; }
 
-/* line 1, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-.maintenance-header {
-  text-align: center;
-  margin-top: 50px; }
-  /* line 5, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-  .maintenance-header h2 {
-    margin-bottom: 10px; }
-
-/* line 10, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-.maintenance-content {
-  padding: 3rem 0; }
-  /* line 13, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-  .maintenance-content .maintenance-list {
-    max-width: 1280px;
-    margin: 0 auto; }
-    /* line 17, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-    .maintenance-content .maintenance-list .view-list-container {
-      padding: 10px 15px;
-      background-color: #fff;
-      border-bottom: 1px solid #ddd; }
-      /* line 22, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-      .maintenance-content .maintenance-list .view-list-container:hover {
-        background-color: #fafafa; }
-      /* line 26, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-      .maintenance-content .maintenance-list .view-list-container .view-name {
-        display: inline-block;
-        width: 20%;
-        float: left; }
-      /* line 32, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-      .maintenance-content .maintenance-list .view-list-container .view-desc {
-        display: inline-block;
-        width: 80%;
-        font-size: 15px; }
-  /* line 40, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-  .maintenance-content .maintenance-form {
-    width: 60%;
-    margin: auto; }
-    /* line 44, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-    .maintenance-content .maintenance-form .result-list {
-      height: calc(100vh - 200px);
-      overflow: auto; }
-    /* line 49, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-    .maintenance-content .maintenance-form .result {
-      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
-      margin-top: 15px;
-      padding: 15px 30px;
-      background: #f9f9f9; }
-    /* line 56, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-    .maintenance-content .maintenance-form li {
-      font-size: 13px;
-      line-height: 9px; }
-    /* line 61, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-    .maintenance-content .maintenance-form .actions {
-      text-align: right; }
-    /* line 65, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-    .maintenance-content .maintenance-form .field-radio div {
-      display: inline-block;
-      margin-right: 10px; }
-    /* line 70, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-    .maintenance-content .maintenance-form div.error {
-      color: #f00;
-      margin-top: 10px;
-      font-size: 13px; }
-    /* line 76, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-    .maintenance-content .maintenance-form div.head-output {
-      font-size: 13px;
-      margin-bottom: 10px; }
-    /* line 81, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-    .maintenance-content .maintenance-form div.main-output {
-      color: #0a0;
-      font-size: 15px; }
-  /* line 87, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-  .maintenance-content .announcement-container {
-    width: 100%;
-    text-align: center; }
-    /* line 91, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-    .maintenance-content .announcement-container .announcement-item {
-      display: inline-block;
-      max-width: 300px;
-      min-width: 300px;
-      margin: 15px; }
-      /* line 97, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-      .maintenance-content .announcement-container .announcement-item .announcement-content {
-        background-color: #fff;
-        text-align: center;
-        padding: 22px 33px; }
-
 /* line 9, /openedx/edx-platform/cms/static/sass/contexts/_ie.scss */
 .lte9 .wrapper-notification.is-shown {
   bottom: 0; }
@@ -16648,25 +16561,29 @@ body.picker-open {
   color: #474747; }
 
 /* line 27, /openedx/edx-platform/cms/static/sass/xmodule/_headings.scss */
+.wrapper-xblock .xblock-render .xblock .xblock-render .xblock h1,
 .wrapper-xblock .xblock-render .xblock .xblock-render .xblock .hd-1 {
   margin-bottom: 1.41575em;
   font-size: 2em;
   line-height: 1.4em; }
 
 /* line 34, /openedx/edx-platform/cms/static/sass/xmodule/_headings.scss */
-.wrapper-xblock .xblock-render .xblock .xblock-render .xblock .hd-2, .wrapper-xblock .xblock-render .xblock .xblock-render .xblock h3 {
+.wrapper-xblock .xblock-render .xblock .xblock-render .xblock h2,
+.wrapper-xblock .xblock-render .xblock .xblock-render .xblock .hd-2 {
   font-size: 1.1125em;
   font-weight: 600;
   line-height: 1.4em; }
 
 /* line 41, /openedx/edx-platform/cms/static/sass/xmodule/_headings.scss */
+.wrapper-xblock .xblock-render .xblock .xblock-render .xblock h3,
 .wrapper-xblock .xblock-render .xblock .xblock-render .xblock .hd-3 {
   margin-bottom: 10px;
   font-size: 1.35em;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.4em; }
 
 /* line 49, /openedx/edx-platform/cms/static/sass/xmodule/_headings.scss */
+.wrapper-xblock .xblock-render .xblock .xblock-render .xblock h4,
 .wrapper-xblock .xblock-render .xblock .xblock-render .xblock .hd-4 {
   margin-bottom: 10px;
   font-size: 1.25em;
@@ -16674,6 +16591,7 @@ body.picker-open {
   line-height: 1.4em; }
 
 /* line 57, /openedx/edx-platform/cms/static/sass/xmodule/_headings.scss */
+.wrapper-xblock .xblock-render .xblock .xblock-render .xblock h5,
 .wrapper-xblock .xblock-render .xblock .xblock-render .xblock .hd-5 {
   margin-bottom: 10px;
   font-size: 1.1em;
@@ -16681,6 +16599,7 @@ body.picker-open {
   line-height: 1.4em; }
 
 /* line 65, /openedx/edx-platform/cms/static/sass/xmodule/_headings.scss */
+.wrapper-xblock .xblock-render .xblock .xblock-render .xblock h6,
 .wrapper-xblock .xblock-render .xblock .xblock-render .xblock .hd-6 {
   margin-bottom: 10px;
   font-size: 1em;
@@ -16688,6 +16607,7 @@ body.picker-open {
   line-height: 1.4em; }
 
 /* line 72, /openedx/edx-platform/cms/static/sass/xmodule/_headings.scss */
+.wrapper-xblock .xblock-render .xblock .xblock-render .xblock h7,
 .wrapper-xblock .xblock-render .xblock .xblock-render .xblock .hd-7 {
   margin-bottom: 5px;
   font-size: 14px;
@@ -16697,6 +16617,7 @@ body.picker-open {
   letter-spacing: 1px; }
 
 /* line 81, /openedx/edx-platform/cms/static/sass/xmodule/_headings.scss */
+.wrapper-xblock .xblock-render .xblock .xblock-render .xblock h8,
 .wrapper-xblock .xblock-render .xblock .xblock-render .xblock .hd-8 {
   margin-bottom: 2.5px;
   font-size: 12px;
@@ -16707,7 +16628,6 @@ body.picker-open {
 
 /* line 113, /openedx/edx-platform/cms/static/sass/xmodule/_headings.scss */
 .wrapper-xblock .xblock-render .xblock .xblock-render .xblock h3 {
-  font-weight: 400;
   text-transform: initial; }
 
 /* line 9, /openedx/edx-platform/cms/static/sass/elements/_xmodules.scss */
@@ -17629,307 +17549,281 @@ body,
 /* line 470, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 [class*="view-"] .wrapper.xblock-iframe-content {
   height: 100%; }
-  /* line 474, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 473, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  [class*="view-"] .wrapper.xblock-iframe-content .xblock-title {
+    margin-bottom: 1.5em !important;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em; }
+  /* line 482, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   [class*="view-"] .wrapper.xblock-iframe-content .wrapper-comp-settings .list-input.settings-list {
     max-height: unset; }
-  /* line 479, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 487, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   [class*="view-"] .wrapper.xblock-iframe-content .google-edit-wrapper .xblock-inputs {
     position: unset;
     overflow-y: unset; }
-  /* line 484, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 492, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   [class*="view-"] .wrapper.xblock-iframe-content .xblock-actions {
     padding: 15px 2% 10px 2%;
     position: sticky;
     bottom: 0; }
-    /* line 489, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+    /* line 497, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
     [class*="view-"] .wrapper.xblock-iframe-content .xblock-actions .action-item {
       display: inline-block;
       margin-right: 15px; }
-      /* line 495, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+      /* line 503, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
       [class*="view-"] .wrapper.xblock-iframe-content .xblock-actions .action-item:last-child {
         margin-right: 0; }
-  /* line 502, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 510, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   [class*="view-"] .wrapper.xblock-iframe-content .openassessment_editor_buttons.xblock-actions {
     padding: 15px 2% 10px 2%;
     position: absolute;
     bottom: 0;
     z-index: 11;
     right: 0; }
-    /* line 509, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+    /* line 517, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
     [class*="view-"] .wrapper.xblock-iframe-content .openassessment_editor_buttons.xblock-actions .action-item {
       display: inline-block;
       margin-right: 15px; }
-      /* line 515, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+      /* line 523, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
       [class*="view-"] .wrapper.xblock-iframe-content .openassessment_editor_buttons.xblock-actions .action-item:last-child {
         margin-right: 0; }
-  /* line 521, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 529, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   [class*="view-"] .wrapper.xblock-iframe-content #openassessment-editor .oa_editor_content_wrapper {
     bottom: 70px;
     height: calc(100% - 112px); }
-  /* line 528, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 536, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   [class*="view-"] .wrapper.xblock-iframe-content #openassessment-editor #openassessment_editor_header {
     padding: 10px;
     padding-right: 50px; }
-  /* line 533, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 541, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   [class*="view-"] .wrapper.xblock-iframe-content .xblock-v1-studio_view {
     height: 100%; }
-    /* line 536, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+    /* line 544, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
     [class*="view-"] .wrapper.xblock-iframe-content .xblock-v1-studio_view .editor-with-buttons {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       height: 100%; }
-    /* line 543, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+    /* line 551, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
     [class*="view-"] .wrapper.xblock-iframe-content .xblock-v1-studio_view.xmodule_DoneXBlock {
       margin-top: 60px;
       padding: 0 20px; }
-    /* line 548, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+    /* line 556, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
     [class*="view-"] .wrapper.xblock-iframe-content .xblock-v1-studio_view .xblock-actions {
       display: flex;
       justify-content: flex-end; }
 
-/* line 555, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 563, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 [class*="view-"] .wrapper .studio-xblock-wrapper::marker {
   content: ''; }
 
-/* line 560, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 568, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 .view-container .content-primary {
   background-color: transparent;
   width: 100%; }
 
-/* line 565, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 573, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 .wrapper-content.wrapper {
   padding: 5px;
   background-color: #f8f7f6; }
 
-/* line 570, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 578, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+input.xblock-inline-title-editor {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 18px;
+  height: 50px;
+  font-weight: 700; }
+
+/* line 586, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 .btn-default.action-edit.title-edit-button {
-  position: relative;
-  top: -7px; }
-  /* line 576, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  position: relative; }
+  /* line 591, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   .btn-default.action-edit.title-edit-button .fa-pencil {
     display: none; }
-  /* line 580, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 595, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   .btn-default.action-edit.title-edit-button::before {
     content: '';
     position: absolute;
     background-color: #000;
     mask: url("../images/pencil-icon.svg") center no-repeat; }
-  /* line 589, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 604, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   .btn-default.action-edit.title-edit-button:hover {
     background-color: #0075b4;
     border-color: transparent; }
-    /* line 593, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+    /* line 608, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
     .btn-default.action-edit.title-edit-button:hover::before {
       background-color: #fff; }
-  /* line 598, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 613, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   .btn-default.action-edit.title-edit-button:focus {
     outline: 2px transparent;
     background-color: transparent;
     box-shadow: inset 0 0 0 2px #0075b4;
     border-color: transparent; }
-    /* line 604, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+    /* line 619, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
     .btn-default.action-edit.title-edit-button:focus:hover {
       color: #fff;
       border-color: transparent; }
-      /* line 608, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+      /* line 623, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
       .btn-default.action-edit.title-edit-button:focus:hover::before {
         background-color: #0075b4; }
 
-/* line 616, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 631, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 .library-sync-button .action-button-text {
   display: none; }
 
-/* line 622, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
-.lib-edit-warning-tooltipbox .tooltiptext {
-  visibility: hidden;
-  position: absolute;
-  width: 200px;
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  padding: 5px;
-  border-radius: 6px;
-  z-index: 1;
-  top: 50%;
-  right: 100%;
-  margin-right: 10px;
-  transform: translateY(-50%);
-  opacity: 0;
-  transition: opacity 0.3s; }
-
-/* line 640, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
-.lib-edit-warning-tooltipbox .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  transform: translateY(-50%);
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent transparent #000; }
-
-/* line 651, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
-.lib-edit-warning-tooltipbox:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1; }
-
-/* line 658, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 637, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 .action-edit .action-button-text {
   display: none; }
 
-/* line 662, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 641, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 .action-edit .edit-button.action-button {
   position: relative; }
-  /* line 667, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 646, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   .action-edit .edit-button.action-button .fa-pencil {
     display: none; }
-  /* line 671, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
-  .action-edit .edit-button.action-button.disabled-button {
-    pointer-events: all;
-    opacity: .5;
-    cursor: default;
-    border-color: transparent; }
-  /* line 678, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 650, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   .action-edit .edit-button.action-button::before {
     content: '';
     position: absolute;
     background-color: #000;
     mask: url("../images/pencil-icon.svg") center no-repeat; }
-  /* line 687, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 659, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   .action-edit .edit-button.action-button:hover {
     background-color: #0075b4;
     border-color: transparent; }
-    /* line 691, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+    /* line 663, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
     .action-edit .edit-button.action-button:hover::before {
       background-color: #fff; }
-  /* line 696, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 668, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   .action-edit .edit-button.action-button:focus {
     outline: 2px transparent;
     background-color: transparent;
     box-shadow: inset 0 0 0 2px #0075b4;
     border-color: transparent; }
-    /* line 702, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+    /* line 674, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
     .action-edit .edit-button.action-button:focus:hover {
       color: #fff;
       border-color: transparent; }
-      /* line 706, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+      /* line 678, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
       .action-edit .edit-button.action-button:focus:hover::before {
         background-color: #0075b4; }
 
-/* line 715, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 687, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 .nav-dd.ui-right .nav-sub::before, .nav-dd.ui-right .nav-sub::after {
   display: none; }
 
-/* line 721, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 693, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 body [class*="view-"] .openassessment_editor_buttons.xblock-actions {
   padding: 15px 2% 3px 2%; }
 
-/* line 726, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 698, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 [class*="view-"] .modal-lg {
   max-width: 1200px; }
 
-/* line 738, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 710, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 [class*="view-"] .modal-lg.modal-editor .edit-xblock-modal .modal-content {
   max-height: calc(100vh - 144px); }
-  /* line 741, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 713, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   [class*="view-"] .modal-lg.modal-editor .edit-xblock-modal .modal-content .editor-with-buttons.wrapper-comp-settings .list-input.settings-list {
     max-height: calc(100vh - 205px); }
 
-/* line 752, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 724, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 [class*="view-"] #openassessment-editor #oa_basic_settings_editor #openassessment_title_editor_wrapper input, [class*="view-"] #openassessment-editor input[type=number] {
   width: 48%; }
 
-/* line 760, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 732, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 [class*="view-"] div.wrapper-comp-settings .list-input.settings-list input:not([type="file"]):not([type="number"]),
 [class*="view-"] div.wrapper-comp-settings .list-input.settings-list select {
   width: 48%; }
 
-/* line 765, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 737, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 [class*="view-"] div.wrapper-comp-settings .list-input.settings-list .metadata-list-enum .create-setting {
   background-color: #0075b4;
   color: #fff;
   border: 1px solid #0075b4;
   cursor: pointer; }
-  /* line 773, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 745, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   [class*="view-"] div.wrapper-comp-settings .list-input.settings-list .metadata-list-enum .create-setting:hover {
     background: #00649b;
     border-color: #2d494e; }
-  /* line 778, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 750, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   [class*="view-"] div.wrapper-comp-settings .list-input.settings-list .metadata-list-enum .create-setting:focus {
     background: #0075b4;
     outline: none; }
 
-/* line 786, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 758, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 [class*="view-"] div.wrapper-comp-settings .list-input.settings-list .field.comp-setting-entry.is-set .setting-input {
   color: #333333;
   margin-bottom: 5px; }
 
-/* line 791, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 763, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 [class*="view-"] div.wrapper-comp-settings .list-input.settings-list select {
   border: 1px solid #e7e7e7;
   border-radius: 0.1875rem;
   color: #333333;
   height: 44px; }
-  /* line 797, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 769, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   [class*="view-"] div.wrapper-comp-settings .list-input.settings-list select:focus {
     background-color: #fff;
     color: #333333;
     outline: 0;
     box-shadow: 0 0 0 1px #0075b4; }
 
-/* line 805, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 777, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 [class*="view-"] div.wrapper-comp-settings .list-input.settings-list .setting-label {
   font-size: 18px;
   line-height: 28px;
   color: #333333;
   font-weight: 400; }
 
-/* line 812, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 784, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 [class*="view-"] div.wrapper-comp-settings .list-input.settings-list input[type="number"] {
   width: 45%; }
 
-/* line 816, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 788, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 [class*="view-"] div.wrapper-comp-settings .list-input.settings-list .action.setting-clear {
   background-color: transparent;
   color: #0075b4;
   border: none; }
-  /* line 823, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 795, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   [class*="view-"] div.wrapper-comp-settings .list-input.settings-list .action.setting-clear:hover {
     background-color: #0075b4;
     color: #fff;
     border: none; }
-  /* line 829, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 801, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   [class*="view-"] div.wrapper-comp-settings .list-input.settings-list .action.setting-clear:focus {
     outline: 2px transparent;
     background-color: transparent;
     box-shadow: inset 0 0 0 2px #0075b4;
     color: #0075b4; }
 
-/* line 838, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 810, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 [class*="view-"] div.wrapper-comp-settings .list-input.settings-list .metadata-list-enum .remove-setting .fa-times-circle {
   color: #0075b4; }
 
-/* line 843, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 815, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 select {
   border: 1px solid #e7e7e7;
   border-radius: 0.1875rem;
   color: #333333;
   height: 44px;
   padding: 10px 16px; }
-  /* line 850, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 822, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   select:focus {
     background-color: #fff;
     color: #333333;
     outline: 0;
     box-shadow: 0 0 0 1px #0075b4; }
 
-/* line 859, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 831, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 .xblock .xblock--drag-and-drop--editor .tab {
   background-color: #fff;
   display: inline-block; }
 
-/* line 865, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 837, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 .xblock #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion .openassessment_criterion_basic_editor .comp-setting-entry .wrapper-comp-settings label input,
 .xblock #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion_option .openassessment_criterion_option_name_wrapper label,
 .xblock #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion_option .openassessment_criterion_option_explanation_wrapper label,
@@ -17946,25 +17840,25 @@ select {
   background-color: #fff;
   background-image: none; }
 
-/* line 884, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 856, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 .xblock #openassessment-editor #openassessment_editor_header .editor_tabs .oa_editor_tab {
   padding: 0 10px; }
 
-/* line 890, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 862, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 .xblock #openassessment-editor #openassessment_editor_header,
 .xblock #openassessment-editor .openassessment_tab_instructions {
   background-color: #fff; }
 
-/* line 895, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 867, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 .xblock #openassessment-editor #oa_schedule_editor_wrapper #dates_config_new_badge {
   background-color: #0075b4; }
 
-/* line 899, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 871, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 .xblock #openassessment-editor .openassessment_description {
   font-size: 14px;
   line-height: 18px; }
 
-/* line 904, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 876, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 .xblock #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion
 .openassessment_criterion_basic_editor .comp-setting-entry
 .wrapper-comp-settings label {
@@ -17973,32 +17867,32 @@ select {
   color: #333333;
   font-weight: 400; }
 
-/* line 913, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 885, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 .xblock #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion_option
 .openassessment_criterion_option_point_wrapper label input {
   min-width: 70px;
   font-size: 18px;
   height: 44px; }
 
-/* line 920, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 892, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 .xblock #openassessment-editor .openassessment_assessment_module_settings_editor:hover {
   border-color: #0075b4; }
-  /* line 923, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 895, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   .xblock #openassessment-editor .openassessment_assessment_module_settings_editor:hover .drag-handle {
     background-color: #0075b4;
     border-color: #0075b4; }
 
-/* line 929, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 901, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 .xblock #openassessment-editor .setting-help,
 .xblock #openassessment-editor .ti.wrapper-comp-settings .list-input.settings-list .setting-help {
   color: #e7e7e7;
   font-size: 14px;
   line-height: 18px; }
 
-/* line 945, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 917, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 .xblock-header:not(.xblock-header-library_content, .xblock-header-split_test) .xblock-header-primary {
   position: relative; }
-  /* line 948, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 920, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   .xblock-header:not(.xblock-header-library_content, .xblock-header-split_test) .xblock-header-primary::before {
     content: '';
     position: absolute;
@@ -18008,66 +17902,66 @@ select {
     height: 1px;
     background-color: #eae6e5; }
 
-/* line 959, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 931, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 .ui-loading {
   background-color: #f8f7f6;
   box-shadow: none; }
-  /* line 963, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 935, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   .ui-loading .spin,
   .ui-loading .copy {
     color: #0075b4; }
 
-/* line 969, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 941, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 .wrapper-comp-setting.metadata-list-enum .action.setting-clear.active {
   margin-top: 0; }
 
-/* line 973, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 945, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 .wrapper-xblock .xblock-header-primary .header-actions .wrapper-nav-sub {
   z-index: 100; }
 
-/* line 978, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 950, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 .xblock-studio_view-drag-and-drop-v2 .xblock--drag-and-drop--editor .zone-align-select,
 .xblock-studio_view-drag-and-drop-v2 .xblock--drag-and-drop--editor .item-styles-form input,
 .xblock-studio_view-drag-and-drop-v2 .xblock--drag-and-drop--editor .drag-builder textarea,
 .xblock-studio_view-drag-and-drop-v2 .xblock--drag-and-drop--editor .target-image-form textarea {
   width: 100%; }
 
-/* line 985, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 957, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 .xblock-studio_view-drag-and-drop-v2 .xblock--drag-and-drop--editor .target-image-form input[type="text"] {
   width: 100%; }
-  /* line 988, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 960, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   .xblock-studio_view-drag-and-drop-v2 .xblock--drag-and-drop--editor .target-image-form input[type="text"].background-url {
     margin-bottom: 10px; }
-  /* line 993, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 965, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   .xblock-studio_view-drag-and-drop-v2 .xblock--drag-and-drop--editor .target-image-form input[type="text"].autozone-layout.autozone-layout-cols, .xblock-studio_view-drag-and-drop-v2 .xblock--drag-and-drop--editor .target-image-form input[type="text"].autozone-layout.autozone-layout-rows {
     width: auto; }
-  /* line 1000, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 972, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   .xblock-studio_view-drag-and-drop-v2 .xblock--drag-and-drop--editor .target-image-form input[type="text"].autozone-size.autozone-size-width, .xblock-studio_view-drag-and-drop-v2 .xblock--drag-and-drop--editor .target-image-form input[type="text"].autozone-size.autozone-size-height {
     width: auto; }
 
-/* line 1007, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 979, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 .xblock-studio_view-drag-and-drop-v2 .xblock--drag-and-drop--editor .feedback-tab input:not([type=checkbox]),
 .xblock-studio_view-drag-and-drop-v2 .xblock--drag-and-drop--editor .xblock--drag-and-drop--editor .feedback-tab select {
   width: 100%; }
 
-/* line 1014, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 986, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 .xblock-render .add-xblock-component {
   background: transparent;
   padding: 20px; }
-  /* line 1019, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 991, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   .xblock-render .add-xblock-component .new-component h5 {
     margin-bottom: 24px;
     font-size: 22px;
     font-weight: 700;
     color: #000; }
-  /* line 1026, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 998, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   .xblock-render .add-xblock-component .new-component .new-component-type {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
     align-items: center;
     justify-content: center; }
-    /* line 1033, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+    /* line 1005, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
     .xblock-render .add-xblock-component .new-component .new-component-type .add-xblock-component-button {
       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15), 0 1px 4px rgba(0, 0, 0, 0.15);
       width: 176px;
@@ -18081,52 +17975,52 @@ select {
       justify-content: center;
       flex-direction: column;
       gap: 8px; }
-      /* line 1047, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+      /* line 1019, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
       .xblock-render .add-xblock-component .new-component .new-component-type .add-xblock-component-button:hover {
         color: #005481;
         background-color: white;
         border-color: #004368; }
-      /* line 1053, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+      /* line 1025, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
       .xblock-render .add-xblock-component .new-component .new-component-type .add-xblock-component-button .large-template-icon {
         width: 24px;
         height: 24px;
         background: #0075b4; }
-        /* line 1059, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+        /* line 1031, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
         .xblock-render .add-xblock-component .new-component .new-component-type .add-xblock-component-button .large-template-icon.large-library-icon {
           mask: url("../images/library-icon.svg") center no-repeat; }
-        /* line 1059, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+        /* line 1031, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
         .xblock-render .add-xblock-component .new-component .new-component-type .add-xblock-component-button .large-template-icon.large-library_v2-icon {
           mask: url("../images/library_v2-icon.svg") center no-repeat; }
-        /* line 1059, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+        /* line 1031, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
         .xblock-render .add-xblock-component .new-component .new-component-type .add-xblock-component-button .large-template-icon.large-itembank-icon {
           mask: url("../images/itembank-icon.svg") center no-repeat; }
-        /* line 1059, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+        /* line 1031, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
         .xblock-render .add-xblock-component .new-component .new-component-type .add-xblock-component-button .large-template-icon.large-advanced-icon {
           mask: url("../images/advanced-icon.svg") center no-repeat; }
-        /* line 1059, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+        /* line 1031, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
         .xblock-render .add-xblock-component .new-component .new-component-type .add-xblock-component-button .large-template-icon.large-html-icon {
           mask: url("../images/text-icon.svg") center no-repeat; }
-        /* line 1059, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+        /* line 1031, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
         .xblock-render .add-xblock-component .new-component .new-component-type .add-xblock-component-button .large-template-icon.large-openassessment-icon {
           mask: url("../images/openassessment-icon.svg") center no-repeat; }
-        /* line 1059, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+        /* line 1031, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
         .xblock-render .add-xblock-component .new-component .new-component-type .add-xblock-component-button .large-template-icon.large-problem-icon {
           mask: url("../images/problem-icon.svg") center no-repeat; }
-        /* line 1059, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+        /* line 1031, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
         .xblock-render .add-xblock-component .new-component .new-component-type .add-xblock-component-button .large-template-icon.large-video-icon {
           mask: url("../images/video-icon.svg") center no-repeat; }
-        /* line 1059, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+        /* line 1031, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
         .xblock-render .add-xblock-component .new-component .new-component-type .add-xblock-component-button .large-template-icon.large-drag-and-drop-v2-icon {
           mask: url("../images/drag-and-drop-v2-icon.svg") center no-repeat; }
-        /* line 1059, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+        /* line 1031, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
         .xblock-render .add-xblock-component .new-component .new-component-type .add-xblock-component-button .large-template-icon.large-text-icon {
           mask: url("../images/text-icon.svg") center no-repeat; }
-      /* line 1065, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+      /* line 1037, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
       .xblock-render .add-xblock-component .new-component .new-component-type .add-xblock-component-button .name {
         color: inherit;
         font-size: 15.75px;
         font-weight: 400; }
-      /* line 1071, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+      /* line 1043, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
       .xblock-render .add-xblock-component .new-component .new-component-type .add-xblock-component-button .beta {
         color: #fff;
         background-color: #0075b4;
@@ -18135,20 +18029,20 @@ select {
         font-weight: 700;
         line-height: 1;
         margin: -6px 0 0; }
-  /* line 1084, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 1056, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   .xblock-render .add-xblock-component .new-component-templates {
     border: 1px solid #e7e7e7;
     border-radius: 5px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15), 0 1px 4px rgba(0, 0, 0, 0.15);
     margin: 20px;
     overflow: hidden; }
-    /* line 1091, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+    /* line 1063, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
     .xblock-render .add-xblock-component .new-component-templates .button-component:hover {
       background: #0075b4; }
 
-/* line 1102, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+/* line 1074, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
 .paste-component {
   margin: 24px 10px 0; }
-  /* line 1105, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
+  /* line 1077, /openedx/edx-platform/cms/static/sass/course-unit-mfe-iframe-bundle.scss */
   .paste-component .paste-component-whats-in-clipboard .clipboard-details-popup {
     right: -10px; }

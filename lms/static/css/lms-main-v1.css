@@ -24307,29 +24307,6 @@ body.open-modal {
 .course-content .bookmark-button.bookmarked::before {
   content: ""; }
 
-/* line 3, /openedx/edx-platform/lms/static/sass/features/_announcements.scss */
-.announcements-list {
-  display: inline-block;
-  width: 100%; }
-  /* line 7, /openedx/edx-platform/lms/static/sass/features/_announcements.scss */
-  .announcements-list .announcement {
-    background-color: whitesmoke;
-    align-content: center;
-    text-align: center;
-    padding: 22px 33px;
-    margin-bottom: 15px; }
-  /* line 15, /openedx/edx-platform/lms/static/sass/features/_announcements.scss */
-  .announcements-list .announcement-button {
-    display: inline-block;
-    padding: 3px 10px;
-    font-size: 0.75rem; }
-  /* line 21, /openedx/edx-platform/lms/static/sass/features/_announcements.scss */
-  .announcements-list .prev {
-    float: left; }
-  /* line 25, /openedx/edx-platform/lms/static/sass/features/_announcements.scss */
-  .announcements-list .next {
-    float: right; }
-
 /* stylelint-disable-line */
 /* stylelint-disable-line */
 /* line 10, /openedx/edx-platform/lms/static/sass/features/_unsupported-browser-alert.scss */

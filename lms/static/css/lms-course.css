@@ -4150,7 +4150,7 @@ mark {
   color: #474747; }
 
 /* line 27, /openedx/edx-platform/lms/static/sass/base/_headings.scss */
-.hd-1 {
+.hd-1, .xblock .xblock h1 {
   margin-bottom: 1.41575em;
   font-size: 2em;
   line-height: 1.4em; }
@@ -4162,35 +4162,35 @@ mark {
   line-height: 1.4em; }
 
 /* line 41, /openedx/edx-platform/lms/static/sass/base/_headings.scss */
-.hd-3 {
+.hd-3, .xblock .xblock h3 {
   margin-bottom: 10px;
   font-size: 1.35em;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.4em; }
 
 /* line 49, /openedx/edx-platform/lms/static/sass/base/_headings.scss */
-.hd-4 {
+.hd-4, .xblock .xblock h4 {
   margin-bottom: 10px;
   font-size: 1.25em;
   font-weight: 600;
   line-height: 1.4em; }
 
 /* line 57, /openedx/edx-platform/lms/static/sass/base/_headings.scss */
-.hd-5, .pattern-library-shim .alert-title {
+.hd-5, .xblock .xblock h5, .pattern-library-shim .alert-title {
   margin-bottom: 10px;
   font-size: 1.1em;
   font-weight: 600;
   line-height: 1.4em; }
 
 /* line 65, /openedx/edx-platform/lms/static/sass/base/_headings.scss */
-.hd-6 {
+.hd-6, .xblock .xblock h6 {
   margin-bottom: 10px;
   font-size: 1em;
   font-weight: 600;
   line-height: 1.4em; }
 
 /* line 72, /openedx/edx-platform/lms/static/sass/base/_headings.scss */
-.hd-7 {
+.hd-7, .xblock .xblock h7 {
   margin-bottom: 5px;
   font-size: 14px;
   font-weight: 600;
@@ -4198,18 +4198,18 @@ mark {
   letter-spacing: 1px; }
 
 /* line 80, /openedx/edx-platform/lms/static/sass/base/_headings.scss */
-.hd-8 {
+.hd-8, .xblock .xblock h8 {
   margin-bottom: 2.5px;
   font-size: 12px;
   font-weight: 600;
   line-height: 1.5em;
   letter-spacing: 1px; }
 
-/* line 115, /openedx/edx-platform/lms/static/sass/base/_headings.scss */
+/* line 121, /openedx/edx-platform/lms/static/sass/base/_headings.scss */
 .xblock .xblock h2 {
   font-weight: 600;
   text-transform: initial; }
-  /* line 122, /openedx/edx-platform/lms/static/sass/base/_headings.scss */
+  /* line 128, /openedx/edx-platform/lms/static/sass/base/_headings.scss */
   .xblock .xblock h2.discussion-module-title {
     margin-bottom: 0;
     display: inline-block; }
@@ -16448,7 +16448,7 @@ body.view-in-course {
 @media only screen and (max-width: 767px) {
   /* line 29, /openedx/edx-platform/lms/static/sass/lms-course.scss */
   .survey-table .survey-option .visible-mobile-only {
-    width: calc(100% - 21px) !important; }
+    width: calc(100% - 54px) !important; }
   /* line 33, /openedx/edx-platform/lms/static/sass/lms-course.scss */
   .survey-percentage .percentage {
     width: 54px !important; } }
