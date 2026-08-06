@@ -44,7 +44,7 @@
   .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register:focus,
   .course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong:active,
   .course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong:focus {
-    color: #fe070c !important;
+    color: #CB8606 !important;
     background: #fff !important; }
   /* line 39, /openedx/themes/nwl2026/lms/static/sass/blocks/_buttons.scss */
   .register-button:focus:hover, .register-button:hover,
@@ -68,7 +68,7 @@
   .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register:hover,
   .course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong:focus:hover,
   .course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong:hover {
-    color: #fe070c !important;
+    color: #CB8606 !important;
     background: #fff !important; }
 
 /* line 46, /openedx/themes/nwl2026/lms/static/sass/blocks/_buttons.scss */
@@ -251,12 +251,12 @@ section.discussion .search-button,
       background: #fff !important; }
     /* line 137, /openedx/themes/nwl2026/lms/static/sass/blocks/_header.scss */
     .global-header .btn:focus:hover {
-      color: #fe070c !important;
+      color: #CB8606 !important;
       background: #fff !important;
       border: 3px solid #0B224E !important; }
     /* line 142, /openedx/themes/nwl2026/lms/static/sass/blocks/_header.scss */
     .global-header .btn:hover {
-      color: #fe070c !important;
+      color: #CB8606 !important;
       background: #fff !important;
       border: 3px solid #0B224E !important; }
 
