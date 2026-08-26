@@ -14284,41 +14284,44 @@ body.picker-open {
 
 /* line 586, /openedx/edx-platform/cms/static/sass/views/_container.scss */
 .modal-add-component-picker {
-  top: 10%; }
-  /* line 588, /openedx/edx-platform/cms/static/sass/views/_container.scss */
+  top: 10%;
+  padding: 0px !important; }
+  /* line 589, /openedx/edx-platform/cms/static/sass/views/_container.scss */
   .modal-add-component-picker .modal-content {
-    padding: 0 !important; }
-    /* line 591, /openedx/edx-platform/cms/static/sass/views/_container.scss */
+    padding: 0 !important;
+    border-radius: 4px; }
+    /* line 593, /openedx/edx-platform/cms/static/sass/views/_container.scss */
     .modal-add-component-picker .modal-content > iframe {
       width: 100%;
       min-height: 80vh;
-      background: url("../images/spinner.gif") center center no-repeat; }
+      background: url("../images/spinner.gif") center center no-repeat;
+      border-radius: 4px; }
 
-/* line 599, /openedx/edx-platform/cms/static/sass/views/_container.scss */
+/* line 602, /openedx/edx-platform/cms/static/sass/views/_container.scss */
 .modal-alert {
   display: flex;
   align-items: center;
   padding: 20px;
   margin-bottom: 20px; }
-  /* line 605, /openedx/edx-platform/cms/static/sass/views/_container.scss */
+  /* line 608, /openedx/edx-platform/cms/static/sass/views/_container.scss */
   .modal-alert.warning {
     background-color: #fcf8e3; }
-    /* line 608, /openedx/edx-platform/cms/static/sass/views/_container.scss */
+    /* line 611, /openedx/edx-platform/cms/static/sass/views/_container.scss */
     .modal-alert.warning .fa-warning {
       color: #fd7e14;
       margin-right: 20px; }
-  /* line 614, /openedx/edx-platform/cms/static/sass/views/_container.scss */
+  /* line 617, /openedx/edx-platform/cms/static/sass/views/_container.scss */
   .modal-alert .action-btn {
     text-wrap: nowrap;
     background-color: #000;
     color: #fff;
     margin-left: auto;
     padding: 10px; }
-    /* line 621, /openedx/edx-platform/cms/static/sass/views/_container.scss */
+    /* line 624, /openedx/edx-platform/cms/static/sass/views/_container.scss */
     .modal-alert .action-btn .fa {
       margin-left: 5px;
       color: #fff; }
-    /* line 626, /openedx/edx-platform/cms/static/sass/views/_container.scss */
+    /* line 629, /openedx/edx-platform/cms/static/sass/views/_container.scss */
     .modal-alert .action-btn:hover, .modal-alert .action-btn:focus, .modal-alert .action-btn:active {
       background-color: #333333; }
 
@@ -16449,93 +16452,6 @@ body.picker-open {
       width: 100%;
       max-height: 100%; }
 
-/* line 1, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-.maintenance-header {
-  text-align: center;
-  margin-top: 50px; }
-  /* line 5, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-  .maintenance-header h2 {
-    margin-bottom: 10px; }
-
-/* line 10, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-.maintenance-content {
-  padding: 3rem 0; }
-  /* line 13, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-  .maintenance-content .maintenance-list {
-    max-width: 1280px;
-    margin: 0 auto; }
-    /* line 17, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-    .maintenance-content .maintenance-list .view-list-container {
-      padding: 10px 15px;
-      background-color: #fff;
-      border-bottom: 1px solid #ddd; }
-      /* line 22, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-      .maintenance-content .maintenance-list .view-list-container:hover {
-        background-color: #fafafa; }
-      /* line 26, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-      .maintenance-content .maintenance-list .view-list-container .view-name {
-        display: inline-block;
-        width: 20%;
-        float: left; }
-      /* line 32, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-      .maintenance-content .maintenance-list .view-list-container .view-desc {
-        display: inline-block;
-        width: 80%;
-        font-size: 15px; }
-  /* line 40, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-  .maintenance-content .maintenance-form {
-    width: 60%;
-    margin: auto; }
-    /* line 44, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-    .maintenance-content .maintenance-form .result-list {
-      height: calc(100vh - 200px);
-      overflow: auto; }
-    /* line 49, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-    .maintenance-content .maintenance-form .result {
-      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
-      margin-top: 15px;
-      padding: 15px 30px;
-      background: #f9f9f9; }
-    /* line 56, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-    .maintenance-content .maintenance-form li {
-      font-size: 13px;
-      line-height: 9px; }
-    /* line 61, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-    .maintenance-content .maintenance-form .actions {
-      text-align: right; }
-    /* line 65, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-    .maintenance-content .maintenance-form .field-radio div {
-      display: inline-block;
-      margin-right: 10px; }
-    /* line 70, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-    .maintenance-content .maintenance-form div.error {
-      color: #f00;
-      margin-top: 10px;
-      font-size: 13px; }
-    /* line 76, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-    .maintenance-content .maintenance-form div.head-output {
-      font-size: 13px;
-      margin-bottom: 10px; }
-    /* line 81, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-    .maintenance-content .maintenance-form div.main-output {
-      color: #0a0;
-      font-size: 15px; }
-  /* line 87, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-  .maintenance-content .announcement-container {
-    width: 100%;
-    text-align: center; }
-    /* line 91, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-    .maintenance-content .announcement-container .announcement-item {
-      display: inline-block;
-      max-width: 300px;
-      min-width: 300px;
-      margin: 15px; }
-      /* line 97, /openedx/edx-platform/cms/static/sass/views/_maintenance.scss */
-      .maintenance-content .announcement-container .announcement-item .announcement-content {
-        background-color: #f5f5f5;
-        text-align: center;
-        padding: 22px 33px; }
-
 /* line 9, /openedx/edx-platform/cms/static/sass/contexts/_ie.scss */
 .lte9 .wrapper-notification.is-shown {
   bottom: 0; }
@@ -16569,25 +16485,29 @@ body.picker-open {
   color: #4c4c4c; }
 
 /* line 27, /openedx/edx-platform/cms/static/sass/xmodule/_headings.scss */
+.wrapper-xblock .xblock-render .xblock .xblock-render .xblock h1,
 .wrapper-xblock .xblock-render .xblock .xblock-render .xblock .hd-1 {
   margin-bottom: 1.41575em;
   font-size: 2em;
   line-height: 1.4em; }
 
 /* line 34, /openedx/edx-platform/cms/static/sass/xmodule/_headings.scss */
-.wrapper-xblock .xblock-render .xblock .xblock-render .xblock .hd-2, .wrapper-xblock .xblock-render .xblock .xblock-render .xblock h3 {
+.wrapper-xblock .xblock-render .xblock .xblock-render .xblock h2,
+.wrapper-xblock .xblock-render .xblock .xblock-render .xblock .hd-2 {
   font-size: 1.1125em;
   font-weight: 600;
   line-height: 1.4em; }
 
 /* line 41, /openedx/edx-platform/cms/static/sass/xmodule/_headings.scss */
+.wrapper-xblock .xblock-render .xblock .xblock-render .xblock h3,
 .wrapper-xblock .xblock-render .xblock .xblock-render .xblock .hd-3 {
   margin-bottom: 10px;
   font-size: 1.35em;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.4em; }
 
 /* line 49, /openedx/edx-platform/cms/static/sass/xmodule/_headings.scss */
+.wrapper-xblock .xblock-render .xblock .xblock-render .xblock h4,
 .wrapper-xblock .xblock-render .xblock .xblock-render .xblock .hd-4 {
   margin-bottom: 10px;
   font-size: 1.25em;
@@ -16595,6 +16515,7 @@ body.picker-open {
   line-height: 1.4em; }
 
 /* line 57, /openedx/edx-platform/cms/static/sass/xmodule/_headings.scss */
+.wrapper-xblock .xblock-render .xblock .xblock-render .xblock h5,
 .wrapper-xblock .xblock-render .xblock .xblock-render .xblock .hd-5 {
   margin-bottom: 10px;
   font-size: 1.1em;
@@ -16602,6 +16523,7 @@ body.picker-open {
   line-height: 1.4em; }
 
 /* line 65, /openedx/edx-platform/cms/static/sass/xmodule/_headings.scss */
+.wrapper-xblock .xblock-render .xblock .xblock-render .xblock h6,
 .wrapper-xblock .xblock-render .xblock .xblock-render .xblock .hd-6 {
   margin-bottom: 10px;
   font-size: 1em;
@@ -16609,6 +16531,7 @@ body.picker-open {
   line-height: 1.4em; }
 
 /* line 72, /openedx/edx-platform/cms/static/sass/xmodule/_headings.scss */
+.wrapper-xblock .xblock-render .xblock .xblock-render .xblock h7,
 .wrapper-xblock .xblock-render .xblock .xblock-render .xblock .hd-7 {
   margin-bottom: 5px;
   font-size: 14px;
@@ -16618,6 +16541,7 @@ body.picker-open {
   letter-spacing: 1px; }
 
 /* line 81, /openedx/edx-platform/cms/static/sass/xmodule/_headings.scss */
+.wrapper-xblock .xblock-render .xblock .xblock-render .xblock h8,
 .wrapper-xblock .xblock-render .xblock .xblock-render .xblock .hd-8 {
   margin-bottom: 2.5px;
   font-size: 12px;
@@ -16628,7 +16552,6 @@ body.picker-open {
 
 /* line 113, /openedx/edx-platform/cms/static/sass/xmodule/_headings.scss */
 .wrapper-xblock .xblock-render .xblock .xblock-render .xblock h3 {
-  font-weight: 400;
   text-transform: initial; }
 
 /* line 9, /openedx/edx-platform/cms/static/sass/elements/_xmodules.scss */
